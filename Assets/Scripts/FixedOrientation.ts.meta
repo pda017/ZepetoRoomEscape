@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 134184a9872a7d34db8fff89f4133636
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nconst UnityEngine_2 = require(\"UnityEngine\");\r\nclass
+    FixedOrientation extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Update()
+    {\r\n        if (UnityEngine_1.Screen.orientation !== UnityEngine_2.ScreenOrientation.Landscape)\r\n           
+    UnityEngine_1.Screen.orientation = UnityEngine_2.ScreenOrientation.Landscape;\r\n   
+    }\r\n}\r\nexports.default = FixedOrientation;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRml4ZWRPcmllbnRhdGlvbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkZpeGVkT3JpZW50YXRpb24udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsNkNBQW9DO0FBQ3BDLDZDQUErQztBQUMvQyxNQUFxQixnQkFBaUIsU0FBUSxxQ0FBcUI7SUFFL0QsTUFBTTtRQUVGLElBQUcsb0JBQU0sQ0FBQyxXQUFXLEtBQUssK0JBQWlCLENBQUMsU0FBUztZQUNqRCxvQkFBTSxDQUFDLFdBQVcsR0FBRywrQkFBaUIsQ0FBQyxTQUFTLENBQUM7SUFDekQsQ0FBQztDQUNKO0FBUEQsbUNBT0MifQ==","assetPath":"Assets/Scripts/FixedOrientation.ts","manifest":{"properties":[],"name":"FixedOrientation","description":""},"isCompiled":true}'
+  typescriptHash: 090e6e0c254fddc4958e91483375e0e6

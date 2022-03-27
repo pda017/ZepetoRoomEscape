@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 5f4c3e7263c2b674aada57556da27690
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    InitData_1 = require(\"./InitData\");\r\nclass TestStage extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Awake() {\r\n        InitData_1.default.Init();\r\n    }\r\n    Start()
+    {\r\n    }\r\n}\r\nexports.default = TestStage;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGVzdFN0YWdlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVGVzdFN0YWdlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0EsaURBQXFEO0FBQ3JELHlDQUFrQztBQUVsQyxNQUFxQixTQUFVLFNBQVEscUNBQXFCO0lBQ3hELEtBQUs7UUFFRCxrQkFBUSxDQUFDLElBQUksRUFBRSxDQUFDO0lBQ3BCLENBQUM7SUFDRCxLQUFLO0lBRUwsQ0FBQztDQUNKO0FBUkQsNEJBUUMifQ==","assetPath":"Assets/Scripts/TestStage.ts","manifest":{"properties":[],"name":"TestStage","description":""},"isCompiled":true}'
+  typescriptHash: 231aecfaefd03b776f9d6171c7e64015

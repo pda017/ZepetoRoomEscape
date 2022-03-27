@@ -1,0 +1,4 @@
+{
+"State" : {"PlayerInfoList" : {"map" : "SPlayerInfo"},"PlayerInfoListDirty" : "int8"},
+"SPlayerInfo" : {"SessionId" : "string","UserId" : "string"}
+}

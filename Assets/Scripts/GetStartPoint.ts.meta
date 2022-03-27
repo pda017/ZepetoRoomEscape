@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: d95a7e8d0129dbb4980c7b9adac0e075
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nclass
+    GetStartPoint {\r\n    static Init() {\r\n        if (this.m_StartPoints ===
+    null) {\r\n            var obj = UnityEngine_1.GameObject.FindWithTag(\"StartPoints\");\r\n           
+    this.m_StartPoints = obj.transform;\r\n        }\r\n    }\r\n    static Get(index)
+    {\r\n        this.Init();\r\n        if (index < this.m_StartPoints.childCount)
+    {\r\n            return this.m_StartPoints.GetChild(index);\r\n        }\r\n       
+    return null;\r\n    }\r\n}\r\nexports.default = GetStartPoint;\r\nGetStartPoint.m_StartPoints
+    = null;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2V0U3RhcnRQb2ludC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkdldFN0YXJ0UG9pbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBb0Q7QUFHcEQsTUFBcUIsYUFBYTtJQUV2QixNQUFNLENBQUMsSUFBSTtRQUVkLElBQUcsSUFBSSxDQUFDLGFBQWEsS0FBSyxJQUFJLEVBQzlCO1lBQ0ksSUFBSSxHQUFHLEdBQUcsd0JBQVUsQ0FBQyxXQUFXLENBQUMsYUFBYSxDQUFDLENBQUM7WUFDaEQsSUFBSSxDQUFDLGFBQWEsR0FBRyxHQUFHLENBQUMsU0FBUyxDQUFDO1NBQ3RDO0lBQ0wsQ0FBQztJQUNNLE1BQU0sQ0FBQyxHQUFHLENBQUMsS0FBYztRQUU1QixJQUFJLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDWixJQUFHLEtBQUssR0FBRyxJQUFJLENBQUMsYUFBYSxDQUFDLFVBQVUsRUFDeEM7WUFDSSxPQUFPLElBQUksQ0FBQyxhQUFhLENBQUMsUUFBUSxDQUFDLEtBQUssQ0FBQyxDQUFDO1NBQzdDO1FBQ0QsT0FBTyxJQUFJLENBQUM7SUFDaEIsQ0FBQzs7QUFsQkwsZ0NBbUJDO0FBbEJVLDJCQUFhLEdBQWUsSUFBSSxDQUFDIn0=","assetPath":"Assets/Scripts/GetStartPoint.ts","manifest":{"properties":[],"name":"GetStartPoint","description":""},"isCompiled":true}'
+  typescriptHash: bd69fed8b74514a9f930d59a5f67a485

@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 542c29249ab45d64590405860ecb3017
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UpdatePlayerExists_1 = require(\"./UpdatePlayerExists\");\r\nclass MultiplayMgr
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.m_UpdatePlayerExists
+    = new UpdatePlayerExists_1.default(this.gameObject);\r\n    }\r\n}\r\nexports.default
+    = MultiplayMgr;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTXVsdGlwbGF5TWdyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiTXVsdGlwbGF5TWdyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUEsaURBQXFEO0FBRXJELDZEQUFzRDtBQUV0RCxNQUFxQixZQUFhLFNBQVEscUNBQXFCO0lBRTNELEtBQUs7UUFDRCxJQUFJLENBQUMsb0JBQW9CLEdBQUcsSUFBSSw0QkFBa0IsQ0FBQyxJQUFJLENBQUMsVUFBVSxDQUFDLENBQUM7SUFDeEUsQ0FBQztDQUNKO0FBTEQsK0JBS0MifQ==","assetPath":"Assets/Scripts/MultiplayMgr.ts","manifest":{"properties":[{"assembly":"","name":"m_UpdatePlayerExists","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/UpdatePlayerExists.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"MultiplayMgr","description":""},"isCompiled":true}'
+  typescriptHash: 974207871e0ef81d56acb6aa6bb9efd3
