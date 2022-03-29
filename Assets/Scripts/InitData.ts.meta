@@ -22,4 +22,4 @@ ScriptedImporter:
     { value: true });\r\nconst StartPointData_1 = require(\"../Data/StartPointData\");\r\nclass
     InitData {\r\n    static Init() {\r\n        StartPointData_1.default.Init();\r\n   
     }\r\n}\r\nexports.default = InitData;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5pdERhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJJbml0RGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLDJEQUFtRDtBQUVuRCxNQUFxQixRQUFRO0lBQ2xCLE1BQU0sQ0FBQyxJQUFJO1FBRWQsd0JBQWMsQ0FBQyxJQUFJLEVBQUUsQ0FBQztJQUMxQixDQUFDO0NBRUo7QUFORCwyQkFNQyJ9","assetPath":"Assets/Scripts/InitData.ts","manifest":{"properties":[],"name":"InitData","description":""},"isCompiled":true}'
-  typescriptHash: 38b7f1f7ab609f51a4b0b0a57a607a83
+  typescriptHash: 8f6c817b1aaec57b9d8121d9360dfccc

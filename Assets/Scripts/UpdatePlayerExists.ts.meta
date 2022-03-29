@@ -18,32 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
-    ZEPETO_Character_Controller_1 = require(\"ZEPETO.Character.Controller\");\r\nconst
-    ZEPETO_World_1 = require(\"ZEPETO.World\");\r\nconst GetStartPoint_1 = require(\"./GetStartPoint\");\r\nclass
-    UpdatePlayerExists {\r\n    constructor(owner) {\r\n        this.m_Dirty = Number.MIN_VALUE;\r\n       
-    console.log(\"UpdatePlayerExists_Constructor\");\r\n        this.m_RemoveSet
-    = new Set();\r\n        this.m_PlayerSet = new Set();\r\n        owner.GetComponentInParent($typeof(ZEPETO_World_1.ZepetoWorldMultiplay)).add_RoomJoined((room)
-    => {\r\n            room.add_OnStateChange((state, isFirst) => {\r\n               
-    if (state.PlayerInfoListDirty != this.m_Dirty) {\r\n                    this.m_Dirty
-    = state.PlayerInfoListDirty;\r\n                    state.PlayerInfoList.ForEach((key,
-    value) => {\r\n                        if (!this.m_PlayerSet.has(value.SessionId))
-    {\r\n                            this.m_PlayerSet.add(value.SessionId);\r\n                           
-    const spawnInfo = new ZEPETO_Character_Controller_1.SpawnInfo();\r\n                           
-    var startPoint = GetStartPoint_1.default.Get(0);\r\n                           
-    if (startPoint !== null) {\r\n                                spawnInfo.position
-    = startPoint.position;\r\n                                spawnInfo.rotation
-    = startPoint.rotation;\r\n                            }\r\n                           
-    else {\r\n                                spawnInfo.position = UnityEngine_1.Vector3.zero;\r\n                               
-    spawnInfo.rotation = UnityEngine_1.Quaternion.identity;\r\n                           
-    }\r\n                            const isLocal = room.SessionId === value.SessionId;\r\n                           
-    $extension(\"ZEPETO.Character.Controller.ZepetoPlayersExtension\").CreatePlayerWithUserId(ZEPETO_Character_Controller_1.ZepetoPlayers.instance,
-    value.SessionId, value.UserId, spawnInfo, isLocal);\r\n                       
-    }\r\n                    });\r\n                    this.m_RemoveSet.clear();\r\n                   
-    this.m_PlayerSet.forEach((key) => {\r\n                        if (!state.PlayerInfoList.ContainsKey(key))
-    {\r\n                            this.m_RemoveSet.add(key);\r\n                           
-    ZEPETO_Character_Controller_1.ZepetoPlayers.instance.RemovePlayer(key);\r\n                       
-    }\r\n                    });\r\n                }\r\n            });\r\n       
-    });\r\n    }\r\n}\r\nexports.default = UpdatePlayerExists;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVXBkYXRlUGxheWVyRXhpc3RzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVXBkYXRlUGxheWVyRXhpc3RzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQTZEO0FBQzdELDZFQUF3RjtBQUl4RiwrQ0FBbUQ7QUFDbkQsbURBQTRDO0FBRTVDLE1BQXFCLGtCQUFrQjtJQUtuQyxZQUFZLEtBQWtCO1FBSDlCLFlBQU8sR0FBWSxNQUFNLENBQUMsU0FBUyxDQUFDO1FBS2hDLE9BQU8sQ0FBQyxHQUFHLENBQUMsZ0NBQWdDLENBQUMsQ0FBQztRQUM5QyxJQUFJLENBQUMsV0FBVyxHQUFHLElBQUksR0FBRyxFQUFVLENBQUM7UUFDckMsSUFBSSxDQUFDLFdBQVcsR0FBRyxJQUFJLEdBQUcsRUFBVSxDQUFDO1FBQ3JDLEtBQUssQ0FBQyxvQkFBb0IsU0FBQyxtQ0FBb0Isa0JBQWtCLENBQUMsSUFBVSxFQUFDLEVBQUU7WUFFM0UsSUFBSSxtQkFBa0IsQ0FBQyxLQUFhLEVBQUMsT0FBaUIsRUFBQyxFQUFFO2dCQUVyRCxJQUFHLEtBQUssQ0FBQyxtQkFBbUIsSUFBSSxJQUFJLENBQUMsT0FBTyxFQUM1QztvQkFDSSxJQUFJLENBQUMsT0FBTyxHQUFHLEtBQUssQ0FBQyxtQkFBbUIsQ0FBQztvQkFDekMsS0FBSyxDQUFDLGNBQWMsQ0FBQyxPQUFPLENBQUMsQ0FBQyxHQUFHLEVBQUMsS0FBSyxFQUFDLEVBQUU7d0JBQ3RDLElBQUcsQ0FBQyxJQUFJLENBQUMsV0FBVyxDQUFDLEdBQUcsQ0FBQyxLQUFLLENBQUMsU0FBUyxDQUFDLEVBQ3pDOzRCQUNJLElBQUksQ0FBQyxXQUFXLENBQUMsR0FBRyxDQUFDLEtBQUssQ0FBQyxTQUFTLENBQUMsQ0FBQzs0QkFDdEMsTUFBTSxTQUFTLEdBQUcsSUFBSSx1Q0FBUyxFQUFFLENBQUM7NEJBQ2xDLElBQUksVUFBVSxHQUFHLHVCQUFhLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQyxDQUFDOzRCQUN0QyxJQUFHLFVBQVUsS0FBSyxJQUFJLEVBQ3RCO2dDQUNJLFNBQVMsQ0FBQyxRQUFRLEdBQUcsVUFBVSxDQUFDLFFBQVEsQ0FBQztnQ0FDekMsU0FBUyxDQUFDLFFBQVEsR0FBRyxVQUFVLENBQUMsUUFBUSxDQUFDOzZCQUM1QztpQ0FFRDtnQ0FDSSxTQUFTLENBQUMsUUFBUSxHQUFHLHFCQUFPLENBQUMsSUFBSSxDQUFDO2dDQUNsQyxTQUFTLENBQUMsUUFBUSxHQUFHLHdCQUFVLENBQUMsUUFBUSxDQUFDOzZCQUM1Qzs0QkFFRCxNQUFNLE9BQU8sR0FBRyxJQUFJLENBQUMsU0FBUyxLQUFLLEtBQUssQ0FBQyxTQUFTLENBQUM7NEJBQ25ELGlFQUF1QixzQkFBc0IsQ0FBN0MsMkNBQWEsQ0FBQyxRQUFRLEVBQXdCLEtBQUssQ0FBQyxTQUFTLEVBQUUsS0FBSyxDQUFDLE1BQU0sRUFBRSxTQUFTLEVBQUUsT0FBTyxFQUFFO3lCQUNwRztvQkFDTCxDQUFDLENBQUMsQ0FBQztvQkFDSCxJQUFJLENBQUMsV0FBVyxDQUFDLEtBQUssRUFBRSxDQUFDO29CQUN6QixJQUFJLENBQUMsV0FBVyxDQUFDLE9BQU8sQ0FBQyxDQUFDLEdBQUcsRUFBQyxFQUFFO3dCQUU1QixJQUFHLENBQUMsS0FBSyxDQUFDLGNBQWMsQ0FBQyxXQUFXLENBQUMsR0FBRyxDQUFDLEVBQ3pDOzRCQUNJLElBQUksQ0FBQyxXQUFXLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQyxDQUFDOzRCQUMxQiwyQ0FBYSxDQUFDLFFBQVEsQ0FBQyxZQUFZLENBQUMsR0FBRyxDQUFDLENBQUM7eUJBQzVDO29CQUNMLENBQUMsQ0FBQyxDQUFDO2lCQUNOO1lBQ0wsQ0FBQyxFQUFDO1FBQ04sQ0FBQyxFQUFDO0lBQ04sQ0FBQztDQUNKO0FBbkRELHFDQW1EQyJ9","assetPath":"Assets/Scripts/UpdatePlayerExists.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_PlayerSet","type":"Set","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_RemoveSet","type":"Set","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"UpdatePlayerExists","description":""},"isCompiled":true}'
-  typescriptHash: 3c714aaeb006d80982ab8bf06aaa177c
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/UpdatePlayerExists.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
+  typescriptHash: 5253d98a22901290c87bb78e4d70104c
