@@ -24,4 +24,4 @@ ScriptedImporter:
     = ZState;\r\nvar StateEnum;\r\n(function (StateEnum) {\r\n    StateEnum[StateEnum[\"GameScene\"]
     = 0] = \"GameScene\";\r\n})(StateEnum = exports.StateEnum || (exports.StateEnum
     = {}));\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiWlN0YXRlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiWlN0YXRlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLGlEQUFxRDtBQUVyRCxNQUFxQixNQUFPLFNBQVEscUNBQXFCO0NBR3hEO0FBSEQseUJBR0M7QUFFRCxJQUFZLFNBR1g7QUFIRCxXQUFZLFNBQVM7SUFFakIsbURBQVMsQ0FBQTtBQUNiLENBQUMsRUFIVyxTQUFTLEdBQVQsaUJBQVMsS0FBVCxpQkFBUyxRQUdwQiJ9","assetPath":"Assets/Scripts/ZState.ts","manifest":{"properties":[{"assembly":"","name":"m_Value","type":"StateEnum","isArray":false,"enumKeys":["GameScene"],"enumValues":["0"],"attributes":[]},{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"ZState","description":""},"isCompiled":true}'
-  typescriptHash: 021278d2a94cf04e1074cdf64fb06d94
+  typescriptHash: 99346cf38ca730f4c0ec33cea72ea010

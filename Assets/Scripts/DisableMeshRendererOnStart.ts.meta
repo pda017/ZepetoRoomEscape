@@ -24,4 +24,4 @@ ScriptedImporter:
     extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.GetComponent($typeof(UnityEngine_1.MeshRenderer)).enabled
     = false;\r\n    }\r\n}\r\nexports.default = DisableMeshRendererOnStart;\r\n//#
     sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGlzYWJsZU1lc2hSZW5kZXJlck9uU3RhcnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJEaXNhYmxlTWVzaFJlbmRlcmVyT25TdGFydC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUEwQztBQUMxQyxpREFBcUQ7QUFFckQsTUFBcUIsMEJBQTJCLFNBQVEscUNBQXFCO0lBRXpFLEtBQUs7UUFDRCxJQUFJLENBQUMsWUFBWSxTQUFDLDBCQUFZLEdBQUksT0FBTyxHQUFHLEtBQUssQ0FBQztJQUN0RCxDQUFDO0NBRUo7QUFORCw2Q0FNQyJ9","assetPath":"Assets/Scripts/DisableMeshRendererOnStart.ts","manifest":{"properties":[],"name":"DisableMeshRendererOnStart","description":""},"isCompiled":true}'
-  typescriptHash: cc43c3de327ef34124b6a6098471ba33
+  typescriptHash: af827de19d4a070d51ebdc9e00603872
