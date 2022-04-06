@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: ebddf1c5642fa6f42bd5f867d4afe742
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst InventoryData_1 = require(\"./Data/InventoryData\");\r\nconst
+    GetItemData_1 = require(\"./GetItemData\");\r\nclass GetInvenItemData {\r\n   
+    static Get(index) {\r\n        if (index >= 0 && index < InventoryData_1.default.m_InvenList.length)
+    {\r\n            var itemKey = InventoryData_1.default.m_InvenList[index];\r\n           
+    var itemData = GetItemData_1.default.Get(itemKey);\r\n            return itemData;\r\n       
+    }\r\n        return null;\r\n    }\r\n}\r\nexports.default = GetInvenItemData;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2V0SW52ZW5JdGVtRGF0YS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkdldEludmVuSXRlbURhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSx3REFBaUQ7QUFFakQsK0NBQXdDO0FBRXhDLE1BQXFCLGdCQUFnQjtJQUMxQixNQUFNLENBQUMsR0FBRyxDQUFDLEtBQWM7UUFFNUIsSUFBRyxLQUFLLElBQUksQ0FBQyxJQUFJLEtBQUssR0FBRyx1QkFBYSxDQUFDLFdBQVcsQ0FBQyxNQUFNLEVBQ3pEO1lBQ0ksSUFBSSxPQUFPLEdBQUcsdUJBQWEsQ0FBQyxXQUFXLENBQUMsS0FBSyxDQUFDLENBQUM7WUFDL0MsSUFBSSxRQUFRLEdBQUcscUJBQVcsQ0FBQyxHQUFHLENBQUMsT0FBTyxDQUFDLENBQUM7WUFDeEMsT0FBTyxRQUFRLENBQUM7U0FDbkI7UUFDRCxPQUFPLElBQUksQ0FBQztJQUNoQixDQUFDO0NBQ0o7QUFYRCxtQ0FXQyJ9","assetPath":"Assets/Scripts/GetInvenItemData.ts","manifest":{"properties":[],"name":"GetInvenItemData","description":""},"isCompiled":true}'
+  typescriptHash: 5be3b174fa217383084df3ca4f3c940e

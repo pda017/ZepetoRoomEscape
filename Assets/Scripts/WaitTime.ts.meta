@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 8736bcf72c085cd439be478b19c350e9
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nclass
+    WaitTime {\r\n    constructor() {\r\n        this.m_Stamp = 0;\r\n    }\r\n   
+    Start() {\r\n        this.m_Stamp = UnityEngine_1.Time.time;\r\n    }\r\n   
+    End(time) {\r\n        if (UnityEngine_1.Time.time - this.m_Stamp > time) {\r\n           
+    this.m_Stamp = UnityEngine_1.Time.time;\r\n            return true;\r\n       
+    }\r\n        return false;\r\n    }\r\n}\r\nexports.default = WaitTime;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiV2FpdFRpbWUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJXYWl0VGltZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFtQztBQUduQyxNQUFxQixRQUFRO0lBQTdCO1FBQ0ksWUFBTyxHQUFZLENBQUMsQ0FBQztJQWN6QixDQUFDO0lBYlUsS0FBSztRQUVSLElBQUksQ0FBQyxPQUFPLEdBQUcsa0JBQUksQ0FBQyxJQUFJLENBQUM7SUFDN0IsQ0FBQztJQUNNLEdBQUcsQ0FBQyxJQUFhO1FBRXBCLElBQUcsa0JBQUksQ0FBQyxJQUFJLEdBQUcsSUFBSSxDQUFDLE9BQU8sR0FBRyxJQUFJLEVBQ2xDO1lBQ0ksSUFBSSxDQUFDLE9BQU8sR0FBRyxrQkFBSSxDQUFDLElBQUksQ0FBQztZQUN6QixPQUFPLElBQUksQ0FBQztTQUNmO1FBQ0QsT0FBTyxLQUFLLENBQUM7SUFDakIsQ0FBQztDQUNKO0FBZkQsMkJBZUMifQ==","assetPath":"Assets/Scripts/WaitTime.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Stamp","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"WaitTime","description":""},"isCompiled":true}'
+  typescriptHash: 38acbc713419f1ed4c3c0ece275fd020

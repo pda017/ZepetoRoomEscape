@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 078ceafbc6682664da08476ebcd1c6d1
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst Data_Int_1 = require(\"../DataType/Data_Int\");\r\nclass
+    KeyInputData {\r\n    static Init() {\r\n        this.m_SelectKey.m_Value = 0;\r\n   
+    }\r\n}\r\nexports.default = KeyInputData;\r\nKeyInputData.m_SelectKey = new Data_Int_1.default(0);\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiS2V5SW5wdXREYXRhLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiS2V5SW5wdXREYXRhLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0EsbURBQTJDO0FBRTNDLE1BQXFCLFlBQVk7SUFFdEIsTUFBTSxDQUFDLElBQUk7UUFFZCxJQUFJLENBQUMsV0FBVyxDQUFDLE9BQU8sR0FBRyxDQUFDLENBQUM7SUFDakMsQ0FBQzs7QUFMTCwrQkFNQztBQUxpQix3QkFBVyxHQUFjLElBQUksa0JBQVEsQ0FBQyxDQUFDLENBQUMsQ0FBQyJ9","assetPath":"Assets/Scripts/Data/KeyInputData.ts","manifest":{"properties":[],"name":"KeyInputData","description":""},"isCompiled":true}'
+  typescriptHash: ab1de9a9aaf6ca8cd59d1e7a2803a6ea

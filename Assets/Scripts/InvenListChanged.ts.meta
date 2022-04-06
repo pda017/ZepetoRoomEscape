@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: e9b3b606b7d619647ae8e8fbddc3cd56
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst InventoryData_1 = require(\"./Data/InventoryData\");\r\nclass
+    InvenListChanged {\r\n    constructor() {\r\n        this.m_Dirty = Number.MIN_SAFE_INTEGER;\r\n   
+    }\r\n    Check() {\r\n        if (this.m_Dirty !== InventoryData_1.default.m_InvenListDirty)
+    {\r\n            this.m_Dirty = InventoryData_1.default.m_InvenListDirty;\r\n           
+    return true;\r\n        }\r\n        return false;\r\n    }\r\n}\r\nexports.default
+    = InvenListChanged;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW52ZW5MaXN0Q2hhbmdlZC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkludmVuTGlzdENoYW5nZWQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSx3REFBaUQ7QUFFakQsTUFBcUIsZ0JBQWdCO0lBQXJDO1FBQ0ksWUFBTyxHQUFZLE1BQU0sQ0FBQyxnQkFBZ0IsQ0FBQztJQVUvQyxDQUFDO0lBVFUsS0FBSztRQUVSLElBQUcsSUFBSSxDQUFDLE9BQU8sS0FBSyx1QkFBYSxDQUFDLGdCQUFnQixFQUNsRDtZQUNJLElBQUksQ0FBQyxPQUFPLEdBQUcsdUJBQWEsQ0FBQyxnQkFBZ0IsQ0FBQztZQUM5QyxPQUFPLElBQUksQ0FBQztTQUNmO1FBQ0QsT0FBTyxLQUFLLENBQUM7SUFDakIsQ0FBQztDQUNKO0FBWEQsbUNBV0MifQ==","assetPath":"Assets/Scripts/InvenListChanged.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"InvenListChanged","description":""},"isCompiled":true}'
+  typescriptHash: bbcd13f3a7aaee6dcd230947c6bb3676

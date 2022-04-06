@@ -1,0 +1,35 @@
+fileFormatVersion: 2
+guid: ce5dd1dc7d57a3f41a153d73158c24a5
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nexports.CharInfo = void 0;\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Character_Controller_1 = require(\"ZEPETO.Character.Controller\");\r\nconst
+    GetMyPlayer_1 = require(\"./GetMyPlayer\");\r\nclass GetMyCharacter {\r\n   
+    static Get() {\r\n        var player = GetMyPlayer_1.default.Get();\r\n       
+    if (player !== null) {\r\n            if (player.isLoadedCharacter)\r\n               
+    return player.character;\r\n        }\r\n        return null;\r\n    }\r\n   
+    static GetInfo() {\r\n        var character = this.Get();\r\n        if (character
+    !== null) {\r\n            var info = new CharInfo();\r\n            info.m_Character
+    = character;\r\n            info.m_Obj = character.gameObject;\r\n           
+    info.m_Tf = character.transform;\r\n            info.m_Col = character.GetComponent($typeof(UnityEngine_1.Collider));\r\n           
+    return info;\r\n        }\r\n        return null;\r\n    }\r\n}\r\nexports.default
+    = GetMyCharacter;\r\nclass CharInfo {\r\n}\r\nexports.CharInfo = CharInfo;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2V0TXlDaGFyYWN0ZXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJHZXRNeUNoYXJhY3Rlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSw2Q0FBOEQ7QUFDOUQsNkVBQTJGO0FBRTNGLCtDQUF3QztBQUd4QyxNQUFxQixjQUFjO0lBRXhCLE1BQU0sQ0FBQyxHQUFHO1FBRWIsSUFBSSxNQUFNLEdBQUcscUJBQVcsQ0FBQyxHQUFHLEVBQUUsQ0FBQztRQUMvQixJQUFHLE1BQU0sS0FBSyxJQUFJLEVBQ2xCO1lBQ0ksSUFBRyxNQUFNLENBQUMsaUJBQWlCO2dCQUN2QixPQUFPLE1BQU0sQ0FBQyxTQUFTLENBQUM7U0FDL0I7UUFDRCxPQUFPLElBQUksQ0FBQztJQUNoQixDQUFDO0lBQ00sTUFBTSxDQUFDLE9BQU87UUFFakIsSUFBSSxTQUFTLEdBQUcsSUFBSSxDQUFDLEdBQUcsRUFBRSxDQUFDO1FBQzNCLElBQUcsU0FBUyxLQUFLLElBQUksRUFDckI7WUFDSSxJQUFJLElBQUksR0FBRyxJQUFJLFFBQVEsRUFBRSxDQUFDO1lBQzFCLElBQUksQ0FBQyxXQUFXLEdBQUcsU0FBUyxDQUFDO1lBQzdCLElBQUksQ0FBQyxLQUFLLEdBQUcsU0FBUyxDQUFDLFVBQVUsQ0FBQztZQUNsQyxJQUFJLENBQUMsSUFBSSxHQUFHLFNBQVMsQ0FBQyxTQUFTLENBQUM7WUFDaEMsSUFBSSxDQUFDLEtBQUssR0FBRyxTQUFTLENBQUMsWUFBWSxTQUFDLHNCQUFRLEVBQUcsQ0FBQztZQUNoRCxPQUFPLElBQUksQ0FBQztTQUNmO1FBQ0QsT0FBTyxJQUFJLENBQUM7SUFDaEIsQ0FBQztDQUNKO0FBMUJELGlDQTBCQztBQUVELE1BQWEsUUFBUTtDQU1wQjtBQU5ELDRCQU1DIn0=","assetPath":"Assets/Scripts/GetMyCharacter.ts","manifest":{"properties":[],"name":"GetMyCharacter","description":""},"isCompiled":true}'
+  typescriptHash: 1d9f03f8af2b3b90d646666c08ae9189

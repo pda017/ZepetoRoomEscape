@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 77f385cf4ec03244cbd06b86e36cb30c
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst ButtonEvent_1 = require(\"./ButtonEvent\");\r\nclass
+    PanelCloseButton extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start()
+    {\r\n        this.m_Canvas = this.GetComponentInParent($typeof(UnityEngine_1.Canvas));\r\n       
+    ButtonEvent_1.default.Add(this.gameObject, () => {\r\n            this.m_Canvas.enabled
+    = false;\r\n        });\r\n    }\r\n}\r\nexports.default = PanelCloseButton;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGFuZWxDbG9zZUJ1dHRvbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlBhbmVsQ2xvc2VCdXR0b24udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBcUM7QUFDckMsaURBQXFEO0FBQ3JELCtDQUF1QztBQUV2QyxNQUFxQixnQkFBaUIsU0FBUSxxQ0FBcUI7SUFFL0QsS0FBSztRQUNELElBQUksQ0FBQyxRQUFRLEdBQUcsSUFBSSxDQUFDLG9CQUFvQixTQUFDLG9CQUFNLEVBQUcsQ0FBQztRQUNwRCxxQkFBVyxDQUFDLEdBQUcsQ0FBQyxJQUFJLENBQUMsVUFBVSxFQUFDLEdBQUUsRUFBRTtZQUVoQyxJQUFJLENBQUMsUUFBUSxDQUFDLE9BQU8sR0FBRyxLQUFLLENBQUM7UUFDbEMsQ0FBQyxDQUFDLENBQUM7SUFDUCxDQUFDO0NBQ0o7QUFURCxtQ0FTQyJ9","assetPath":"Assets/Scripts/PanelCloseButton.ts","manifest":{"properties":[{"assembly":"UnityEngine.UIModule","name":"m_Canvas","type":"UnityEngine.Canvas","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"PanelCloseButton","description":""},"isCompiled":true}'
+  typescriptHash: ad3e2a5b7f72d2c0284985d271640638

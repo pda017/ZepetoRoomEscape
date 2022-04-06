@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 1eefde5bba8194d4bb50965dfd6e9a75
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst InventoryData_1 = require(\"./Data/InventoryData\");\r\nclass
+    EquipedItemChanged {\r\n    constructor() {\r\n        this.m_Dirty = Number.MIN_SAFE_INTEGER;\r\n   
+    }\r\n    Check() {\r\n        if (this.m_Dirty != InventoryData_1.default.m_EquipedIndex)
+    {\r\n            this.m_Dirty = InventoryData_1.default.m_EquipedIndex;\r\n           
+    return true;\r\n        }\r\n        return false;\r\n    }\r\n}\r\nexports.default
+    = EquipedItemChanged;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXF1aXBlZEl0ZW1DaGFuZ2VkLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiRXF1aXBlZEl0ZW1DaGFuZ2VkLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0Esd0RBQWlEO0FBRWpELE1BQXFCLGtCQUFrQjtJQUF2QztRQUNJLFlBQU8sR0FBWSxNQUFNLENBQUMsZ0JBQWdCLENBQUM7SUFVL0MsQ0FBQztJQVRVLEtBQUs7UUFFUixJQUFHLElBQUksQ0FBQyxPQUFPLElBQUksdUJBQWEsQ0FBQyxjQUFjLEVBQy9DO1lBQ0ksSUFBSSxDQUFDLE9BQU8sR0FBRyx1QkFBYSxDQUFDLGNBQWMsQ0FBQztZQUM1QyxPQUFPLElBQUksQ0FBQztTQUNmO1FBQ0QsT0FBTyxLQUFLLENBQUM7SUFDakIsQ0FBQztDQUNKO0FBWEQscUNBV0MifQ==","assetPath":"Assets/Scripts/EquipedItemChanged.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"EquipedItemChanged","description":""},"isCompiled":true}'
+  typescriptHash: a42cb7f131c7ca2524e042cec66dbf2b

@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 80a26de03656c174db6e4e147e39f567
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nclass SelectObjData {\r\n    static Init() {\r\n       
+    this.m_canSelect = false;\r\n    }\r\n}\r\nexports.default = SelectObjData;\r\nSelectObjData.m_ButtonHeightPer
+    = 10;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2VsZWN0T2JqRGF0YS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlNlbGVjdE9iakRhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFHQSxNQUFxQixhQUFhO0lBSXZCLE1BQU0sQ0FBQyxJQUFJO1FBRWQsSUFBSSxDQUFDLFdBQVcsR0FBRyxLQUFLLENBQUM7SUFDN0IsQ0FBQzs7QUFQTCxnQ0FRQztBQUxpQiwrQkFBaUIsR0FBWSxFQUFFLENBQUMifQ==","assetPath":"Assets/Data/SelectObjData.ts","manifest":{"properties":[],"name":"SelectObjData","description":""},"isCompiled":true}'
+  typescriptHash: e5edd7acc298092fd23a6315924e4650

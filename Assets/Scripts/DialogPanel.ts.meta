@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: ba9e4ff2f160ad04d8b26bebb447061c
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst DialogData_1 = require(\"./Data/DialogData\");\r\nclass
+    DialogPanel extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n       
+    this.m_Canvas = this.GetComponent($typeof(UnityEngine_1.Canvas));\r\n    }\r\n   
+    Update() {\r\n        this.m_Canvas.enabled = DialogData_1.default.m_DialogPlaying;\r\n   
+    }\r\n}\r\nexports.default = DialogPanel;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGlhbG9nUGFuZWwuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJEaWFsb2dQYW5lbC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFvQztBQUNwQyxpREFBcUQ7QUFDckQsa0RBQTJDO0FBRTNDLE1BQXFCLFdBQVksU0FBUSxxQ0FBcUI7SUFFMUQsS0FBSztRQUNELElBQUksQ0FBQyxRQUFRLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQyxvQkFBTSxFQUFHLENBQUM7SUFDaEQsQ0FBQztJQUNELE1BQU07UUFFRixJQUFJLENBQUMsUUFBUSxDQUFDLE9BQU8sR0FBRyxvQkFBVSxDQUFDLGVBQWUsQ0FBQztJQUN2RCxDQUFDO0NBQ0o7QUFURCw4QkFTQyJ9","assetPath":"Assets/Scripts/DialogPanel.ts","manifest":{"properties":[{"assembly":"UnityEngine.UIModule","name":"m_Canvas","type":"UnityEngine.Canvas","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"DialogPanel","description":""},"isCompiled":true}'
+  typescriptHash: 5262362bfcf1108b31c6d278da796e44

@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 515d0f06f7c760e418637d887f75b154
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nclass ButtonEvent {\r\n   
+    static Add(owner, onClickEvent) {\r\n        owner.GetComponent($typeof(UnityEngine_UI_1.Button)).onClick.AddListener(onClickEvent);\r\n   
+    }\r\n}\r\nexports.default = ButtonEvent;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQnV0dG9uRXZlbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJCdXR0b25FdmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUF5QztBQUV6QyxtREFBd0M7QUFHeEMsTUFBcUIsV0FBVztJQUNyQixNQUFNLENBQUMsR0FBRyxDQUFDLEtBQWtCLEVBQUUsWUFBMEI7UUFFNUQsS0FBSyxDQUFDLFlBQVksU0FBQyx1QkFBTSxHQUFJLE9BQU8sQ0FBQyxXQUFXLENBQUMsWUFBWSxDQUFDLENBQUM7SUFDbkUsQ0FBQztDQUNKO0FBTEQsOEJBS0MifQ==","assetPath":"Assets/Scripts/ButtonEvent.ts","manifest":{"properties":[],"name":"ButtonEvent","description":""},"isCompiled":true}'
+  typescriptHash: c92ed220658ab5ec8d70c801a5212387

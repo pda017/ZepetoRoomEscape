@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 98de8adf82dafa34484869f70aa34032
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ItemData_1 = require(\"./Data/ItemData\");\r\nclass MapDataTest extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n        var itemMap = ItemData_1.default.GetItemMap();\r\n       
+    itemMap.forEach((value, key) => {\r\n            console.log(key + \",\" + value);\r\n       
+    });\r\n    }\r\n}\r\nexports.default = MapDataTest;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWFwRGF0YVRlc3QuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJNYXBEYXRhVGVzdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUNyRCw4Q0FBc0M7QUFFdEMsTUFBcUIsV0FBWSxTQUFRLHFDQUFxQjtJQUUxRCxLQUFLO1FBQ0QsSUFBSSxPQUFPLEdBQUcsa0JBQVEsQ0FBQyxVQUFVLEVBQUUsQ0FBQztRQUNwQyxPQUFPLENBQUMsT0FBTyxDQUFDLENBQUMsS0FBSyxFQUFDLEdBQUcsRUFBQyxFQUFFO1lBRXpCLE9BQU8sQ0FBQyxHQUFHLENBQUMsR0FBRyxHQUFHLEdBQUcsR0FBRyxLQUFLLENBQUMsQ0FBQztRQUNuQyxDQUFDLENBQUMsQ0FBQztJQUNQLENBQUM7Q0FFSjtBQVZELDhCQVVDIn0=","assetPath":"Assets/Scripts/MapDataTest.ts","manifest":{"properties":[],"name":"MapDataTest","description":""},"isCompiled":true}'
+  typescriptHash: 0c7db5834612bcfff143786ab61f1a31

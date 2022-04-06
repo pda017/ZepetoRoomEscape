@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: be6fce9fbe8b32c4cb78364775440c99
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ItemData_1 = require(\"./Data/ItemData\");\r\nclass
+    GetItemData {\r\n    static Get(itemKey) {\r\n        var itemMap = ItemData_1.default.GetItemMap();\r\n       
+    return itemMap.get(itemKey);\r\n    }\r\n}\r\nexports.default = GetItemData;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2V0SXRlbURhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJHZXRJdGVtRGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLDhDQUFxRDtBQUVyRCxNQUFxQixXQUFXO0lBQ3JCLE1BQU0sQ0FBQyxHQUFHLENBQUMsT0FBZ0I7UUFFOUIsSUFBSSxPQUFPLEdBQUcsa0JBQVEsQ0FBQyxVQUFVLEVBQUUsQ0FBQztRQUNwQyxPQUFPLE9BQU8sQ0FBQyxHQUFHLENBQUMsT0FBTyxDQUFDLENBQUM7SUFDaEMsQ0FBQztDQUNKO0FBTkQsOEJBTUMifQ==","assetPath":"Assets/Scripts/GetItemData.ts","manifest":{"properties":[],"name":"GetItemData","description":""},"isCompiled":true}'
+  typescriptHash: ea10edfdbbc911d588cee10b388df0fc

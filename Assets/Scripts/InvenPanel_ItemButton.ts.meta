@@ -1,0 +1,37 @@
+fileFormatVersion: 2
+guid: e89b3f19a3c271a48a42aadfa7b41138
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst ButtonEvent_1 = require(\"./ButtonEvent\");\r\nconst
+    InventoryData_1 = require(\"./Data/InventoryData\");\r\nconst IndexTag_1 = require(\"./IndexTag\");\r\nconst
+    InvenSelectIndexChanged_1 = require(\"./InvenSelectIndexChanged\");\r\nconst
+    SelectInvenItem_1 = require(\"./SelectInvenItem\");\r\nclass InvenPanel_ItemButton
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor() {\r\n       
+    super(...arguments);\r\n        this.m_InvenSelectIndexChanged = new InvenSelectIndexChanged_1.default();\r\n   
+    }\r\n    Start() {\r\n        this.m_Outline = this.GetComponent($typeof(UnityEngine_UI_1.Outline));\r\n       
+    this.m_IndexTf = this.GetComponentInParent($typeof(IndexTag_1.default)).transform;\r\n       
+    ButtonEvent_1.default.Add(this.gameObject, () => {\r\n            SelectInvenItem_1.default.Select(this.m_IndexTf.GetSiblingIndex());\r\n       
+    });\r\n    }\r\n    Update() {\r\n        if (this.m_InvenSelectIndexChanged.Check())
+    {\r\n            var index = this.m_IndexTf.GetSiblingIndex();\r\n           
+    if (index === InventoryData_1.default.m_SelectIndex)\r\n                this.m_Outline.enabled
+    = true;\r\n            else\r\n                this.m_Outline.enabled = false;\r\n       
+    }\r\n    }\r\n}\r\nexports.default = InvenPanel_ItemButton;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW52ZW5QYW5lbF9JdGVtQnV0dG9uLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiSW52ZW5QYW5lbF9JdGVtQnV0dG9uLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0EsbURBQXlDO0FBQ3pDLGlEQUFxRDtBQUNyRCwrQ0FBdUM7QUFDdkMsd0RBQWlEO0FBQ2pELHlDQUFrQztBQUNsQyx1RUFBZ0U7QUFDaEUsdURBQWdEO0FBRWhELE1BQXFCLHFCQUFzQixTQUFRLHFDQUFxQjtJQUF4RTs7UUFHSSw4QkFBeUIsR0FBNkIsSUFBSSxpQ0FBdUIsRUFBRSxDQUFDO0lBb0J4RixDQUFDO0lBbkJHLEtBQUs7UUFDRCxJQUFJLENBQUMsU0FBUyxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMsd0JBQU8sRUFBRyxDQUFDO1FBQzlDLElBQUksQ0FBQyxTQUFTLEdBQUcsSUFBSSxDQUFDLG9CQUFvQixTQUFDLGtCQUFRLEdBQUksU0FBUyxDQUFDO1FBQ2pFLHFCQUFXLENBQUMsR0FBRyxDQUFDLElBQUksQ0FBQyxVQUFVLEVBQUMsR0FBRSxFQUFFO1lBRWhDLHlCQUFlLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxTQUFTLENBQUMsZUFBZSxFQUFFLENBQUMsQ0FBQztRQUM3RCxDQUFDLENBQUMsQ0FBQztJQUNQLENBQUM7SUFDRCxNQUFNO1FBRUYsSUFBRyxJQUFJLENBQUMseUJBQXlCLENBQUMsS0FBSyxFQUFFLEVBQ3pDO1lBQ0ksSUFBSSxLQUFLLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQyxlQUFlLEVBQUUsQ0FBQztZQUM3QyxJQUFHLEtBQUssS0FBSyx1QkFBYSxDQUFDLGFBQWE7Z0JBQ3BDLElBQUksQ0FBQyxTQUFTLENBQUMsT0FBTyxHQUFHLElBQUksQ0FBQzs7Z0JBRTlCLElBQUksQ0FBQyxTQUFTLENBQUMsT0FBTyxHQUFHLEtBQUssQ0FBQztTQUN0QztJQUNMLENBQUM7Q0FDSjtBQXZCRCx3Q0F1QkMifQ==","assetPath":"Assets/Scripts/InvenPanel_ItemButton.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"m_IndexTf","type":"UnityEngine.Transform","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"m_Outline","type":"UnityEngine.UI.Outline","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_InvenSelectIndexChanged","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/InvenSelectIndexChanged.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"InvenPanel_ItemButton","description":""},"isCompiled":true}'
+  typescriptHash: 5ea849fea2227f803f8dc98731f5bb80

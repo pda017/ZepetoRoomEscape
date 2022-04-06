@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: f41de9b3efe3f4340ab72ddb87395991
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nclass Data_Int {\r\n    constructor(value) {\r\n       
+    this.m_Value = value;\r\n    }\r\n}\r\nexports.default = Data_Int;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGF0YV9JbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJEYXRhX0ludC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUVBLE1BQXFCLFFBQVE7SUFFekIsWUFBWSxLQUFjO1FBRXRCLElBQUksQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDO0lBQ3pCLENBQUM7Q0FDSjtBQU5ELDJCQU1DIn0=","assetPath":"Assets/Scripts/Data_Int.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Value","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Data_Int","description":""},"isCompiled":true}'
+  typescriptHash: e44b32b00c14185855ac4c743ec3d369

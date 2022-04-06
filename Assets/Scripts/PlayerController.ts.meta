@@ -1,0 +1,46 @@
+fileFormatVersion: 2
+guid: 3d908c4dcf5d0814db8dea3bfd15da51
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst AddItemToInventory_1 =
+    require(\"./AddItemToInventory\");\r\nconst CheckKeyInput_1 = require(\"./CheckKeyInput\");\r\nconst
+    KeyInputData_1 = require(\"./Data/KeyInputData\");\r\nconst SelectObjData_1 =
+    require(\"./Data/SelectObjData\");\r\nconst DetectSelectObj_1 = require(\"./DetectSelectObj\");\r\nconst
+    ExcuteSelectEvent_1 = require(\"./ExcuteSelectEvent\");\r\nconst IsOn_1 = require(\"./IsOn\");\r\nconst
+    ItemKey_1 = require(\"./ItemKey\");\r\nconst SelectObjType_1 = require(\"./SelectObjType\");\r\nclass
+    PlayerController extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start()
+    {\r\n        this.m_DetectSelectObj = new DetectSelectObj_1.default();\r\n   
+    }\r\n    Update() {\r\n        this.m_SelectCol = this.m_DetectSelectObj.Detect();\r\n       
+    if (this.m_SelectCol !== null) {\r\n            SelectObjData_1.default.m_ObjPos
+    = this.m_SelectCol.bounds.center;\r\n            SelectObjData_1.default.m_canSelect
+    = true;\r\n            if (CheckKeyInput_1.default.GetKeyDown(KeyInputData_1.default.m_SelectKey))
+    {\r\n                ExcuteSelectEvent_1.default.Excute(this.m_SelectCol.gameObject);\r\n               
+    var selectObjType = this.m_SelectCol.GetComponent($typeof(SelectObjType_1.default));\r\n               
+    if (selectObjType.m_Value == SelectObjType_1.SelectObjEnum.Item) {\r\n                   
+    var itemKey = this.m_SelectCol.GetComponent($typeof(ItemKey_1.default));\r\n                   
+    AddItemToInventory_1.default.Add(itemKey.m_Value);\r\n                    this.m_SelectCol.gameObject.SetActive(false);\r\n               
+    }\r\n                else if (selectObjType.m_Value == SelectObjType_1.SelectObjEnum.Switch)
+    {\r\n                    var isOn = this.m_SelectCol.GetComponent($typeof(IsOn_1.default));\r\n                   
+    isOn.m_Value = true;\r\n                    isOn.m_Dirty = UnityEngine_1.Time.time;\r\n               
+    }\r\n            }\r\n        }\r\n        else {\r\n            SelectObjData_1.default.m_canSelect
+    = false;\r\n        }\r\n    }\r\n}\r\nexports.default = PlayerController;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGxheWVyQ29udHJvbGxlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlBsYXllckNvbnRyb2xsZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBbUQ7QUFDbkQsaURBQXFEO0FBQ3JELDZEQUFzRDtBQUN0RCxtREFBNEM7QUFDNUMsc0RBQStDO0FBQy9DLHdEQUFpRDtBQUNqRCx1REFBZ0Q7QUFDaEQsMkRBQW9EO0FBQ3BELGlDQUEwQjtBQUMxQix1Q0FBZ0M7QUFDaEMsbURBQStEO0FBRS9ELE1BQXFCLGdCQUFpQixTQUFRLHFDQUFxQjtJQUcvRCxLQUFLO1FBQ0QsSUFBSSxDQUFDLGlCQUFpQixHQUFHLElBQUkseUJBQWUsRUFBRSxDQUFDO0lBQ25ELENBQUM7SUFDRCxNQUFNO1FBRUYsSUFBSSxDQUFDLFdBQVcsR0FBRyxJQUFJLENBQUMsaUJBQWlCLENBQUMsTUFBTSxFQUFFLENBQUM7UUFDbkQsSUFBRyxJQUFJLENBQUMsV0FBVyxLQUFLLElBQUksRUFDNUI7WUFDSSx1QkFBYSxDQUFDLFFBQVEsR0FBRyxJQUFJLENBQUMsV0FBVyxDQUFDLE1BQU0sQ0FBQyxNQUFNLENBQUM7WUFDeEQsdUJBQWEsQ0FBQyxXQUFXLEdBQUcsSUFBSSxDQUFDO1lBRWpDLElBQUcsdUJBQWEsQ0FBQyxVQUFVLENBQUMsc0JBQVksQ0FBQyxXQUFXLENBQUMsRUFDckQ7Z0JBQ0ksMkJBQWlCLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxXQUFXLENBQUMsVUFBVSxDQUFDLENBQUM7Z0JBQ3RELElBQUksYUFBYSxHQUFHLElBQUksQ0FBQyxXQUFXLENBQUMsWUFBWSxTQUFDLHVCQUFhLEVBQUcsQ0FBQztnQkFDbkUsSUFBRyxhQUFhLENBQUMsT0FBTyxJQUFJLDZCQUFhLENBQUMsSUFBSSxFQUM5QztvQkFDSSxJQUFJLE9BQU8sR0FBRyxJQUFJLENBQUMsV0FBVyxDQUFDLFlBQVksU0FBQyxpQkFBTyxFQUFHLENBQUM7b0JBQ3ZELDRCQUFrQixDQUFDLEdBQUcsQ0FBQyxPQUFPLENBQUMsT0FBTyxDQUFDLENBQUM7b0JBQ3hDLElBQUksQ0FBQyxXQUFXLENBQUMsVUFBVSxDQUFDLFNBQVMsQ0FBQyxLQUFLLENBQUMsQ0FBQztpQkFDaEQ7cUJBQ0ksSUFBRyxhQUFhLENBQUMsT0FBTyxJQUFJLDZCQUFhLENBQUMsTUFBTSxFQUNyRDtvQkFDSSxJQUFJLElBQUksR0FBRyxJQUFJLENBQUMsV0FBVyxDQUFDLFlBQVksU0FBQyxjQUFJLEVBQUcsQ0FBQztvQkFDakQsSUFBSSxDQUFDLE9BQU8sR0FBRyxJQUFJLENBQUM7b0JBQ3BCLElBQUksQ0FBQyxPQUFPLEdBQUcsa0JBQUksQ0FBQyxJQUFJLENBQUM7aUJBQzVCO2FBQ0o7U0FDSjthQUVEO1lBQ0ksdUJBQWEsQ0FBQyxXQUFXLEdBQUcsS0FBSyxDQUFDO1NBQ3JDO0lBQ0wsQ0FBQztDQUNKO0FBckNELG1DQXFDQyJ9","assetPath":"Assets/Scripts/PlayerController.ts","manifest":{"properties":[{"assembly":"UnityEngine.PhysicsModule","name":"m_SelectCol","type":"UnityEngine.Collider","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_DetectSelectObj","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/DetectSelectObj.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"PlayerController","description":""},"isCompiled":true}'
+  typescriptHash: 590768b76467c36e68ee6cc3a2af06d6

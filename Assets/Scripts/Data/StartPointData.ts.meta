@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: c77d3fa6913e978498def0f46e2091aa
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nexports.StartPointInfo = void 0;\r\nclass StartPointData
+    {\r\n    static Init() {\r\n        this.m_StartPointList = [];\r\n    }\r\n}\r\nexports.default
+    = StartPointData;\r\nclass StartPointInfo {\r\n}\r\nexports.StartPointInfo =
+    StartPointInfo;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU3RhcnRQb2ludERhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJTdGFydFBvaW50RGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFFQSxNQUFxQixjQUFjO0lBRXhCLE1BQU0sQ0FBQyxJQUFJO1FBRWQsSUFBSSxDQUFDLGdCQUFnQixHQUFHLEVBQUUsQ0FBQztJQUMvQixDQUFDO0NBQ0o7QUFORCxpQ0FNQztBQUVELE1BQWEsY0FBYztDQUkxQjtBQUpELHdDQUlDIn0=","assetPath":"Assets/Data/StartPointData.ts","manifest":{"properties":[],"name":"StartPointData","description":""},"isCompiled":true}'
+  typescriptHash: dd5430c18f062c1eaaf1e9fd6b72d512

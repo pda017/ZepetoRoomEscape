@@ -1,4 +1,4 @@
 {
-"State" : {"PlayerInfoList" : {"map" : "SPlayerInfo"},"PlayerInfoListDirty" : "int8"},
+"State" : {"PlayerInfoList" : {"map" : "SPlayerInfo"},"PlayerInfoListDirty" : "int8","RemainTime" : "uint16"},
 "SPlayerInfo" : {"SessionId" : "string","UserId" : "string"}
 }

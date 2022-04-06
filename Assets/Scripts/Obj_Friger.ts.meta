@@ -1,0 +1,37 @@
+fileFormatVersion: 2
+guid: 3392a42f555dd1a4587192076d3cbb4d
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst Interactable_1 = require(\"./Interactable\");\r\nconst
+    IsOn_1 = require(\"./IsOn\");\r\nconst ZAnimator_1 = require(\"./ZAnimator\");\r\nclass
+    Obj_Friger extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
+    {\r\n        super(...arguments);\r\n        this.m_NumState = 0;\r\n    }\r\n   
+    Start() {\r\n        this.m_Col = this.GetComponent($typeof(UnityEngine_1.Collider));\r\n       
+    this.m_Interactable = this.GetComponent($typeof(Interactable_1.default));\r\n       
+    this.m_IsOn = this.GetComponent($typeof(IsOn_1.default));\r\n        this.m_Anim
+    = new ZAnimator_1.default(this.gameObject, true);\r\n    }\r\n    Update() {\r\n       
+    if (this.m_NumState === 0) {\r\n            if (this.m_IsOn.m_Value) {\r\n               
+    this.m_Col.enabled = false;\r\n                this.m_Interactable.m_Value =
+    false;\r\n                this.m_Interactable.m_Dirty = UnityEngine_1.Time.time;\r\n               
+    this.m_Anim.Play(\"Open\");\r\n                this.m_NumState = 1;\r\n               
+    return;\r\n            }\r\n        }\r\n    }\r\n}\r\nexports.default = Obj_Friger;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiT2JqX0ZyaWdlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIk9ial9GcmlnZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBNkM7QUFDN0MsaURBQXFEO0FBQ3JELGlEQUEwQztBQUMxQyxpQ0FBMEI7QUFDMUIsMkNBQW1DO0FBRW5DLE1BQXFCLFVBQVcsU0FBUSxxQ0FBcUI7SUFBN0Q7O1FBS0ksZUFBVSxHQUFZLENBQUMsQ0FBQztJQXNCNUIsQ0FBQztJQXJCRyxLQUFLO1FBQ0QsSUFBSSxDQUFDLEtBQUssR0FBRyxJQUFJLENBQUMsWUFBWSxTQUFDLHNCQUFRLEVBQUcsQ0FBQztRQUMzQyxJQUFJLENBQUMsY0FBYyxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMsc0JBQVksRUFBRyxDQUFDO1FBQ3hELElBQUksQ0FBQyxNQUFNLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQyxjQUFJLEVBQUcsQ0FBQztRQUN4QyxJQUFJLENBQUMsTUFBTSxHQUFHLElBQUksbUJBQVMsQ0FBQyxJQUFJLENBQUMsVUFBVSxFQUFDLElBQUksQ0FBQyxDQUFDO0lBQ3RELENBQUM7SUFDRCxNQUFNO1FBRUYsSUFBRyxJQUFJLENBQUMsVUFBVSxLQUFLLENBQUMsRUFDeEI7WUFDSSxJQUFHLElBQUksQ0FBQyxNQUFNLENBQUMsT0FBTyxFQUN0QjtnQkFDSSxJQUFJLENBQUMsS0FBSyxDQUFDLE9BQU8sR0FBRyxLQUFLLENBQUM7Z0JBQzNCLElBQUksQ0FBQyxjQUFjLENBQUMsT0FBTyxHQUFHLEtBQUssQ0FBQztnQkFDcEMsSUFBSSxDQUFDLGNBQWMsQ0FBQyxPQUFPLEdBQUcsa0JBQUksQ0FBQyxJQUFJLENBQUM7Z0JBQ3hDLElBQUksQ0FBQyxNQUFNLENBQUMsSUFBSSxDQUFDLE1BQU0sQ0FBQyxDQUFDO2dCQUN6QixJQUFJLENBQUMsVUFBVSxHQUFHLENBQUMsQ0FBQztnQkFDcEIsT0FBUTthQUNYO1NBQ0o7SUFDTCxDQUFDO0NBQ0o7QUEzQkQsNkJBMkJDIn0=","assetPath":"Assets/Scripts/Obj_Friger.ts","manifest":{"properties":[{"assembly":"","name":"m_Anim","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/ZAnimator.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_IsOn","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/IsOn.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_Interactable","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/Interactable.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.PhysicsModule","name":"m_Col","type":"UnityEngine.Collider","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_NumState","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Obj_Friger","description":""},"isCompiled":true}'
+  typescriptHash: 6e31dfc4d31f8a8d5aa5fdcab738bb61

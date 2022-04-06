@@ -1,0 +1,50 @@
+fileFormatVersion: 2
+guid: ed03cb1e106ebff448c6bbe8f1650d50
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    LayerData_1 = require(\"./Data/LayerData\");\r\nconst PlayerData_1 = require(\"./Data/PlayerData\");\r\nconst
+    GetMyCharacter_1 = require(\"./GetMyCharacter\");\r\nconst GetZepetoCam_1 = require(\"./GetZepetoCam\");\r\nconst
+    Interactable_1 = require(\"./Interactable\");\r\nconst Vector3Util_1 = require(\"./Vector3Util\");\r\nclass
+    DetectSelectObj {\r\n    constructor() {\r\n        this.m_CharInfo = null;\r\n       
+    this.m_Cam = null;\r\n        this.m_CamTf = null;\r\n    }\r\n    Detect() {\r\n       
+    //console.log(\"##DetectSelectObj Start\");\r\n        if (this.m_CharInfo ===
+    null)\r\n            this.m_CharInfo = GetMyCharacter_1.default.GetInfo();\r\n       
+    //console.log(\"##m_CharInfo:\"+this.m_CharInfo);\r\n        if (this.m_CamTf
+    === null) {\r\n            this.m_Cam = GetZepetoCam_1.default.Get();\r\n           
+    if (this.m_Cam !== null)\r\n                this.m_CamTf = this.m_Cam.transform;\r\n       
+    }\r\n        //console.log(\"##camTf:\" + this.m_CamTf);\r\n        if (this.m_CharInfo
+    === null || this.m_CamTf === null)\r\n            return null;\r\n        //console.log(\"##OverlapSphere
+    Start\");\r\n        var center = this.m_CharInfo.m_Col.bounds.center;\r\n       
+    var radius = PlayerData_1.default.m_SelectDetectRange;\r\n        var camForward
+    = this.m_CamTf.forward;\r\n        camForward.y = 0;\r\n        camForward.Normalize();\r\n       
+    var hits = UnityEngine_1.Physics.OverlapSphere(center, radius, LayerData_1.default.m_SelectableObj);\r\n       
+    //console.log(hits.length);\r\n        var minAngle = Number.MAX_VALUE;\r\n       
+    var targetCol = null;\r\n        hits.forEach((value, index) => {\r\n           
+    var interactable = value.GetComponent($typeof(Interactable_1.default));\r\n           
+    var bPass = false;\r\n            if (interactable != null && !interactable.m_Value)\r\n               
+    bPass = true;\r\n            if (!bPass) {\r\n                var look = Vector3Util_1.default.Minus(value.bounds.center,
+    center);\r\n                look.y = 0;\r\n                var dir = look.normalized;\r\n               
+    var angle = UnityEngine_1.Vector3.Angle(dir, camForward);\r\n               
+    if (angle < PlayerData_1.default.m_SelectDetectAngle && angle < minAngle) {\r\n                   
+    minAngle = angle;\r\n                    targetCol = value;\r\n               
+    }\r\n            }\r\n        });\r\n        return targetCol;\r\n    }\r\n}\r\nexports.default
+    = DetectSelectObj;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGV0ZWN0U2VsZWN0T2JqLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiRGV0ZWN0U2VsZWN0T2JqLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQTRFO0FBSTVFLGdEQUF5QztBQUN6QyxrREFBMkM7QUFDM0MscURBQTREO0FBQzVELGlEQUEwQztBQUMxQyxpREFBMEM7QUFDMUMsK0NBQXdDO0FBRXhDLE1BQXFCLGVBQWU7SUFBcEM7UUFDSSxlQUFVLEdBQWMsSUFBSSxDQUFDO1FBQzdCLFVBQUssR0FBWSxJQUFJLENBQUM7UUFDdEIsWUFBTyxHQUFlLElBQUksQ0FBQztJQWtEL0IsQ0FBQztJQWpEVSxNQUFNO1FBRVQseUNBQXlDO1FBQ3pDLElBQUcsSUFBSSxDQUFDLFVBQVUsS0FBSyxJQUFJO1lBQ3ZCLElBQUksQ0FBQyxVQUFVLEdBQUcsd0JBQWMsQ0FBQyxPQUFPLEVBQUUsQ0FBQztRQUMvQywrQ0FBK0M7UUFDL0MsSUFBRyxJQUFJLENBQUMsT0FBTyxLQUFLLElBQUksRUFDeEI7WUFDSSxJQUFJLENBQUMsS0FBSyxHQUFHLHNCQUFZLENBQUMsR0FBRyxFQUFFLENBQUM7WUFDaEMsSUFBRyxJQUFJLENBQUMsS0FBSyxLQUFLLElBQUk7Z0JBQ2xCLElBQUksQ0FBQyxPQUFPLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxTQUFTLENBQUM7U0FDM0M7UUFDRCx5Q0FBeUM7UUFFekMsSUFBRyxJQUFJLENBQUMsVUFBVSxLQUFLLElBQUksSUFBSSxJQUFJLENBQUMsT0FBTyxLQUFLLElBQUk7WUFDaEQsT0FBTyxJQUFJLENBQUM7UUFFaEIsdUNBQXVDO1FBQ3ZDLElBQUksTUFBTSxHQUFHLElBQUksQ0FBQyxVQUFVLENBQUMsS0FBSyxDQUFDLE1BQU0sQ0FBQyxNQUFNLENBQUM7UUFDakQsSUFBSSxNQUFNLEdBQUcsb0JBQVUsQ0FBQyxtQkFBbUIsQ0FBQztRQUM1QyxJQUFJLFVBQVUsR0FBRyxJQUFJLENBQUMsT0FBTyxDQUFDLE9BQU8sQ0FBQztRQUN0QyxVQUFVLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FBQztRQUNqQixVQUFVLENBQUMsU0FBUyxFQUFFLENBQUM7UUFDdkIsSUFBSSxJQUFJLEdBQUcscUJBQU8sQ0FBQyxhQUFhLENBQUMsTUFBTSxFQUFDLE1BQU0sRUFBQyxtQkFBUyxDQUFDLGVBQWUsQ0FBQyxDQUFDO1FBQzFFLDJCQUEyQjtRQUMzQixJQUFJLFFBQVEsR0FBRyxNQUFNLENBQUMsU0FBUyxDQUFDO1FBQ2hDLElBQUksU0FBUyxHQUFHLElBQUksQ0FBQztRQUNyQixJQUFJLENBQUMsT0FBTyxDQUFDLENBQUMsS0FBSyxFQUFDLEtBQUssRUFBQyxFQUFFO1lBRXhCLElBQUksWUFBWSxHQUFHLEtBQUssQ0FBQyxZQUFZLFNBQUMsc0JBQVksRUFBRyxDQUFDO1lBQ3RELElBQUksS0FBSyxHQUFHLEtBQUssQ0FBQztZQUNsQixJQUFHLFlBQVksSUFBSSxJQUFJLElBQUksQ0FBQyxZQUFZLENBQUMsT0FBTztnQkFDNUMsS0FBSyxHQUFHLElBQUksQ0FBQztZQUVqQixJQUFHLENBQUMsS0FBSyxFQUNUO2dCQUNJLElBQUksSUFBSSxHQUFHLHFCQUFXLENBQUMsS0FBSyxDQUFDLEtBQUssQ0FBQyxNQUFNLENBQUMsTUFBTSxFQUFFLE1BQU0sQ0FBQyxDQUFDO2dCQUMxRCxJQUFJLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FBQztnQkFDWCxJQUFJLEdBQUcsR0FBRyxJQUFJLENBQUMsVUFBVSxDQUFDO2dCQUMxQixJQUFJLEtBQUssR0FBRyxxQkFBTyxDQUFDLEtBQUssQ0FBQyxHQUFHLEVBQUMsVUFBVSxDQUFDLENBQUM7Z0JBQzFDLElBQUcsS0FBSyxHQUFHLG9CQUFVLENBQUMsbUJBQW1CLElBQUksS0FBSyxHQUFHLFFBQVEsRUFDN0Q7b0JBQ0ksUUFBUSxHQUFHLEtBQUssQ0FBQztvQkFDakIsU0FBUyxHQUFHLEtBQUssQ0FBQztpQkFDckI7YUFDSjtRQUNMLENBQUMsQ0FBQyxDQUFDO1FBQ0gsT0FBTyxTQUFTLENBQUM7SUFDckIsQ0FBQztDQUNKO0FBckRELGtDQXFEQyJ9","assetPath":"Assets/Scripts/DetectSelectObj.ts","manifest":{"properties":[{"assembly":"","name":"m_CharInfo","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/GetMyCharacter.CharInfo","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"m_Cam","type":"UnityEngine.Camera","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"m_CamTf","type":"UnityEngine.Transform","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"DetectSelectObj","description":""},"isCompiled":true}'
+  typescriptHash: 35dd0fd7dc4f6fab5558f8905e00e951
