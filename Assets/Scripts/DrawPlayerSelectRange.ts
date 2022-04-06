@@ -1,8 +1,8 @@
 import { Collider, GameObject, MeshRenderer, Transform, Vector3 } from 'UnityEngine';
 import { ZepetoCharacter } from 'ZEPETO.Character.Controller';
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
-import DebugData from '../Data/DebugData';
-import PlayerData from '../Data/PlayerData';
+import DebugData from './Data/DebugData';
+import PlayerData from './Data/PlayerData';
 import GetMyCharacter from './GetMyCharacter';
 
 export default class DrawPlayerSelectRange extends ZepetoScriptBehaviour {

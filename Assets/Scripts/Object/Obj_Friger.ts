@@ -1,8 +1,9 @@
 import { Collider, Time } from 'UnityEngine';
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
-import Interactable from './Interactable';
-import IsOn from './IsOn';
-import ZAnimator from './ZAnimator'
+import Interactable from '../Interactable';
+import IsOn from '../IsOn';
+import ZAnimator from '../ZAnimator';
+
 
 export default class Obj_Friger extends ZepetoScriptBehaviour {
     m_Anim : ZAnimator;
@@ -22,7 +23,7 @@ export default class Obj_Friger extends ZepetoScriptBehaviour {
         {
             if(this.m_IsOn.m_Value)
             {
-                this.m_Col.enabled = false;
+                //this.m_Col.enabled = false;
                 this.m_Interactable.m_Value = false;
                 this.m_Interactable.m_Dirty = Time.time;
                 this.m_Anim.Play("Open");

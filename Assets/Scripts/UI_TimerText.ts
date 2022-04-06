@@ -1,6 +1,6 @@
 import { Text } from 'UnityEngine.UI'
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
-import TimerData from '../Data/TimerData';
+import TimerData from './Data/TimerData';
 export default class UI_TimerText extends ZepetoScriptBehaviour {
     m_Text : Text;
     m_Dirty : number = Number.MIN_SAFE_INTEGER;
