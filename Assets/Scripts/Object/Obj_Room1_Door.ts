@@ -1,14 +1,13 @@
 import { Animator, Time } from 'UnityEngine';
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
-import CheckAniEnd from './CheckAniEnd';
-import CheckEquipedItem from './CheckEquipedItem';
-import InventoryData from './Data/InventoryData';
-import HasInvenItem from './HasInvenItem';
-import Interactable from './Interactable';
-import IsOn from './IsOn'
-import RemoveInvenItem from './RemoveInvenItem';
+import CheckAniEnd from '../CheckAniEnd';
+import CheckEquipedItem from '../CheckEquipedItem';
+import InventoryData from '../Data/InventoryData';
+import Interactable from '../Interactable';
+import IsOn from '../IsOn';
+import RemoveInvenItem from '../RemoveInvenItem';
 
-export default class Obj_Door extends ZepetoScriptBehaviour {
+export default class Obj_Room1_Door extends ZepetoScriptBehaviour {
     m_IsOn : IsOn;
     m_Anim : Animator;
     m_NumState :number = 0;

@@ -12,6 +12,8 @@ export default class RemoveInvenItem {
     {
         if(index >= 0)
         {
+            if(InventoryData.m_EquipedIndex === index)
+                InventoryData.m_EquipedIndex = -1;
             InventoryData.m_InvenList.splice(index,1);
             InventoryData.m_InvenListDirty = Time.time;
         }
