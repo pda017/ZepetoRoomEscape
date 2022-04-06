@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 54828a9128231354e997a33394c8abf2
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst StartPointData_1 = require(\"../Data/StartPointData\");\r\nconst
+    DialogData_1 = require(\"./DialogData\");\r\nconst InventoryData_1 = require(\"./InventoryData\");\r\nconst
+    KeyInputData_1 = require(\"./KeyInputData\");\r\nconst SelectObjData_1 = require(\"./SelectObjData\");\r\nclass
+    InitData {\r\n    static Init() {\r\n        StartPointData_1.default.Init();\r\n       
+    InventoryData_1.default.Init();\r\n        SelectObjData_1.default.Init();\r\n       
+    KeyInputData_1.default.Init();\r\n        DialogData_1.default.Init();\r\n   
+    }\r\n}\r\nexports.default = InitData;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5pdERhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJJbml0RGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLDJEQUFtRDtBQUNuRCw2Q0FBc0M7QUFDdEMsbURBQTRDO0FBQzVDLGlEQUEwQztBQUMxQyxtREFBNEM7QUFFNUMsTUFBcUIsUUFBUTtJQUNsQixNQUFNLENBQUMsSUFBSTtRQUVkLHdCQUFjLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDdEIsdUJBQWEsQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUNyQix1QkFBYSxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ3JCLHNCQUFZLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDcEIsb0JBQVUsQ0FBQyxJQUFJLEVBQUUsQ0FBQztJQUN0QixDQUFDO0NBQ0o7QUFURCwyQkFTQyJ9","assetPath":"Assets/Scripts/Data/InitData.ts","manifest":{"properties":[],"name":"InitData","description":""},"isCompiled":true}'
+  typescriptHash: 645926806fb8d3c16219c62223444d40

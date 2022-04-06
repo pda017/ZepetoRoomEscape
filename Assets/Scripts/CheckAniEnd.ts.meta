@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 33f77c1fad3c1cf4c89f92115980e2b5
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nclass
+    CheckAniEnd {\r\n    constructor(owner, findParent = false) {\r\n        if (findParent)\r\n           
+    this.m_Anim = owner.GetComponentInParent($typeof(UnityEngine_1.Animator));\r\n       
+    else\r\n            this.m_Anim = owner.GetComponentInChildren($typeof(UnityEngine_1.Animator));\r\n   
+    }\r\n    Check(layer = 0) {\r\n        if (this.m_Anim.GetCurrentAnimatorStateInfo(layer).normalizedTime
+    >= 0.99)\r\n            return true;\r\n        return false;\r\n    }\r\n}\r\nexports.default
+    = CheckAniEnd;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hlY2tBbmlFbmQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJDaGVja0FuaUVuZC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFtRDtBQUduRCxNQUFxQixXQUFXO0lBRTVCLFlBQVksS0FBa0IsRUFBQyxhQUF1QixLQUFLO1FBRXZELElBQUcsVUFBVTtZQUNULElBQUksQ0FBQyxNQUFNLEdBQUcsS0FBSyxDQUFDLG9CQUFvQixTQUFDLHNCQUFRLEVBQUcsQ0FBQzs7WUFFckQsSUFBSSxDQUFDLE1BQU0sR0FBRyxLQUFLLENBQUMsc0JBQXNCLFNBQUMsc0JBQVEsRUFBRyxDQUFDO0lBQy9ELENBQUM7SUFDTSxLQUFLLENBQUMsUUFBaUIsQ0FBQztRQUUzQixJQUFHLElBQUksQ0FBQyxNQUFNLENBQUMsMkJBQTJCLENBQUMsS0FBSyxDQUFDLENBQUMsY0FBYyxJQUFJLElBQUk7WUFDcEUsT0FBTyxJQUFJLENBQUM7UUFDaEIsT0FBTyxLQUFLLENBQUM7SUFDakIsQ0FBQztDQUNKO0FBZkQsOEJBZUMifQ==","assetPath":"Assets/Scripts/CheckAniEnd.ts","manifest":{"properties":[{"assembly":"UnityEngine.AnimationModule","name":"m_Anim","type":"UnityEngine.Animator","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"CheckAniEnd","description":""},"isCompiled":true}'
+  typescriptHash: ad82e388ef0bb4ae8ac1872b0bea1e8d

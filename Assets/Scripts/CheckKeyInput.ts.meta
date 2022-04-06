@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 00574b6e906957040ab2d89e62989c14
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    CheckKeyInput extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    static GetKeyDown(keyState)
+    {\r\n        if (keyState.m_Value === 2)\r\n            return true;\r\n       
+    return false;\r\n    }\r\n    static GetKeyStay(keyState) {\r\n        if (keyState.m_Value
+    > 0)\r\n            return true;\r\n        return false;\r\n    }\r\n    static
+    GetKeyUp(keyState) {\r\n        if (keyState.m_Value === -1)\r\n            return
+    true;\r\n        return false;\r\n    }\r\n}\r\nexports.default = CheckKeyInput;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hlY2tLZXlJbnB1dC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkNoZWNrS2V5SW5wdXQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFHckQsTUFBcUIsYUFBYyxTQUFRLHFDQUFxQjtJQUNyRCxNQUFNLENBQUMsVUFBVSxDQUFDLFFBQW1CO1FBRXhDLElBQUcsUUFBUSxDQUFDLE9BQU8sS0FBSyxDQUFDO1lBQ3JCLE9BQU8sSUFBSSxDQUFDO1FBQ2hCLE9BQU8sS0FBSyxDQUFDO0lBQ2pCLENBQUM7SUFDTSxNQUFNLENBQUMsVUFBVSxDQUFDLFFBQW1CO1FBRXhDLElBQUcsUUFBUSxDQUFDLE9BQU8sR0FBRyxDQUFDO1lBQ25CLE9BQU8sSUFBSSxDQUFDO1FBQ2hCLE9BQU8sS0FBSyxDQUFDO0lBQ2pCLENBQUM7SUFDTSxNQUFNLENBQUMsUUFBUSxDQUFDLFFBQW1CO1FBRXRDLElBQUcsUUFBUSxDQUFDLE9BQU8sS0FBSyxDQUFDLENBQUM7WUFDdEIsT0FBTyxJQUFJLENBQUM7UUFDaEIsT0FBTyxLQUFLLENBQUM7SUFDakIsQ0FBQztDQUNKO0FBbkJELGdDQW1CQyJ9","assetPath":"Assets/Scripts/CheckKeyInput.ts","manifest":{"properties":[],"name":"CheckKeyInput","description":""},"isCompiled":true}'
+  typescriptHash: 1c1575e9d86d6849805ce86742f01fbb

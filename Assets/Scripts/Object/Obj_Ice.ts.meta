@@ -1,0 +1,34 @@
+fileFormatVersion: 2
+guid: 67675464145a6b8439b0b66da548aafd
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst Interactable_1 = require(\"../Interactable\");\r\nconst
+    IsOn_1 = require(\"../IsOn\");\r\nclass Obj_Ice extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.m_NumState
+    = 0;\r\n    }\r\n    Start() {\r\n        this.m_IsDoorOn = this.GetComponentInParent($typeof(IsOn_1.default));\r\n       
+    if (this.m_IsDoorOn == null) {\r\n            this.m_IsDoorOn = this.transform.parent.GetComponentInChildren($typeof(IsOn_1.default));\r\n       
+    }\r\n        this.m_Interactable = this.GetComponent($typeof(Interactable_1.default));\r\n   
+    }\r\n    Update() {\r\n        if (this.m_NumState === 0) {\r\n            if
+    (this.m_IsDoorOn.m_Value) {\r\n                this.m_Interactable.m_Value =
+    true;\r\n                this.m_Interactable.m_Dirty = UnityEngine_1.Time.time;\r\n               
+    this.m_NumState++;\r\n            }\r\n        }\r\n    }\r\n}\r\nexports.default
+    = Obj_Ice;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiT2JqX0ljZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIk9ial9JY2UudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBbUM7QUFDbkMsaURBQXFEO0FBQ3JELGtEQUEwQztBQUMxQyxrQ0FBMkI7QUFFM0IsTUFBcUIsT0FBUSxTQUFRLHFDQUFxQjtJQUExRDs7UUFHSSxlQUFVLEdBQVksQ0FBQyxDQUFDO0lBcUI1QixDQUFDO0lBcEJHLEtBQUs7UUFDRCxJQUFJLENBQUMsVUFBVSxHQUFHLElBQUksQ0FBQyxvQkFBb0IsU0FBQyxjQUFJLEVBQUcsQ0FBQztRQUNwRCxJQUFHLElBQUksQ0FBQyxVQUFVLElBQUksSUFBSSxFQUMxQjtZQUNJLElBQUksQ0FBQyxVQUFVLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQyxNQUFNLENBQUMsc0JBQXNCLFNBQUMsY0FBSSxFQUFHLENBQUM7U0FDMUU7UUFDRCxJQUFJLENBQUMsY0FBYyxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMsc0JBQVksRUFBRyxDQUFDO0lBQzVELENBQUM7SUFDRCxNQUFNO1FBRUYsSUFBRyxJQUFJLENBQUMsVUFBVSxLQUFLLENBQUMsRUFDeEI7WUFDSSxJQUFHLElBQUksQ0FBQyxVQUFVLENBQUMsT0FBTyxFQUMxQjtnQkFDSSxJQUFJLENBQUMsY0FBYyxDQUFDLE9BQU8sR0FBRyxJQUFJLENBQUM7Z0JBQ25DLElBQUksQ0FBQyxjQUFjLENBQUMsT0FBTyxHQUFHLGtCQUFJLENBQUMsSUFBSSxDQUFDO2dCQUN4QyxJQUFJLENBQUMsVUFBVSxFQUFFLENBQUM7YUFDckI7U0FDSjtJQUNMLENBQUM7Q0FDSjtBQXhCRCwwQkF3QkMifQ==","assetPath":"Assets/Scripts/Object/Obj_Ice.ts","manifest":{"properties":[{"assembly":"","name":"m_Interactable","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/Interactable.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_IsDoorOn","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/IsOn.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_NumState","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Obj_Ice","description":""},"isCompiled":true}'
+  typescriptHash: f6343d7f703423b3346975ccc746a9ef

@@ -6,6 +6,7 @@ declare module "ZEPETO.Multiplay.Schema" {
 	interface State extends Schema {
 		PlayerInfoList: MapSchema<SPlayerInfo>;
 		PlayerInfoListDirty: number;
+		RemainTime: number;
 	}
 	class SPlayerInfo extends Schema {
 		SessionId: string;

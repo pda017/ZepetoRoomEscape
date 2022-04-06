@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: 917a40850c1eb1a4a92a2276fac96902
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst DialogData_1 = require(\"./Data/DialogData\");\r\nconst
+    NoticeTextChanged_1 = require(\"./NoticeTextChanged\");\r\nclass NoticePanel_NoticeText
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor() {\r\n       
+    super(...arguments);\r\n        this.m_NoticeTextChanged = new NoticeTextChanged_1.default();\r\n   
+    }\r\n    Start() {\r\n        this.m_Text = this.GetComponent($typeof(UnityEngine_UI_1.Text));\r\n   
+    }\r\n    Update() {\r\n        if (this.m_NoticeTextChanged.Check()) {\r\n           
+    this.m_Text.text = DialogData_1.default.m_NoticeText;\r\n        }\r\n    }\r\n}\r\nexports.default
+    = NoticePanel_NoticeText;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTm90aWNlUGFuZWxfTm90aWNlVGV4dC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIk5vdGljZVBhbmVsX05vdGljZVRleHQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxtREFBc0M7QUFDdEMsaURBQXFEO0FBQ3JELGtEQUEyQztBQUMzQywyREFBbUQ7QUFFbkQsTUFBcUIsc0JBQXVCLFNBQVEscUNBQXFCO0lBQXpFOztRQUVJLHdCQUFtQixHQUF1QixJQUFJLDJCQUFpQixFQUFFLENBQUM7SUFXdEUsQ0FBQztJQVZHLEtBQUs7UUFDRCxJQUFJLENBQUMsTUFBTSxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMscUJBQUksRUFBRyxDQUFDO0lBQzVDLENBQUM7SUFDRCxNQUFNO1FBRUYsSUFBRyxJQUFJLENBQUMsbUJBQW1CLENBQUMsS0FBSyxFQUFFLEVBQ25DO1lBQ0ksSUFBSSxDQUFDLE1BQU0sQ0FBQyxJQUFJLEdBQUcsb0JBQVUsQ0FBQyxZQUFZLENBQUM7U0FDOUM7SUFDTCxDQUFDO0NBQ0o7QUFiRCx5Q0FhQyJ9","assetPath":"Assets/Scripts/NoticePanel_NoticeText.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"m_Text","type":"UnityEngine.UI.Text","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_NoticeTextChanged","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/NoticeTextChanged.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"NoticePanel_NoticeText","description":""},"isCompiled":true}'
+  typescriptHash: a681b78db15c3cea544811d50c3636a9

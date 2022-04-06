@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 1b0252ed54872f3408cd0d7303e433ba
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nclass DialogData {\r\n    static Init() {\r\n        this.m_DialogText
+    = \"\";\r\n        this.m_NoticeText = \"\";\r\n        this.m_NoticePlaying
+    = false;\r\n        this.m_DialogPlaying = false;\r\n    }\r\n}\r\nexports.default
+    = DialogData;\r\nDialogData.m_DialogText = \"\";\r\nDialogData.m_DialogTextDelay
+    = 0.1;\r\nDialogData.m_DialogShowDuration = 2;\r\nDialogData.m_DialogPlaying
+    = false;\r\nDialogData.m_NoticeText = \"\";\r\nDialogData.m_NoticeTime = 2;\r\nDialogData.m_NoticePlaying
+    = false;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGlhbG9nRGF0YS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkRpYWxvZ0RhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFQSxNQUFxQixVQUFVO0lBU3BCLE1BQU0sQ0FBQyxJQUFJO1FBRWQsSUFBSSxDQUFDLFlBQVksR0FBRyxFQUFFLENBQUM7UUFDdkIsSUFBSSxDQUFDLFlBQVksR0FBRyxFQUFFLENBQUM7UUFDdkIsSUFBSSxDQUFDLGVBQWUsR0FBRyxLQUFLLENBQUM7UUFDN0IsSUFBSSxDQUFDLGVBQWUsR0FBRyxLQUFLLENBQUM7SUFDakMsQ0FBQzs7QUFmTCw2QkFnQkM7QUFmaUIsdUJBQVksR0FBWSxFQUFFLENBQUM7QUFDM0IsNEJBQWlCLEdBQVksR0FBRyxDQUFDO0FBQ2pDLCtCQUFvQixHQUFZLENBQUMsQ0FBQztBQUNsQywwQkFBZSxHQUFhLEtBQUssQ0FBQztBQUNsQyx1QkFBWSxHQUFZLEVBQUUsQ0FBQztBQUUzQix1QkFBWSxHQUFZLENBQUMsQ0FBQztBQUMxQiwwQkFBZSxHQUFhLEtBQUssQ0FBQyJ9","assetPath":"Assets/Scripts/Data/DialogData.ts","manifest":{"properties":[],"name":"DialogData","description":""},"isCompiled":true}'
+  typescriptHash: fdc593b874ffa3c98c0eb4463fa148a1

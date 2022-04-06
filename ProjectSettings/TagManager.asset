@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - StartPoints
+  - Panel
+  - SelectableObj
   layers:
   - Default
   - TransparentFX
@@ -26,7 +28,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - SelectableObj
   - 
   - 
   - 

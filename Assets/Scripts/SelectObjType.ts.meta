@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 966df2a796564de4fb17de631cbba7f8
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nexports.SelectObjEnum = void 0;\r\nconst ZEPETO_Script_1
+    = require(\"ZEPETO.Script\");\r\nclass SelectObjType extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n}\r\nexports.default = SelectObjType;\r\nvar SelectObjEnum;\r\n(function
+    (SelectObjEnum) {\r\n    SelectObjEnum[SelectObjEnum[\"Item\"] = 0] = \"Item\";\r\n   
+    SelectObjEnum[SelectObjEnum[\"Switch\"] = 1] = \"Switch\";\r\n})(SelectObjEnum
+    = exports.SelectObjEnum || (exports.SelectObjEnum = {}));\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2VsZWN0T2JqVHlwZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlNlbGVjdE9ialR5cGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsaURBQXFEO0FBRXJELE1BQXFCLGFBQWMsU0FBUSxxQ0FBcUI7Q0FHL0Q7QUFIRCxnQ0FHQztBQUVELElBQVksYUFJWDtBQUpELFdBQVksYUFBYTtJQUVyQixpREFBSSxDQUFBO0lBQ0oscURBQU0sQ0FBQTtBQUNWLENBQUMsRUFKVyxhQUFhLEdBQWIscUJBQWEsS0FBYixxQkFBYSxRQUl4QiJ9","assetPath":"Assets/Scripts/SelectObjType.ts","manifest":{"properties":[{"assembly":"","name":"m_Value","type":"SelectObjEnum","isArray":false,"enumKeys":["Item","Switch"],"enumValues":["0","1"],"attributes":[]},{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"SelectObjType","description":""},"isCompiled":true}'
+  typescriptHash: c66a403016ff5bef43570036517267f0

@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: d734196fd1d79e84dbaa8a72d5a6e252
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    PrefabMgr_1 = require(\"./PrefabMgr\");\r\nconst SelectEventKey_1 = require(\"./SelectEventKey\");\r\nclass
+    ExcuteSelectEvent {\r\n    static Excute(target) {\r\n        var eventKey =
+    target.GetComponentInParent($typeof(SelectEventKey_1.default));\r\n        if
+    (eventKey != null) {\r\n            PrefabMgr_1.default.Create(eventKey.m_Value);\r\n       
+    }\r\n    }\r\n}\r\nexports.default = ExcuteSelectEvent;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXhjdXRlU2VsZWN0RXZlbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJFeGN1dGVTZWxlY3RFdmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUF5QztBQUV6QywyQ0FBb0M7QUFDcEMscURBQThDO0FBRTlDLE1BQXFCLGlCQUFpQjtJQUMzQixNQUFNLENBQUMsTUFBTSxDQUFDLE1BQW1CO1FBRXBDLElBQUksUUFBUSxHQUFHLE1BQU0sQ0FBQyxvQkFBb0IsU0FBQyx3QkFBYyxFQUFHLENBQUM7UUFDN0QsSUFBRyxRQUFRLElBQUksSUFBSSxFQUNuQjtZQUNJLG1CQUFTLENBQUMsTUFBTSxDQUFDLFFBQVEsQ0FBQyxPQUFPLENBQUMsQ0FBQztTQUN0QztJQUNMLENBQUM7Q0FDSjtBQVRELG9DQVNDIn0=","assetPath":"Assets/Scripts/ExcuteSelectEvent.ts","manifest":{"properties":[],"name":"ExcuteSelectEvent","description":""},"isCompiled":true}'
+  typescriptHash: c91ba0e3ac7b2af99c58e5585fe0efa4
