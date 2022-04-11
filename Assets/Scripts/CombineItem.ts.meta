@@ -1,0 +1,44 @@
+fileFormatVersion: 2
+guid: 01c9eb5d22279ca4980694eb61edeff6
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    AddItemToInventory_1 = require(\"./AddItemToInventory\");\r\nconst CombineData_1
+    = require(\"./Data/CombineData\");\r\nconst InventoryData_1 = require(\"./Data/InventoryData\");\r\nconst
+    RemoveInvenItem_1 = require(\"./RemoveInvenItem\");\r\nclass CombineItem {\r\n   
+    static Combine(selectIndex) {\r\n        InventoryData_1.default.m_CombineMode
+    = false;\r\n        InventoryData_1.default.m_CombineModeDirty = UnityEngine_1.Time.time;\r\n       
+    if (selectIndex !== InventoryData_1.default.m_SelectIndex && selectIndex >= 0
+    && selectIndex < InventoryData_1.default.m_InvenList.length) {\r\n           
+    var firstItem = InventoryData_1.default.m_InvenList[InventoryData_1.default.m_SelectIndex];\r\n           
+    var secondItem = InventoryData_1.default.m_InvenList[selectIndex];\r\n           
+    //console.log(\"firstItem:\"+firstItem+\",secondItem:\" + secondItem);\r\n           
+    var combineMap = CombineData_1.default.GetCombineMap();\r\n            for (var
+    item of combineMap) {\r\n                var value = item[1];\r\n               
+    //value.m_MatSet.forEach(value=>console.log(value));\r\n                var count
+    = 0;\r\n                if (value.m_MatSet.has(firstItem))\r\n                   
+    count++;\r\n                if (value.m_MatSet.has(secondItem))\r\n                   
+    count++;\r\n                //console.log(\"count:\"+count);\r\n               
+    if (count >= 2) {\r\n                    RemoveInvenItem_1.default.Remove(firstItem);\r\n                   
+    RemoveInvenItem_1.default.Remove(secondItem);\r\n                    AddItemToInventory_1.default.Add(value.m_Result);\r\n                   
+    return true;\r\n                }\r\n            }\r\n            return false;\r\n       
+    }\r\n        return false;\r\n    }\r\n}\r\nexports.default = CombineItem;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29tYmluZUl0ZW0uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJDb21iaW5lSXRlbS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFtQztBQUVuQyw2REFBc0Q7QUFFdEQsb0RBQTZDO0FBQzdDLHdEQUFnRDtBQUNoRCx1REFBZ0Q7QUFFaEQsTUFBcUIsV0FBVztJQUNyQixNQUFNLENBQUMsT0FBTyxDQUFDLFdBQW9CO1FBRXRDLHVCQUFhLENBQUMsYUFBYSxHQUFHLEtBQUssQ0FBQztRQUNwQyx1QkFBYSxDQUFDLGtCQUFrQixHQUFHLGtCQUFJLENBQUMsSUFBSSxDQUFDO1FBQzdDLElBQUcsV0FBVyxLQUFLLHVCQUFhLENBQUMsYUFBYSxJQUFJLFdBQVcsSUFBRyxDQUFDLElBQUksV0FBVyxHQUFHLHVCQUFhLENBQUMsV0FBVyxDQUFDLE1BQU0sRUFDbkg7WUFDSSxJQUFJLFNBQVMsR0FBRyx1QkFBYSxDQUFDLFdBQVcsQ0FBQyx1QkFBYSxDQUFDLGFBQWEsQ0FBQyxDQUFDO1lBQ3ZFLElBQUksVUFBVSxHQUFHLHVCQUFhLENBQUMsV0FBVyxDQUFDLFdBQVcsQ0FBQyxDQUFDO1lBQ3hELGtFQUFrRTtZQUNsRSxJQUFJLFVBQVUsR0FBRyxxQkFBVyxDQUFDLGFBQWEsRUFBRSxDQUFDO1lBQzdDLEtBQUksSUFBSSxJQUFJLElBQUksVUFBVSxFQUMxQjtnQkFDSSxJQUFJLEtBQUssR0FBRyxJQUFJLENBQUMsQ0FBQyxDQUFDLENBQUM7Z0JBQ3BCLG9EQUFvRDtnQkFDcEQsSUFBSSxLQUFLLEdBQUcsQ0FBQyxDQUFDO2dCQUNkLElBQUcsS0FBSyxDQUFDLFFBQVEsQ0FBQyxHQUFHLENBQUMsU0FBUyxDQUFDO29CQUM1QixLQUFLLEVBQUUsQ0FBQztnQkFDWixJQUFHLEtBQUssQ0FBQyxRQUFRLENBQUMsR0FBRyxDQUFDLFVBQVUsQ0FBQztvQkFDN0IsS0FBSyxFQUFFLENBQUM7Z0JBQ1osOEJBQThCO2dCQUM5QixJQUFHLEtBQUssSUFBSSxDQUFDLEVBQ2I7b0JBQ0kseUJBQWUsQ0FBQyxNQUFNLENBQUMsU0FBUyxDQUFDLENBQUM7b0JBQ2xDLHlCQUFlLENBQUMsTUFBTSxDQUFDLFVBQVUsQ0FBQyxDQUFDO29CQUNuQyw0QkFBa0IsQ0FBQyxHQUFHLENBQUMsS0FBSyxDQUFDLFFBQVEsQ0FBQyxDQUFDO29CQUN2QyxPQUFPLElBQUksQ0FBQztpQkFDZjthQUNKO1lBQ0QsT0FBTyxLQUFLLENBQUM7U0FDaEI7UUFDRCxPQUFPLEtBQUssQ0FBQztJQUNqQixDQUFDO0NBQ0o7QUFqQ0QsOEJBaUNDIn0=","assetPath":"Assets/Scripts/CombineItem.ts","manifest":{"properties":[],"name":"CombineItem","description":""},"isCompiled":true}'
+  typescriptHash: 3e1cb0f288133e40beec2f02ca02e17c

@@ -2,7 +2,7 @@ import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
 
 export default class DialogData {
     public static m_DialogText : string = "";
-    public static m_DialogTextDelay : number = 0.1;
+    public static m_DialogTextDelay : number = 0.01;
     public static m_DialogShowDuration : number = 2;
     public static m_DialogPlaying : boolean = false;
     public static m_NoticeText : string = "";

@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: c729bccfe9d82104fb68d547c81942c3
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    Finder_1 = require(\"./Finder\");\r\nclass AddToFinder extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Awake() {\r\n        Finder_1.default.Add(this.gameObject);\r\n    }\r\n}\r\nexports.default
+    = AddToFinder;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQWRkVG9GaW5kZXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJBZGRUb0ZpbmRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUNyRCxxQ0FBNkI7QUFFN0IsTUFBcUIsV0FBWSxTQUFRLHFDQUFxQjtJQUMxRCxLQUFLO1FBRUQsZ0JBQU0sQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLFVBQVUsQ0FBQyxDQUFDO0lBQ2hDLENBQUM7Q0FDSjtBQUxELDhCQUtDIn0=","assetPath":"Assets/Scripts/AddToFinder.ts","manifest":{"properties":[],"name":"AddToFinder","description":""},"isCompiled":true}'
+  typescriptHash: 149e05f8c26e92693c6d58beaaae1980

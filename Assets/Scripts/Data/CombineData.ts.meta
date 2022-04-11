@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: 1bf3788e57a99314dab4f9d27b995ed0
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nexports.CombineInfo = void 0;\r\nconst CsvParser_1 = require(\"../CsvParser\");\r\nclass
+    CombineData {\r\n    static GetCombineMap() {\r\n        if (this.m_CombineMap
+    == null) {\r\n            this.m_CombineMap = new Map();\r\n            var table
+    = CsvParser_1.default.LoadTextAsset(\"DataTable/CombineTable\");\r\n           
+    if (table.length !== 0) {\r\n                var colArr = table[0];\r\n               
+    for (let i = 1; i < table.length; i++) {\r\n                    var line = table[i];\r\n                   
+    var info = new CombineInfo();\r\n                    line.forEach((tokenValue,
+    tokenIndex) => {\r\n                        var col = colArr[tokenIndex];\r\n                       
+    if (col === \"Key\")\r\n                            info.m_Key = tokenValue;\r\n                       
+    else if (col === \"Mat1\" || col === \"Mat2\")\r\n                           
+    info.m_MatSet.add(tokenValue);\r\n                        else if (col === \"Result\")\r\n                           
+    info.m_Result = tokenValue;\r\n                    });\r\n                   
+    this.m_CombineMap.set(info.m_Key, info);\r\n                }\r\n           
+    }\r\n        }\r\n        return this.m_CombineMap;\r\n    }\r\n}\r\nexports.default
+    = CombineData;\r\nCombineData.m_CombineMap = null;\r\nclass CombineInfo {\r\n   
+    constructor() {\r\n        this.m_MatSet = new Set();\r\n    }\r\n}\r\nexports.CombineInfo
+    = CombineInfo;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29tYmluZURhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJDb21iaW5lRGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFDQSw0Q0FBcUM7QUFFckMsTUFBcUIsV0FBVztJQUVyQixNQUFNLENBQUMsYUFBYTtRQUV2QixJQUFHLElBQUksQ0FBQyxZQUFZLElBQUksSUFBSSxFQUM1QjtZQUNJLElBQUksQ0FBQyxZQUFZLEdBQUcsSUFBSSxHQUFHLEVBQXNCLENBQUM7WUFDbEQsSUFBSSxLQUFLLEdBQUcsbUJBQVMsQ0FBQyxhQUFhLENBQUMsd0JBQXdCLENBQUMsQ0FBQztZQUM5RCxJQUFHLEtBQUssQ0FBQyxNQUFNLEtBQUssQ0FBQyxFQUNyQjtnQkFDSSxJQUFJLE1BQU0sR0FBRyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUM7Z0JBQ3RCLEtBQUksSUFBSSxDQUFDLEdBQUUsQ0FBQyxFQUFDLENBQUMsR0FBQyxLQUFLLENBQUMsTUFBTSxFQUFDLENBQUMsRUFBRSxFQUMvQjtvQkFDSSxJQUFJLElBQUksR0FBRyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUM7b0JBQ3BCLElBQUksSUFBSSxHQUFHLElBQUksV0FBVyxFQUFFLENBQUM7b0JBQzdCLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQyxVQUFVLEVBQUMsVUFBVSxFQUFDLEVBQUU7d0JBRWxDLElBQUksR0FBRyxHQUFHLE1BQU0sQ0FBQyxVQUFVLENBQUMsQ0FBQzt3QkFDN0IsSUFBRyxHQUFHLEtBQUssS0FBSzs0QkFDWixJQUFJLENBQUMsS0FBSyxHQUFHLFVBQVUsQ0FBQzs2QkFDdkIsSUFBRyxHQUFHLEtBQUssTUFBTSxJQUFJLEdBQUcsS0FBSyxNQUFNOzRCQUNwQyxJQUFJLENBQUMsUUFBUSxDQUFDLEdBQUcsQ0FBQyxVQUFVLENBQUMsQ0FBQzs2QkFDN0IsSUFBRyxHQUFHLEtBQUssUUFBUTs0QkFDcEIsSUFBSSxDQUFDLFFBQVEsR0FBRyxVQUFVLENBQUM7b0JBQ25DLENBQUMsQ0FBQyxDQUFDO29CQUNILElBQUksQ0FBQyxZQUFZLENBQUMsR0FBRyxDQUFDLElBQUksQ0FBQyxLQUFLLEVBQUMsSUFBSSxDQUFDLENBQUM7aUJBQzFDO2FBQ0o7U0FDSjtRQUNELE9BQU8sSUFBSSxDQUFDLFlBQVksQ0FBQztJQUM3QixDQUFDOztBQTlCTCw4QkErQkM7QUE5QmlCLHdCQUFZLEdBQTZCLElBQUksQ0FBQztBQWdDaEUsTUFBYSxXQUFXO0lBQXhCO1FBR1csYUFBUSxHQUFpQixJQUFJLEdBQUcsRUFBVSxDQUFDO0lBRXRELENBQUM7Q0FBQTtBQUxELGtDQUtDIn0=","assetPath":"Assets/Scripts/Data/CombineData.ts","manifest":{"properties":[],"name":"CombineData","description":""},"isCompiled":true}'
+  typescriptHash: d33de970b173559b4302fe5d181769c2

@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: f3d0b7fa4d641a74db01c320c9c30085
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    CombineData_1 = require(\"./Data/CombineData\");\r\nclass TestCombineTable extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        var map =
+    CombineData_1.default.GetCombineMap();\r\n        map.forEach(value => {\r\n           
+    console.log(\"##Start Key:\" + value.m_Key);\r\n            value.m_MatSet.forEach(mat
+    => console.log(\"##Mat:\" + mat));\r\n            console.log(\"##Result:\" +
+    value.m_Result);\r\n            console.log(\"##End\");\r\n        });\r\n   
+    }\r\n}\r\nexports.default = TestCombineTable;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGVzdENvbWJpbmVUYWJsZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlRlc3RDb21iaW5lVGFibGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsb0RBQTRDO0FBRTVDLE1BQXFCLGdCQUFpQixTQUFRLHFDQUFxQjtJQUUvRCxLQUFLO1FBQ0QsSUFBSSxHQUFHLEdBQUcscUJBQVcsQ0FBQyxhQUFhLEVBQUUsQ0FBQztRQUN0QyxHQUFHLENBQUMsT0FBTyxDQUFDLEtBQUssQ0FBQSxFQUFFO1lBRVgsT0FBTyxDQUFDLEdBQUcsQ0FBQyxjQUFjLEdBQUMsS0FBSyxDQUFDLEtBQUssQ0FBQyxDQUFDO1lBQ3hDLEtBQUssQ0FBQyxRQUFRLENBQUMsT0FBTyxDQUFDLEdBQUcsQ0FBQSxFQUFFLENBQUEsT0FBTyxDQUFDLEdBQUcsQ0FBQyxRQUFRLEdBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQztZQUN2RCxPQUFPLENBQUMsR0FBRyxDQUFDLFdBQVcsR0FBRSxLQUFLLENBQUMsUUFBUSxDQUFDLENBQUM7WUFDekMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxPQUFPLENBQUMsQ0FBQztRQUN6QixDQUFDLENBQUMsQ0FBQztJQUNYLENBQUM7Q0FFSjtBQWJELG1DQWFDIn0=","assetPath":"Assets/Scripts/TestCombineTable.ts","manifest":{"properties":[],"name":"TestCombineTable","description":""},"isCompiled":true}'
+  typescriptHash: eca672f11bd1179293d7ce12a6135368
