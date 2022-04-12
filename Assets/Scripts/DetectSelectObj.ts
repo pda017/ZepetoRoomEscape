@@ -42,7 +42,7 @@ export default class DetectSelectObj {
         var targetCol = null;
         hits.forEach((value,index)=>
         {
-            var interactable = value.GetComponent<Interactable>();
+            var interactable = value.GetComponentInParent<Interactable>();
             var bPass = false;
             if(interactable != null && !interactable.m_Value)
                 bPass = true;

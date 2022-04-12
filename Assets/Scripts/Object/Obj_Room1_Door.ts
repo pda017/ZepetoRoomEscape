@@ -25,7 +25,7 @@ export default class Obj_Room1_Door extends ZepetoScriptBehaviour {
         {
             if(this.m_IsOn.m_Value)
             {
-                if(CheckEquipedItem.Check("Key"))
+                if(CheckEquipedItem.Check("ROOM1_Key"))
                 {
                     RemoveInvenItem.RemoveByIndex(InventoryData.m_EquipedIndex);
                     this.m_Anim.Play("Open",0,0);

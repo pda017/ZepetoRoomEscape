@@ -5,6 +5,8 @@ import Finder from '../Finder';
 import Interactable from '../Interactable';
 import IsOn from '../IsOn'
 import RemoveInvenItem from '../RemoveInvenItem';
+import SetDialog from '../SetDialog';
+import SetNotice from '../SetNotice';
 import ZAnimator from '../ZAnimator';
 
 export default class Obj_Room2_Cabinet extends ZepetoScriptBehaviour {
@@ -46,13 +48,15 @@ export default class Obj_Room2_Cabinet extends ZepetoScriptBehaviour {
         {
             if(this.m_IsOn.m_Value)
             {
-                if(!CheckEquipedItem.Check("Key"))
+                if(!CheckEquipedItem.Check("Cabinet_Key"))
                 {
+                    SetDialog.SetByKey("CabinetDialog");
                     this.m_IsOn.m_Value = false;
                     this.m_IsOn.m_Dirty = Time.time;
                     return ;
                 }
 
+                SetNotice.SetByKey("CabinetNotice");
                 RemoveInvenItem.RemoveEquipedItem();
                 this.m_MoveStamp = Time.time;
                 this.m_Anim.Play("Close");
