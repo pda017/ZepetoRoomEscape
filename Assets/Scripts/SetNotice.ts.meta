@@ -18,5 +18,12 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/SetNotice.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 0b160a75bf3eb6a8e3897ef766a899e3
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    DialogData_1 = require(\"./Data/DialogData\");\r\nconst GetStringData_1 = require(\"./GetStringData\");\r\nclass
+    SetNotice {\r\n    static Set(text) {\r\n        DialogData_1.default.m_NoticeText
+    = text;\r\n        DialogData_1.default.m_NoticeDirty = UnityEngine_1.Time.time;\r\n       
+    DialogData_1.default.m_NoticePlaying = true;\r\n    }\r\n    static SetByKey(key)
+    {\r\n        this.Set(GetStringData_1.default.Get(key));\r\n    }\r\n}\r\nexports.default
+    = SetNotice;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2V0Tm90aWNlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiU2V0Tm90aWNlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQW1DO0FBRW5DLGtEQUEyQztBQUMzQyxtREFBNEM7QUFFNUMsTUFBcUIsU0FBUztJQUNuQixNQUFNLENBQUMsR0FBRyxDQUFDLElBQWE7UUFFM0Isb0JBQVUsQ0FBQyxZQUFZLEdBQUcsSUFBSSxDQUFDO1FBQy9CLG9CQUFVLENBQUMsYUFBYSxHQUFHLGtCQUFJLENBQUMsSUFBSSxDQUFDO1FBQ3JDLG9CQUFVLENBQUMsZUFBZSxHQUFHLElBQUksQ0FBQztJQUN0QyxDQUFDO0lBQ00sTUFBTSxDQUFDLFFBQVEsQ0FBQyxHQUFZO1FBRS9CLElBQUksQ0FBQyxHQUFHLENBQUMsdUJBQWEsQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQztJQUNyQyxDQUFDO0NBQ0o7QUFYRCw0QkFXQyJ9","assetPath":"Assets/Scripts/SetNotice.ts","manifest":{"properties":[],"name":"SetNotice","description":""},"isCompiled":true}'
+  typescriptHash: 5840668b8bf84fda0cb05e2e60db93c6

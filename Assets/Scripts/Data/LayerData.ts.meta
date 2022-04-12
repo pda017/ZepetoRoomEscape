@@ -20,5 +20,5 @@ ScriptedImporter:
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
     { value: true });\r\nclass LayerData {\r\n}\r\nexports.default = LayerData;\r\nLayerData.m_SelectableObj
-    = 1 << 20;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTGF5ZXJEYXRhLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiTGF5ZXJEYXRhLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUEsTUFBcUIsU0FBUzs7QUFBOUIsNEJBRUM7QUFEaUIseUJBQWUsR0FBWSxDQUFDLElBQUksRUFBRSxDQUFDIn0=","assetPath":"Assets/Data/LayerData.ts","manifest":{"properties":[],"name":"LayerData","description":""},"isCompiled":true}'
-  typescriptHash: 40c88b3af5a75b673254a96140cc2564
+    = 1 << 20;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTGF5ZXJEYXRhLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiTGF5ZXJEYXRhLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUEsTUFBcUIsU0FBUzs7QUFBOUIsNEJBRUM7QUFEaUIseUJBQWUsR0FBWSxDQUFDLElBQUksRUFBRSxDQUFDIn0=","assetPath":"Assets/Scripts/Data/LayerData.ts","manifest":{"properties":[],"name":"LayerData","description":""},"isCompiled":true}'
+  typescriptHash: 00be2790027e325e0c1a60ab6bb3a499

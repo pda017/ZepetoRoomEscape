@@ -25,4 +25,4 @@ ScriptedImporter:
     {\r\n    Awake() {\r\n        InitData_1.default.Init();\r\n        SpriteMgr_1.default.Init();\r\n       
     PrefabMgr_1.default.Init();\r\n    }\r\n    Start() {\r\n    }\r\n}\r\nexports.default
     = TestStage;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGVzdFN0YWdlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVGVzdFN0YWdlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0EsaURBQXFEO0FBQ3JELDhDQUF1QztBQUN2QywyQ0FBb0M7QUFDcEMsMkNBQW9DO0FBRXBDLE1BQXFCLFNBQVUsU0FBUSxxQ0FBcUI7SUFDeEQsS0FBSztRQUVELGtCQUFRLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDaEIsbUJBQVMsQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUNqQixtQkFBUyxDQUFDLElBQUksRUFBRSxDQUFDO0lBQ3JCLENBQUM7SUFDRCxLQUFLO0lBRUwsQ0FBQztDQUNKO0FBVkQsNEJBVUMifQ==","assetPath":"Assets/Scripts/TestStage.ts","manifest":{"properties":[],"name":"TestStage","description":""},"isCompiled":true}'
-  typescriptHash: fd01a69ef8ebf07f595383807ae80c30
+  typescriptHash: b4e4ff03672027cd314b97198993c300

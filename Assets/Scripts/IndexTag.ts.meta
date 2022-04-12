@@ -22,4 +22,4 @@ ScriptedImporter:
     { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
     IndexTag extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n   
     }\r\n}\r\nexports.default = IndexTag;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5kZXhUYWcuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJJbmRleFRhZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUVyRCxNQUFxQixRQUFTLFNBQVEscUNBQXFCO0lBRXZELEtBQUs7SUFFTCxDQUFDO0NBRUo7QUFORCwyQkFNQyJ9","assetPath":"Assets/Scripts/IndexTag.ts","manifest":{"properties":[],"name":"IndexTag","description":""},"isCompiled":true}'
-  typescriptHash: 2fe577424f192d94a1bcb030658aca33
+  typescriptHash: 72d8893349b4519045b07752ff6f209d
