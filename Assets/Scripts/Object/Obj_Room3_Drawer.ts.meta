@@ -1,0 +1,37 @@
+fileFormatVersion: 2
+guid: 73d13473bf5a9ed4db4508623da44b57
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst Finder_1 = require(\"../Finder\");\r\nconst
+    Interactable_1 = require(\"../Interactable\");\r\nconst IsOn_1 = require(\"../IsOn\");\r\nconst
+    ZAnimator_1 = require(\"../ZAnimator\");\r\nclass Obj_Room3_Drawer extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.m_NumState
+    = 0;\r\n    }\r\n    Start() {\r\n        this.m_Anim = new ZAnimator_1.default(this.gameObject,
+    true);\r\n        this.m_IsOn = this.GetComponent($typeof(IsOn_1.default));\r\n       
+    this.m_Interactable = this.GetComponent($typeof(Interactable_1.default));\r\n   
+    }\r\n    Update() {\r\n        if (this.m_NumState === 0) {\r\n            if
+    (this.m_IsOn.m_Value) {\r\n                this.m_Anim.Play(\"Open\");\r\n               
+    this.m_Interactable.m_Value = false;\r\n                this.m_Interactable.m_Dirty
+    = UnityEngine_1.Time.time;\r\n                var driverTipInteractable = Finder_1.default.Find(\"Room3_DriverTip\").GetComponent($typeof(Interactable_1.default));\r\n               
+    driverTipInteractable.m_Value = true;\r\n                driverTipInteractable.m_Dirty
+    = UnityEngine_1.Time.time;\r\n                this.m_NumState++;\r\n           
+    }\r\n        }\r\n    }\r\n}\r\nexports.default = Obj_Room3_Drawer;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiT2JqX1Jvb20zX0RyYXdlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIk9ial9Sb29tM19EcmF3ZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBbUM7QUFDbkMsaURBQXFEO0FBQ3JELHNDQUErQjtBQUMvQixrREFBMkM7QUFDM0Msa0NBQTBCO0FBQzFCLDRDQUFxQztBQUVyQyxNQUFxQixnQkFBaUIsU0FBUSxxQ0FBcUI7SUFBbkU7O1FBR0ksZUFBVSxHQUFHLENBQUMsQ0FBQztJQXVCbkIsQ0FBQztJQXJCRyxLQUFLO1FBQ0QsSUFBSSxDQUFDLE1BQU0sR0FBRyxJQUFJLG1CQUFTLENBQUMsSUFBSSxDQUFDLFVBQVUsRUFBQyxJQUFJLENBQUMsQ0FBQztRQUNsRCxJQUFJLENBQUMsTUFBTSxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMsY0FBSSxFQUFHLENBQUM7UUFDeEMsSUFBSSxDQUFDLGNBQWMsR0FBRyxJQUFJLENBQUMsWUFBWSxTQUFDLHNCQUFZLEVBQUcsQ0FBQztJQUM1RCxDQUFDO0lBQ0QsTUFBTTtRQUVGLElBQUcsSUFBSSxDQUFDLFVBQVUsS0FBSyxDQUFDLEVBQ3hCO1lBQ0ksSUFBRyxJQUFJLENBQUMsTUFBTSxDQUFDLE9BQU8sRUFDdEI7Z0JBQ0ksSUFBSSxDQUFDLE1BQU0sQ0FBQyxJQUFJLENBQUMsTUFBTSxDQUFDLENBQUM7Z0JBQ3pCLElBQUksQ0FBQyxjQUFjLENBQUMsT0FBTyxHQUFHLEtBQUssQ0FBQztnQkFDcEMsSUFBSSxDQUFDLGNBQWMsQ0FBQyxPQUFPLEdBQUcsa0JBQUksQ0FBQyxJQUFJLENBQUM7Z0JBQ3hDLElBQUkscUJBQXFCLEdBQUcsZ0JBQU0sQ0FBQyxJQUFJLENBQUMsaUJBQWlCLENBQUMsQ0FBQyxZQUFZLFNBQUMsc0JBQVksRUFBRyxDQUFDO2dCQUN4RixxQkFBcUIsQ0FBQyxPQUFPLEdBQUcsSUFBSSxDQUFDO2dCQUNyQyxxQkFBcUIsQ0FBQyxPQUFPLEdBQUcsa0JBQUksQ0FBQyxJQUFJLENBQUM7Z0JBQzFDLElBQUksQ0FBQyxVQUFVLEVBQUUsQ0FBQzthQUNyQjtTQUNKO0lBQ0wsQ0FBQztDQUNKO0FBMUJELG1DQTBCQyJ9","assetPath":"Assets/Scripts/Object/Obj_Room3_Drawer.ts","manifest":{"properties":[{"assembly":"","name":"m_IsOn","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/IsOn.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_Interactable","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/Interactable.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_NumState","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_Anim","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/ZAnimator.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Obj_Room3_Drawer","description":""},"isCompiled":true}'
+  typescriptHash: d01bfd44188f340287bf44a432120d96

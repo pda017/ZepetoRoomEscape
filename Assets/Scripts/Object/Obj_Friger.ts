@@ -1,5 +1,6 @@
 import { Collider, Time } from 'UnityEngine';
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
+import Finder from '../Finder';
 import Interactable from '../Interactable';
 import IsOn from '../IsOn';
 import ZAnimator from '../ZAnimator';
@@ -27,6 +28,7 @@ export default class Obj_Friger extends ZepetoScriptBehaviour {
                 this.m_Interactable.m_Value = false;
                 this.m_Interactable.m_Dirty = Time.time;
                 this.m_Anim.Play("Open");
+                Finder.Find("Room2_Ice").GetComponent<Interactable>().m_Value = true;
                 this.m_NumState = 1;
                 return ;
             }

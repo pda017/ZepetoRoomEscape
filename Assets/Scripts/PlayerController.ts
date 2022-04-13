@@ -27,16 +27,16 @@ export default class PlayerController extends ZepetoScriptBehaviour {
             if(CheckKeyInput.GetKeyDown(KeyInputData.m_SelectKey))
             {
                 ExcuteSelectEvent.Excute(this.m_SelectCol.gameObject);
-                var selectObjType = this.m_SelectCol.GetComponent<SelectObjType>();
+                var selectObjType = this.m_SelectCol.GetComponentInParent<SelectObjType>();
                 if(selectObjType.m_Value == SelectObjEnum.Item)
                 {
-                    var itemKey = this.m_SelectCol.GetComponent<ItemKey>();
+                    var itemKey = this.m_SelectCol.GetComponentInParent<ItemKey>();
                     AddItemToInventory.Add(itemKey.m_Value);
                     this.m_SelectCol.gameObject.SetActive(false);
                 }
                 else if(selectObjType.m_Value == SelectObjEnum.Switch)
                 {
-                    var isOn = this.m_SelectCol.GetComponent<IsOn>();
+                    var isOn = this.m_SelectCol.GetComponentInParent<IsOn>();
                     isOn.m_Value = true;
                     isOn.m_Dirty = Time.time;
                 }

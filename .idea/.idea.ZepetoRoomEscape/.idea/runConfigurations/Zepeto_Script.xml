@@ -1,5 +1,9 @@
 <component name="ProjectRunConfigurationManager">
+<<<<<<< HEAD
     <configuration default="false" name="Zepeto Script" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="63324" restartOnDisconnect="true">
+=======
+    <configuration default="false" name="Zepeto Script" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="2240" restartOnDisconnect="true">
+>>>>>>> 5128017cc6b986d975b42fdfb19f8b910ef7217d
     <method v="2" />
     </configuration>
 </component>

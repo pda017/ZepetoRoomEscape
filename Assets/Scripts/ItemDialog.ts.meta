@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: e84d6843fb9d5bf40baf4fbb061b326e
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    ItemDialog extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n}\r\nexports.default
+    = ItemDialog;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSXRlbURpYWxvZy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkl0ZW1EaWFsb2cudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFFckQsTUFBcUIsVUFBVyxTQUFRLHFDQUFxQjtDQUc1RDtBQUhELDZCQUdDIn0=","assetPath":"Assets/Scripts/ItemDialog.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_DialogKey","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_NoticeKey","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"ItemDialog","description":""},"isCompiled":true}'
+  typescriptHash: 9a053432c8b9e8d6c90f35531e95c7c1
