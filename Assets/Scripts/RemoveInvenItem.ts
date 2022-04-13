@@ -18,4 +18,8 @@ export default class RemoveInvenItem {
             InventoryData.m_InvenListDirty = Time.time;
         }
     }
+    public static RemoveEquipedItem()
+    {
+        this.RemoveByIndex(InventoryData.m_EquipedIndex);
+    }
 }

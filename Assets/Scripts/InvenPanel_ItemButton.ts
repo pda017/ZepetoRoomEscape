@@ -2,6 +2,7 @@ import { Transform } from 'UnityEngine';
 import { Outline } from 'UnityEngine.UI';
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
 import ButtonEvent from './ButtonEvent'
+import CombineItem from './CombineItem';
 import InventoryData from './Data/InventoryData';
 import IndexTag from './IndexTag';
 import InvenListChanged from './InvenListChanged';
@@ -18,7 +19,10 @@ export default class InvenPanel_ItemButton extends ZepetoScriptBehaviour {
         this.m_IndexTf = this.GetComponentInParent<IndexTag>().transform;
         ButtonEvent.Add(this.gameObject,()=>
         {
-            SelectInvenItem.Select(this.m_IndexTf.GetSiblingIndex());
+            if(InventoryData.m_CombineMode)
+                CombineItem.Combine(this.m_IndexTf.GetSiblingIndex());
+            else
+                SelectInvenItem.Select(this.m_IndexTf.GetSiblingIndex());
         });
     }
     Update()

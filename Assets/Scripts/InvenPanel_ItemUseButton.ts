@@ -9,7 +9,8 @@ export default class InvenPanel_ItemUseButton extends ZepetoScriptBehaviour {
         {
             if(InventoryData.m_SelectIndex >= 0 && InventoryData.m_SelectIndex < InventoryData.m_InvenList.length)
             {
-                InventoryData.m_EquipedIndex = InventoryData.m_SelectIndex;
+                if(!InventoryData.m_CombineMode)
+                    InventoryData.m_EquipedIndex = InventoryData.m_SelectIndex;
             }
         });
     }

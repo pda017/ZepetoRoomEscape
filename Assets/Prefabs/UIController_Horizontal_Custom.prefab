@@ -943,8 +943,9 @@ GameObject:
   - component: {fileID: 5801474834561900547}
   - component: {fileID: 2012833443248460342}
   - component: {fileID: 8018803929570134114}
+  - component: {fileID: 628709115131708781}
   m_Layer: 5
-  m_Name: ItemButton (1)
+  m_Name: CombineButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1052,6 +1053,32 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &628709115131708781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117546148161018799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1673316429, guid: 921f0445823004a16a499d629dd566a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  script:
+    keys:
+    - m_OriColor
+    - m_CombineModeColor
+    unityValues:
+    - {fileID: 0}
+    - {fileID: 0}
+    values:
+    - '{"type":"UnityEngine.Color, UnityEngine.CoreModule","value":"{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.0}"}'
+    - '{"type":"UnityEngine.Color, UnityEngine.CoreModule","value":"{\"r\":0.0,\"g\":0.0,\"b\":0.0,\"a\":0.0}"}'
+    unityArrayValues: []
+    arrayValues: []
+    script: {fileID: 4458252877524076426, guid: 296ebfbb77602df4992760e2442556b0, type: 3}
+    isExpaned: 0
 --- !u!1 &1408769964527538534
 GameObject:
   m_ObjectHideFlags: 0
@@ -2268,7 +2295,7 @@ MonoBehaviour:
     values: []
     unityArrayValues: []
     arrayValues: []
-    script: {fileID: 4458252877524076426, guid: 77f385cf4ec03244cbd06b86e36cb30c, type: 3}
+    script: {fileID: 4458252877524076426, guid: 98632c01636c1f34197952458c8498e7, type: 3}
     isExpaned: 0
 --- !u!1 &2276875590935733256
 GameObject:
