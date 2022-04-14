@@ -22,4 +22,4 @@ ScriptedImporter:
     { value: true });\r\nconst StringData_1 = require(\"./Data/StringData\");\r\nclass
     GetStringData {\r\n    static Get(key) {\r\n        return StringData_1.default.GetStringMap().get(key);\r\n   
     }\r\n}\r\nexports.default = GetStringData;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2V0U3RyaW5nRGF0YS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkdldFN0cmluZ0RhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSxrREFBMEM7QUFFMUMsTUFBcUIsYUFBYTtJQUN2QixNQUFNLENBQUMsR0FBRyxDQUFDLEdBQVk7UUFFMUIsT0FBTyxvQkFBVSxDQUFDLFlBQVksRUFBRSxDQUFDLEdBQUcsQ0FBQyxHQUFHLENBQUMsQ0FBQztJQUM5QyxDQUFDO0NBQ0o7QUFMRCxnQ0FLQyJ9","assetPath":"Assets/Scripts/GetStringData.ts","manifest":{"properties":[],"name":"GetStringData","description":""},"isCompiled":true}'
-  typescriptHash: dec48af49642c7dbd4fd7fcd68f552b8
+  typescriptHash: 4aed3b4ead323c6885d8fccf0f96c7c0

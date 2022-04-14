@@ -26,4 +26,4 @@ ScriptedImporter:
     InventoryData_1.default.Init();\r\n        SelectObjData_1.default.Init();\r\n       
     KeyInputData_1.default.Init();\r\n        DialogData_1.default.Init();\r\n   
     }\r\n}\r\nexports.default = InitData;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5pdERhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJJbml0RGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLDJEQUFtRDtBQUNuRCw2Q0FBc0M7QUFDdEMsbURBQTRDO0FBQzVDLGlEQUEwQztBQUMxQyxtREFBNEM7QUFFNUMsTUFBcUIsUUFBUTtJQUNsQixNQUFNLENBQUMsSUFBSTtRQUVkLHdCQUFjLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDdEIsdUJBQWEsQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUNyQix1QkFBYSxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ3JCLHNCQUFZLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDcEIsb0JBQVUsQ0FBQyxJQUFJLEVBQUUsQ0FBQztJQUN0QixDQUFDO0NBQ0o7QUFURCwyQkFTQyJ9","assetPath":"Assets/Scripts/Data/InitData.ts","manifest":{"properties":[],"name":"InitData","description":""},"isCompiled":true}'
-  typescriptHash: 645926806fb8d3c16219c62223444d40
+  typescriptHash: b62fb84d89fb5a1e189d18200cfd5cb7
