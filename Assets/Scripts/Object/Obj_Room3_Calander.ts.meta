@@ -18,5 +18,23 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/Object/Obj_Room3_Calander.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 2845114363f28c7707f7475fc8d9f14d
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    AddItemToInventory_1 = require(\"../AddItemToInventory\");\r\nconst ItemData_1
+    = require(\"../Data/ItemData\");\r\nconst Finder_1 = require(\"../Finder\");\r\nconst
+    Interactable_1 = require(\"../Interactable\");\r\nconst IsOn_1 = require(\"../IsOn\");\r\nconst
+    ItemDialog_1 = require(\"../ItemDialog\");\r\nconst ItemKey_1 = require(\"../ItemKey\");\r\nconst
+    SetDialog_1 = require(\"../SetDialog\");\r\nconst SetNotice_1 = require(\"../SetNotice\");\r\nclass
+    Obj_Room3_Calander extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
+    {\r\n        super(...arguments);\r\n        this.m_NumState = 0;\r\n    }\r\n   
+    Start() {\r\n        this.m_ItemKey = this.GetComponent($typeof(ItemKey_1.default));\r\n       
+    this.m_Interactable = this.GetComponent($typeof(Interactable_1.default));\r\n       
+    this.m_ItemDialog = this.GetComponent($typeof(ItemDialog_1.default));\r\n       
+    this.m_IsOn = this.GetComponent($typeof(IsOn_1.default));\r\n    }\r\n    Update()
+    {\r\n        if (this.m_NumState === 0) {\r\n            if (this.m_IsOn.m_Value)
+    {\r\n                this.m_Interactable.m_Value = false;\r\n               
+    AddItemToInventory_1.default.AddWithItemDialog(this.m_ItemKey.m_Value, this.m_ItemDialog);\r\n               
+    Finder_1.default.Find(\"Room3_CalanderImage\").SetActive(false);\r\n               
+    this.m_NumState++;\r\n            }\r\n        }\r\n    }\r\n}\r\nexports.default
+    = Obj_Room3_Calander;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiT2JqX1Jvb20zX0NhbGFuZGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiT2JqX1Jvb20zX0NhbGFuZGVyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0EsaURBQXFEO0FBQ3JELDhEQUF1RDtBQUN2RCwrQ0FBd0M7QUFDeEMsc0NBQStCO0FBQy9CLGtEQUEyQztBQUMzQyxrQ0FBMkI7QUFDM0IsOENBQXVDO0FBQ3ZDLHdDQUFnQztBQUNoQyw0Q0FBcUM7QUFDckMsNENBQXFDO0FBRXJDLE1BQXFCLGtCQUFtQixTQUFRLHFDQUFxQjtJQUFyRTs7UUFLSSxlQUFVLEdBQUcsQ0FBQyxDQUFDO0lBb0JuQixDQUFDO0lBbkJHLEtBQUs7UUFDRCxJQUFJLENBQUMsU0FBUyxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMsaUJBQU8sRUFBRyxDQUFDO1FBQzlDLElBQUksQ0FBQyxjQUFjLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQyxzQkFBWSxFQUFHLENBQUM7UUFDeEQsSUFBSSxDQUFDLFlBQVksR0FBRyxJQUFJLENBQUMsWUFBWSxTQUFDLG9CQUFVLEVBQUcsQ0FBQztRQUNwRCxJQUFJLENBQUMsTUFBTSxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMsY0FBSSxFQUFHLENBQUM7SUFDNUMsQ0FBQztJQUNELE1BQU07UUFFRixJQUFHLElBQUksQ0FBQyxVQUFVLEtBQUssQ0FBQyxFQUN4QjtZQUNJLElBQUcsSUFBSSxDQUFDLE1BQU0sQ0FBQyxPQUFPLEVBQ3RCO2dCQUNJLElBQUksQ0FBQyxjQUFjLENBQUMsT0FBTyxHQUFHLEtBQUssQ0FBQztnQkFDcEMsNEJBQWtCLENBQUMsaUJBQWlCLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxPQUFPLEVBQUMsSUFBSSxDQUFDLFlBQVksQ0FBQyxDQUFDO2dCQUMvRSxnQkFBTSxDQUFDLElBQUksQ0FBQyxxQkFBcUIsQ0FBQyxDQUFDLFNBQVMsQ0FBQyxLQUFLLENBQUMsQ0FBQztnQkFDcEQsSUFBSSxDQUFDLFVBQVUsRUFBRSxDQUFDO2FBQ3JCO1NBQ0o7SUFDTCxDQUFDO0NBQ0o7QUF6QkQscUNBeUJDIn0=","assetPath":"Assets/Scripts/Object/Obj_Room3_Calander.ts","manifest":{"properties":[{"assembly":"","name":"m_IsOn","type":"F:/ZepetoRoomEscape/Assets/Scripts/IsOn.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_ItemDialog","type":"F:/ZepetoRoomEscape/Assets/Scripts/ItemDialog.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_Interactable","type":"F:/ZepetoRoomEscape/Assets/Scripts/Interactable.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_ItemKey","type":"F:/ZepetoRoomEscape/Assets/Scripts/ItemKey.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_NumState","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Obj_Room3_Calander","description":""},"isCompiled":true}'
+  typescriptHash: 1c49e06b9e652543617343023d16e9c4
