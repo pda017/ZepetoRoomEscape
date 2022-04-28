@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 68d43b8f163e1b04694d31847ed182a0
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst ButtonEvent_1 = require(\"./ButtonEvent\");\r\nconst
+    DoorLockData_1 = require(\"./Data/DoorLockData\");\r\nclass DoorLockPanel_CloseButton
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.m_Canvas
+    = this.GetComponentInParent($typeof(UnityEngine_1.Canvas));\r\n        ButtonEvent_1.default.Add(this.gameObject,
+    () => {\r\n            this.m_Canvas.enabled = false;\r\n            DoorLockData_1.default.m_InputDone
+    = true;\r\n        });\r\n    }\r\n}\r\nexports.default = DoorLockPanel_CloseButton;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRG9vckxvY2tQYW5lbF9DbG9zZUJ1dHRvbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkRvb3JMb2NrUGFuZWxfQ2xvc2VCdXR0b24udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBcUM7QUFDckMsaURBQXFEO0FBQ3JELCtDQUF1QztBQUN2QyxzREFBK0M7QUFFL0MsTUFBcUIseUJBQTBCLFNBQVEscUNBQXFCO0lBRXhFLEtBQUs7UUFDRCxJQUFJLENBQUMsUUFBUSxHQUFHLElBQUksQ0FBQyxvQkFBb0IsU0FBQyxvQkFBTSxFQUFHLENBQUM7UUFDcEQscUJBQVcsQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLFVBQVUsRUFBQyxHQUFFLEVBQUU7WUFFaEMsSUFBSSxDQUFDLFFBQVEsQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDO1lBQzlCLHNCQUFZLENBQUMsV0FBVyxHQUFHLElBQUksQ0FBQztRQUNwQyxDQUFDLENBQUMsQ0FBQztJQUNQLENBQUM7Q0FFSjtBQVhELDRDQVdDIn0=","assetPath":"Assets/Scripts/DoorLockPanel_CloseButton.ts","manifest":{"properties":[{"assembly":"UnityEngine.UIModule","name":"m_Canvas","type":"UnityEngine.Canvas","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"DoorLockPanel_CloseButton","description":""},"isCompiled":true}'
+  typescriptHash: 422fce55f80f4bf7b220b5e3a740d88b

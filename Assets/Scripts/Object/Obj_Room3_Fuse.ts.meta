@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: 6eb35f778d2367b4da318edde2094fe6
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst IsOn_1 = require(\"../IsOn\");\r\nclass
+    Obj_Room3_Fuse extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start()
+    {\r\n        this.m_Mr = this.GetComponent($typeof(UnityEngine_1.MeshRenderer));\r\n       
+    this.m_IsOn = this.GetComponentInParent($typeof(IsOn_1.default));\r\n    }\r\n   
+    Update() {\r\n        if (this.m_IsOn.m_Value) {\r\n            if (this.m_IsChargedObj)\r\n               
+    this.m_Mr.enabled = true;\r\n            else\r\n                this.m_Mr.enabled
+    = false;\r\n        }\r\n        else {\r\n            if (this.m_IsChargedObj)\r\n               
+    this.m_Mr.enabled = false;\r\n            else\r\n                this.m_Mr.enabled
+    = true;\r\n        }\r\n    }\r\n}\r\nexports.default = Obj_Room3_Fuse;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiT2JqX1Jvb20zX0Z1c2UuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJPYmpfUm9vbTNfRnVzZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUEyQztBQUMzQyxpREFBcUQ7QUFDckQsa0NBQTJCO0FBRTNCLE1BQXFCLGNBQWUsU0FBUSxxQ0FBcUI7SUFJN0QsS0FBSztRQUNELElBQUksQ0FBQyxJQUFJLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQywwQkFBWSxFQUFHLENBQUM7UUFDOUMsSUFBSSxDQUFDLE1BQU0sR0FBRyxJQUFJLENBQUMsb0JBQW9CLFNBQUMsY0FBSSxFQUFHLENBQUM7SUFDcEQsQ0FBQztJQUNELE1BQU07UUFFRixJQUFHLElBQUksQ0FBQyxNQUFNLENBQUMsT0FBTyxFQUN0QjtZQUNJLElBQUcsSUFBSSxDQUFDLGNBQWM7Z0JBQ2xCLElBQUksQ0FBQyxJQUFJLENBQUMsT0FBTyxHQUFHLElBQUksQ0FBQzs7Z0JBRXpCLElBQUksQ0FBQyxJQUFJLENBQUMsT0FBTyxHQUFHLEtBQUssQ0FBQztTQUNqQzthQUVEO1lBQ0ksSUFBRyxJQUFJLENBQUMsY0FBYztnQkFDbEIsSUFBSSxDQUFDLElBQUksQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDOztnQkFFMUIsSUFBSSxDQUFDLElBQUksQ0FBQyxPQUFPLEdBQUcsSUFBSSxDQUFDO1NBQ2hDO0lBQ0wsQ0FBQztDQUNKO0FBekJELGlDQXlCQyJ9","assetPath":"Assets/Scripts/Object/Obj_Room3_Fuse.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_IsChargedObj","type":"System.Boolean","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_IsOn","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/IsOn.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"m_Mr","type":"UnityEngine.MeshRenderer","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Obj_Room3_Fuse","description":""},"isCompiled":true}'
+  typescriptHash: f14f08b45890c992d2e0edf5445fbd4f

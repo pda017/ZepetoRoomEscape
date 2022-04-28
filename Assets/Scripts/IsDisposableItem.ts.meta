@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: f248150d9ab51694895f94851374c603
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst GetItemData_1 = require(\"./GetItemData\");\r\nclass
+    IsDisposableItem {\r\n    static Check(itemKey) {\r\n        var itemData = GetItemData_1.default.Get(itemKey);\r\n       
+    if (itemData.m_Disposable)\r\n            return true;\r\n        return false;\r\n   
+    }\r\n}\r\nexports.default = IsDisposableItem;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSXNEaXNwb3NhYmxlSXRlbS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIklzRGlzcG9zYWJsZUl0ZW0udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSwrQ0FBdUM7QUFFdkMsTUFBcUIsZ0JBQWdCO0lBQzFCLE1BQU0sQ0FBQyxLQUFLLENBQUMsT0FBZ0I7UUFFaEMsSUFBSSxRQUFRLEdBQUcscUJBQVcsQ0FBQyxHQUFHLENBQUMsT0FBTyxDQUFDLENBQUM7UUFDeEMsSUFBRyxRQUFRLENBQUMsWUFBWTtZQUNwQixPQUFPLElBQUksQ0FBQztRQUNoQixPQUFPLEtBQUssQ0FBQztJQUNqQixDQUFDO0NBQ0o7QUFSRCxtQ0FRQyJ9","assetPath":"Assets/Scripts/IsDisposableItem.ts","manifest":{"properties":[],"name":"IsDisposableItem","description":""},"isCompiled":true}'
+  typescriptHash: 62884f913f3a0bdc89cae34d32027c8a

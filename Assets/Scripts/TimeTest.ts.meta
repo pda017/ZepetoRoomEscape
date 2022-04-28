@@ -23,4 +23,4 @@ ScriptedImporter:
     ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass TimeTest extends ZEPETO_Script_1.ZepetoScriptBehaviour
     {\r\n    Start() {\r\n    }\r\n    Update() {\r\n        console.log(UnityEngine_1.Time.time);\r\n   
     }\r\n}\r\nexports.default = TimeTest;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGltZVRlc3QuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJUaW1lVGVzdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFrQztBQUNsQyxpREFBcUQ7QUFFckQsTUFBcUIsUUFBUyxTQUFRLHFDQUFxQjtJQUV2RCxLQUFLO0lBRUwsQ0FBQztJQUNELE1BQU07UUFFRixPQUFPLENBQUMsR0FBRyxDQUFDLGtCQUFJLENBQUMsSUFBSSxDQUFDLENBQUM7SUFDM0IsQ0FBQztDQUNKO0FBVEQsMkJBU0MifQ==","assetPath":"Assets/Scripts/TimeTest.ts","manifest":{"properties":[],"name":"TimeTest","description":""},"isCompiled":true}'
-  typescriptHash: aa91f6e97e138ee1a1a1c6c54c82814b
+  typescriptHash: 58bb32f96afed2b216c5786e1e6c2b2d

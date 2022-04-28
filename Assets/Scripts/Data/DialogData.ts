@@ -5,6 +5,7 @@ export default class DialogData {
     public static m_DialogTextDelay : number = 0.01;
     public static m_DialogShowDuration : number = 2;
     public static m_DialogPlaying : boolean = false;
+    public static m_DialogPlayDirty : number;
     public static m_NoticeText : string = "";
     public static m_NoticeDirty : number;
     public static m_NoticeTime : number = 2;

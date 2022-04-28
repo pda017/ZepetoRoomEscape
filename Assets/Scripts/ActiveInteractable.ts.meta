@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 1f7285392f85f1a4486fc4d8fd22d41c
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    ActiveInteractable extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
+    {\r\n        super(...arguments);\r\n        this.m_Value = [];\r\n    }\r\n}\r\nexports.default
+    = ActiveInteractable;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQWN0aXZlSW50ZXJhY3RhYmxlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQWN0aXZlSW50ZXJhY3RhYmxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQXFEO0FBRXJELE1BQXFCLGtCQUFtQixTQUFRLHFDQUFxQjtJQUFyRTs7UUFDVyxZQUFPLEdBQWMsRUFBRSxDQUFDO0lBRW5DLENBQUM7Q0FBQTtBQUhELHFDQUdDIn0=","assetPath":"Assets/Scripts/ActiveInteractable.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Value","type":"System.String[]","isArray":true,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"ActiveInteractable","description":""},"isCompiled":true}'
+  typescriptHash: d875e69edfe0a033f46fa99c6485cd79

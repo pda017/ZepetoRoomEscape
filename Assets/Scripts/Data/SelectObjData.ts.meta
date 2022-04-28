@@ -22,4 +22,4 @@ ScriptedImporter:
     { value: true });\r\nclass SelectObjData {\r\n    static Init() {\r\n       
     this.m_canSelect = false;\r\n    }\r\n}\r\nexports.default = SelectObjData;\r\nSelectObjData.m_ButtonHeightPer
     = 10;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2VsZWN0T2JqRGF0YS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlNlbGVjdE9iakRhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFHQSxNQUFxQixhQUFhO0lBSXZCLE1BQU0sQ0FBQyxJQUFJO1FBRWQsSUFBSSxDQUFDLFdBQVcsR0FBRyxLQUFLLENBQUM7SUFDN0IsQ0FBQzs7QUFQTCxnQ0FRQztBQUxpQiwrQkFBaUIsR0FBWSxFQUFFLENBQUMifQ==","assetPath":"Assets/Scripts/Data/SelectObjData.ts","manifest":{"properties":[],"name":"SelectObjData","description":""},"isCompiled":true}'
-  typescriptHash: 0d5d87da24202b2c93b41d9cb785b943
+  typescriptHash: e5edd7acc298092fd23a6315924e4650

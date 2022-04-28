@@ -24,4 +24,4 @@ ScriptedImporter:
     InventoryData_1.default.m_SelectIndex = index;\r\n        else\r\n           
     InventoryData_1.default.m_SelectIndex = -1;\r\n    }\r\n}\r\nexports.default
     = SelectInvenItem;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2VsZWN0SW52ZW5JdGVtLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiU2VsZWN0SW52ZW5JdGVtLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0Esd0RBQWdEO0FBRWhELE1BQXFCLGVBQWU7SUFDekIsTUFBTSxDQUFDLE1BQU0sQ0FBQyxLQUFjO1FBRS9CLElBQUcsS0FBSyxHQUFHLHVCQUFhLENBQUMsV0FBVyxDQUFDLE1BQU07WUFDdkMsdUJBQWEsQ0FBQyxhQUFhLEdBQUcsS0FBSyxDQUFDOztZQUVwQyx1QkFBYSxDQUFDLGFBQWEsR0FBRyxDQUFDLENBQUMsQ0FBQztJQUN6QyxDQUFDO0NBQ0o7QUFSRCxrQ0FRQyJ9","assetPath":"Assets/Scripts/SelectInvenItem.ts","manifest":{"properties":[],"name":"SelectInvenItem","description":""},"isCompiled":true}'
-  typescriptHash: 81a0e2027d1f61064704122b20b2816c
+  typescriptHash: b0de945b5848a8b6d9c2226ede35af35

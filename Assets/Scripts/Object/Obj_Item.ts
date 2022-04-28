@@ -7,6 +7,7 @@ import SetDialog from '../SetDialog';
 import SetNotice from '../SetNotice';
 
 export default class Obj_Item extends ZepetoScriptBehaviour {
+    public m_bDisableParent : boolean = false;
     m_ItemKey : ItemKey;
     m_ItemDialog : ItemDialog;
     m_IsOn : IsOn;
@@ -30,7 +31,10 @@ export default class Obj_Item extends ZepetoScriptBehaviour {
                     if(this.m_ItemDialog.m_NoticeKey != "")
                         SetNotice.SetByKey(this.m_ItemDialog.m_NoticeKey);
                 }
-                this.gameObject.SetActive(false);
+                if(this.m_bDisableParent)
+                    this.transform.parent.gameObject.SetActive(false);
+                else
+                    this.gameObject.SetActive(false);
                 this.m_NumState++;
             }
         }
