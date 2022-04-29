@@ -18,9 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nexports.StartPointInfo = void 0;\r\nclass StartPointData
-    {\r\n    static Init() {\r\n        this.m_StartPointList = [];\r\n    }\r\n}\r\nexports.default
-    = StartPointData;\r\nclass StartPointInfo {\r\n}\r\nexports.StartPointInfo =
-    StartPointInfo;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU3RhcnRQb2ludERhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJTdGFydFBvaW50RGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFFQSxNQUFxQixjQUFjO0lBRXhCLE1BQU0sQ0FBQyxJQUFJO1FBRWQsSUFBSSxDQUFDLGdCQUFnQixHQUFHLEVBQUUsQ0FBQztJQUMvQixDQUFDO0NBQ0o7QUFORCxpQ0FNQztBQUVELE1BQWEsY0FBYztDQUkxQjtBQUpELHdDQUlDIn0=","assetPath":"Assets/Scripts/Data/StartPointData.ts","manifest":{"properties":[],"name":"StartPointData","description":""},"isCompiled":true}'
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/Data/StartPointData.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
   typescriptHash: 63fc831d739e1d2f170f806a1ad1ec60

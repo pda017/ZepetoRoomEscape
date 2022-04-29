@@ -18,12 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
-    ZEPETO_Character_Controller_1 = require(\"ZEPETO.Character.Controller\");\r\nclass
-    GetZepetoCam {\r\n    static Get() {\r\n        if (this.m_Cam === null) {\r\n           
-    var zpInst = ZEPETO_Character_Controller_1.ZepetoPlayers.instance;\r\n           
-    if (zpInst !== null) {\r\n                this.m_Cam = zpInst.GetComponentInChildren($typeof(UnityEngine_1.Camera));\r\n           
-    }\r\n        }\r\n        return this.m_Cam;\r\n    }\r\n}\r\nexports.default
-    = GetZepetoCam;\r\nGetZepetoCam.m_Cam = null;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2V0WmVwZXRvQ2FtLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiR2V0WmVwZXRvQ2FtLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQW9DO0FBQ3BDLDZFQUE0RDtBQUc1RCxNQUFxQixZQUFZO0lBRXRCLE1BQU0sQ0FBQyxHQUFHO1FBRWIsSUFBRyxJQUFJLENBQUMsS0FBSyxLQUFLLElBQUksRUFDdEI7WUFDSSxJQUFJLE1BQU0sR0FBRywyQ0FBYSxDQUFDLFFBQVEsQ0FBQztZQUNwQyxJQUFHLE1BQU0sS0FBSyxJQUFJLEVBQ2xCO2dCQUNJLElBQUksQ0FBQyxLQUFLLEdBQUcsTUFBTSxDQUFDLHNCQUFzQixTQUFDLG9CQUFNLEVBQUcsQ0FBQzthQUN4RDtTQUNKO1FBQ0QsT0FBTyxJQUFJLENBQUMsS0FBSyxDQUFDO0lBQ3RCLENBQUM7O0FBYkwsK0JBY0M7QUFiaUIsa0JBQUssR0FBWSxJQUFJLENBQUMifQ==","assetPath":"Assets/Scripts/GetZepetoCam.ts","manifest":{"properties":[],"name":"GetZepetoCam","description":""},"isCompiled":true}'
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/GetZepetoCam.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
   typescriptHash: f97e89c5cd38e064fdbeb1de564b556c

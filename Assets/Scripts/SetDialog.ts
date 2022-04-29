@@ -1,3 +1,4 @@
+import { Time } from 'UnityEngine';
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
 import DialogData from './Data/DialogData';
 import GetStringData from './GetStringData';
@@ -7,6 +8,7 @@ export default class SetDialog  {
     {
         DialogData.m_DialogPlaying = true;
         DialogData.m_DialogText = text;
+        DialogData.m_DialogPlayDirty = Time.time;
     }
     public static SetByKey(key : string)
     {

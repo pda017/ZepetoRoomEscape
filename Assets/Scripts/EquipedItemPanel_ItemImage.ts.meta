@@ -18,20 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nconst
-    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst EquipedItemChanged_1 =
-    require(\"./EquipedItemChanged\");\r\nconst GetEquipedItemData_1 = require(\"./GetEquipedItemData\");\r\nconst
-    InvenListChanged_1 = require(\"./InvenListChanged\");\r\nconst SpriteMgr_1 =
-    require(\"./SpriteMgr\");\r\nclass EquipedItemPanel_ItemImage extends ZEPETO_Script_1.ZepetoScriptBehaviour
-    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.m_InvenItemChanged
-    = new InvenListChanged_1.default();\r\n        this.m_EquipedItemChanged = new
-    EquipedItemChanged_1.default();\r\n    }\r\n    Start() {\r\n        this.m_Image
-    = this.GetComponent($typeof(UnityEngine_UI_1.Image));\r\n    }\r\n    Update()
-    {\r\n        if (this.m_InvenItemChanged.Check() || this.m_EquipedItemChanged.Check())
-    {\r\n            var itemData = GetEquipedItemData_1.default.Get();\r\n           
-    if (itemData != null) {\r\n                this.m_Image.enabled = true;\r\n               
-    this.m_Image.sprite = SpriteMgr_1.default.Get(itemData.m_Icon);\r\n           
-    }\r\n            else\r\n                this.m_Image.enabled = false;\r\n       
-    }\r\n    }\r\n}\r\nexports.default = EquipedItemPanel_ItemImage;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXF1aXBlZEl0ZW1QYW5lbF9JdGVtSW1hZ2UuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJFcXVpcGVkSXRlbVBhbmVsX0l0ZW1JbWFnZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLG1EQUFzQztBQUN0QyxpREFBcUQ7QUFDckQsNkRBQXNEO0FBQ3RELDZEQUFzRDtBQUN0RCx5REFBa0Q7QUFDbEQsMkNBQW9DO0FBRXBDLE1BQXFCLDBCQUEyQixTQUFRLHFDQUFxQjtJQUE3RTs7UUFFSSx1QkFBa0IsR0FBc0IsSUFBSSwwQkFBZ0IsRUFBRSxDQUFDO1FBQy9ELHlCQUFvQixHQUF3QixJQUFJLDRCQUFrQixFQUFFLENBQUM7SUFrQnpFLENBQUM7SUFqQkcsS0FBSztRQUNELElBQUksQ0FBQyxPQUFPLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQyxzQkFBSyxFQUFHLENBQUM7SUFDOUMsQ0FBQztJQUNELE1BQU07UUFFRixJQUFHLElBQUksQ0FBQyxrQkFBa0IsQ0FBQyxLQUFLLEVBQUUsSUFBSSxJQUFJLENBQUMsb0JBQW9CLENBQUMsS0FBSyxFQUFFLEVBQ3ZFO1lBQ0ksSUFBSSxRQUFRLEdBQUcsNEJBQWtCLENBQUMsR0FBRyxFQUFFLENBQUM7WUFDeEMsSUFBRyxRQUFRLElBQUksSUFBSSxFQUNuQjtnQkFDSSxJQUFJLENBQUMsT0FBTyxDQUFDLE9BQU8sR0FBRyxJQUFJLENBQUM7Z0JBQzVCLElBQUksQ0FBQyxPQUFPLENBQUMsTUFBTSxHQUFHLG1CQUFTLENBQUMsR0FBRyxDQUFDLFFBQVEsQ0FBQyxNQUFNLENBQUMsQ0FBQzthQUN4RDs7Z0JBRUcsSUFBSSxDQUFDLE9BQU8sQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDO1NBQ3BDO0lBQ0wsQ0FBQztDQUNKO0FBckJELDZDQXFCQyJ9","assetPath":"Assets/Scripts/EquipedItemPanel_ItemImage.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"m_Image","type":"UnityEngine.UI.Image","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_InvenItemChanged","type":"F:/ZepetoRoomEscape/Assets/Scripts/InvenListChanged.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_EquipedItemChanged","type":"F:/ZepetoRoomEscape/Assets/Scripts/EquipedItemChanged.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"EquipedItemPanel_ItemImage","description":""},"isCompiled":true}'
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/EquipedItemPanel_ItemImage.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
   typescriptHash: e7f7122109889a2d2e24b3d6b35bac26

@@ -18,21 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nexports.ItemInfo = void 0;\r\nconst CsvParser_1 = require(\"../CsvParser\");\r\nclass
-    ItemData {\r\n    static GetItemMap() {\r\n        if (this.m_ItemMap === null)
-    {\r\n            this.m_ItemMap = new Map();\r\n            var table = CsvParser_1.default.LoadTextAsset(\"DataTable/ItemTable\");\r\n           
-    if (table.length !== 0) {\r\n                var colArr = table[0];\r\n               
-    for (let i = 1; i < table.length; i++) {\r\n                    var line = table[i];\r\n                   
-    var info = new ItemInfo();\r\n                    line.forEach((tokenValue, tokenIndex)
-    => {\r\n                        var col = colArr[tokenIndex];\r\n                       
-    if (col === \"Key\")\r\n                            info.m_Key = tokenValue;\r\n                       
-    else if (col === \"ItemName\")\r\n                            info.m_ItemName
-    = tokenValue;\r\n                        else if (col === \"Icon\")\r\n                           
-    info.m_Icon = tokenValue;\r\n                        else if (col === \"Desc\")\r\n                           
-    info.m_Desc = tokenValue;\r\n                        else if (col === \"Prefab\")\r\n                           
-    info.m_Prefab = tokenValue;\r\n                    });\r\n                   
-    this.m_ItemMap.set(info.m_Key, info);\r\n                }\r\n            }\r\n       
-    }\r\n        return this.m_ItemMap;\r\n    }\r\n}\r\nexports.default = ItemData;\r\nItemData.m_ItemMap
-    = null;\r\nclass ItemInfo {\r\n}\r\nexports.ItemInfo = ItemInfo;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSXRlbURhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJJdGVtRGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFFQSw0Q0FBcUM7QUFFckMsTUFBcUIsUUFBUTtJQUVsQixNQUFNLENBQUMsVUFBVTtRQUVwQixJQUFHLElBQUksQ0FBQyxTQUFTLEtBQUssSUFBSSxFQUMxQjtZQUNJLElBQUksQ0FBQyxTQUFTLEdBQUcsSUFBSSxHQUFHLEVBQW1CLENBQUM7WUFDNUMsSUFBSSxLQUFLLEdBQUcsbUJBQVMsQ0FBQyxhQUFhLENBQUMscUJBQXFCLENBQUMsQ0FBQztZQUMzRCxJQUFHLEtBQUssQ0FBQyxNQUFNLEtBQUssQ0FBQyxFQUNyQjtnQkFDSSxJQUFJLE1BQU0sR0FBRyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUM7Z0JBQ3RCLEtBQUksSUFBSSxDQUFDLEdBQUUsQ0FBQyxFQUFDLENBQUMsR0FBQyxLQUFLLENBQUMsTUFBTSxFQUFDLENBQUMsRUFBRSxFQUMvQjtvQkFDSSxJQUFJLElBQUksR0FBRyxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUM7b0JBQ3BCLElBQUksSUFBSSxHQUFHLElBQUksUUFBUSxFQUFFLENBQUM7b0JBQzFCLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQyxVQUFVLEVBQUMsVUFBVSxFQUFDLEVBQUU7d0JBRWxDLElBQUksR0FBRyxHQUFHLE1BQU0sQ0FBQyxVQUFVLENBQUMsQ0FBQzt3QkFDN0IsSUFBRyxHQUFHLEtBQUssS0FBSzs0QkFDWixJQUFJLENBQUMsS0FBSyxHQUFHLFVBQVUsQ0FBQzs2QkFDdkIsSUFBRyxHQUFHLEtBQUssVUFBVTs0QkFDdEIsSUFBSSxDQUFDLFVBQVUsR0FBRyxVQUFVLENBQUM7NkJBQzVCLElBQUcsR0FBRyxLQUFLLE1BQU07NEJBQ2xCLElBQUksQ0FBQyxNQUFNLEdBQUcsVUFBVSxDQUFDOzZCQUN4QixJQUFHLEdBQUcsS0FBSyxNQUFNOzRCQUNsQixJQUFJLENBQUMsTUFBTSxHQUFHLFVBQVUsQ0FBQzs2QkFDeEIsSUFBRyxHQUFHLEtBQUssUUFBUTs0QkFDcEIsSUFBSSxDQUFDLFFBQVEsR0FBRyxVQUFVLENBQUM7b0JBQ25DLENBQUMsQ0FBQyxDQUFDO29CQUNILElBQUksQ0FBQyxTQUFTLENBQUMsR0FBRyxDQUFDLElBQUksQ0FBQyxLQUFLLEVBQUMsSUFBSSxDQUFDLENBQUM7aUJBQ3ZDO2FBQ0o7U0FDSjtRQUNELE9BQU8sSUFBSSxDQUFDLFNBQVMsQ0FBQztJQUMxQixDQUFDOztBQWxDTCwyQkFtQ0M7QUFsQ2lCLGtCQUFTLEdBQTBCLElBQUksQ0FBQztBQW9DMUQsTUFBYSxRQUFRO0NBT3BCO0FBUEQsNEJBT0MifQ==","assetPath":"Assets/Scripts/Data/ItemData.ts","manifest":{"properties":[],"name":"ItemData","description":""},"isCompiled":true}'
-  typescriptHash: c3b00b3c9c5adedcced2ebccb96e21fe
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/Data/ItemData.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
+  typescriptHash: cb7e4dec5d3a1a4cff402d1f11097fb9

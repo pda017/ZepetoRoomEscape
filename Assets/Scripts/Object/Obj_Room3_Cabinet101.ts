@@ -27,8 +27,17 @@ export default class Obj_Room3_Cabinet101 extends ZepetoScriptBehaviour {
                 this.m_Anim.Play("Open");
                 this.m_Interactable.m_Value = false;
                 this.m_Interactable.m_Dirty = Time.time;
-                SetDialog.SetByKey(this.m_ItemDialog.m_DialogKey);
+                if(this.m_ItemDialog != null)
+                    SetDialog.SetByKey(this.m_ItemDialog.m_DialogKey);
                 this.m_NumState++;
+            }
+        }
+        else if(this.m_NumState === 1)
+        {
+            if(!this.m_IsOn.m_Value)
+            {
+                this.m_Anim.Play("Close");
+                this.m_NumState = 0;
             }
         }
     }

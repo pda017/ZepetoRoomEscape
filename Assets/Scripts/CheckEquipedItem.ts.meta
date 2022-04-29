@@ -18,11 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst InventoryData_1 = require(\"./Data/InventoryData\");\r\nclass
-    CheckEquipedItem {\r\n    static Check(itemName) {\r\n        if (InventoryData_1.default.m_EquipedIndex
-    >= 0 && InventoryData_1.default.m_EquipedIndex < InventoryData_1.default.m_InvenList.length)
-    {\r\n            var equipedItem = InventoryData_1.default.m_InvenList[InventoryData_1.default.m_EquipedIndex];\r\n           
-    if (equipedItem === itemName)\r\n                return true;\r\n        }\r\n       
-    return false;\r\n    }\r\n}\r\nexports.default = CheckEquipedItem;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hlY2tFcXVpcGVkSXRlbS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkNoZWNrRXF1aXBlZEl0ZW0udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSx3REFBZ0Q7QUFFaEQsTUFBcUIsZ0JBQWdCO0lBQzFCLE1BQU0sQ0FBQyxLQUFLLENBQUMsUUFBaUI7UUFFakMsSUFBRyx1QkFBYSxDQUFDLGNBQWMsSUFBSSxDQUFDLElBQUksdUJBQWEsQ0FBQyxjQUFjLEdBQUcsdUJBQWEsQ0FBQyxXQUFXLENBQUMsTUFBTSxFQUN2RztZQUNJLElBQUksV0FBVyxHQUFHLHVCQUFhLENBQUMsV0FBVyxDQUFDLHVCQUFhLENBQUMsY0FBYyxDQUFDLENBQUM7WUFDMUUsSUFBRyxXQUFXLEtBQUssUUFBUTtnQkFDdkIsT0FBTyxJQUFJLENBQUM7U0FDbkI7UUFDRCxPQUFPLEtBQUssQ0FBQztJQUNqQixDQUFDO0NBQ0o7QUFYRCxtQ0FXQyJ9","assetPath":"Assets/Scripts/CheckEquipedItem.ts","manifest":{"properties":[],"name":"CheckEquipedItem","description":""},"isCompiled":true}'
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/CheckEquipedItem.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
   typescriptHash: 32bdbe6abc88b51a3c89897c343b3b6a

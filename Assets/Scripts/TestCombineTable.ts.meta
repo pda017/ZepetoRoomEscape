@@ -18,13 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
-    CombineData_1 = require(\"./Data/CombineData\");\r\nclass TestCombineTable extends
-    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        var map =
-    CombineData_1.default.GetCombineMap();\r\n        map.forEach(value => {\r\n           
-    console.log(\"##Start Key:\" + value.m_Key);\r\n            value.m_MatSet.forEach(mat
-    => console.log(\"##Mat:\" + mat));\r\n            console.log(\"##Result:\" +
-    value.m_Result);\r\n            console.log(\"##End\");\r\n        });\r\n   
-    }\r\n}\r\nexports.default = TestCombineTable;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGVzdENvbWJpbmVUYWJsZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlRlc3RDb21iaW5lVGFibGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsb0RBQTRDO0FBRTVDLE1BQXFCLGdCQUFpQixTQUFRLHFDQUFxQjtJQUUvRCxLQUFLO1FBQ0QsSUFBSSxHQUFHLEdBQUcscUJBQVcsQ0FBQyxhQUFhLEVBQUUsQ0FBQztRQUN0QyxHQUFHLENBQUMsT0FBTyxDQUFDLEtBQUssQ0FBQSxFQUFFO1lBRVgsT0FBTyxDQUFDLEdBQUcsQ0FBQyxjQUFjLEdBQUMsS0FBSyxDQUFDLEtBQUssQ0FBQyxDQUFDO1lBQ3hDLEtBQUssQ0FBQyxRQUFRLENBQUMsT0FBTyxDQUFDLEdBQUcsQ0FBQSxFQUFFLENBQUEsT0FBTyxDQUFDLEdBQUcsQ0FBQyxRQUFRLEdBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQztZQUN2RCxPQUFPLENBQUMsR0FBRyxDQUFDLFdBQVcsR0FBRSxLQUFLLENBQUMsUUFBUSxDQUFDLENBQUM7WUFDekMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxPQUFPLENBQUMsQ0FBQztRQUN6QixDQUFDLENBQUMsQ0FBQztJQUNYLENBQUM7Q0FFSjtBQWJELG1DQWFDIn0=","assetPath":"Assets/Scripts/TestCombineTable.ts","manifest":{"properties":[],"name":"TestCombineTable","description":""},"isCompiled":true}'
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/TestCombineTable.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
   typescriptHash: c74ada00acadf5382794d7b54f08566f

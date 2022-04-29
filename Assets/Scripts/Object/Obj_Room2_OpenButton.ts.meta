@@ -18,19 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
-    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst Finder_1 = require(\"../Finder\");\r\nconst
-    Interactable_1 = require(\"../Interactable\");\r\nconst IsOn_1 = require(\"../IsOn\");\r\nclass
-    Obj_Room2_OpenButton extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
-    {\r\n        super(...arguments);\r\n        this.m_NumState = 0;\r\n    }\r\n   
-    Start() {\r\n        this.m_IsOn = this.GetComponent($typeof(IsOn_1.default));\r\n       
-    this.m_Interactable = this.GetComponent($typeof(Interactable_1.default));\r\n   
-    }\r\n    Update() {\r\n        if (this.m_NumState === 0) {\r\n            if
-    (this.m_IsOn.m_Value) {\r\n                this.m_Interactable.m_Value = false;\r\n               
-    this.m_Interactable.m_Dirty = UnityEngine_1.Time.time;\r\n                var
-    exitDoorOn = Finder_1.default.Find(\"Room2_ExitDoor\").GetComponent($typeof(IsOn_1.default));\r\n               
-    exitDoorOn.m_Value = true;\r\n                exitDoorOn.m_Dirty = UnityEngine_1.Time.time;\r\n               
-    this.m_NumState++;\r\n            }\r\n        }\r\n    }\r\n}\r\nexports.default
-    = Obj_Room2_OpenButton;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiT2JqX1Jvb20yX09wZW5CdXR0b24uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJPYmpfUm9vbTJfT3BlbkJ1dHRvbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFtQztBQUNuQyxpREFBcUQ7QUFDckQsc0NBQStCO0FBQy9CLGtEQUEyQztBQUMzQyxrQ0FBMEI7QUFFMUIsTUFBcUIsb0JBQXFCLFNBQVEscUNBQXFCO0lBQXZFOztRQUdJLGVBQVUsR0FBWSxDQUFDLENBQUM7SUFvQjVCLENBQUM7SUFuQkcsS0FBSztRQUNELElBQUksQ0FBQyxNQUFNLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQyxjQUFJLEVBQUcsQ0FBQztRQUN4QyxJQUFJLENBQUMsY0FBYyxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMsc0JBQVksRUFBRyxDQUFDO0lBQzVELENBQUM7SUFDRCxNQUFNO1FBRUYsSUFBRyxJQUFJLENBQUMsVUFBVSxLQUFLLENBQUMsRUFDeEI7WUFDSSxJQUFHLElBQUksQ0FBQyxNQUFNLENBQUMsT0FBTyxFQUN0QjtnQkFDSSxJQUFJLENBQUMsY0FBYyxDQUFDLE9BQU8sR0FBRyxLQUFLLENBQUM7Z0JBQ3BDLElBQUksQ0FBQyxjQUFjLENBQUMsT0FBTyxHQUFHLGtCQUFJLENBQUMsSUFBSSxDQUFDO2dCQUN4QyxJQUFJLFVBQVUsR0FBRyxnQkFBTSxDQUFDLElBQUksQ0FBQyxnQkFBZ0IsQ0FBQyxDQUFDLFlBQVksU0FBQyxjQUFJLEVBQUcsQ0FBQztnQkFDcEUsVUFBVSxDQUFDLE9BQU8sR0FBRyxJQUFJLENBQUM7Z0JBQzFCLFVBQVUsQ0FBQyxPQUFPLEdBQUcsa0JBQUksQ0FBQyxJQUFJLENBQUM7Z0JBQy9CLElBQUksQ0FBQyxVQUFVLEVBQUUsQ0FBQzthQUNyQjtTQUNKO0lBQ0wsQ0FBQztDQUNKO0FBdkJELHVDQXVCQyJ9","assetPath":"Assets/Scripts/Object/Obj_Room2_OpenButton.ts","manifest":{"properties":[{"assembly":"","name":"m_Interactable","type":"F:/ZepetoRoomEscape/Assets/Scripts/Interactable.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_IsOn","type":"F:/ZepetoRoomEscape/Assets/Scripts/IsOn.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_NumState","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Obj_Room2_OpenButton","description":""},"isCompiled":true}'
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/Object/Obj_Room2_OpenButton.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
   typescriptHash: 93e56cbca8f5050e73d4382c29ac5335

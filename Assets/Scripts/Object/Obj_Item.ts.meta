@@ -18,21 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
-    AddItemToInventory_1 = require(\"../AddItemToInventory\");\r\nconst IsOn_1 =
-    require(\"../IsOn\");\r\nconst ItemDialog_1 = require(\"../ItemDialog\");\r\nconst
-    ItemKey_1 = require(\"../ItemKey\");\r\nconst SetDialog_1 = require(\"../SetDialog\");\r\nconst
-    SetNotice_1 = require(\"../SetNotice\");\r\nclass Obj_Item extends ZEPETO_Script_1.ZepetoScriptBehaviour
-    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.m_NumState
-    = 0;\r\n    }\r\n    Start() {\r\n        this.m_ItemKey = this.GetComponent($typeof(ItemKey_1.default));\r\n       
-    this.m_ItemDialog = this.GetComponent($typeof(ItemDialog_1.default));\r\n       
-    this.m_IsOn = this.GetComponent($typeof(IsOn_1.default));\r\n    }\r\n    Update()
-    {\r\n        if (this.m_NumState === 0) {\r\n            if (this.m_IsOn.m_Value)
-    {\r\n                AddItemToInventory_1.default.Add(this.m_ItemKey.m_Value);\r\n               
-    if (this.m_ItemDialog != null) {\r\n                    if (this.m_ItemDialog.m_DialogKey
-    != \"\")\r\n                        SetDialog_1.default.SetByKey(this.m_ItemDialog.m_DialogKey);\r\n                   
-    if (this.m_ItemDialog.m_NoticeKey != \"\")\r\n                        SetNotice_1.default.SetByKey(this.m_ItemDialog.m_NoticeKey);\r\n               
-    }\r\n                this.gameObject.SetActive(false);\r\n                this.m_NumState++;\r\n           
-    }\r\n        }\r\n    }\r\n}\r\nexports.default = Obj_Item;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiT2JqX0l0ZW0uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJPYmpfSXRlbS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUNyRCw4REFBdUQ7QUFDdkQsa0NBQTJCO0FBQzNCLDhDQUF1QztBQUN2Qyx3Q0FBZ0M7QUFDaEMsNENBQXFDO0FBQ3JDLDRDQUFxQztBQUVyQyxNQUFxQixRQUFTLFNBQVEscUNBQXFCO0lBQTNEOztRQUlJLGVBQVUsR0FBRyxDQUFDLENBQUM7SUF5Qm5CLENBQUM7SUF4QkcsS0FBSztRQUNELElBQUksQ0FBQyxTQUFTLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQyxpQkFBTyxFQUFHLENBQUM7UUFDOUMsSUFBSSxDQUFDLFlBQVksR0FBRyxJQUFJLENBQUMsWUFBWSxTQUFDLG9CQUFVLEVBQUcsQ0FBQztRQUNwRCxJQUFJLENBQUMsTUFBTSxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMsY0FBSSxFQUFHLENBQUM7SUFDNUMsQ0FBQztJQUNELE1BQU07UUFFRixJQUFHLElBQUksQ0FBQyxVQUFVLEtBQUssQ0FBQyxFQUN4QjtZQUNJLElBQUcsSUFBSSxDQUFDLE1BQU0sQ0FBQyxPQUFPLEVBQ3RCO2dCQUNJLDRCQUFrQixDQUFDLEdBQUcsQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLE9BQU8sQ0FBQyxDQUFDO2dCQUMvQyxJQUFHLElBQUksQ0FBQyxZQUFZLElBQUksSUFBSSxFQUM1QjtvQkFDSSxJQUFHLElBQUksQ0FBQyxZQUFZLENBQUMsV0FBVyxJQUFJLEVBQUU7d0JBQ2xDLG1CQUFTLENBQUMsUUFBUSxDQUFDLElBQUksQ0FBQyxZQUFZLENBQUMsV0FBVyxDQUFDLENBQUM7b0JBQ3RELElBQUcsSUFBSSxDQUFDLFlBQVksQ0FBQyxXQUFXLElBQUksRUFBRTt3QkFDbEMsbUJBQVMsQ0FBQyxRQUFRLENBQUMsSUFBSSxDQUFDLFlBQVksQ0FBQyxXQUFXLENBQUMsQ0FBQztpQkFDekQ7Z0JBQ0QsSUFBSSxDQUFDLFVBQVUsQ0FBQyxTQUFTLENBQUMsS0FBSyxDQUFDLENBQUM7Z0JBQ2pDLElBQUksQ0FBQyxVQUFVLEVBQUUsQ0FBQzthQUNyQjtTQUNKO0lBQ0wsQ0FBQztDQUNKO0FBN0JELDJCQTZCQyJ9","assetPath":"Assets/Scripts/Object/Obj_Item.ts","manifest":{"properties":[{"assembly":"","name":"m_ItemKey","type":"F:/ZepetoRoomEscape/Assets/Scripts/ItemKey.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_ItemDialog","type":"F:/ZepetoRoomEscape/Assets/Scripts/ItemDialog.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_IsOn","type":"F:/ZepetoRoomEscape/Assets/Scripts/IsOn.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_NumState","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Obj_Item","description":""},"isCompiled":true}'
-  typescriptHash: 472c1145321ff42d3ec0b18967ab607a
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/Object/Obj_Item.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
+  typescriptHash: 1b92abd9ca813ed4a0a6d452521a5d77

@@ -18,19 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
-    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst DialogData_1 = require(\"./Data/DialogData\");\r\nconst
-    WaitTime_1 = require(\"./WaitTime\");\r\nclass NoticePanel extends ZEPETO_Script_1.ZepetoScriptBehaviour
-    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.m_WaitTime
-    = new WaitTime_1.default();\r\n        this.m_NumState = 0;\r\n    }\r\n    Start()
-    {\r\n        this.m_Canvas = this.GetComponent($typeof(UnityEngine_1.Canvas));\r\n   
-    }\r\n    Update() {\r\n        if (this.m_NumState === 0) {\r\n            if
-    (DialogData_1.default.m_NoticePlaying) {\r\n                this.m_WaitTime.Start();\r\n               
-    this.m_Canvas.enabled = true;\r\n                this.m_NumState++;\r\n           
-    }\r\n        }\r\n        else if (this.m_NumState === 1) {\r\n            if
-    (this.m_WaitTime.End(DialogData_1.default.m_NoticeTime)) {\r\n               
-    DialogData_1.default.m_NoticePlaying = false;\r\n                this.m_Canvas.enabled
-    = false;\r\n                this.m_NumState = 0;\r\n            }\r\n       
-    }\r\n    }\r\n}\r\nexports.default = NoticePanel;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTm90aWNlUGFuZWwuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJOb3RpY2VQYW5lbC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFxQztBQUNyQyxpREFBcUQ7QUFDckQsa0RBQTJDO0FBQzNDLHlDQUFrQztBQUVsQyxNQUFxQixXQUFZLFNBQVEscUNBQXFCO0lBQTlEOztRQUVJLGVBQVUsR0FBYyxJQUFJLGtCQUFRLEVBQUUsQ0FBQztRQUN2QyxlQUFVLEdBQVksQ0FBQyxDQUFDO0lBeUI1QixDQUFDO0lBeEJHLEtBQUs7UUFDRCxJQUFJLENBQUMsUUFBUSxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMsb0JBQU0sRUFBRyxDQUFDO0lBQ2hELENBQUM7SUFDRCxNQUFNO1FBRUYsSUFBRyxJQUFJLENBQUMsVUFBVSxLQUFLLENBQUMsRUFDeEI7WUFDSSxJQUFHLG9CQUFVLENBQUMsZUFBZSxFQUM3QjtnQkFDSSxJQUFJLENBQUMsVUFBVSxDQUFDLEtBQUssRUFBRSxDQUFDO2dCQUN4QixJQUFJLENBQUMsUUFBUSxDQUFDLE9BQU8sR0FBRyxJQUFJLENBQUM7Z0JBQzdCLElBQUksQ0FBQyxVQUFVLEVBQUUsQ0FBQzthQUNyQjtTQUNKO2FBQ0ksSUFBRyxJQUFJLENBQUMsVUFBVSxLQUFLLENBQUMsRUFDN0I7WUFDSSxJQUFHLElBQUksQ0FBQyxVQUFVLENBQUMsR0FBRyxDQUFDLG9CQUFVLENBQUMsWUFBWSxDQUFDLEVBQy9DO2dCQUNJLG9CQUFVLENBQUMsZUFBZSxHQUFHLEtBQUssQ0FBQztnQkFDbkMsSUFBSSxDQUFDLFFBQVEsQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDO2dCQUM5QixJQUFJLENBQUMsVUFBVSxHQUFHLENBQUMsQ0FBQzthQUN2QjtTQUNKO0lBQ0wsQ0FBQztDQUNKO0FBNUJELDhCQTRCQyJ9","assetPath":"Assets/Scripts/NoticePanel.ts","manifest":{"properties":[{"assembly":"UnityEngine.UIModule","name":"m_Canvas","type":"UnityEngine.Canvas","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_WaitTime","type":"F:/ZepetoRoomEscape/Assets/Scripts/WaitTime.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_NumState","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"NoticePanel","description":""},"isCompiled":true}'
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/NoticePanel.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
   typescriptHash: aad130010dda9dd999134857c85ce6a6

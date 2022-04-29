@@ -1,6 +1,7 @@
 import { Text } from 'UnityEngine.UI'
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
 import DialogData from './Data/DialogData';
+import DialogPlayChanged from './DialogPlayChanged';
 import WaitTime from './WaitTime';
 
 export default class DialogPanel_DialogText extends ZepetoScriptBehaviour {
@@ -8,12 +9,16 @@ export default class DialogPanel_DialogText extends ZepetoScriptBehaviour {
     m_NumState : number = 0;    
     m_DialogIndex : number = 0;
     m_WaitTime : WaitTime = new WaitTime();
+    m_DialogPlayChanged : DialogPlayChanged = new DialogPlayChanged();
     Start() 
     {    
         this.m_Text = this.GetComponent<Text>();
     }
     Update()
     {
+        if(this.m_DialogPlayChanged.Check())
+            this.m_NumState = 0;
+
         if(this.m_NumState === 0)
         {
             if(DialogData.m_DialogPlaying)

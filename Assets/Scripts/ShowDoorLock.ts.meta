@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: c514a167d599402429f4f99e820e2318
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/ShowDoorLock.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
+  typescriptHash: df95c529fe2c433f4dd9c886a30e6b47

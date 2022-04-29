@@ -18,16 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
-    ZEPETO_World_1 = require(\"ZEPETO.World\");\r\nconst TimerData_1 = require(\"./Data/TimerData\");\r\nconst
-    UpdatePlayerExists_1 = require(\"./UpdatePlayerExists\");\r\nclass MultiplayMgr
-    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.m_Multiplay
-    = this.GetComponent($typeof(ZEPETO_World_1.ZepetoWorldMultiplay));\r\n       
-    this.m_Multiplay.add_RoomCreated((room) => {\r\n            MultiplayMgr.m_Room
-    = room;\r\n        });\r\n        this.m_Multiplay.add_RoomJoined((room) => {\r\n           
-    room.add_OnStateChange((state, isFirst) => {\r\n                TimerData_1.default.m_RemainTime
-    = state.RemainTime;\r\n            });\r\n        });\r\n        this.m_UpdatePlayerExists
-    = new UpdatePlayerExists_1.default(this.gameObject);\r\n    }\r\n}\r\nexports.default
-    = MultiplayMgr;\r\nMultiplayMgr.m_Room = null;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTXVsdGlwbGF5TWdyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiTXVsdGlwbGF5TWdyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUEsaURBQXFEO0FBQ3JELCtDQUFtRDtBQUNuRCxnREFBeUM7QUFDekMsNkRBQXNEO0FBRXRELE1BQXFCLFlBQWEsU0FBUSxxQ0FBcUI7SUFJM0QsS0FBSztRQUNELElBQUksQ0FBQyxXQUFXLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQyxtQ0FBb0IsRUFBRyxDQUFDO1FBQzdELElBQUksQ0FBQyxXQUFXLGlCQUFnQixDQUFDLElBQVUsRUFBRSxFQUFFO1lBQzNDLFlBQVksQ0FBQyxNQUFNLEdBQUcsSUFBSSxDQUFDO1FBQy9CLENBQUMsRUFBQztRQUNGLElBQUksQ0FBQyxXQUFXLGdCQUFlLENBQUMsSUFBVyxFQUFDLEVBQUU7WUFDMUMsSUFBSSxtQkFBa0IsQ0FBQyxLQUFhLEVBQUMsT0FBaUIsRUFBQyxFQUFFO2dCQUVyRCxtQkFBUyxDQUFDLFlBQVksR0FBRyxLQUFLLENBQUMsVUFBVSxDQUFDO1lBQzlDLENBQUMsRUFBQztRQUNOLENBQUMsRUFBQztRQUVGLElBQUksQ0FBQyxvQkFBb0IsR0FBRyxJQUFJLDRCQUFrQixDQUFDLElBQUksQ0FBQyxVQUFVLENBQUMsQ0FBQztJQUN4RSxDQUFDOztBQWpCTCwrQkFrQkM7QUFqQmlCLG1CQUFNLEdBQVUsSUFBSSxDQUFDIn0=","assetPath":"Assets/Scripts/MultiplayMgr.ts","manifest":{"properties":[{"assembly":"","name":"m_UpdatePlayerExists","type":"F:/ZepetoRoomEscape/Assets/Scripts/UpdatePlayerExists.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"ZEPETO.World","name":"m_Multiplay","type":"ZEPETO.World.ZepetoWorldMultiplay","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"MultiplayMgr","description":""},"isCompiled":true}'
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/MultiplayMgr.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
   typescriptHash: 01c357060056966541fe34340fcc19fa

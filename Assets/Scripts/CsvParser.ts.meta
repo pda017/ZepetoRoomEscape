@@ -18,29 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nclass
-    CsvParser {\r\n    static Parse(csvText) {\r\n        var state = 0;\r\n       
-    var tableArr = new Array();\r\n        var token = \"\";\r\n        var lineArr
-    = new Array();\r\n        for (let i = 0; i < csvText.length; i++) {\r\n           
-    var c = csvText.charAt(i);\r\n            var nextChar = \"\";\r\n           
-    if (i + 1 < csvText.length)\r\n                nextChar = csvText.charAt(i +
-    1);\r\n            var asciiCode = csvText.codePointAt(i);\r\n            if
-    (this.m_IgnoreChar.includes(asciiCode))\r\n                continue;\r\n           
-    if (state === 0) {\r\n                if (c === ''\"'') {\r\n                   
-    state = 1;\r\n                    continue;\r\n                }\r\n               
-    if (c === \",\") {\r\n                    lineArr.push(token);\r\n                   
-    token = \"\";\r\n                }\r\n                else if (c === \"\\n\")
-    {\r\n                    lineArr.push(token);\r\n                    tableArr.push(lineArr);\r\n                   
-    lineArr = new Array();\r\n                    token = \"\";\r\n               
-    }\r\n                else\r\n                    token += c;\r\n            }\r\n           
-    if (state === 1) {\r\n                if (c === ''\"'' && nextChar === ''\"'')
-    {\r\n                    i++;\r\n                    c = csvText.charAt(i);\r\n               
-    }\r\n                else if (c === ''\"'') {\r\n                    state =
-    0;\r\n                    continue;\r\n                }\r\n                token
-    += c;\r\n            }\r\n        }\r\n        lineArr.push(token);\r\n       
-    tableArr.push(lineArr);\r\n        return tableArr;\r\n    }\r\n    static LoadTextAsset(path)
-    {\r\n        var textAsset = UnityEngine_1.Resources.Load(path);\r\n        return
-    this.Parse(textAsset.text);\r\n    }\r\n}\r\nexports.default = CsvParser;\r\nCsvParser.m_IgnoreChar
-    = [\r\n    13\r\n];\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ3N2UGFyc2VyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQ3N2UGFyc2VyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQW1EO0FBR25ELE1BQXFCLFNBQVM7SUFNbkIsTUFBTSxDQUFDLEtBQUssQ0FBQyxPQUFnQjtRQUVoQyxJQUFJLEtBQUssR0FBVSxDQUFDLENBQUM7UUFDckIsSUFBSSxRQUFRLEdBQUcsSUFBSSxLQUFLLEVBQWlCLENBQUM7UUFDMUMsSUFBSSxLQUFLLEdBQVUsRUFBRSxDQUFDO1FBQ3RCLElBQUksT0FBTyxHQUFpQixJQUFJLEtBQUssRUFBVSxDQUFDO1FBQ2hELEtBQUksSUFBSSxDQUFDLEdBQUMsQ0FBQyxFQUFDLENBQUMsR0FBQyxPQUFPLENBQUMsTUFBTSxFQUFDLENBQUMsRUFBRSxFQUNoQztZQUNJLElBQUksQ0FBQyxHQUFHLE9BQU8sQ0FBQyxNQUFNLENBQUMsQ0FBQyxDQUFDLENBQUM7WUFDMUIsSUFBSSxRQUFRLEdBQUcsRUFBRSxDQUFDO1lBQ2xCLElBQUcsQ0FBQyxHQUFDLENBQUMsR0FBRyxPQUFPLENBQUMsTUFBTTtnQkFDbkIsUUFBUSxHQUFHLE9BQU8sQ0FBQyxNQUFNLENBQUMsQ0FBQyxHQUFDLENBQUMsQ0FBQyxDQUFDO1lBQ25DLElBQUksU0FBUyxHQUFHLE9BQU8sQ0FBQyxXQUFXLENBQUMsQ0FBQyxDQUFDLENBQUM7WUFDdkMsSUFBRyxJQUFJLENBQUMsWUFBWSxDQUFDLFFBQVEsQ0FBQyxTQUFTLENBQUM7Z0JBQ3BDLFNBQVM7WUFFYixJQUFHLEtBQUssS0FBSyxDQUFDLEVBQ2Q7Z0JBQ0ksSUFBRyxDQUFDLEtBQUssR0FBRyxFQUNaO29CQUNJLEtBQUssR0FBRyxDQUFDLENBQUM7b0JBQ1YsU0FBUztpQkFDWjtnQkFFRCxJQUFHLENBQUMsS0FBSyxHQUFHLEVBQ1o7b0JBQ0ksT0FBTyxDQUFDLElBQUksQ0FBQyxLQUFLLENBQUMsQ0FBQztvQkFDcEIsS0FBSyxHQUFHLEVBQUUsQ0FBQztpQkFDZDtxQkFDSSxJQUFHLENBQUMsS0FBSyxJQUFJLEVBQ2xCO29CQUNJLE9BQU8sQ0FBQyxJQUFJLENBQUMsS0FBSyxDQUFDLENBQUM7b0JBQ3BCLFFBQVEsQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDLENBQUM7b0JBQ3ZCLE9BQU8sR0FBRyxJQUFJLEtBQUssRUFBVSxDQUFDO29CQUM5QixLQUFLLEdBQUcsRUFBRSxDQUFDO2lCQUNkOztvQkFFRyxLQUFLLElBQUksQ0FBQyxDQUFDO2FBQ2xCO1lBQ0QsSUFBRyxLQUFLLEtBQUssQ0FBQyxFQUNkO2dCQUNJLElBQUcsQ0FBQyxLQUFLLEdBQUcsSUFBSSxRQUFRLEtBQUssR0FBRyxFQUNoQztvQkFDSSxDQUFDLEVBQUUsQ0FBQztvQkFDSixDQUFDLEdBQUcsT0FBTyxDQUFDLE1BQU0sQ0FBQyxDQUFDLENBQUMsQ0FBQztpQkFDekI7cUJBQ0ksSUFBRyxDQUFDLEtBQUssR0FBRyxFQUNqQjtvQkFDSSxLQUFLLEdBQUcsQ0FBQyxDQUFDO29CQUNWLFNBQVM7aUJBQ1o7Z0JBQ0QsS0FBSyxJQUFJLENBQUMsQ0FBQzthQUNkO1NBQ0o7UUFDRCxPQUFPLENBQUMsSUFBSSxDQUFDLEtBQUssQ0FBQyxDQUFDO1FBQ3BCLFFBQVEsQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDLENBQUM7UUFDdkIsT0FBTyxRQUFRLENBQUM7SUFDcEIsQ0FBQztJQUNNLE1BQU0sQ0FBQyxhQUFhLENBQUMsSUFBYTtRQUVyQyxJQUFJLFNBQVMsR0FBRyx1QkFBUyxDQUFDLElBQUksQ0FBWSxJQUFJLENBQUMsQ0FBQztRQUNoRCxPQUFPLElBQUksQ0FBQyxLQUFLLENBQUMsU0FBUyxDQUFDLElBQUksQ0FBQyxDQUFDO0lBQ3RDLENBQUM7O0FBcEVMLDRCQXFFQztBQW5FaUIsc0JBQVksR0FDMUI7SUFDSSxFQUFFO0NBQ0wsQ0FBQyJ9","assetPath":"Assets/Scripts/CsvParser.ts","manifest":{"properties":[],"name":"CsvParser","description":""},"isCompiled":true}'
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/CsvParser.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
   typescriptHash: 5614f62df678b7c90cf954302306ee19

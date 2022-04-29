@@ -30,6 +30,10 @@ export default class ItemData {
                             info.m_Desc = tokenValue;
                         else if(col === "Prefab")
                             info.m_Prefab = tokenValue;
+                        else if(col === "UseItem")
+                            info.m_UseItem = JSON.parse(tokenValue.toLowerCase());
+                        else if(col === "Disposable")
+                            info.m_Disposable = JSON.parse(tokenValue.toLowerCase());
                     });
                     this.m_ItemMap.set(info.m_Key,info);
                 }
@@ -46,4 +50,6 @@ export class ItemInfo
     public m_Icon : string;
     public m_Desc : string;
     public m_Prefab : string;
+    public m_UseItem : boolean;
+    public m_Disposable: boolean;
 }

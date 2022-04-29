@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: bf555ff7c6115b6489e439f48efa3562
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst Finder_1 = require(\"./Finder\");\r\nconst Interactable_1
+    = require(\"./Interactable\");\r\nclass SetInteractable {\r\n    static Set(objName,
+    bEnable) {\r\n        Finder_1.default.Find(objName).GetComponent($typeof(Interactable_1.default)).m_Value
+    = bEnable;\r\n    }\r\n    static SetArray(objName, bEnable) {\r\n        objName.forEach(v
+    => this.Set(v, bEnable));\r\n    }\r\n}\r\nexports.default = SetInteractable;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2V0SW50ZXJhY3RhYmxlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiU2V0SW50ZXJhY3RhYmxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0EscUNBQThCO0FBQzlCLGlEQUEwQztBQUUxQyxNQUFxQixlQUFlO0lBQ3pCLE1BQU0sQ0FBQyxHQUFHLENBQUMsT0FBZSxFQUFFLE9BQWlCO1FBRWhELGdCQUFNLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQyxDQUFDLFlBQVksU0FBQyxzQkFBWSxHQUFJLE9BQU8sR0FBRyxPQUFPLENBQUM7SUFDeEUsQ0FBQztJQUNNLE1BQU0sQ0FBQyxRQUFRLENBQUMsT0FBa0IsRUFBRSxPQUFpQjtRQUV4RCxPQUFPLENBQUMsT0FBTyxDQUFDLENBQUMsQ0FBQSxFQUFFLENBQUEsSUFBSSxDQUFDLEdBQUcsQ0FBQyxDQUFDLEVBQUMsT0FBTyxDQUFDLENBQUMsQ0FBQztJQUM1QyxDQUFDO0NBQ0o7QUFURCxrQ0FTQyJ9","assetPath":"Assets/Scripts/SetInteractable.ts","manifest":{"properties":[],"name":"SetInteractable","description":""},"isCompiled":true}'
+  typescriptHash: 4e644bab4527c76d7f4dd127c14964cc

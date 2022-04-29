@@ -18,9 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
-    UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nclass ButtonEvent {\r\n   
-    static Add(owner, onClickEvent) {\r\n        owner.GetComponent($typeof(UnityEngine_UI_1.Button)).onClick.AddListener(onClickEvent);\r\n   
-    }\r\n}\r\nexports.default = ButtonEvent;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQnV0dG9uRXZlbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJCdXR0b25FdmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUF5QztBQUV6QyxtREFBd0M7QUFHeEMsTUFBcUIsV0FBVztJQUNyQixNQUFNLENBQUMsR0FBRyxDQUFDLEtBQWtCLEVBQUUsWUFBMEI7UUFFNUQsS0FBSyxDQUFDLFlBQVksU0FBQyx1QkFBTSxHQUFJLE9BQU8sQ0FBQyxXQUFXLENBQUMsWUFBWSxDQUFDLENBQUM7SUFDbkUsQ0FBQztDQUNKO0FBTEQsOEJBS0MifQ==","assetPath":"Assets/Scripts/ButtonEvent.ts","manifest":{"properties":[],"name":"ButtonEvent","description":""},"isCompiled":true}'
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/ButtonEvent.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
   typescriptHash: 6b9a88a50f59e5702a1dc1ccdba26ad7

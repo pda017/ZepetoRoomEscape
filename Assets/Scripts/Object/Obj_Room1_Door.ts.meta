@@ -18,25 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
-    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst CheckAniEnd_1 = require(\"../CheckAniEnd\");\r\nconst
-    CheckEquipedItem_1 = require(\"../CheckEquipedItem\");\r\nconst InventoryData_1
-    = require(\"../Data/InventoryData\");\r\nconst Interactable_1 = require(\"../Interactable\");\r\nconst
-    IsOn_1 = require(\"../IsOn\");\r\nconst RemoveInvenItem_1 = require(\"../RemoveInvenItem\");\r\nclass
-    Obj_Room1_Door extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
-    {\r\n        super(...arguments);\r\n        this.m_NumState = 0;\r\n    }\r\n   
-    Start() {\r\n        this.m_Interactable = this.GetComponent($typeof(Interactable_1.default));\r\n       
-    this.m_CheckAniEnd = new CheckAniEnd_1.default(this.gameObject, true);\r\n       
-    this.m_Anim = this.GetComponentInParent($typeof(UnityEngine_1.Animator));\r\n       
-    this.m_IsOn = this.GetComponent($typeof(IsOn_1.default));\r\n    }\r\n    Update()
-    {\r\n        if (this.m_NumState === 0) {\r\n            if (this.m_IsOn.m_Value)
-    {\r\n                if (CheckEquipedItem_1.default.Check(\"ROOM1_Key\")) {\r\n                   
-    RemoveInvenItem_1.default.RemoveByIndex(InventoryData_1.default.m_EquipedIndex);\r\n                   
-    this.m_Anim.Play(\"Open\", 0, 0);\r\n                    this.m_Interactable.m_Value
-    = false;\r\n                    this.m_Interactable.m_Dirty = UnityEngine_1.Time.time;\r\n                   
-    this.m_NumState++;\r\n                }\r\n                else {\r\n                   
-    this.m_IsOn.m_Value = false;\r\n                    this.m_IsOn.m_Dirty = UnityEngine_1.Time.time;\r\n               
-    }\r\n            }\r\n        }\r\n    }\r\n}\r\nexports.default = Obj_Room1_Door;\r\n//#
-    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiT2JqX1Jvb20xX0Rvb3IuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJPYmpfUm9vbTFfRG9vci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUE2QztBQUM3QyxpREFBcUQ7QUFDckQsZ0RBQXlDO0FBQ3pDLDBEQUFtRDtBQUNuRCx5REFBa0Q7QUFDbEQsa0RBQTJDO0FBQzNDLGtDQUEyQjtBQUMzQix3REFBaUQ7QUFFakQsTUFBcUIsY0FBZSxTQUFRLHFDQUFxQjtJQUFqRTs7UUFHSSxlQUFVLEdBQVcsQ0FBQyxDQUFDO0lBK0IzQixDQUFDO0lBNUJHLEtBQUs7UUFDRCxJQUFJLENBQUMsY0FBYyxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMsc0JBQVksRUFBRyxDQUFDO1FBQ3hELElBQUksQ0FBQyxhQUFhLEdBQUcsSUFBSSxxQkFBVyxDQUFDLElBQUksQ0FBQyxVQUFVLEVBQUMsSUFBSSxDQUFDLENBQUM7UUFDM0QsSUFBSSxDQUFDLE1BQU0sR0FBRyxJQUFJLENBQUMsb0JBQW9CLFNBQUMsc0JBQVEsRUFBRyxDQUFDO1FBQ3BELElBQUksQ0FBQyxNQUFNLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQyxjQUFJLEVBQUcsQ0FBQztJQUM1QyxDQUFDO0lBQ0QsTUFBTTtRQUVGLElBQUcsSUFBSSxDQUFDLFVBQVUsS0FBSyxDQUFDLEVBQ3hCO1lBQ0ksSUFBRyxJQUFJLENBQUMsTUFBTSxDQUFDLE9BQU8sRUFDdEI7Z0JBQ0ksSUFBRywwQkFBZ0IsQ0FBQyxLQUFLLENBQUMsV0FBVyxDQUFDLEVBQ3RDO29CQUNJLHlCQUFlLENBQUMsYUFBYSxDQUFDLHVCQUFhLENBQUMsY0FBYyxDQUFDLENBQUM7b0JBQzVELElBQUksQ0FBQyxNQUFNLENBQUMsSUFBSSxDQUFDLE1BQU0sRUFBQyxDQUFDLEVBQUMsQ0FBQyxDQUFDLENBQUM7b0JBQzdCLElBQUksQ0FBQyxjQUFjLENBQUMsT0FBTyxHQUFHLEtBQUssQ0FBQztvQkFDcEMsSUFBSSxDQUFDLGNBQWMsQ0FBQyxPQUFPLEdBQUcsa0JBQUksQ0FBQyxJQUFJLENBQUM7b0JBQ3hDLElBQUksQ0FBQyxVQUFVLEVBQUUsQ0FBQztpQkFDckI7cUJBRUQ7b0JBQ0ksSUFBSSxDQUFDLE1BQU0sQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDO29CQUM1QixJQUFJLENBQUMsTUFBTSxDQUFDLE9BQU8sR0FBRyxrQkFBSSxDQUFDLElBQUksQ0FBQztpQkFDbkM7YUFDSjtTQUNKO0lBQ0wsQ0FBQztDQUNKO0FBbENELGlDQWtDQyJ9","assetPath":"Assets/Scripts/Object/Obj_Room1_Door.ts","manifest":{"properties":[{"assembly":"","name":"m_IsOn","type":"F:/ZepetoRoomEscape/Assets/Scripts/IsOn.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.AnimationModule","name":"m_Anim","type":"UnityEngine.Animator","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_NumState","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_CheckAniEnd","type":"F:/ZepetoRoomEscape/Assets/Scripts/CheckAniEnd.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_Interactable","type":"F:/ZepetoRoomEscape/Assets/Scripts/Interactable.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Obj_Room1_Door","description":""},"isCompiled":true}'
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/Object/Obj_Room1_Door.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
   typescriptHash: 0032c14c92009c1a0a1dd427008dae42

@@ -18,7 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nclass Data_Int {\r\n    constructor(value) {\r\n       
-    this.m_Value = value;\r\n    }\r\n}\r\nexports.default = Data_Int;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGF0YV9JbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJEYXRhX0ludC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUVBLE1BQXFCLFFBQVE7SUFFekIsWUFBWSxLQUFjO1FBRXRCLElBQUksQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDO0lBQ3pCLENBQUM7Q0FDSjtBQU5ELDJCQU1DIn0=","assetPath":"Assets/Scripts/DataType/Data_Int.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Value","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Data_Int","description":""},"isCompiled":true}'
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/DataType/Data_Int.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
   typescriptHash: e01128c32306c6ec14adfcc804198de1

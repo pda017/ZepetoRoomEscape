@@ -18,12 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nclass
-    WaitTime {\r\n    constructor() {\r\n        this.m_Stamp = 0;\r\n    }\r\n   
-    Start() {\r\n        this.m_Stamp = UnityEngine_1.Time.time;\r\n    }\r\n   
-    End(time) {\r\n        if (UnityEngine_1.Time.time - this.m_Stamp > time) {\r\n           
-    this.m_Stamp = UnityEngine_1.Time.time;\r\n            return true;\r\n       
-    }\r\n        return false;\r\n    }\r\n}\r\nexports.default = WaitTime;\r\n//#
-    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiV2FpdFRpbWUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJXYWl0VGltZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFtQztBQUduQyxNQUFxQixRQUFRO0lBQTdCO1FBQ0ksWUFBTyxHQUFZLENBQUMsQ0FBQztJQWN6QixDQUFDO0lBYlUsS0FBSztRQUVSLElBQUksQ0FBQyxPQUFPLEdBQUcsa0JBQUksQ0FBQyxJQUFJLENBQUM7SUFDN0IsQ0FBQztJQUNNLEdBQUcsQ0FBQyxJQUFhO1FBRXBCLElBQUcsa0JBQUksQ0FBQyxJQUFJLEdBQUcsSUFBSSxDQUFDLE9BQU8sR0FBRyxJQUFJLEVBQ2xDO1lBQ0ksSUFBSSxDQUFDLE9BQU8sR0FBRyxrQkFBSSxDQUFDLElBQUksQ0FBQztZQUN6QixPQUFPLElBQUksQ0FBQztTQUNmO1FBQ0QsT0FBTyxLQUFLLENBQUM7SUFDakIsQ0FBQztDQUNKO0FBZkQsMkJBZUMifQ==","assetPath":"Assets/Scripts/WaitTime.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Stamp","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"WaitTime","description":""},"isCompiled":true}'
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/WaitTime.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
   typescriptHash: 06bdb0e011ceee94b919b0d1575ab2c6

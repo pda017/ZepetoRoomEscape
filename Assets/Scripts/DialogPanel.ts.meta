@@ -18,11 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
-    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst DialogData_1 = require(\"./Data/DialogData\");\r\nclass
-    DialogPanel extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n       
-    this.m_Canvas = this.GetComponent($typeof(UnityEngine_1.Canvas));\r\n    }\r\n   
-    Update() {\r\n        this.m_Canvas.enabled = DialogData_1.default.m_DialogPlaying;\r\n   
-    }\r\n}\r\nexports.default = DialogPanel;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGlhbG9nUGFuZWwuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJEaWFsb2dQYW5lbC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFvQztBQUNwQyxpREFBcUQ7QUFDckQsa0RBQTJDO0FBRTNDLE1BQXFCLFdBQVksU0FBUSxxQ0FBcUI7SUFFMUQsS0FBSztRQUNELElBQUksQ0FBQyxRQUFRLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQyxvQkFBTSxFQUFHLENBQUM7SUFDaEQsQ0FBQztJQUNELE1BQU07UUFFRixJQUFJLENBQUMsUUFBUSxDQUFDLE9BQU8sR0FBRyxvQkFBVSxDQUFDLGVBQWUsQ0FBQztJQUN2RCxDQUFDO0NBQ0o7QUFURCw4QkFTQyJ9","assetPath":"Assets/Scripts/DialogPanel.ts","manifest":{"properties":[{"assembly":"UnityEngine.UIModule","name":"m_Canvas","type":"UnityEngine.Canvas","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"DialogPanel","description":""},"isCompiled":true}'
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/DialogPanel.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
   typescriptHash: 29b38d37d23d593e9091f1c6dc36bfbb
