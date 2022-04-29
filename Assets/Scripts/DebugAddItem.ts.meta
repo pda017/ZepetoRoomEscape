@@ -18,11 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
-    AddItemToInventory_1 = require(\"./AddItemToInventory\");\r\nclass DebugAddItem
-    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor() {\r\n       
-    super(...arguments);\r\n        this.m_Value = [];\r\n    }\r\n    Start() {\r\n       
-    this.m_Value.forEach(value => {\r\n            AddItemToInventory_1.default.Add(value);\r\n       
-    });\r\n    }\r\n}\r\nexports.default = DebugAddItem;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGVidWdBZGRJdGVtLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiRGVidWdBZGRJdGVtLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQXFEO0FBQ3JELDZEQUFzRDtBQUV0RCxNQUFxQixZQUFhLFNBQVEscUNBQXFCO0lBQS9EOztRQUNXLFlBQU8sR0FBYyxFQUFFLENBQUM7SUFRbkMsQ0FBQztJQVBHLEtBQUs7UUFDRCxJQUFJLENBQUMsT0FBTyxDQUFDLE9BQU8sQ0FBQyxLQUFLLENBQUEsRUFBRTtZQUVwQiw0QkFBa0IsQ0FBQyxHQUFHLENBQUMsS0FBSyxDQUFDLENBQUM7UUFDbEMsQ0FBQyxDQUFDLENBQUM7SUFDWCxDQUFDO0NBRUo7QUFURCwrQkFTQyJ9","assetPath":"Assets/Scripts/DebugAddItem.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Value","type":"System.String[]","isArray":true,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"DebugAddItem","description":""},"isCompiled":true}'
-  typescriptHash: 3098964edbfe2e5160f59c206ffc693c
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/DebugAddItem.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
+  typescriptHash: a63997825182f76d417db3a092400a8f

@@ -18,13 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst StartPointData_1 = require(\"../Data/StartPointData\");\r\nconst
-    DialogData_1 = require(\"./DialogData\");\r\nconst DoorLockData_1 = require(\"./DoorLockData\");\r\nconst
-    InventoryData_1 = require(\"./InventoryData\");\r\nconst KeyInputData_1 = require(\"./KeyInputData\");\r\nconst
-    SelectObjData_1 = require(\"./SelectObjData\");\r\nclass InitData {\r\n    static
-    Init() {\r\n        StartPointData_1.default.Init();\r\n        InventoryData_1.default.Init();\r\n       
-    SelectObjData_1.default.Init();\r\n        KeyInputData_1.default.Init();\r\n       
-    DialogData_1.default.Init();\r\n        DoorLockData_1.default.Init();\r\n   
-    }\r\n}\r\nexports.default = InitData;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5pdERhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJJbml0RGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLDJEQUFtRDtBQUNuRCw2Q0FBc0M7QUFDdEMsaURBQTBDO0FBQzFDLG1EQUE0QztBQUM1QyxpREFBMEM7QUFDMUMsbURBQTRDO0FBRTVDLE1BQXFCLFFBQVE7SUFDbEIsTUFBTSxDQUFDLElBQUk7UUFFZCx3QkFBYyxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ3RCLHVCQUFhLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDckIsdUJBQWEsQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUNyQixzQkFBWSxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ3BCLG9CQUFVLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDbEIsc0JBQVksQ0FBQyxJQUFJLEVBQUUsQ0FBQztJQUN4QixDQUFDO0NBQ0o7QUFWRCwyQkFVQyJ9","assetPath":"Assets/Scripts/Data/InitData.ts","manifest":{"properties":[],"name":"InitData","description":""},"isCompiled":true}'
-  typescriptHash: 0cddde84306a28f84b8efa806e5e4fb5
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/Data/InitData.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
+  typescriptHash: 5a12157da75136c7d06f71206b1d4da7

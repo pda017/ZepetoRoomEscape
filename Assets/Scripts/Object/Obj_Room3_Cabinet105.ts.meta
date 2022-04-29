@@ -19,4 +19,4 @@ ScriptedImporter:
   WrapperFilters: []
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"","assetPath":"Assets/Scripts/Object/Obj_Room3_Cabinet105.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 18c6bc71789d67607b77643d28f9c716
+  typescriptHash: 207032d9136a670a3e64ede5901e33d2

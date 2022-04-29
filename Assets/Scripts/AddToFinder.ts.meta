@@ -18,9 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
-    Finder_1 = require(\"./Finder\");\r\nclass AddToFinder extends ZEPETO_Script_1.ZepetoScriptBehaviour
-    {\r\n    Awake() {\r\n        Finder_1.default.Add(this.gameObject);\r\n    }\r\n}\r\nexports.default
-    = AddToFinder;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQWRkVG9GaW5kZXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJBZGRUb0ZpbmRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUNyRCxxQ0FBNkI7QUFFN0IsTUFBcUIsV0FBWSxTQUFRLHFDQUFxQjtJQUMxRCxLQUFLO1FBRUQsZ0JBQU0sQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLFVBQVUsQ0FBQyxDQUFDO0lBQ2hDLENBQUM7Q0FDSjtBQUxELDhCQUtDIn0=","assetPath":"Assets/Scripts/AddToFinder.ts","manifest":{"properties":[],"name":"AddToFinder","description":""},"isCompiled":true}'
-  typescriptHash: 149e05f8c26e92693c6d58beaaae1980
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/AddToFinder.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
+  typescriptHash: d806ba1905e2c210f445c0f96478ea24

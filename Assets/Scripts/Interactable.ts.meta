@@ -18,8 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
-    Interactable extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n}\r\nexports.default
-    = Interactable;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW50ZXJhY3RhYmxlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiSW50ZXJhY3RhYmxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQXFEO0FBRXJELE1BQXFCLFlBQWEsU0FBUSxxQ0FBcUI7Q0FHOUQ7QUFIRCwrQkFHQyJ9","assetPath":"Assets/Scripts/Interactable.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Value","type":"System.Boolean","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Interactable","description":""},"isCompiled":true}'
-  typescriptHash: 609525d516317147fb12fa234a704954
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/Interactable.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
+  typescriptHash: 9b561851e0df18710f1da490e7890765
