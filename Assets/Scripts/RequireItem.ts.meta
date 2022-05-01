@@ -22,4 +22,4 @@ ScriptedImporter:
     { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
     RequireItem extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n}\r\nexports.default
     = RequireItem;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVxdWlyZUl0ZW0uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJSZXF1aXJlSXRlbS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUVyRCxNQUFxQixXQUFZLFNBQVEscUNBQXFCO0NBRzdEO0FBSEQsOEJBR0MifQ==","assetPath":"Assets/Scripts/RequireItem.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Value","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"RequireItem","description":""},"isCompiled":true}'
-  typescriptHash: b0d935024078dedbe65129aad2c6364e
+  typescriptHash: 408120becee9fc57ee9fb541158124ad
