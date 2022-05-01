@@ -23,4 +23,4 @@ ScriptedImporter:
     GetItemData {\r\n    static Get(itemKey) {\r\n        var itemMap = ItemData_1.default.GetItemMap();\r\n       
     return itemMap.get(itemKey);\r\n    }\r\n}\r\nexports.default = GetItemData;\r\n//#
     sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2V0SXRlbURhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJHZXRJdGVtRGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLDhDQUFxRDtBQUVyRCxNQUFxQixXQUFXO0lBQ3JCLE1BQU0sQ0FBQyxHQUFHLENBQUMsT0FBZ0I7UUFFOUIsSUFBSSxPQUFPLEdBQUcsa0JBQVEsQ0FBQyxVQUFVLEVBQUUsQ0FBQztRQUNwQyxPQUFPLE9BQU8sQ0FBQyxHQUFHLENBQUMsT0FBTyxDQUFDLENBQUM7SUFDaEMsQ0FBQztDQUNKO0FBTkQsOEJBTUMifQ==","assetPath":"Assets/Scripts/GetItemData.ts","manifest":{"properties":[],"name":"GetItemData","description":""},"isCompiled":true}'
-  typescriptHash: ea10edfdbbc911d588cee10b388df0fc
+  typescriptHash: 763365983c5651dea6b4c4da21ffaec9

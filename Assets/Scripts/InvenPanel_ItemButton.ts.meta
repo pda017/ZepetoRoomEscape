@@ -18,25 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nconst
-    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst ButtonEvent_1 = require(\"./ButtonEvent\");\r\nconst
-    CombineItem_1 = require(\"./CombineItem\");\r\nconst InventoryData_1 = require(\"./Data/InventoryData\");\r\nconst
-    IndexTag_1 = require(\"./IndexTag\");\r\nconst InvenListChanged_1 = require(\"./InvenListChanged\");\r\nconst
-    InvenSelectIndexChanged_1 = require(\"./InvenSelectIndexChanged\");\r\nconst
-    SelectInvenItem_1 = require(\"./SelectInvenItem\");\r\nclass InvenPanel_ItemButton
-    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor() {\r\n       
-    super(...arguments);\r\n        this.m_InvenSelectIndexChanged = new InvenSelectIndexChanged_1.default();\r\n       
-    this.m_InvenListChanged = new InvenListChanged_1.default();\r\n    }\r\n    Start()
-    {\r\n        this.m_Outline = this.GetComponent($typeof(UnityEngine_UI_1.Outline));\r\n       
-    this.m_IndexTf = this.GetComponentInParent($typeof(IndexTag_1.default)).transform;\r\n       
-    ButtonEvent_1.default.Add(this.gameObject, () => {\r\n            if (InventoryData_1.default.m_CombineMode)\r\n               
-    CombineItem_1.default.Combine(this.m_IndexTf.GetSiblingIndex());\r\n           
-    else\r\n                SelectInvenItem_1.default.Select(this.m_IndexTf.GetSiblingIndex());\r\n       
-    });\r\n    }\r\n    Update() {\r\n        if (this.m_InvenSelectIndexChanged.Check()
-    || this.m_InvenListChanged.Check()) {\r\n            var index = this.m_IndexTf.GetSiblingIndex();\r\n           
-    if (index === InventoryData_1.default.m_SelectIndex && InventoryData_1.default.m_SelectIndex
-    < InventoryData_1.default.m_InvenList.length)\r\n                this.m_Outline.enabled
-    = true;\r\n            else\r\n                this.m_Outline.enabled = false;\r\n       
-    }\r\n    }\r\n}\r\nexports.default = InvenPanel_ItemButton;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW52ZW5QYW5lbF9JdGVtQnV0dG9uLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiSW52ZW5QYW5lbF9JdGVtQnV0dG9uLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0EsbURBQXlDO0FBQ3pDLGlEQUFxRDtBQUNyRCwrQ0FBdUM7QUFDdkMsK0NBQXdDO0FBQ3hDLHdEQUFpRDtBQUNqRCx5Q0FBa0M7QUFDbEMseURBQWtEO0FBQ2xELHVFQUFnRTtBQUNoRSx1REFBZ0Q7QUFFaEQsTUFBcUIscUJBQXNCLFNBQVEscUNBQXFCO0lBQXhFOztRQUdJLDhCQUF5QixHQUE2QixJQUFJLGlDQUF1QixFQUFFLENBQUM7UUFDcEYsdUJBQWtCLEdBQXNCLElBQUksMEJBQWdCLEVBQUUsQ0FBQztJQXVCbkUsQ0FBQztJQXRCRyxLQUFLO1FBQ0QsSUFBSSxDQUFDLFNBQVMsR0FBRyxJQUFJLENBQUMsWUFBWSxTQUFDLHdCQUFPLEVBQUcsQ0FBQztRQUM5QyxJQUFJLENBQUMsU0FBUyxHQUFHLElBQUksQ0FBQyxvQkFBb0IsU0FBQyxrQkFBUSxHQUFJLFNBQVMsQ0FBQztRQUNqRSxxQkFBVyxDQUFDLEdBQUcsQ0FBQyxJQUFJLENBQUMsVUFBVSxFQUFDLEdBQUUsRUFBRTtZQUVoQyxJQUFHLHVCQUFhLENBQUMsYUFBYTtnQkFDMUIscUJBQVcsQ0FBQyxPQUFPLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxlQUFlLEVBQUUsQ0FBQyxDQUFDOztnQkFFdEQseUJBQWUsQ0FBQyxNQUFNLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxlQUFlLEVBQUUsQ0FBQyxDQUFDO1FBQ2pFLENBQUMsQ0FBQyxDQUFDO0lBQ1AsQ0FBQztJQUNELE1BQU07UUFFRixJQUFHLElBQUksQ0FBQyx5QkFBeUIsQ0FBQyxLQUFLLEVBQUUsSUFBSSxJQUFJLENBQUMsa0JBQWtCLENBQUMsS0FBSyxFQUFFLEVBQzVFO1lBQ0ksSUFBSSxLQUFLLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQyxlQUFlLEVBQUUsQ0FBQztZQUM3QyxJQUFHLEtBQUssS0FBSyx1QkFBYSxDQUFDLGFBQWEsSUFBSSx1QkFBYSxDQUFDLGFBQWEsR0FBRyx1QkFBYSxDQUFDLFdBQVcsQ0FBQyxNQUFNO2dCQUN0RyxJQUFJLENBQUMsU0FBUyxDQUFDLE9BQU8sR0FBRyxJQUFJLENBQUM7O2dCQUU5QixJQUFJLENBQUMsU0FBUyxDQUFDLE9BQU8sR0FBRyxLQUFLLENBQUM7U0FDdEM7SUFDTCxDQUFDO0NBQ0o7QUEzQkQsd0NBMkJDIn0=","assetPath":"Assets/Scripts/InvenPanel_ItemButton.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"m_IndexTf","type":"UnityEngine.Transform","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"m_Outline","type":"UnityEngine.UI.Outline","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_InvenSelectIndexChanged","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/InvenSelectIndexChanged.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_InvenListChanged","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/InvenListChanged.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"InvenPanel_ItemButton","description":""},"isCompiled":true}'
-  typescriptHash: b26a87ea026ffaede408bca8b11d710f
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/InvenPanel_ItemButton.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
+  typescriptHash: b311a57bc445873f608c0df812308de0

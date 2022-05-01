@@ -18,8 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nclass DoorLockData {\r\n    static Init() {\r\n        this.m_InputDone
-    = false;\r\n        this.m_Password = \"\";\r\n    }\r\n}\r\nexports.default
-    = DoorLockData;\r\nDoorLockData.m_PasswordLimit = 6;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRG9vckxvY2tEYXRhLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiRG9vckxvY2tEYXRhLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUEsTUFBcUIsWUFBWTtJQUt0QixNQUFNLENBQUMsSUFBSTtRQUVkLElBQUksQ0FBQyxXQUFXLEdBQUcsS0FBSyxDQUFDO1FBQ3pCLElBQUksQ0FBQyxVQUFVLEdBQUcsRUFBRSxDQUFDO0lBQ3pCLENBQUM7O0FBVEwsK0JBVUM7QUFOaUIsNEJBQWUsR0FBWSxDQUFDLENBQUMifQ==","assetPath":"Assets/Scripts/Data/DoorLockData.ts","manifest":{"properties":[],"name":"DoorLockData","description":""},"isCompiled":true}'
-  typescriptHash: dc67db6ba6e360b26068f4ffbca33706
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/Data/DoorLockData.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
+  typescriptHash: ae33a8d9a392516d2b39994008367437

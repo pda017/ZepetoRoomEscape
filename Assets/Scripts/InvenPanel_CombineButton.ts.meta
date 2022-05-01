@@ -18,21 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
-    UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
-    ButtonEvent_1 = require(\"./ButtonEvent\");\r\nconst CheckInvenSelectIndexValid_1
-    = require(\"./CheckInvenSelectIndexValid\");\r\nconst CombineData_1 = require(\"./Data/CombineData\");\r\nconst
-    InventoryData_1 = require(\"./Data/InventoryData\");\r\nclass InvenPanel_CombineButton
-    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.m_Image
-    = this.GetComponent($typeof(UnityEngine_UI_1.Image));\r\n        this.m_OriColor
-    = this.m_Image.color;\r\n        ButtonEvent_1.default.Add(this.gameObject, ()
-    => {\r\n            InventoryData_1.default.m_CombineMode = !InventoryData_1.default.m_CombineMode;\r\n           
-    if (InventoryData_1.default.m_CombineMode && !CheckInvenSelectIndexValid_1.default.Check())\r\n               
-    InventoryData_1.default.m_CombineMode = false;\r\n            InventoryData_1.default.m_CombineModeDirty
-    = UnityEngine_1.Time.time;\r\n        });\r\n    }\r\n    Update() {\r\n       
-    if (InventoryData_1.default.m_CombineMode)\r\n            this.m_Image.color
-    = InvenPanel_CombineButton.m_CombineModeColor;\r\n        else\r\n           
-    this.m_Image.color = this.m_OriColor;\r\n    }\r\n}\r\nexports.default = InvenPanel_CombineButton;\r\nInvenPanel_CombineButton.m_CombineModeColor
-    = new UnityEngine_1.Color(1, 0, 0, 1);\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW52ZW5QYW5lbF9Db21iaW5lQnV0dG9uLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiSW52ZW5QYW5lbF9Db21iaW5lQnV0dG9uLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQTBDO0FBQzFDLG1EQUF1QztBQUN2QyxpREFBcUQ7QUFDckQsK0NBQXVDO0FBQ3ZDLDZFQUFzRTtBQUN0RSxvREFBNkM7QUFDN0Msd0RBQWlEO0FBRWpELE1BQXFCLHdCQUF5QixTQUFRLHFDQUFxQjtJQUl2RSxLQUFLO1FBQ0QsSUFBSSxDQUFDLE9BQU8sR0FBRyxJQUFJLENBQUMsWUFBWSxTQUFDLHNCQUFLLEVBQUcsQ0FBQztRQUMxQyxJQUFJLENBQUMsVUFBVSxHQUFHLElBQUksQ0FBQyxPQUFPLENBQUMsS0FBSyxDQUFDO1FBQ3JDLHFCQUFXLENBQUMsR0FBRyxDQUFDLElBQUksQ0FBQyxVQUFVLEVBQUMsR0FBRSxFQUFFO1lBRWhDLHVCQUFhLENBQUMsYUFBYSxHQUFHLENBQUMsdUJBQWEsQ0FBQyxhQUFhLENBQUM7WUFDM0QsSUFBRyx1QkFBYSxDQUFDLGFBQWEsSUFBSSxDQUFDLG9DQUEwQixDQUFDLEtBQUssRUFBRTtnQkFDakUsdUJBQWEsQ0FBQyxhQUFhLEdBQUcsS0FBSyxDQUFDO1lBQ3hDLHVCQUFhLENBQUMsa0JBQWtCLEdBQUcsa0JBQUksQ0FBQyxJQUFJLENBQUM7UUFDakQsQ0FBQyxDQUFDLENBQUM7SUFDUCxDQUFDO0lBQ0QsTUFBTTtRQUVGLElBQUcsdUJBQWEsQ0FBQyxhQUFhO1lBQzFCLElBQUksQ0FBQyxPQUFPLENBQUMsS0FBSyxHQUFHLHdCQUF3QixDQUFDLGtCQUFrQixDQUFDOztZQUVqRSxJQUFJLENBQUMsT0FBTyxDQUFDLEtBQUssR0FBRyxJQUFJLENBQUMsVUFBVSxDQUFDO0lBQzdDLENBQUM7O0FBckJMLDJDQXNCQztBQW5CVSwyQ0FBa0IsR0FBVyxJQUFJLG1CQUFLLENBQUMsQ0FBQyxFQUFDLENBQUMsRUFBQyxDQUFDLEVBQUMsQ0FBQyxDQUFDLENBQUMifQ==","assetPath":"Assets/Scripts/InvenPanel_CombineButton.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"m_Image","type":"UnityEngine.UI.Image","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"m_OriColor","type":"UnityEngine.Color","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"InvenPanel_CombineButton","description":""},"isCompiled":true}'
-  typescriptHash: c8c7273a51011ec5f4185498472b3332
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/InvenPanel_CombineButton.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
+  typescriptHash: 245bb4633e9d32cc1cf7a14e7774fb1b

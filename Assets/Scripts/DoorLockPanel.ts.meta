@@ -19,4 +19,4 @@ ScriptedImporter:
   WrapperFilters: []
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"","assetPath":"Assets/Scripts/DoorLockPanel.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 94c0a6cf2d9891ce90c153d199a8d5de
+  typescriptHash: ba84a71a30c09760b61fa81c65692d93

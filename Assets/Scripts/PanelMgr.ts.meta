@@ -18,16 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nclass
-    PanelMgr {\r\n    static Show(panelName, tagName = \"Panel\") {\r\n        var
-    canvas = this.GetPanel(panelName, tagName);\r\n        if (canvas !== null)\r\n           
-    canvas.enabled = true;\r\n    }\r\n    static Hide(panelName, tagName = \"Panel\")
-    {\r\n        var canvas = this.GetPanel(panelName, tagName);\r\n        if (canvas
-    !== null)\r\n            canvas.enabled = false;\r\n    }\r\n    static GetPanel(panelName,
-    tagName = \"Panel\") {\r\n        var objs = UnityEngine_1.GameObject.FindGameObjectsWithTag(tagName);\r\n       
-    for (let i = 0; i < objs.length; i++) {\r\n            var obj = objs[i];\r\n           
-    if (obj.name === panelName) {\r\n                return obj.GetComponent($typeof(UnityEngine_1.Canvas));\r\n           
-    }\r\n        }\r\n        return null;\r\n    }\r\n}\r\nexports.default = PanelMgr;\r\n//#
-    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGFuZWxNZ3IuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJQYW5lbE1nci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFnRDtBQUdoRCxNQUFxQixRQUFRO0lBRWxCLE1BQU0sQ0FBQyxJQUFJLENBQUMsU0FBa0IsRUFBRSxVQUFtQixPQUFPO1FBRTdELElBQUksTUFBTSxHQUFHLElBQUksQ0FBQyxRQUFRLENBQUMsU0FBUyxFQUFDLE9BQU8sQ0FBQyxDQUFDO1FBQzlDLElBQUcsTUFBTSxLQUFLLElBQUk7WUFDZCxNQUFNLENBQUMsT0FBTyxHQUFHLElBQUksQ0FBQztJQUM5QixDQUFDO0lBQ00sTUFBTSxDQUFDLElBQUksQ0FBQyxTQUFrQixFQUFFLFVBQW1CLE9BQU87UUFFN0QsSUFBSSxNQUFNLEdBQUcsSUFBSSxDQUFDLFFBQVEsQ0FBQyxTQUFTLEVBQUMsT0FBTyxDQUFDLENBQUM7UUFDOUMsSUFBRyxNQUFNLEtBQUssSUFBSTtZQUNkLE1BQU0sQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDO0lBQy9CLENBQUM7SUFDTSxNQUFNLENBQUMsUUFBUSxDQUFDLFNBQWtCLEVBQUUsVUFBbUIsT0FBTztRQUVqRSxJQUFJLElBQUksR0FBRyx3QkFBVSxDQUFDLHNCQUFzQixDQUFDLE9BQU8sQ0FBQyxDQUFDO1FBQ3RELEtBQUksSUFBSSxDQUFDLEdBQUcsQ0FBQyxFQUFDLENBQUMsR0FBQyxJQUFJLENBQUMsTUFBTSxFQUFDLENBQUMsRUFBRSxFQUMvQjtZQUNJLElBQUksR0FBRyxHQUFHLElBQUksQ0FBQyxDQUFDLENBQUMsQ0FBQztZQUNsQixJQUFHLEdBQUcsQ0FBQyxJQUFJLEtBQUssU0FBUyxFQUN6QjtnQkFDSSxPQUFPLEdBQUcsQ0FBQyxZQUFZLFNBQUMsb0JBQU0sR0FBSTthQUNyQztTQUNKO1FBQ0QsT0FBTyxJQUFJLENBQUM7SUFDaEIsQ0FBQztDQUNKO0FBM0JELDJCQTJCQyJ9","assetPath":"Assets/Scripts/PanelMgr.ts","manifest":{"properties":[],"name":"PanelMgr","description":""},"isCompiled":true}'
-  typescriptHash: 7a752e52db37048154f27f7a940ededf
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/PanelMgr.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
+  typescriptHash: 580bde5cc74968f9041911a716e90f90

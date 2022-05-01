@@ -18,15 +18,5 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
-    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst AddToFinder_1 = require(\"./AddToFinder\");\r\nclass
-    Finder extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor() {\r\n       
-    super(...arguments);\r\n        this.m_ObjMap = new Map();\r\n    }\r\n    static
-    GetInst() {\r\n        if (this.m_Inst == null)\r\n            this.m_Inst =
-    UnityEngine_1.GameObject.FindObjectOfType($typeof(Finder));\r\n        return
-    this.m_Inst;\r\n    }\r\n    static Add(obj) {\r\n        var inst = this.GetInst();\r\n       
-    inst.m_ObjMap.set(obj.name, obj);\r\n    }\r\n    static Find(objName) {\r\n       
-    return this.GetInst().m_ObjMap.get(objName);\r\n    }\r\n}\r\nexports.default
-    = Finder;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmluZGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiRmluZGVyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQXdDO0FBQ3hDLGlEQUFxRDtBQUNyRCwrQ0FBd0M7QUFFeEMsTUFBcUIsTUFBTyxTQUFRLHFDQUFxQjtJQUF6RDs7UUFDVyxhQUFRLEdBQTRCLElBQUksR0FBRyxFQUFxQixDQUFDO0lBaUI1RSxDQUFDO0lBZlUsTUFBTSxDQUFDLE9BQU87UUFFakIsSUFBRyxJQUFJLENBQUMsTUFBTSxJQUFJLElBQUk7WUFDbEIsSUFBSSxDQUFDLE1BQU0sR0FBRyx3QkFBVSxDQUFDLGdCQUFnQixTQUFDLE1BQU0sRUFBRyxDQUFDO1FBQ3hELE9BQU8sSUFBSSxDQUFDLE1BQU0sQ0FBQztJQUN2QixDQUFDO0lBQ00sTUFBTSxDQUFDLEdBQUcsQ0FBQyxHQUFnQjtRQUU5QixJQUFJLElBQUksR0FBRyxJQUFJLENBQUMsT0FBTyxFQUFFLENBQUM7UUFDMUIsSUFBSSxDQUFDLFFBQVEsQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFDLElBQUksRUFBQyxHQUFHLENBQUMsQ0FBQztJQUNwQyxDQUFDO0lBQ00sTUFBTSxDQUFDLElBQUksQ0FBQyxPQUFnQjtRQUUvQixPQUFPLElBQUksQ0FBQyxPQUFPLEVBQUUsQ0FBQyxRQUFRLENBQUMsR0FBRyxDQUFDLE9BQU8sQ0FBQyxDQUFDO0lBQ2hELENBQUM7Q0FDSjtBQWxCRCx5QkFrQkMifQ==","assetPath":"Assets/Scripts/Finder.ts","manifest":{"properties":[{"assembly":"","name":"m_ObjMap","type":"Map","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Finder","description":""},"isCompiled":true}'
-  typescriptHash: b0ff17f0c36c0a617df9dad5b9c39c2d
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/Finder.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
+  typescriptHash: d0095dc9493770bd28ed634b11deacfb

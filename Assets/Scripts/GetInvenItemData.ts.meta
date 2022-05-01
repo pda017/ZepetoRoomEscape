@@ -26,4 +26,4 @@ ScriptedImporter:
     var itemData = GetItemData_1.default.Get(itemKey);\r\n            return itemData;\r\n       
     }\r\n        return null;\r\n    }\r\n}\r\nexports.default = GetInvenItemData;\r\n//#
     sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2V0SW52ZW5JdGVtRGF0YS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkdldEludmVuSXRlbURhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSx3REFBaUQ7QUFFakQsK0NBQXdDO0FBRXhDLE1BQXFCLGdCQUFnQjtJQUMxQixNQUFNLENBQUMsR0FBRyxDQUFDLEtBQWM7UUFFNUIsSUFBRyxLQUFLLElBQUksQ0FBQyxJQUFJLEtBQUssR0FBRyx1QkFBYSxDQUFDLFdBQVcsQ0FBQyxNQUFNLEVBQ3pEO1lBQ0ksSUFBSSxPQUFPLEdBQUcsdUJBQWEsQ0FBQyxXQUFXLENBQUMsS0FBSyxDQUFDLENBQUM7WUFDL0MsSUFBSSxRQUFRLEdBQUcscUJBQVcsQ0FBQyxHQUFHLENBQUMsT0FBTyxDQUFDLENBQUM7WUFDeEMsT0FBTyxRQUFRLENBQUM7U0FDbkI7UUFDRCxPQUFPLElBQUksQ0FBQztJQUNoQixDQUFDO0NBQ0o7QUFYRCxtQ0FXQyJ9","assetPath":"Assets/Scripts/GetInvenItemData.ts","manifest":{"properties":[],"name":"GetInvenItemData","description":""},"isCompiled":true}'
-  typescriptHash: 5be3b174fa217383084df3ca4f3c940e
+  typescriptHash: d48ce5aa12fd82c2bc1f5f57e264e8d0
