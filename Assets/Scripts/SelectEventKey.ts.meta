@@ -18,5 +18,8 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/SelectEventKey.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 0d544b0b225ff925f2b5c348b97da82d
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    SelectEventKey extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n}\r\nexports.default
+    = SelectEventKey;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2VsZWN0RXZlbnRLZXkuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJTZWxlY3RFdmVudEtleS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUVyRCxNQUFxQixjQUFlLFNBQVEscUNBQXFCO0NBR2hFO0FBSEQsaUNBR0MifQ==","assetPath":"Assets/Scripts/SelectEventKey.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Value","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"SelectEventKey","description":""},"isCompiled":true}'
+  typescriptHash: 504d4201dee4df6b0e580efe47e378be

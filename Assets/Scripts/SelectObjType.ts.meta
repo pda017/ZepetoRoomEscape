@@ -18,5 +18,11 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/SelectObjType.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 616aa0b4e764a847c89a07bace097e97
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nexports.SelectObjEnum = void 0;\r\nconst ZEPETO_Script_1
+    = require(\"ZEPETO.Script\");\r\nclass SelectObjType extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n}\r\nexports.default = SelectObjType;\r\nvar SelectObjEnum;\r\n(function
+    (SelectObjEnum) {\r\n    SelectObjEnum[SelectObjEnum[\"Item\"] = 0] = \"Item\";\r\n   
+    SelectObjEnum[SelectObjEnum[\"Switch\"] = 1] = \"Switch\";\r\n})(SelectObjEnum
+    = exports.SelectObjEnum || (exports.SelectObjEnum = {}));\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2VsZWN0T2JqVHlwZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlNlbGVjdE9ialR5cGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsaURBQXFEO0FBRXJELE1BQXFCLGFBQWMsU0FBUSxxQ0FBcUI7Q0FHL0Q7QUFIRCxnQ0FHQztBQUVELElBQVksYUFJWDtBQUpELFdBQVksYUFBYTtJQUVyQixpREFBSSxDQUFBO0lBQ0oscURBQU0sQ0FBQTtBQUNWLENBQUMsRUFKVyxhQUFhLEdBQWIscUJBQWEsS0FBYixxQkFBYSxRQUl4QiJ9","assetPath":"Assets/Scripts/SelectObjType.ts","manifest":{"properties":[{"assembly":"","name":"m_Value","type":"SelectObjEnum","isArray":false,"enumKeys":["Item","Switch"],"enumValues":["0","1"],"attributes":[]},{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"SelectObjType","description":""},"isCompiled":true}'
+  typescriptHash: c66a403016ff5bef43570036517267f0

@@ -18,5 +18,11 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/MainPanel_InvenButton.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 58265830e36f8da5c41a6e067aeb810c
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ButtonEvent_1 = require(\"./ButtonEvent\");\r\nconst PanelMgr_1 = require(\"./PanelMgr\");\r\nclass
+    MainPanel_InvenButton extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n   
+    Start() {\r\n        ButtonEvent_1.default.Add(this.gameObject, () => {\r\n           
+    PanelMgr_1.default.Show(\"InvenPanel\");\r\n        });\r\n    }\r\n}\r\nexports.default
+    = MainPanel_InvenButton;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWFpblBhbmVsX0ludmVuQnV0dG9uLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiTWFpblBhbmVsX0ludmVuQnV0dG9uLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQXFEO0FBQ3JELCtDQUF1QztBQUN2Qyx5Q0FBa0M7QUFFbEMsTUFBcUIscUJBQXNCLFNBQVEscUNBQXFCO0lBRXBFLEtBQUs7UUFFRCxxQkFBVyxDQUFDLEdBQUcsQ0FBQyxJQUFJLENBQUMsVUFBVSxFQUFDLEdBQUUsRUFBRTtZQUVoQyxrQkFBUSxDQUFDLElBQUksQ0FBQyxZQUFZLENBQUMsQ0FBQztRQUNoQyxDQUFDLENBQUMsQ0FBQztJQUNQLENBQUM7Q0FFSjtBQVZELHdDQVVDIn0=","assetPath":"Assets/Scripts/MainPanel_InvenButton.ts","manifest":{"properties":[],"name":"MainPanel_InvenButton","description":""},"isCompiled":true}'
+  typescriptHash: d6d91e263b0961f78896edc667cf6071

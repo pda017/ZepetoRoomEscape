@@ -18,5 +18,9 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/DisableColliderOnStart.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 6b67ecbd2f94c052a32ccbac182da484
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass DisableColliderOnStart
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.GetComponent($typeof(UnityEngine_1.Collider)).enabled
+    = false;\r\n    }\r\n}\r\nexports.default = DisableColliderOnStart;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGlzYWJsZUNvbGxpZGVyT25TdGFydC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkRpc2FibGVDb2xsaWRlck9uU3RhcnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBc0M7QUFDdEMsaURBQXFEO0FBRXJELE1BQXFCLHNCQUF1QixTQUFRLHFDQUFxQjtJQUVyRSxLQUFLO1FBQ0QsSUFBSSxDQUFDLFlBQVksU0FBQyxzQkFBUSxHQUFJLE9BQU8sR0FBRyxLQUFLLENBQUM7SUFDbEQsQ0FBQztDQUVKO0FBTkQseUNBTUMifQ==","assetPath":"Assets/Scripts/DisableColliderOnStart.ts","manifest":{"properties":[],"name":"DisableColliderOnStart","description":""},"isCompiled":true}'
+  typescriptHash: b3b8bedd11889d6f6d8d5f4a532afdb9

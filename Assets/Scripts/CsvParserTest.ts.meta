@@ -18,5 +18,13 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/CsvParserTest.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 47ba8f258d2a001e9dff92f73b6679b9
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    CsvParser_1 = require(\"./CsvParser\");\r\nclass CsvParserTest extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n        var table = CsvParser_1.default.LoadTextAsset(\"Test\");\r\n       
+    console.log(table.length);\r\n        table.forEach(lineValue => {\r\n           
+    console.log(\"##LineStart\");\r\n            lineValue.forEach(tokenValue =>
+    {\r\n                console.log(tokenValue);\r\n            });\r\n           
+    console.log(\"##LineEnd\");\r\n        });\r\n    }\r\n}\r\nexports.default =
+    CsvParserTest;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ3N2UGFyc2VyVGVzdC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkNzdlBhcnNlclRlc3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsMkNBQW1DO0FBRW5DLE1BQXFCLGFBQWMsU0FBUSxxQ0FBcUI7SUFFNUQsS0FBSztRQUNELElBQUksS0FBSyxHQUFHLG1CQUFTLENBQUMsYUFBYSxDQUFDLE1BQU0sQ0FBQyxDQUFDO1FBQzVDLE9BQU8sQ0FBQyxHQUFHLENBQUMsS0FBSyxDQUFDLE1BQU0sQ0FBQyxDQUFDO1FBQzFCLEtBQUssQ0FBQyxPQUFPLENBQUMsU0FBUyxDQUFBLEVBQUU7WUFFckIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxhQUFhLENBQUMsQ0FBQztZQUMzQixTQUFTLENBQUMsT0FBTyxDQUFDLFVBQVUsQ0FBQSxFQUFFO2dCQUUxQixPQUFPLENBQUMsR0FBRyxDQUFDLFVBQVUsQ0FBQyxDQUFDO1lBQzVCLENBQUMsQ0FBQyxDQUFDO1lBQ0gsT0FBTyxDQUFDLEdBQUcsQ0FBQyxXQUFXLENBQUMsQ0FBQztRQUM3QixDQUFDLENBQUMsQ0FBQztJQUNQLENBQUM7Q0FFSjtBQWhCRCxnQ0FnQkMifQ==","assetPath":"Assets/Scripts/CsvParserTest.ts","manifest":{"properties":[],"name":"CsvParserTest","description":""},"isCompiled":true}'
+  typescriptHash: 637c0e2b87ba5cce29bda889c35aedba

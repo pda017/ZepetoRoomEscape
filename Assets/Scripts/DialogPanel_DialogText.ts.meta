@@ -18,5 +18,31 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/DialogPanel_DialogText.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 8e4c690acc2636f5a6561f332d76d3e4
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst DialogData_1 = require(\"./Data/DialogData\");\r\nconst
+    DialogPlayChanged_1 = require(\"./DialogPlayChanged\");\r\nconst WaitTime_1 =
+    require(\"./WaitTime\");\r\nclass DialogPanel_DialogText extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.m_NumState
+    = 0;\r\n        this.m_DialogIndex = 0;\r\n        this.m_WaitTime = new WaitTime_1.default();\r\n       
+    this.m_DialogPlayChanged = new DialogPlayChanged_1.default();\r\n    }\r\n   
+    Start() {\r\n        this.m_Text = this.GetComponent($typeof(UnityEngine_UI_1.Text));\r\n   
+    }\r\n    Update() {\r\n        if (this.m_DialogPlayChanged.Check())\r\n           
+    this.m_NumState = 0;\r\n        if (this.m_NumState === 0) {\r\n            if
+    (DialogData_1.default.m_DialogPlaying) {\r\n                this.m_DialogIndex
+    = 0;\r\n                if (this.m_DialogIndex >= DialogData_1.default.m_DialogText.length)
+    {\r\n                    DialogData_1.default.m_DialogPlaying = false;\r\n                   
+    return;\r\n                }\r\n                this.m_Text.text = DialogData_1.default.m_DialogText.charAt(this.m_DialogIndex);\r\n               
+    this.m_DialogIndex++;\r\n                this.m_WaitTime.Start();\r\n               
+    this.m_NumState++;\r\n            }\r\n        }\r\n        else if (this.m_NumState
+    === 1) {\r\n            if (this.m_WaitTime.End(DialogData_1.default.m_DialogTextDelay))
+    {\r\n                this.m_WaitTime.Start();\r\n                this.m_Text.text
+    += DialogData_1.default.m_DialogText.charAt(this.m_DialogIndex);\r\n               
+    this.m_DialogIndex++;\r\n                if (this.m_DialogIndex >= DialogData_1.default.m_DialogText.length)
+    {\r\n                    this.m_NumState++;\r\n                    return;\r\n               
+    }\r\n            }\r\n        }\r\n        else if (this.m_NumState === 2) {\r\n           
+    if (this.m_WaitTime.End(DialogData_1.default.m_DialogShowDuration)) {\r\n               
+    DialogData_1.default.m_DialogPlaying = false;\r\n                this.m_NumState
+    = 0;\r\n            }\r\n        }\r\n    }\r\n}\r\nexports.default = DialogPanel_DialogText;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGlhbG9nUGFuZWxfRGlhbG9nVGV4dC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkRpYWxvZ1BhbmVsX0RpYWxvZ1RleHQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxtREFBcUM7QUFDckMsaURBQXFEO0FBQ3JELGtEQUEyQztBQUMzQywyREFBb0Q7QUFDcEQseUNBQWtDO0FBRWxDLE1BQXFCLHNCQUF1QixTQUFRLHFDQUFxQjtJQUF6RTs7UUFFSSxlQUFVLEdBQVksQ0FBQyxDQUFDO1FBQ3hCLGtCQUFhLEdBQVksQ0FBQyxDQUFDO1FBQzNCLGVBQVUsR0FBYyxJQUFJLGtCQUFRLEVBQUUsQ0FBQztRQUN2Qyx3QkFBbUIsR0FBdUIsSUFBSSwyQkFBaUIsRUFBRSxDQUFDO0lBaUR0RSxDQUFDO0lBaERHLEtBQUs7UUFFRCxJQUFJLENBQUMsTUFBTSxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMscUJBQUksRUFBRyxDQUFDO0lBQzVDLENBQUM7SUFDRCxNQUFNO1FBRUYsSUFBRyxJQUFJLENBQUMsbUJBQW1CLENBQUMsS0FBSyxFQUFFO1lBQy9CLElBQUksQ0FBQyxVQUFVLEdBQUcsQ0FBQyxDQUFDO1FBRXhCLElBQUcsSUFBSSxDQUFDLFVBQVUsS0FBSyxDQUFDLEVBQ3hCO1lBQ0ksSUFBRyxvQkFBVSxDQUFDLGVBQWUsRUFDN0I7Z0JBQ0ksSUFBSSxDQUFDLGFBQWEsR0FBRyxDQUFDLENBQUM7Z0JBQ3ZCLElBQUcsSUFBSSxDQUFDLGFBQWEsSUFBSSxvQkFBVSxDQUFDLFlBQVksQ0FBQyxNQUFNLEVBQ3ZEO29CQUNJLG9CQUFVLENBQUMsZUFBZSxHQUFHLEtBQUssQ0FBQztvQkFDbkMsT0FBTztpQkFDVjtnQkFDRCxJQUFJLENBQUMsTUFBTSxDQUFDLElBQUksR0FBRyxvQkFBVSxDQUFDLFlBQVksQ0FBQyxNQUFNLENBQUMsSUFBSSxDQUFDLGFBQWEsQ0FBQyxDQUFDO2dCQUN0RSxJQUFJLENBQUMsYUFBYSxFQUFFLENBQUM7Z0JBQ3JCLElBQUksQ0FBQyxVQUFVLENBQUMsS0FBSyxFQUFFLENBQUM7Z0JBQ3hCLElBQUksQ0FBQyxVQUFVLEVBQUUsQ0FBQzthQUNyQjtTQUNKO2FBQ0ksSUFBRyxJQUFJLENBQUMsVUFBVSxLQUFLLENBQUMsRUFDN0I7WUFDSSxJQUFHLElBQUksQ0FBQyxVQUFVLENBQUMsR0FBRyxDQUFDLG9CQUFVLENBQUMsaUJBQWlCLENBQUMsRUFDcEQ7Z0JBQ0ksSUFBSSxDQUFDLFVBQVUsQ0FBQyxLQUFLLEVBQUUsQ0FBQztnQkFDeEIsSUFBSSxDQUFDLE1BQU0sQ0FBQyxJQUFJLElBQUksb0JBQVUsQ0FBQyxZQUFZLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxhQUFhLENBQUMsQ0FBQztnQkFDdkUsSUFBSSxDQUFDLGFBQWEsRUFBRSxDQUFDO2dCQUNyQixJQUFHLElBQUksQ0FBQyxhQUFhLElBQUksb0JBQVUsQ0FBQyxZQUFZLENBQUMsTUFBTSxFQUN2RDtvQkFDSSxJQUFJLENBQUMsVUFBVSxFQUFFLENBQUM7b0JBQ2xCLE9BQU87aUJBQ1Y7YUFDSjtTQUNKO2FBQ0ksSUFBRyxJQUFJLENBQUMsVUFBVSxLQUFLLENBQUMsRUFDN0I7WUFDSSxJQUFHLElBQUksQ0FBQyxVQUFVLENBQUMsR0FBRyxDQUFDLG9CQUFVLENBQUMsb0JBQW9CLENBQUMsRUFDdkQ7Z0JBQ0ksb0JBQVUsQ0FBQyxlQUFlLEdBQUcsS0FBSyxDQUFDO2dCQUNuQyxJQUFJLENBQUMsVUFBVSxHQUFHLENBQUMsQ0FBQzthQUN2QjtTQUNKO0lBQ0wsQ0FBQztDQUNKO0FBdERELHlDQXNEQyJ9","assetPath":"Assets/Scripts/DialogPanel_DialogText.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"m_Text","type":"UnityEngine.UI.Text","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_NumState","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_DialogIndex","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_WaitTime","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/WaitTime.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_DialogPlayChanged","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/DialogPlayChanged.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"DialogPanel_DialogText","description":""},"isCompiled":true}'
+  typescriptHash: 1b74ff202337bdea9dd646ec9b6dd861

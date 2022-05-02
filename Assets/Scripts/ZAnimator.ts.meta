@@ -18,5 +18,13 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/ZAnimator.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 6eee1083e509106cfd910544c2c467c9
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nclass
+    ZAnimator {\r\n    constructor(owner, findParent = false) {\r\n        if (findParent)\r\n           
+    this.m_Anim = owner.GetComponentInParent($typeof(UnityEngine_1.Animator));\r\n       
+    else\r\n            this.m_Anim = owner.GetComponentInChildren($typeof(UnityEngine_1.Animator));\r\n   
+    }\r\n    Play(aniName, layer = 0, normalizeTime = 0) {\r\n        this.m_Anim.Play(aniName,
+    layer, normalizeTime);\r\n    }\r\n    End(layer) {\r\n        if (this.m_Anim.GetCurrentAnimatorStateInfo(layer).normalizedTime
+    >= 0.999)\r\n            return true;\r\n        return false;\r\n    }\r\n}\r\nexports.default
+    = ZAnimator;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiWkFuaW1hdG9yLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiWkFuaW1hdG9yLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQWtEO0FBR2xELE1BQXFCLFNBQVM7SUFFMUIsWUFBWSxLQUFrQixFQUFDLGFBQXVCLEtBQUs7UUFFdkQsSUFBRyxVQUFVO1lBQ1QsSUFBSSxDQUFDLE1BQU0sR0FBRyxLQUFLLENBQUMsb0JBQW9CLFNBQUMsc0JBQVEsRUFBRyxDQUFDOztZQUVyRCxJQUFJLENBQUMsTUFBTSxHQUFHLEtBQUssQ0FBQyxzQkFBc0IsU0FBQyxzQkFBUSxFQUFHLENBQUM7SUFDL0QsQ0FBQztJQUNNLElBQUksQ0FBQyxPQUFnQixFQUFDLFFBQWlCLENBQUMsRUFBQyxnQkFBeUIsQ0FBQztRQUV0RSxJQUFJLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxPQUFPLEVBQUMsS0FBSyxFQUFDLGFBQWEsQ0FBQyxDQUFDO0lBQ2xELENBQUM7SUFDTSxHQUFHLENBQUMsS0FBYztRQUVyQixJQUFHLElBQUksQ0FBQyxNQUFNLENBQUMsMkJBQTJCLENBQUMsS0FBSyxDQUFDLENBQUMsY0FBYyxJQUFJLEtBQUs7WUFDckUsT0FBTyxJQUFJLENBQUM7UUFDaEIsT0FBTyxLQUFLLENBQUM7SUFDakIsQ0FBQztDQUNKO0FBbkJELDRCQW1CQyJ9","assetPath":"Assets/Scripts/ZAnimator.ts","manifest":{"properties":[{"assembly":"UnityEngine.AnimationModule","name":"m_Anim","type":"UnityEngine.Animator","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"ZAnimator","description":""},"isCompiled":true}'
+  typescriptHash: a55e5fd61cfd915383e8edf0caa158a3

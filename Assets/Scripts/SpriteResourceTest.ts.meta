@@ -18,5 +18,12 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/SpriteResourceTest.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 11c1680a476151d3f0dff5dfbf8e7adc
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass SpriteResourceTest extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        var arr =
+    UnityEngine_1.Resources.LoadAll(\"Sprites\");\r\n        arr.forEach(value =>
+    {\r\n            console.log(\"Obj:\" + value + \",Name:\" + value.name + \"isSprite:
+    \" + (value instanceof UnityEngine_1.Sprite));\r\n        });\r\n    }\r\n}\r\nexports.default
+    = SpriteResourceTest;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU3ByaXRlUmVzb3VyY2VUZXN0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiU3ByaXRlUmVzb3VyY2VUZXN0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQStDO0FBQy9DLGlEQUFxRDtBQUVyRCxNQUFxQixrQkFBbUIsU0FBUSxxQ0FBcUI7SUFFakUsS0FBSztRQUNELElBQUksR0FBRyxHQUFHLHVCQUFTLENBQUMsT0FBTyxDQUFTLFNBQVMsQ0FBQyxDQUFDO1FBQy9DLEdBQUcsQ0FBQyxPQUFPLENBQUMsS0FBSyxDQUFBLEVBQUU7WUFFWCxPQUFPLENBQUMsR0FBRyxDQUFDLE1BQU0sR0FBRyxLQUFLLEdBQUcsUUFBUSxHQUFHLEtBQUssQ0FBQyxJQUFJLEdBQUcsWUFBWSxHQUFHLENBQUMsS0FBSyxZQUFZLG9CQUFNLENBQUMsQ0FBQyxDQUFDO1FBQ25HLENBQUMsQ0FBQyxDQUFDO0lBQ1gsQ0FBQztDQUVKO0FBVkQscUNBVUMifQ==","assetPath":"Assets/Scripts/SpriteResourceTest.ts","manifest":{"properties":[],"name":"SpriteResourceTest","description":""},"isCompiled":true}'
+  typescriptHash: 7e7c773a2292324633d96896052a8b30

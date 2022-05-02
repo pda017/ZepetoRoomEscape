@@ -18,5 +18,20 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/InvenPanel_DescPanel_ItemDesc.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 25b697482025b8d1f710c648f9d03850
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst InventoryData_1 = require(\"./Data/InventoryData\");\r\nconst
+    GetInvenItemData_1 = require(\"./GetInvenItemData\");\r\nconst GetItemData_1
+    = require(\"./GetItemData\");\r\nconst InvenListChanged_1 = require(\"./InvenListChanged\");\r\nconst
+    InvenSelectIndexChanged_1 = require(\"./InvenSelectIndexChanged\");\r\nconst
+    SpriteMgr_1 = require(\"./SpriteMgr\");\r\nclass InvenPanel_DescPanel_ItemDesc
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor() {\r\n       
+    super(...arguments);\r\n        this.m_SelectItemChanged = new InvenSelectIndexChanged_1.default();\r\n       
+    this.m_InvenListChanged = new InvenListChanged_1.default();\r\n    }\r\n    Start()
+    {\r\n        this.m_Text = this.GetComponent($typeof(UnityEngine_UI_1.Text));\r\n   
+    }\r\n    Update() {\r\n        if (this.m_SelectItemChanged.Check() || this.m_InvenListChanged.Check())
+    {\r\n            var itemData = GetInvenItemData_1.default.Get(InventoryData_1.default.m_SelectIndex);\r\n           
+    if (itemData != null) {\r\n                this.m_Text.text = itemData.m_Desc;\r\n           
+    }\r\n            else\r\n                this.m_Text.text = \"\";\r\n       
+    }\r\n    }\r\n}\r\nexports.default = InvenPanel_DescPanel_ItemDesc;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW52ZW5QYW5lbF9EZXNjUGFuZWxfSXRlbURlc2MuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJJbnZlblBhbmVsX0Rlc2NQYW5lbF9JdGVtRGVzYy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLG1EQUE2QztBQUM3QyxpREFBcUQ7QUFDckQsd0RBQWlEO0FBQ2pELHlEQUFrRDtBQUNsRCwrQ0FBd0M7QUFDeEMseURBQWtEO0FBQ2xELHVFQUFnRTtBQUNoRSwyQ0FBb0M7QUFFcEMsTUFBcUIsNkJBQThCLFNBQVEscUNBQXFCO0lBQWhGOztRQUVJLHdCQUFtQixHQUE2QixJQUFJLGlDQUF1QixFQUFFLENBQUM7UUFDOUUsdUJBQWtCLEdBQXNCLElBQUksMEJBQWdCLEVBQUUsQ0FBQztJQWlCbkUsQ0FBQztJQWhCRyxLQUFLO1FBQ0QsSUFBSSxDQUFDLE1BQU0sR0FBRyxJQUFJLENBQUMsWUFBWSxTQUFDLHFCQUFJLEVBQUcsQ0FBQztJQUM1QyxDQUFDO0lBQ0QsTUFBTTtRQUVGLElBQUcsSUFBSSxDQUFDLG1CQUFtQixDQUFDLEtBQUssRUFBRSxJQUFJLElBQUksQ0FBQyxrQkFBa0IsQ0FBQyxLQUFLLEVBQUUsRUFDdEU7WUFDSSxJQUFJLFFBQVEsR0FBRywwQkFBZ0IsQ0FBQyxHQUFHLENBQUMsdUJBQWEsQ0FBQyxhQUFhLENBQUMsQ0FBQztZQUNqRSxJQUFHLFFBQVEsSUFBSSxJQUFJLEVBQ25CO2dCQUNJLElBQUksQ0FBQyxNQUFNLENBQUMsSUFBSSxHQUFHLFFBQVEsQ0FBQyxNQUFNLENBQUM7YUFDdEM7O2dCQUVHLElBQUksQ0FBQyxNQUFNLENBQUMsSUFBSSxHQUFHLEVBQUUsQ0FBQztTQUM3QjtJQUNMLENBQUM7Q0FDSjtBQXBCRCxnREFvQkMifQ==","assetPath":"Assets/Scripts/InvenPanel_DescPanel_ItemDesc.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"m_Text","type":"UnityEngine.UI.Text","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_SelectItemChanged","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/InvenSelectIndexChanged.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_InvenListChanged","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/InvenListChanged.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"InvenPanel_DescPanel_ItemDesc","description":""},"isCompiled":true}'
+  typescriptHash: b5ba8392c82fe7d6ef1197e061807d1f

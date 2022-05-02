@@ -18,5 +18,15 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/PrefabMgr.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 1f41b995003d38c2a1247072314037ea
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nclass
+    PrefabMgr {\r\n    static Load() {\r\n        var arr = UnityEngine_1.Resources.LoadAll(\"Prefabs\");\r\n       
+    this.m_PrefabMap = new Map();\r\n        arr.forEach(value => {\r\n           
+    this.m_PrefabMap.set(value.name, value);\r\n        });\r\n    }\r\n    static
+    Init() {\r\n        if (this.m_PrefabMap == null)\r\n            this.Load();\r\n   
+    }\r\n    static Get(prefabName) {\r\n        return this.m_PrefabMap.get(prefabName);\r\n   
+    }\r\n    static Create(prefabName, pos = UnityEngine_1.Vector3.zero, rot = UnityEngine_1.Quaternion.identity)
+    {\r\n        var prefabObj = this.Get(prefabName);\r\n        return UnityEngine_1.GameObject.Instantiate(prefabObj,
+    pos, rot);\r\n    }\r\n}\r\nexports.default = PrefabMgr;\r\nPrefabMgr.m_PrefabMap
+    = null;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUHJlZmFiTWdyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiUHJlZmFiTWdyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQXdFO0FBR3hFLE1BQXFCLFNBQVM7SUFFbkIsTUFBTSxDQUFDLElBQUk7UUFFZCxJQUFJLEdBQUcsR0FBRyx1QkFBUyxDQUFDLE9BQU8sQ0FBYSxTQUFTLENBQUMsQ0FBQztRQUNuRCxJQUFJLENBQUMsV0FBVyxHQUFHLElBQUksR0FBRyxFQUFxQixDQUFDO1FBQ2hELEdBQUcsQ0FBQyxPQUFPLENBQUMsS0FBSyxDQUFBLEVBQUU7WUFFWCxJQUFJLENBQUMsV0FBVyxDQUFDLEdBQUcsQ0FBQyxLQUFLLENBQUMsSUFBSSxFQUFDLEtBQUssQ0FBQyxDQUFDO1FBQzNDLENBQUMsQ0FBQyxDQUFDO0lBQ1gsQ0FBQztJQUNNLE1BQU0sQ0FBQyxJQUFJO1FBRWQsSUFBRyxJQUFJLENBQUMsV0FBVyxJQUFJLElBQUk7WUFDdkIsSUFBSSxDQUFDLElBQUksRUFBRSxDQUFDO0lBQ3BCLENBQUM7SUFDTSxNQUFNLENBQUMsR0FBRyxDQUFDLFVBQW1CO1FBRWpDLE9BQU8sSUFBSSxDQUFDLFdBQVcsQ0FBQyxHQUFHLENBQUMsVUFBVSxDQUFDLENBQUM7SUFDNUMsQ0FBQztJQUNNLE1BQU0sQ0FBQyxNQUFNLENBQUMsVUFBbUIsRUFBQyxNQUFnQixxQkFBTyxDQUFDLElBQUksRUFBQyxNQUFtQix3QkFBVSxDQUFDLFFBQVE7UUFFeEcsSUFBSSxTQUFTLEdBQUcsSUFBSSxDQUFDLEdBQUcsQ0FBQyxVQUFVLENBQUMsQ0FBQztRQUNyQyxPQUFPLHdCQUFVLENBQUMsV0FBVyxDQUFDLFNBQVMsRUFBQyxHQUFHLEVBQUMsR0FBRyxDQUFlLENBQUM7SUFDbkUsQ0FBQzs7QUF4QkwsNEJBeUJDO0FBeEJpQixxQkFBVyxHQUE0QixJQUFJLENBQUMifQ==","assetPath":"Assets/Scripts/PrefabMgr.ts","manifest":{"properties":[],"name":"PrefabMgr","description":""},"isCompiled":true}'
+  typescriptHash: e7ba0ae2757a5b7238339c7b7a835653
