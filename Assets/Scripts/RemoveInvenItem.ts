@@ -22,4 +22,8 @@ export default class RemoveInvenItem {
     {
         this.RemoveByIndex(InventoryData.m_EquipedIndex);
     }
+    public static RemoveSelectedItem()
+    {
+        this.RemoveByIndex(InventoryData.m_SelectIndex);
+    }
 }

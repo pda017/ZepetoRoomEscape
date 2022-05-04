@@ -82,11 +82,13 @@ Teacher_KeyGetDialog,"""사물함 안에 있던 열쇠를 찾았다. 어디에 �
 Teacher_KeyNoticeDialog,열쇠를 획득하였습니다.,선생님 책상 열쇠 획득 시
 ClassDoorDialog,"""문이 잠겨있다..비밀번호를 알아내야해..""",교실 문 상호작용 시
 ClassDoorUnLockDialog,"""자물쇠를 풀었어..이제 밖으로 나갈 수 있어.""",교실 자물쇠 해제 시
-Teachers'RoomDoorDialog,"""교무실 문은 잠겨 있다..비밀번호를 알아내야해..""",교무실 문 상호작용 시
+Teachers_RoomDoorDialog,"""교무실 문은 잠겨 있다..비밀번호를 알아내야해..""",교무실 문 상호작용 시
 WallpaperDialog,교무실 비밀번호는 학년 부장 선생님에게,교무실 문 옆 메모 상호작용 시
-Teachers'WhiteBoardDialog,"""화이트 보드에 숫자가 적혀있다..""",화이트 보드 상호작용 시
+Teachers_WhiteBoardDialog,"""화이트 보드에 숫자가 적혀있다..""",화이트 보드 상호작용 시
 SafePWGetDialog,"""무슨 뜻 인지 모르겠지만...일단 챙겨보자.""",금고 비밀번호 쪽지 획득 시
 SafePWGetNotice,"""알 수 없는 종이를 획득하였습니다.",금고 비밀번호 쪽지 획득 시
-Teachers'PCDialog,"""교감 선생님 PC가 켜져있다. 화면에 이상한 그림이 있어.""",교감 선생님 PC 상호작용 시
+Teachers_PCDialog,"""교감 선생님 PC가 켜져있다. 화면에 이상한 그림이 있어.""",교감 선생님 PC 상호작용 시
 SecretRoomCabinetDialog,"""사물함 뒤로 바람이 느껴져..뒤에 무언가 있는걸까..?""",시크릿 룸 입구 사물함 상호작용 시
 SecretRoomOpenDialog,"""사물함 뒤에 통로가 있었어..!!""",시크릿 룸 입구 오픈 시
+ItemEquipText,사용,
+ItemUnequipText,헤제,

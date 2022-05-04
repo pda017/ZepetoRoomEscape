@@ -55,8 +55,6 @@ export default class Obj_Room4_Table extends ZepetoScriptBehaviour {
         {
             if(this.m_IsOn.m_Value)
             {
-                //this.m_IsOn.m_Value = false;
-                this.m_Interactable.m_Value = false;
                 SetDialog.SetByKey("std_Desk&Chair4Dialog");
                 this.m_NumState.m_Value++;
             }
