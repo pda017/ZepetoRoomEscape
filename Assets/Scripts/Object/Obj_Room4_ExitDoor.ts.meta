@@ -1,0 +1,53 @@
+fileFormatVersion: 2
+guid: 65eb40f603d11244d8118c4b589dcdee
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst CheckAniEnd_1 = require(\"../CheckAniEnd\");\r\nconst
+    CheckEquipedItem_1 = require(\"../CheckEquipedItem\");\r\nconst CheckPanelClose_1
+    = require(\"../CheckPanelClose\");\r\nconst InventoryData_1 = require(\"../Data/InventoryData\");\r\nconst
+    RotateLockData_1 = require(\"../Data/RotateLockData\");\r\nconst Interactable_1
+    = require(\"../Interactable\");\r\nconst IsOn_1 = require(\"../IsOn\");\r\nconst
+    PanelMgr_1 = require(\"../PanelMgr\");\r\nconst RemoveInvenItem_1 = require(\"../RemoveInvenItem\");\r\nconst
+    RotatePasswordChanged_1 = require(\"../RotatePasswordChanged\");\r\nconst SetDialog_1
+    = require(\"../SetDialog\");\r\nclass Obj_Room4_ExitDoor extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.m_Password
+    = \"1234\";\r\n        this.m_NumState = 0;\r\n        this.m_RotatePasswordChanged
+    = new RotatePasswordChanged_1.default();\r\n    }\r\n    Start() {\r\n       
+    this.m_CheckPanelClose = new CheckPanelClose_1.default(\"RotateLockPanel\");\r\n       
+    this.m_Interactable = this.GetComponent($typeof(Interactable_1.default));\r\n       
+    this.m_CheckAniEnd = new CheckAniEnd_1.default(this.gameObject, true);\r\n       
+    this.m_Anim = this.GetComponentInParent($typeof(UnityEngine_1.Animator));\r\n       
+    this.m_IsOn = this.GetComponent($typeof(IsOn_1.default));\r\n    }\r\n    Update()
+    {\r\n        this.m_CheckPanelClose.Init();\r\n        if (this.m_NumState ===
+    0) {\r\n            if (this.m_IsOn.m_Value) {\r\n                this.m_IsOn.m_Value
+    = false;\r\n                PanelMgr_1.default.Show(\"RotateLockPanel\");\r\n               
+    this.m_NumState++;\r\n            }\r\n        }\r\n        else if (this.m_NumState
+    === 1) {\r\n            if (this.m_CheckPanelClose.Check()) {\r\n               
+    this.m_NumState = 0;\r\n                return;\r\n            }\r\n           
+    if (this.m_RotatePasswordChanged.Check()) {\r\n                if (RotateLockData_1.default.m_Password
+    === this.m_Password) {\r\n                    SetDialog_1.default.SetByKey(\"ClassDoorUnLockDialog\");\r\n                   
+    //console.log(RotateLockData.m_Password + \" : \" + this.m_Password);\r\n                   
+    PanelMgr_1.default.Hide(\"RotateLockPanel\");\r\n                    this.m_Interactable.m_Value
+    = false;\r\n                    this.m_Anim.Play(\"Open\");\r\n                   
+    this.m_NumState++;\r\n                    return;\r\n                }\r\n           
+    }\r\n        }\r\n    }\r\n}\r\nexports.default = Obj_Room4_ExitDoor;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiT2JqX1Jvb200X0V4aXREb29yLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiT2JqX1Jvb200X0V4aXREb29yLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQTZDO0FBQzdDLGlEQUFxRDtBQUNyRCxnREFBeUM7QUFDekMsMERBQW1EO0FBQ25ELHdEQUFpRDtBQUNqRCx5REFBa0Q7QUFDbEQsMkRBQW9EO0FBQ3BELGtEQUEyQztBQUMzQyxrQ0FBMkI7QUFDM0IsMENBQW1DO0FBQ25DLHdEQUFpRDtBQUNqRCxvRUFBNkQ7QUFDN0QsNENBQXFDO0FBRXJDLE1BQXFCLGtCQUFtQixTQUFRLHFDQUFxQjtJQUFyRTs7UUFDVyxlQUFVLEdBQVksTUFBTSxDQUFDO1FBR3BDLGVBQVUsR0FBVyxDQUFDLENBQUM7UUFHdkIsNEJBQXVCLEdBQTJCLElBQUksK0JBQXFCLEVBQUUsQ0FBQztJQTZDbEYsQ0FBQztJQTNDRyxLQUFLO1FBQ0QsSUFBSSxDQUFDLGlCQUFpQixHQUFHLElBQUkseUJBQWUsQ0FBQyxpQkFBaUIsQ0FBQyxDQUFDO1FBQ2hFLElBQUksQ0FBQyxjQUFjLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQyxzQkFBWSxFQUFHLENBQUM7UUFDeEQsSUFBSSxDQUFDLGFBQWEsR0FBRyxJQUFJLHFCQUFXLENBQUMsSUFBSSxDQUFDLFVBQVUsRUFBQyxJQUFJLENBQUMsQ0FBQztRQUMzRCxJQUFJLENBQUMsTUFBTSxHQUFHLElBQUksQ0FBQyxvQkFBb0IsU0FBQyxzQkFBUSxFQUFHLENBQUM7UUFDcEQsSUFBSSxDQUFDLE1BQU0sR0FBRyxJQUFJLENBQUMsWUFBWSxTQUFDLGNBQUksRUFBRyxDQUFDO0lBQzVDLENBQUM7SUFDRCxNQUFNO1FBRUYsSUFBSSxDQUFDLGlCQUFpQixDQUFDLElBQUksRUFBRSxDQUFDO1FBRTlCLElBQUcsSUFBSSxDQUFDLFVBQVUsS0FBSyxDQUFDLEVBQ3hCO1lBQ0ksSUFBRyxJQUFJLENBQUMsTUFBTSxDQUFDLE9BQU8sRUFDdEI7Z0JBQ0ksSUFBSSxDQUFDLE1BQU0sQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDO2dCQUM1QixrQkFBUSxDQUFDLElBQUksQ0FBQyxpQkFBaUIsQ0FBQyxDQUFDO2dCQUNqQyxJQUFJLENBQUMsVUFBVSxFQUFFLENBQUM7YUFDckI7U0FDSjthQUNJLElBQUcsSUFBSSxDQUFDLFVBQVUsS0FBSyxDQUFDLEVBQzdCO1lBQ0ksSUFBRyxJQUFJLENBQUMsaUJBQWlCLENBQUMsS0FBSyxFQUFFLEVBQ2pDO2dCQUNJLElBQUksQ0FBQyxVQUFVLEdBQUcsQ0FBQyxDQUFDO2dCQUNwQixPQUFRO2FBQ1g7WUFFRCxJQUFHLElBQUksQ0FBQyx1QkFBdUIsQ0FBQyxLQUFLLEVBQUUsRUFDdkM7Z0JBQ0ksSUFBRyx3QkFBYyxDQUFDLFVBQVUsS0FBSyxJQUFJLENBQUMsVUFBVSxFQUNoRDtvQkFDSSxtQkFBUyxDQUFDLFFBQVEsQ0FBQyx1QkFBdUIsQ0FBQyxDQUFDO29CQUM1QyxtRUFBbUU7b0JBQ25FLGtCQUFRLENBQUMsSUFBSSxDQUFDLGlCQUFpQixDQUFDLENBQUM7b0JBQ2pDLElBQUksQ0FBQyxjQUFjLENBQUMsT0FBTyxHQUFHLEtBQUssQ0FBQztvQkFDcEMsSUFBSSxDQUFDLE1BQU0sQ0FBQyxJQUFJLENBQUMsTUFBTSxDQUFDLENBQUM7b0JBQ3pCLElBQUksQ0FBQyxVQUFVLEVBQUUsQ0FBQztvQkFDbEIsT0FBUTtpQkFDWDthQUNKO1NBQ0o7SUFDTCxDQUFDO0NBQ0o7QUFwREQscUNBb0RDIn0=","assetPath":"Assets/Scripts/Object/Obj_Room4_ExitDoor.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Password","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_IsOn","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/IsOn.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.AnimationModule","name":"m_Anim","type":"UnityEngine.Animator","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_NumState","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_CheckAniEnd","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/CheckAniEnd.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_Interactable","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/Interactable.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_RotatePasswordChanged","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/RotatePasswordChanged.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_CheckPanelClose","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/CheckPanelClose.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Obj_Room4_ExitDoor","description":""},"isCompiled":true}'
+  typescriptHash: 99b373ba84cd2bc043351b59a7f37c35
