@@ -1,0 +1,34 @@
+fileFormatVersion: 2
+guid: d4b203c4f42e0934a9a1445c5fcc698a
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ButtonEvent_1 = require(\"./ButtonEvent\");\r\nconst RotateLockData_1 = require(\"./Data/RotateLockData\");\r\nclass
+    RotateLockPanel_RotateButton extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n   
+    Start() {\r\n        this.m_Tf = this.transform;\r\n        ButtonEvent_1.default.Add(this.gameObject,
+    () => {\r\n            var index = this.m_Tf.GetSiblingIndex();\r\n           
+    RotateLockData_1.default.m_PasswordArr[index]++;\r\n            if (RotateLockData_1.default.m_PasswordArr[index]
+    > 9)\r\n                RotateLockData_1.default.m_PasswordArr[index] = 0;\r\n           
+    RotateLockData_1.default.m_Password = \"\";\r\n            RotateLockData_1.default.m_PasswordArr.forEach(v
+    => {\r\n                RotateLockData_1.default.m_Password += v;\r\n           
+    });\r\n            RotateLockData_1.default.m_PasswordDirty++;\r\n           
+    //console.log(RotateLockData.m_Password);\r\n        });\r\n    }\r\n}\r\nexports.default
+    = RotateLockPanel_RotateButton;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUm90YXRlTG9ja1BhbmVsX1JvdGF0ZUJ1dHRvbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlJvdGF0ZUxvY2tQYW5lbF9Sb3RhdGVCdXR0b24udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSxpREFBcUQ7QUFDckQsK0NBQXVDO0FBQ3ZDLDBEQUFtRDtBQUVuRCxNQUFxQiw0QkFBNkIsU0FBUSxxQ0FBcUI7SUFFM0UsS0FBSztRQUNELElBQUksQ0FBQyxJQUFJLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQztRQUMzQixxQkFBVyxDQUFDLEdBQUcsQ0FBQyxJQUFJLENBQUMsVUFBVSxFQUFDLEdBQUUsRUFBRTtZQUVoQyxJQUFJLEtBQUssR0FBRyxJQUFJLENBQUMsSUFBSSxDQUFDLGVBQWUsRUFBRSxDQUFDO1lBQ3hDLHdCQUFjLENBQUMsYUFBYSxDQUFDLEtBQUssQ0FBQyxFQUFFLENBQUM7WUFDdEMsSUFBRyx3QkFBYyxDQUFDLGFBQWEsQ0FBQyxLQUFLLENBQUMsR0FBRyxDQUFDO2dCQUN0Qyx3QkFBYyxDQUFDLGFBQWEsQ0FBQyxLQUFLLENBQUMsR0FBRyxDQUFDLENBQUM7WUFDNUMsd0JBQWMsQ0FBQyxVQUFVLEdBQUcsRUFBRSxDQUFDO1lBQy9CLHdCQUFjLENBQUMsYUFBYSxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUEsRUFBRTtnQkFFaEMsd0JBQWMsQ0FBQyxVQUFVLElBQUksQ0FBQyxDQUFDO1lBQ25DLENBQUMsQ0FBQyxDQUFDO1lBQ1Asd0JBQWMsQ0FBQyxlQUFlLEVBQUUsQ0FBQztZQUNqQyx5Q0FBeUM7UUFDN0MsQ0FBQyxDQUFDLENBQUM7SUFDUCxDQUFDO0NBRUo7QUFwQkQsK0NBb0JDIn0=","assetPath":"Assets/Scripts/RotateLockPanel_RotateButton.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"m_Tf","type":"UnityEngine.Transform","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"RotateLockPanel_RotateButton","description":""},"isCompiled":true}'
+  typescriptHash: c25cec945c34d6fb7e27c87abb835aeb

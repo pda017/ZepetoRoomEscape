@@ -1,4 +1,4 @@
-import { Camera, Collider, Physics, Transform, Vector3 } from 'UnityEngine';
+import { Camera, Collider, Color, Debug, Physics, Transform, Vector3 } from 'UnityEngine';
 import { Selectable } from 'UnityEngine.UI';
 import { ZepetoPlayers } from 'ZEPETO.Character.Controller';
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
@@ -40,26 +40,43 @@ export default class DetectSelectObj {
         //console.log(hits.length);
         var minAngle = Number.MAX_VALUE;
         var targetCol = null;
-        hits.forEach((value,index)=>
+        for(let i=0;i<hits.length;i++)
         {
+            var value = hits[i];
+            if(this.CheckWall(value))
+                continue;
+
             var interactable = value.GetComponentInParent<Interactable>();
-            var bPass = false;
             if(interactable != null && !interactable.m_Value)
-                bPass = true;
-            
-            if(!bPass)
-            {
-                var look = Vector3Util.Minus(value.bounds.center, center);
-                look.y = 0;
-                var dir = look.normalized;
-                var angle = Vector3.Angle(dir,camForward);
-                if(angle < PlayerData.m_SelectDetectAngle && angle < minAngle)
-                {
-                    minAngle = angle;
-                    targetCol = value;
-                }
-            }
-        });
+                continue;
+                
+             var look = Vector3Util.Minus(value.bounds.center, center);
+             look.y = 0;
+             var dir = look.normalized;
+             var angle = Vector3.Angle(dir,camForward);
+             if(angle < PlayerData.m_SelectDetectAngle && angle < minAngle)
+             {
+                 minAngle = angle;
+                 targetCol = value;
+             }
+        }
         return targetCol;
+    }
+    CheckWall(col : Collider) : boolean
+    {
+        //Debug.DrawLine(this.m_CharInfo.m_Col.bounds.center,col.bounds.center,Color.red);
+        var charCenter = this.m_CharInfo.m_Col.bounds.center;
+        var look = Vector3Util.Minus(col.bounds.center, charCenter);
+        var dir = look.normalized;
+        var dist = look.magnitude;
+        var hits = Physics.RaycastAll(charCenter,dir,dist);
+        for(let i =0;i<hits.length;i++)
+        {
+            var hit = hits[i];
+            //console.log(hit.collider.tag);
+            if(hit.collider.CompareTag("Wall"))
+                return true;
+        }
+        return false;
     }
 }

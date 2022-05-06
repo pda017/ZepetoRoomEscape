@@ -1,0 +1,42 @@
+fileFormatVersion: 2
+guid: 43b4102897a272b41b997da54cc713d4
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst ButtonEvent_1 = require(\"./ButtonEvent\");\r\nconst
+    InventoryData_1 = require(\"./Data/InventoryData\");\r\nconst StringData_1 =
+    require(\"./Data/StringData\");\r\nconst EquipedItemChanged_1 = require(\"./EquipedItemChanged\");\r\nconst
+    GetEquipedItemData_1 = require(\"./GetEquipedItemData\");\r\nconst GetSelectedItemData_1
+    = require(\"./GetSelectedItemData\");\r\nconst GetStringData_1 = require(\"./GetStringData\");\r\nconst
+    InvenSelectIndexChanged_1 = require(\"./InvenSelectIndexChanged\");\r\nconst
+    PanelMgr_1 = require(\"./PanelMgr\");\r\nconst PrefabMgr_1 = require(\"./PrefabMgr\");\r\nconst
+    RemoveInvenItem_1 = require(\"./RemoveInvenItem\");\r\nclass InvenPanel_ItemUseText
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor() {\r\n       
+    super(...arguments);\r\n        this.m_InvenSelectIndexChanged = new InvenSelectIndexChanged_1.default();\r\n       
+    this.m_EquipedItemChanged = new EquipedItemChanged_1.default();\r\n    }\r\n   
+    Start() {\r\n        this.m_Text = this.GetComponent($typeof(UnityEngine_UI_1.Text));\r\n   
+    }\r\n    Update() {\r\n        if (this.m_InvenSelectIndexChanged.Check() ||
+    this.m_EquipedItemChanged.Check()) {\r\n            if (InventoryData_1.default.m_EquipedIndex
+    === InventoryData_1.default.m_SelectIndex && InventoryData_1.default.m_SelectIndex
+    !== -1) {\r\n                this.m_Text.text = GetStringData_1.default.Get(\"ItemUnequipText\");\r\n           
+    }\r\n            else {\r\n                this.m_Text.text = GetStringData_1.default.Get(\"ItemEquipText\");\r\n           
+    }\r\n        }\r\n    }\r\n}\r\nexports.default = InvenPanel_ItemUseText;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW52ZW5QYW5lbF9JdGVtVXNlVGV4dC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkludmVuUGFuZWxfSXRlbVVzZVRleHQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxtREFBc0M7QUFDdEMsaURBQXFEO0FBQ3JELCtDQUF1QztBQUN2Qyx3REFBaUQ7QUFDakQsa0RBQTJDO0FBQzNDLDZEQUFzRDtBQUN0RCw2REFBc0Q7QUFDdEQsK0RBQXdEO0FBQ3hELG1EQUE0QztBQUM1Qyx1RUFBZ0U7QUFDaEUseUNBQWtDO0FBQ2xDLDJDQUFvQztBQUNwQyx1REFBZ0Q7QUFFaEQsTUFBcUIsc0JBQXVCLFNBQVEscUNBQXFCO0lBQXpFOztRQUVJLDhCQUF5QixHQUE2QixJQUFJLGlDQUF1QixFQUFFLENBQUM7UUFDcEYseUJBQW9CLEdBQXdCLElBQUksNEJBQWtCLEVBQUUsQ0FBQztJQW9CekUsQ0FBQztJQW5CRyxLQUFLO1FBR0QsSUFBSSxDQUFDLE1BQU0sR0FBRyxJQUFJLENBQUMsWUFBWSxTQUFDLHFCQUFJLEVBQUcsQ0FBQztJQUM1QyxDQUFDO0lBQ0QsTUFBTTtRQUVGLElBQUcsSUFBSSxDQUFDLHlCQUF5QixDQUFDLEtBQUssRUFBRSxJQUFJLElBQUksQ0FBQyxvQkFBb0IsQ0FBQyxLQUFLLEVBQUUsRUFDOUU7WUFDSSxJQUFHLHVCQUFhLENBQUMsY0FBYyxLQUFLLHVCQUFhLENBQUMsYUFBYSxJQUFJLHVCQUFhLENBQUMsYUFBYSxLQUFLLENBQUMsQ0FBQyxFQUNyRztnQkFDSSxJQUFJLENBQUMsTUFBTSxDQUFDLElBQUksR0FBRyx1QkFBYSxDQUFDLEdBQUcsQ0FBQyxpQkFBaUIsQ0FBQyxDQUFDO2FBQzNEO2lCQUVEO2dCQUNJLElBQUksQ0FBQyxNQUFNLENBQUMsSUFBSSxHQUFHLHVCQUFhLENBQUMsR0FBRyxDQUFDLGVBQWUsQ0FBQyxDQUFDO2FBQ3pEO1NBQ0o7SUFDTCxDQUFDO0NBQ0o7QUF2QkQseUNBdUJDIn0=","assetPath":"Assets/Scripts/InvenPanel_ItemUseText.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"m_Text","type":"UnityEngine.UI.Text","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_InvenSelectIndexChanged","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/InvenSelectIndexChanged.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_EquipedItemChanged","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/EquipedItemChanged.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"InvenPanel_ItemUseText","description":""},"isCompiled":true}'
+  typescriptHash: a0df323215508779730d2d23c099e69f

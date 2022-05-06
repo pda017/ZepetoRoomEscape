@@ -21,10 +21,12 @@ export default class CombineData {
                         var col = colArr[tokenIndex];
                         if(col === "Key")
                             info.m_Key = tokenValue;
-                        else if(col === "Mat1" || col === "Mat2")
+                        else if(col.includes("Mat"))
                             info.m_MatSet.add(tokenValue);
                         else if(col === "Result")
                             info.m_Result = tokenValue;
+                        else if(col === "Event")
+                            info.m_Event = tokenValue;
                     });
                     this.m_CombineMap.set(info.m_Key,info);
                 }
@@ -39,4 +41,5 @@ export class CombineInfo
     public m_Key : string;
     public m_MatSet : Set<string> = new Set<string>();
     public m_Result : string;
+    public m_Event : string;
 }

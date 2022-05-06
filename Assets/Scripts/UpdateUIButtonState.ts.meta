@@ -18,5 +18,30 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/UpdateUIButtonState.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 3e8e3abafe92cb1077aa53ec7b9458f1
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    UnityEngine_EventSystems_1 = require(\"UnityEngine.EventSystems\");\r\nconst
+    UnityEngine_EventSystems_EventTrigger_1 = require(\"UnityEngine.EventSystems.EventTrigger\");\r\nclass
+    UpdateUIButtonState {\r\n    constructor(owner, keyState) {\r\n        this.m_KeyState
+    = keyState;\r\n        this.m_EventTrigger = owner.GetComponent($typeof(UnityEngine_EventSystems_1.EventTrigger));\r\n       
+    if (this.m_EventTrigger === null)\r\n            this.m_EventTrigger = owner.AddComponent($typeof(UnityEngine_EventSystems_1.EventTrigger));\r\n       
+    var pointExit = new UnityEngine_EventSystems_EventTrigger_1.Entry();\r\n       
+    pointExit.eventID = UnityEngine_EventSystems_1.EventTriggerType.PointerExit;\r\n       
+    pointExit.callback.AddListener(() => {\r\n            this.m_bPush = false;\r\n       
+    });\r\n        this.m_EventTrigger.triggers.Add(pointExit);\r\n        var pointDown
+    = new UnityEngine_EventSystems_EventTrigger_1.Entry();\r\n        pointDown.eventID
+    = UnityEngine_EventSystems_1.EventTriggerType.PointerDown;\r\n        pointDown.callback.AddListener(()
+    => this.m_bPush = true);\r\n        this.m_EventTrigger.triggers.Add(pointDown);\r\n       
+    var pointUp = new UnityEngine_EventSystems_EventTrigger_1.Entry();\r\n       
+    pointUp.eventID = UnityEngine_EventSystems_1.EventTriggerType.PointerUp;\r\n       
+    pointUp.callback.AddListener(() => this.m_bPush = false);\r\n        this.m_EventTrigger.triggers.Add(pointUp);\r\n   
+    }\r\n    SetKeyState(keyState) {\r\n        this.m_KeyState = keyState;\r\n   
+    }\r\n    Update() {\r\n        if (this.m_bPush) {\r\n            if (this.m_KeyState.m_Value
+    <= 0)\r\n                this.m_KeyState.m_Value = 2;\r\n            else if
+    (this.m_KeyState.m_Value === 2)\r\n                this.m_KeyState.m_Value =
+    1;\r\n        }\r\n        else {\r\n            if (this.m_KeyState.m_Value
+    > 0)\r\n                this.m_KeyState.m_Value = -1;\r\n            else if
+    (this.m_KeyState.m_Value === -1)\r\n                this.m_KeyState.m_Value =
+    0;\r\n        }\r\n    }\r\n}\r\nexports.default = UpdateUIButtonState;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVXBkYXRlVUlCdXR0b25TdGF0ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlVwZGF0ZVVJQnV0dG9uU3RhdGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBNkQ7QUFDN0QsdUVBQTBFO0FBQzFFLGlHQUE4RDtBQUc5RCxNQUFxQixtQkFBbUI7SUFJcEMsWUFBWSxLQUFrQixFQUFDLFFBQW1CO1FBRTlDLElBQUksQ0FBQyxVQUFVLEdBQUcsUUFBUSxDQUFDO1FBQzNCLElBQUksQ0FBQyxjQUFjLEdBQUcsS0FBSyxDQUFDLFlBQVksU0FBQyx1Q0FBWSxFQUFHLENBQUM7UUFDekQsSUFBRyxJQUFJLENBQUMsY0FBYyxLQUFLLElBQUk7WUFDM0IsSUFBSSxDQUFDLGNBQWMsR0FBRyxLQUFLLENBQUMsWUFBWSxTQUFDLHVDQUFZLEVBQUcsQ0FBQztRQUU3RCxJQUFJLFNBQVMsR0FBRyxJQUFJLDZDQUFLLEVBQUUsQ0FBQztRQUM1QixTQUFTLENBQUMsT0FBTyxHQUFHLDJDQUFnQixDQUFDLFdBQVcsQ0FBQztRQUNqRCxTQUFTLENBQUMsUUFBUSxDQUFDLFdBQVcsQ0FBQyxHQUFFLEVBQUU7WUFFL0IsSUFBSSxDQUFDLE9BQU8sR0FBRyxLQUFLLENBQUM7UUFDekIsQ0FBQyxDQUFDLENBQUM7UUFDSCxJQUFJLENBQUMsY0FBYyxDQUFDLFFBQVEsQ0FBQyxHQUFHLENBQUMsU0FBUyxDQUFDLENBQUM7UUFFNUMsSUFBSSxTQUFTLEdBQUcsSUFBSSw2Q0FBSyxFQUFFLENBQUM7UUFDNUIsU0FBUyxDQUFDLE9BQU8sR0FBRywyQ0FBZ0IsQ0FBQyxXQUFXLENBQUM7UUFDakQsU0FBUyxDQUFDLFFBQVEsQ0FBQyxXQUFXLENBQUMsR0FBRSxFQUFFLENBQUEsSUFBSSxDQUFDLE9BQU8sR0FBRyxJQUFJLENBQUMsQ0FBQztRQUN4RCxJQUFJLENBQUMsY0FBYyxDQUFDLFFBQVEsQ0FBQyxHQUFHLENBQUMsU0FBUyxDQUFDLENBQUM7UUFFNUMsSUFBSSxPQUFPLEdBQUcsSUFBSSw2Q0FBSyxFQUFFLENBQUM7UUFDMUIsT0FBTyxDQUFDLE9BQU8sR0FBRywyQ0FBZ0IsQ0FBQyxTQUFTLENBQUM7UUFDN0MsT0FBTyxDQUFDLFFBQVEsQ0FBQyxXQUFXLENBQUMsR0FBRSxFQUFFLENBQUEsSUFBSSxDQUFDLE9BQU8sR0FBRyxLQUFLLENBQUMsQ0FBQztRQUN2RCxJQUFJLENBQUMsY0FBYyxDQUFDLFFBQVEsQ0FBQyxHQUFHLENBQUMsT0FBTyxDQUFDLENBQUM7SUFDOUMsQ0FBQztJQUNNLFdBQVcsQ0FBQyxRQUFtQjtRQUVsQyxJQUFJLENBQUMsVUFBVSxHQUFHLFFBQVEsQ0FBQztJQUMvQixDQUFDO0lBQ00sTUFBTTtRQUVULElBQUksSUFBSSxDQUFDLE9BQU8sRUFDaEI7WUFDSSxJQUFJLElBQUksQ0FBQyxVQUFVLENBQUMsT0FBTyxJQUFJLENBQUM7Z0JBQzVCLElBQUksQ0FBQyxVQUFVLENBQUMsT0FBTyxHQUFHLENBQUMsQ0FBQztpQkFDM0IsSUFBSSxJQUFJLENBQUMsVUFBVSxDQUFDLE9BQU8sS0FBSyxDQUFDO2dCQUNsQyxJQUFJLENBQUMsVUFBVSxDQUFDLE9BQU8sR0FBRyxDQUFDLENBQUM7U0FDbkM7YUFFRDtZQUNJLElBQUksSUFBSSxDQUFDLFVBQVUsQ0FBQyxPQUFPLEdBQUcsQ0FBQztnQkFDM0IsSUFBSSxDQUFDLFVBQVUsQ0FBQyxPQUFPLEdBQUcsQ0FBQyxDQUFDLENBQUM7aUJBQzVCLElBQUksSUFBSSxDQUFDLFVBQVUsQ0FBQyxPQUFPLEtBQUssQ0FBQyxDQUFDO2dCQUNuQyxJQUFJLENBQUMsVUFBVSxDQUFDLE9BQU8sR0FBRyxDQUFDLENBQUM7U0FDbkM7SUFDTCxDQUFDO0NBQ0o7QUFsREQsc0NBa0RDIn0=","assetPath":"Assets/Scripts/UpdateUIButtonState.ts","manifest":{"properties":[{"assembly":"","name":"m_KeyState","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/DataType/Data_Int.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_bPush","type":"System.Boolean","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"m_EventTrigger","type":"UnityEngine.EventSystems.EventTrigger","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"UpdateUIButtonState","description":""},"isCompiled":true}'
+  typescriptHash: 86083705bb016fdd1785a85ed303146f

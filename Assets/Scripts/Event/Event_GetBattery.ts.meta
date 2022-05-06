@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: 4c370df59b68f9245830fd3570baa0df
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst ItemDialog_1 = require(\"../ItemDialog\");\r\nconst
+    PanelMgr_1 = require(\"../PanelMgr\");\r\nconst SetDialog_1 = require(\"../SetDialog\");\r\nconst
+    SetNotice_1 = require(\"../SetNotice\");\r\nclass Event_GetBattery extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n        var itemDialog = this.GetComponent($typeof(ItemDialog_1.default));\r\n       
+    if (itemDialog.m_DialogKey != \"\")\r\n            SetDialog_1.default.SetByKey(itemDialog.m_DialogKey);\r\n       
+    if (itemDialog.m_NoticeKey != \"\")\r\n            SetNotice_1.default.SetByKey(itemDialog.m_NoticeKey);\r\n       
+    PanelMgr_1.default.Hide(\"InvenPanel\");\r\n        UnityEngine_1.GameObject.Destroy(this.gameObject);\r\n   
+    }\r\n}\r\nexports.default = Event_GetBattery;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXZlbnRfR2V0QmF0dGVyeS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkV2ZW50X0dldEJhdHRlcnkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBeUM7QUFDekMsaURBQXFEO0FBQ3JELDhDQUF1QztBQUN2QywwQ0FBbUM7QUFDbkMsNENBQXFDO0FBQ3JDLDRDQUFvQztBQUVwQyxNQUFxQixnQkFBaUIsU0FBUSxxQ0FBcUI7SUFFL0QsS0FBSztRQUNELElBQUksVUFBVSxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMsb0JBQVUsRUFBRyxDQUFDO1FBQ2pELElBQUcsVUFBVSxDQUFDLFdBQVcsSUFBSSxFQUFFO1lBQzNCLG1CQUFTLENBQUMsUUFBUSxDQUFDLFVBQVUsQ0FBQyxXQUFXLENBQUMsQ0FBQztRQUMvQyxJQUFHLFVBQVUsQ0FBQyxXQUFXLElBQUksRUFBRTtZQUMzQixtQkFBUyxDQUFDLFFBQVEsQ0FBQyxVQUFVLENBQUMsV0FBVyxDQUFDLENBQUM7UUFDL0Msa0JBQVEsQ0FBQyxJQUFJLENBQUMsWUFBWSxDQUFDLENBQUM7UUFDNUIsd0JBQVUsQ0FBQyxPQUFPLENBQUMsSUFBSSxDQUFDLFVBQVUsQ0FBQyxDQUFDO0lBQ3hDLENBQUM7Q0FFSjtBQVpELG1DQVlDIn0=","assetPath":"Assets/Scripts/Event/Event_GetBattery.ts","manifest":{"properties":[],"name":"Event_GetBattery","description":""},"isCompiled":true}'
+  typescriptHash: 6a98144ef38208e191c03fd7f49bafb4

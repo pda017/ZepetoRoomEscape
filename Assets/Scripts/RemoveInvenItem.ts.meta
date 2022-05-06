@@ -18,5 +18,16 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/RemoveInvenItem.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: a4bb612f893e34e2901d32ef3b1032ae
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    InventoryData_1 = require(\"./Data/InventoryData\");\r\nclass RemoveInvenItem
+    {\r\n    static Remove(itemName) {\r\n        var index = InventoryData_1.default.m_InvenList.indexOf(itemName);\r\n       
+    this.RemoveByIndex(index);\r\n    }\r\n    static RemoveByIndex(index) {\r\n       
+    if (index >= 0) {\r\n            if (InventoryData_1.default.m_EquipedIndex ===
+    index)\r\n                InventoryData_1.default.m_EquipedIndex = -1;\r\n           
+    InventoryData_1.default.m_InvenList.splice(index, 1);\r\n            InventoryData_1.default.m_InvenListDirty
+    = UnityEngine_1.Time.time;\r\n        }\r\n    }\r\n    static RemoveEquipedItem()
+    {\r\n        this.RemoveByIndex(InventoryData_1.default.m_EquipedIndex);\r\n   
+    }\r\n    static RemoveSelectedItem() {\r\n        this.RemoveByIndex(InventoryData_1.default.m_SelectIndex);\r\n   
+    }\r\n}\r\nexports.default = RemoveInvenItem;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVtb3ZlSW52ZW5JdGVtLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiUmVtb3ZlSW52ZW5JdGVtLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQW1DO0FBRW5DLHdEQUFnRDtBQUVoRCxNQUFxQixlQUFlO0lBQ3pCLE1BQU0sQ0FBQyxNQUFNLENBQUMsUUFBaUI7UUFFbEMsSUFBSSxLQUFLLEdBQUcsdUJBQWEsQ0FBQyxXQUFXLENBQUMsT0FBTyxDQUFDLFFBQVEsQ0FBQyxDQUFDO1FBQ3hELElBQUksQ0FBQyxhQUFhLENBQUMsS0FBSyxDQUFDLENBQUM7SUFDOUIsQ0FBQztJQUNNLE1BQU0sQ0FBQyxhQUFhLENBQUMsS0FBYztRQUV0QyxJQUFHLEtBQUssSUFBSSxDQUFDLEVBQ2I7WUFDSSxJQUFHLHVCQUFhLENBQUMsY0FBYyxLQUFLLEtBQUs7Z0JBQ3JDLHVCQUFhLENBQUMsY0FBYyxHQUFHLENBQUMsQ0FBQyxDQUFDO1lBQ3RDLHVCQUFhLENBQUMsV0FBVyxDQUFDLE1BQU0sQ0FBQyxLQUFLLEVBQUMsQ0FBQyxDQUFDLENBQUM7WUFDMUMsdUJBQWEsQ0FBQyxnQkFBZ0IsR0FBRyxrQkFBSSxDQUFDLElBQUksQ0FBQztTQUM5QztJQUNMLENBQUM7SUFDTSxNQUFNLENBQUMsaUJBQWlCO1FBRTNCLElBQUksQ0FBQyxhQUFhLENBQUMsdUJBQWEsQ0FBQyxjQUFjLENBQUMsQ0FBQztJQUNyRCxDQUFDO0lBQ00sTUFBTSxDQUFDLGtCQUFrQjtRQUU1QixJQUFJLENBQUMsYUFBYSxDQUFDLHVCQUFhLENBQUMsYUFBYSxDQUFDLENBQUM7SUFDcEQsQ0FBQztDQUNKO0FBeEJELGtDQXdCQyJ9","assetPath":"Assets/Scripts/RemoveInvenItem.ts","manifest":{"properties":[],"name":"RemoveInvenItem","description":""},"isCompiled":true}'
+  typescriptHash: cc5fd56206b52ed32aac1ba14a3e79e3

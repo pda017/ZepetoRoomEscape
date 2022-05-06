@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 47072e4324ea60545b1297b327ac2c0a
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nclass
+    RemoconData {\r\n}\r\nexports.default = RemoconData;\r\nRemoconData.m_InputDirty
+    = 0;\r\nRemoconData.m_Dir = UnityEngine_1.Vector2Int.zero;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVtb2NvbkRhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJSZW1vY29uRGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUF5QztBQUd6QyxNQUFxQixXQUFXOztBQUFoQyw4QkFHQztBQUZpQix3QkFBWSxHQUFZLENBQUMsQ0FBQztBQUMxQixpQkFBSyxHQUFnQix3QkFBVSxDQUFDLElBQUksQ0FBQyJ9","assetPath":"Assets/Scripts/Data/RemoconData.ts","manifest":{"properties":[],"name":"RemoconData","description":""},"isCompiled":true}'
+  typescriptHash: c7cec0dde26abf6c013f7d0e987a8377

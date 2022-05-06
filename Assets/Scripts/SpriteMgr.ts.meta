@@ -18,5 +18,14 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/SpriteMgr.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 5f9d3b8176ad972ed55b14ad0588a047
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nclass
+    SpriteMgr {\r\n    static Init() {\r\n        if (this.m_SpriteMap == null) {\r\n           
+    this.m_SpriteMap = new Map();\r\n            var arr = UnityEngine_1.Resources.LoadAll(\"Sprites\");\r\n           
+    arr.forEach(value => {\r\n                if (value instanceof UnityEngine_1.Sprite)\r\n                   
+    this.m_SpriteMap.set(value.name, value);\r\n            });\r\n        }\r\n   
+    }\r\n    static Reset() {\r\n        this.m_SpriteMap = null;\r\n    }\r\n   
+    static Get(key) {\r\n        this.Init();\r\n        return this.m_SpriteMap.get(key);\r\n   
+    }\r\n}\r\nexports.default = SpriteMgr;\r\nSpriteMgr.m_SpriteMap = null;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU3ByaXRlTWdyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiU3ByaXRlTWdyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQWdEO0FBR2hELE1BQXFCLFNBQVM7SUFFbkIsTUFBTSxDQUFDLElBQUk7UUFFZCxJQUFHLElBQUksQ0FBQyxXQUFXLElBQUksSUFBSSxFQUMzQjtZQUNJLElBQUksQ0FBQyxXQUFXLEdBQUcsSUFBSSxHQUFHLEVBQWlCLENBQUM7WUFDNUMsSUFBSSxHQUFHLEdBQUcsdUJBQVMsQ0FBQyxPQUFPLENBQUMsU0FBUyxDQUFDLENBQUM7WUFDdkMsR0FBRyxDQUFDLE9BQU8sQ0FBQyxLQUFLLENBQUEsRUFBRTtnQkFFWCxJQUFHLEtBQUssWUFBWSxvQkFBTTtvQkFDdEIsSUFBSSxDQUFDLFdBQVcsQ0FBQyxHQUFHLENBQUMsS0FBSyxDQUFDLElBQUksRUFBQyxLQUFLLENBQUMsQ0FBQztZQUMvQyxDQUFDLENBQUMsQ0FBQztTQUNWO0lBQ0wsQ0FBQztJQUNNLE1BQU0sQ0FBQyxLQUFLO1FBRWYsSUFBSSxDQUFDLFdBQVcsR0FBRyxJQUFJLENBQUM7SUFDNUIsQ0FBQztJQUNNLE1BQU0sQ0FBQyxHQUFHLENBQUMsR0FBWTtRQUUxQixJQUFJLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDWixPQUFPLElBQUksQ0FBQyxXQUFXLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQyxDQUFDO0lBQ3JDLENBQUM7O0FBdkJMLDRCQXdCQztBQXZCaUIscUJBQVcsR0FBd0IsSUFBSSxDQUFDIn0=","assetPath":"Assets/Scripts/SpriteMgr.ts","manifest":{"properties":[],"name":"SpriteMgr","description":""},"isCompiled":true}'
+  typescriptHash: 731a3e45abbc97e2abd759af5386b39e

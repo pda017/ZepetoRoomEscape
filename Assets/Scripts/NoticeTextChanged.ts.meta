@@ -18,5 +18,11 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/NoticeTextChanged.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: f9a6936084eaa15ca641ef6f586e5fdc
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst DialogData_1 = require(\"./Data/DialogData\");\r\nclass
+    NoticeTextChanged {\r\n    constructor() {\r\n        this.m_Dirty = Number.MIN_SAFE_INTEGER;\r\n   
+    }\r\n    Check() {\r\n        if (this.m_Dirty !== DialogData_1.default.m_NoticeDirty)
+    {\r\n            this.m_Dirty = DialogData_1.default.m_NoticeDirty;\r\n           
+    return true;\r\n        }\r\n        return false;\r\n    }\r\n}\r\nexports.default
+    = NoticeTextChanged;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTm90aWNlVGV4dENoYW5nZWQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJOb3RpY2VUZXh0Q2hhbmdlZC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLGtEQUEyQztBQUUzQyxNQUFxQixpQkFBaUI7SUFBdEM7UUFDSSxZQUFPLEdBQVksTUFBTSxDQUFDLGdCQUFnQixDQUFDO0lBVS9DLENBQUM7SUFUVSxLQUFLO1FBRVIsSUFBRyxJQUFJLENBQUMsT0FBTyxLQUFLLG9CQUFVLENBQUMsYUFBYSxFQUM1QztZQUNJLElBQUksQ0FBQyxPQUFPLEdBQUcsb0JBQVUsQ0FBQyxhQUFhLENBQUM7WUFDeEMsT0FBTyxJQUFJLENBQUM7U0FDZjtRQUNELE9BQU8sS0FBSyxDQUFDO0lBQ2pCLENBQUM7Q0FDSjtBQVhELG9DQVdDIn0=","assetPath":"Assets/Scripts/NoticeTextChanged.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"NoticeTextChanged","description":""},"isCompiled":true}'
+  typescriptHash: 7c08b627379c8f61d24413b9df0adf81

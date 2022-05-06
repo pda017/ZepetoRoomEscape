@@ -4,6 +4,7 @@ import AddItemToInventory from './AddItemToInventory';
 import CheckInvenSelectIndexValid from './CheckInvenSelectIndexValid'
 import CombineData from './Data/CombineData';
 import InventoryData from './Data/InventoryData'
+import PrefabMgr from './PrefabMgr';
 import RemoveInvenItem from './RemoveInvenItem';
 
 export default class CombineItem {
@@ -13,6 +14,8 @@ export default class CombineItem {
         InventoryData.m_CombineModeDirty = Time.time;
         if(selectIndex !== InventoryData.m_SelectIndex && selectIndex >=0 && selectIndex < InventoryData.m_InvenList.length)
         {
+            if(selectIndex === InventoryData.m_EquipedIndex || InventoryData.m_SelectIndex === InventoryData.m_EquipedIndex)
+                InventoryData.m_EquipedIndex = -1;
             var firstItem = InventoryData.m_InvenList[InventoryData.m_SelectIndex];
             var secondItem = InventoryData.m_InvenList[selectIndex];
             //console.log("firstItem:"+firstItem+",secondItem:" + secondItem);
@@ -32,6 +35,8 @@ export default class CombineItem {
                     RemoveInvenItem.Remove(firstItem);
                     RemoveInvenItem.Remove(secondItem);
                     AddItemToInventory.Add(value.m_Result);
+                    if(value.m_Event != "")
+                        PrefabMgr.Create(value.m_Event);
                     return true;
                 }
             }

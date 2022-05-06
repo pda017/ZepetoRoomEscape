@@ -18,5 +18,11 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/ExcuteSelectEvent.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 08984bed3d0d3a4104085ff116c8a654
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    PrefabMgr_1 = require(\"./PrefabMgr\");\r\nconst SelectEventKey_1 = require(\"./SelectEventKey\");\r\nclass
+    ExcuteSelectEvent {\r\n    static Excute(target) {\r\n        var eventKey =
+    target.GetComponentInParent($typeof(SelectEventKey_1.default));\r\n        if
+    (eventKey != null) {\r\n            PrefabMgr_1.default.Create(eventKey.m_Value);\r\n       
+    }\r\n    }\r\n}\r\nexports.default = ExcuteSelectEvent;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXhjdXRlU2VsZWN0RXZlbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJFeGN1dGVTZWxlY3RFdmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUF5QztBQUV6QywyQ0FBb0M7QUFDcEMscURBQThDO0FBRTlDLE1BQXFCLGlCQUFpQjtJQUMzQixNQUFNLENBQUMsTUFBTSxDQUFDLE1BQW1CO1FBRXBDLElBQUksUUFBUSxHQUFHLE1BQU0sQ0FBQyxvQkFBb0IsU0FBQyx3QkFBYyxFQUFHLENBQUM7UUFDN0QsSUFBRyxRQUFRLElBQUksSUFBSSxFQUNuQjtZQUNJLG1CQUFTLENBQUMsTUFBTSxDQUFDLFFBQVEsQ0FBQyxPQUFPLENBQUMsQ0FBQztTQUN0QztJQUNMLENBQUM7Q0FDSjtBQVRELG9DQVNDIn0=","assetPath":"Assets/Scripts/ExcuteSelectEvent.ts","manifest":{"properties":[],"name":"ExcuteSelectEvent","description":""},"isCompiled":true}'
+  typescriptHash: c91ba0e3ac7b2af99c58e5585fe0efa4

@@ -18,5 +18,14 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/NoticeTextTest.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: b320410b0dd819b013e9641047f272e0
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst UnityEngine_1 = require(\\\"UnityEngine\\\");\\r\\nconst
+    ZEPETO_Script_1 = require(\\\"ZEPETO.Script\\\");\\r\\nconst ButtonEvent_1 =
+    require(\\\"./ButtonEvent\\\");\\r\\nconst DialogData_1 = require(\\\"./Data/DialogData\\\");\\r\\nclass
+    NoticeTextTest extends ZEPETO_Script_1.ZepetoScriptBehaviour {\\r\\n    Start()
+    {\\r\\n        ButtonEvent_1.default.Add(this.gameObject, () => {\\r\\n           
+    DialogData_1.default.m_NoticeText = \\\"\uC5F4\uC1E0\uB97C \uD68D\uB4DD\uD558\uC600\uC2B5\uB2C8\uB2E4.\\\";\\r\\n           
+    DialogData_1.default.m_NoticeDirty = UnityEngine_1.Time.time;\\r\\n           
+    DialogData_1.default.m_NoticePlaying = true;\\r\\n        });\\r\\n    }\\r\\n}\\r\\nexports.default
+    = NoticeTextTest;\\r\\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTm90aWNlVGV4dFRlc3QuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJOb3RpY2VUZXh0VGVzdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFtQztBQUNuQyxpREFBcUQ7QUFDckQsK0NBQXVDO0FBQ3ZDLGtEQUEyQztBQUUzQyxNQUFxQixjQUFlLFNBQVEscUNBQXFCO0lBRTdELEtBQUs7UUFDRCxxQkFBVyxDQUFDLEdBQUcsQ0FBQyxJQUFJLENBQUMsVUFBVSxFQUFDLEdBQUUsRUFBRTtZQUVoQyxvQkFBVSxDQUFDLFlBQVksR0FBRyxjQUFjLENBQUM7WUFDekMsb0JBQVUsQ0FBQyxhQUFhLEdBQUcsa0JBQUksQ0FBQyxJQUFJLENBQUM7WUFDckMsb0JBQVUsQ0FBQyxlQUFlLEdBQUcsSUFBSSxDQUFDO1FBQ3RDLENBQUMsQ0FBQyxDQUFDO0lBQ1AsQ0FBQztDQUNKO0FBVkQsaUNBVUMifQ==\",\"assetPath\":\"Assets/Scripts/NoticeTextTest.ts\",\"manifest\":{\"properties\":[],\"name\":\"NoticeTextTest\",\"description\":\"\"},\"isCompiled\":true}"
+  typescriptHash: bc9ce8f0f407d84aa5a661730a080737

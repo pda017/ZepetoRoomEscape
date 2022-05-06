@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 5eef024c78de0ce479bd044b70e7705a
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst InventoryData_1 = require(\"./Data/InventoryData\");\r\nconst
+    GetInvenItemData_1 = require(\"./GetInvenItemData\");\r\nclass GetSelectedItemData
+    {\r\n    static Get() {\r\n        return GetInvenItemData_1.default.Get(InventoryData_1.default.m_SelectIndex);\r\n   
+    }\r\n}\r\nexports.default = GetSelectedItemData;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2V0U2VsZWN0ZWRJdGVtRGF0YS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkdldFNlbGVjdGVkSXRlbURhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSx3REFBaUQ7QUFFakQseURBQWtEO0FBRWxELE1BQXFCLG1CQUFtQjtJQUU3QixNQUFNLENBQUMsR0FBRztRQUViLE9BQU8sMEJBQWdCLENBQUMsR0FBRyxDQUFDLHVCQUFhLENBQUMsYUFBYSxDQUFDLENBQUM7SUFDN0QsQ0FBQztDQUNKO0FBTkQsc0NBTUMifQ==","assetPath":"Assets/Scripts/GetSelectedItemData.ts","manifest":{"properties":[],"name":"GetSelectedItemData","description":""},"isCompiled":true}'
+  typescriptHash: bc905723a2ba60ae547b01c4644ef32d

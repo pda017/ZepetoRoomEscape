@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: 891fdd67962a89c4fbff690812a69fc2
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    AddItemToInventory_1 = require(\"./AddItemToInventory\");\r\nconst ButtonEvent_1
+    = require(\"./ButtonEvent\");\r\nconst InventoryData_1 = require(\"./Data/InventoryData\");\r\nconst
+    GetDissemblyData_1 = require(\"./GetDissemblyData\");\r\nconst GetSelectedItemData_1
+    = require(\"./GetSelectedItemData\");\r\nconst PrefabMgr_1 = require(\"./PrefabMgr\");\r\nconst
+    RemoveInvenItem_1 = require(\"./RemoveInvenItem\");\r\nclass InvenPanel_DissembleButton
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        ButtonEvent_1.default.Add(this.gameObject,
+    () => {\r\n            var selectItemData = GetSelectedItemData_1.default.Get();\r\n           
+    if (selectItemData != null) {\r\n                var dissemblyData = GetDissemblyData_1.default.Get(selectItemData.m_Key);\r\n               
+    if (dissemblyData != null) {\r\n                    dissemblyData.m_MatList.forEach(v
+    => AddItemToInventory_1.default.Add(v));\r\n                    if (InventoryData_1.default.m_SelectIndex
+    === InventoryData_1.default.m_EquipedIndex)\r\n                        InventoryData_1.default.m_EquipedIndex
+    = -1;\r\n                    RemoveInvenItem_1.default.RemoveSelectedItem();\r\n                   
+    if (dissemblyData.m_Event !== \"\" && dissemblyData.m_Event != null) {\r\n                       
+    PrefabMgr_1.default.Create(dissemblyData.m_Event);\r\n                    }\r\n               
+    }\r\n            }\r\n        });\r\n    }\r\n}\r\nexports.default = InvenPanel_DissembleButton;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW52ZW5QYW5lbF9EaXNzZW1ibGVCdXR0b24uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJJbnZlblBhbmVsX0Rpc3NlbWJsZUJ1dHRvbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUNyRCw2REFBc0Q7QUFDdEQsK0NBQXVDO0FBRXZDLHdEQUFpRDtBQUNqRCx5REFBa0Q7QUFDbEQsK0RBQXdEO0FBQ3hELDJDQUFvQztBQUNwQyx1REFBZ0Q7QUFFaEQsTUFBcUIsMEJBQTJCLFNBQVEscUNBQXFCO0lBRXpFLEtBQUs7UUFDRCxxQkFBVyxDQUFDLEdBQUcsQ0FBQyxJQUFJLENBQUMsVUFBVSxFQUFDLEdBQUUsRUFBRTtZQUVoQyxJQUFJLGNBQWMsR0FBRyw2QkFBbUIsQ0FBQyxHQUFHLEVBQUUsQ0FBQztZQUMvQyxJQUFHLGNBQWMsSUFBSSxJQUFJLEVBQ3pCO2dCQUNJLElBQUksYUFBYSxHQUFHLDBCQUFnQixDQUFDLEdBQUcsQ0FBQyxjQUFjLENBQUMsS0FBSyxDQUFDLENBQUM7Z0JBQy9ELElBQUcsYUFBYSxJQUFJLElBQUksRUFDeEI7b0JBQ0ksYUFBYSxDQUFDLFNBQVMsQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFBLEVBQUUsQ0FBQSw0QkFBa0IsQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQztvQkFDOUQsSUFBRyx1QkFBYSxDQUFDLGFBQWEsS0FBSyx1QkFBYSxDQUFDLGNBQWM7d0JBQzNELHVCQUFhLENBQUMsY0FBYyxHQUFHLENBQUMsQ0FBQyxDQUFDO29CQUN0Qyx5QkFBZSxDQUFDLGtCQUFrQixFQUFFLENBQUM7b0JBQ3JDLElBQUcsYUFBYSxDQUFDLE9BQU8sS0FBSyxFQUFFLElBQUksYUFBYSxDQUFDLE9BQU8sSUFBSSxJQUFJLEVBQ2hFO3dCQUNJLG1CQUFTLENBQUMsTUFBTSxDQUFDLGFBQWEsQ0FBQyxPQUFPLENBQUMsQ0FBQztxQkFDM0M7aUJBQ0o7YUFDSjtRQUNMLENBQUMsQ0FBQyxDQUFDO0lBQ1AsQ0FBQztDQUVKO0FBeEJELDZDQXdCQyJ9","assetPath":"Assets/Scripts/InvenPanel_DissembleButton.ts","manifest":{"properties":[],"name":"InvenPanel_DissembleButton","description":""},"isCompiled":true}'
+  typescriptHash: 681fd4b0d55326cf422dde668a94e494

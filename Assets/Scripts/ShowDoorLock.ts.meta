@@ -18,5 +18,11 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/ShowDoorLock.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: df95c529fe2c433f4dd9c886a30e6b47
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst DoorLockData_1 = require(\"./Data/DoorLockData\");\r\nconst
+    PanelMgr_1 = require(\"./PanelMgr\");\r\nclass ShowDoorLock {\r\n    static Show(panelName,
+    passwordLimit) {\r\n        PanelMgr_1.default.Show(panelName);\r\n        DoorLockData_1.default.m_PasswordLimit
+    = passwordLimit;\r\n        DoorLockData_1.default.m_InputDone = false;\r\n       
+    DoorLockData_1.default.m_Password = \"\";\r\n        DoorLockData_1.default.m_PasswordDirty++;\r\n   
+    }\r\n}\r\nexports.default = ShowDoorLock;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2hvd0Rvb3JMb2NrLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiU2hvd0Rvb3JMb2NrLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0Esc0RBQStDO0FBQy9DLHlDQUFrQztBQUVsQyxNQUFxQixZQUFZO0lBQ3RCLE1BQU0sQ0FBQyxJQUFJLENBQUMsU0FBa0IsRUFBQyxhQUFzQjtRQUV4RCxrQkFBUSxDQUFDLElBQUksQ0FBQyxTQUFTLENBQUMsQ0FBQztRQUN6QixzQkFBWSxDQUFDLGVBQWUsR0FBRyxhQUFhLENBQUM7UUFDN0Msc0JBQVksQ0FBQyxXQUFXLEdBQUcsS0FBSyxDQUFDO1FBQ2pDLHNCQUFZLENBQUMsVUFBVSxHQUFHLEVBQUUsQ0FBQztRQUM3QixzQkFBWSxDQUFDLGVBQWUsRUFBRSxDQUFDO0lBQ25DLENBQUM7Q0FDSjtBQVRELCtCQVNDIn0=","assetPath":"Assets/Scripts/ShowDoorLock.ts","manifest":{"properties":[],"name":"ShowDoorLock","description":""},"isCompiled":true}'
+  typescriptHash: 1cd777c71b809ddacdba43b148909bf2

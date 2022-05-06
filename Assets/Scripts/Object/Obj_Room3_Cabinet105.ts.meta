@@ -18,5 +18,23 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/Object/Obj_Room3_Cabinet105.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 207032d9136a670a3e64ede5901e33d2
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst Finder_1 = require(\"../Finder\");\r\nconst
+    Interactable_1 = require(\"../Interactable\");\r\nconst IsOn_1 = require(\"../IsOn\");\r\nconst
+    ItemDialog_1 = require(\"../ItemDialog\");\r\nconst SetDialog_1 = require(\"../SetDialog\");\r\nconst
+    SetInteractable_1 = require(\"../SetInteractable\");\r\nconst ZAnimator_1 = require(\"../ZAnimator\");\r\nclass
+    Obj_Room3_Cabinet105 extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
+    {\r\n        super(...arguments);\r\n        this.m_NumState = 0;\r\n    }\r\n   
+    Start() {\r\n        this.m_Anim = new ZAnimator_1.default(this.gameObject, true);\r\n       
+    this.m_ItemDialog = this.GetComponent($typeof(ItemDialog_1.default));\r\n       
+    this.m_IsOn = this.GetComponent($typeof(IsOn_1.default));\r\n        this.m_Interactable
+    = this.GetComponent($typeof(Interactable_1.default));\r\n    }\r\n    Update()
+    {\r\n        if (this.m_NumState === 0) {\r\n            if (this.m_IsOn.m_Value)
+    {\r\n                SetInteractable_1.default.Set(\"CrowBar_Selector\", true);\r\n               
+    this.m_Anim.Play(\"Open\");\r\n                this.m_Interactable.m_Value =
+    false;\r\n                this.m_Interactable.m_Dirty = UnityEngine_1.Time.time;\r\n               
+    SetDialog_1.default.SetByKey(this.m_ItemDialog.m_DialogKey);\r\n               
+    this.m_NumState++;\r\n            }\r\n        }\r\n    }\r\n}\r\nexports.default
+    = Obj_Room3_Cabinet105;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiT2JqX1Jvb20zX0NhYmluZXQxMDUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJPYmpfUm9vbTNfQ2FiaW5ldDEwNS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFtQztBQUNuQyxpREFBcUQ7QUFDckQsc0NBQStCO0FBQy9CLGtEQUEyQztBQUMzQyxrQ0FBMEI7QUFDMUIsOENBQXVDO0FBQ3ZDLDRDQUFxQztBQUNyQyx3REFBaUQ7QUFDakQsNENBQXFDO0FBRXJDLE1BQXFCLG9CQUFxQixTQUFRLHFDQUFxQjtJQUF2RTs7UUFJSSxlQUFVLEdBQVksQ0FBQyxDQUFDO0lBdUI1QixDQUFDO0lBckJHLEtBQUs7UUFDRCxJQUFJLENBQUMsTUFBTSxHQUFHLElBQUksbUJBQVMsQ0FBQyxJQUFJLENBQUMsVUFBVSxFQUFDLElBQUksQ0FBQyxDQUFDO1FBQ2xELElBQUksQ0FBQyxZQUFZLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQyxvQkFBVSxFQUFHLENBQUM7UUFDcEQsSUFBSSxDQUFDLE1BQU0sR0FBRyxJQUFJLENBQUMsWUFBWSxTQUFDLGNBQUksRUFBRyxDQUFDO1FBQ3hDLElBQUksQ0FBQyxjQUFjLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQyxzQkFBWSxFQUFHLENBQUM7SUFDNUQsQ0FBQztJQUNELE1BQU07UUFFRixJQUFHLElBQUksQ0FBQyxVQUFVLEtBQUssQ0FBQyxFQUN4QjtZQUNJLElBQUcsSUFBSSxDQUFDLE1BQU0sQ0FBQyxPQUFPLEVBQ3RCO2dCQUNJLHlCQUFlLENBQUMsR0FBRyxDQUFDLGtCQUFrQixFQUFDLElBQUksQ0FBQyxDQUFDO2dCQUM3QyxJQUFJLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxNQUFNLENBQUMsQ0FBQztnQkFDekIsSUFBSSxDQUFDLGNBQWMsQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDO2dCQUNwQyxJQUFJLENBQUMsY0FBYyxDQUFDLE9BQU8sR0FBRyxrQkFBSSxDQUFDLElBQUksQ0FBQztnQkFDeEMsbUJBQVMsQ0FBQyxRQUFRLENBQUMsSUFBSSxDQUFDLFlBQVksQ0FBQyxXQUFXLENBQUMsQ0FBQztnQkFDbEQsSUFBSSxDQUFDLFVBQVUsRUFBRSxDQUFDO2FBQ3JCO1NBQ0o7SUFDTCxDQUFDO0NBQ0o7QUEzQkQsdUNBMkJDIn0=","assetPath":"Assets/Scripts/Object/Obj_Room3_Cabinet105.ts","manifest":{"properties":[{"assembly":"","name":"m_IsOn","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/IsOn.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_Interactable","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/Interactable.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_ItemDialog","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/ItemDialog.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_NumState","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_Anim","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/ZAnimator.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Obj_Room3_Cabinet105","description":""},"isCompiled":true}'
+  typescriptHash: 18c6bc71789d67607b77643d28f9c716

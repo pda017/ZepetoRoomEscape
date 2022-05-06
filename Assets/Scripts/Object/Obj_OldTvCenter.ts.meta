@@ -1,0 +1,50 @@
+fileFormatVersion: 2
+guid: 35a0e2eaf95a11b4c9d1fcb4577a6d6a
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst RemoconData_1 = require(\"../Data/RemoconData\");\r\nconst
+    Finder_1 = require(\"../Finder\");\r\nconst IsOn_1 = require(\"../IsOn\");\r\nconst
+    RemoconInputChanged_1 = require(\"../RemoconInputChanged\");\r\nconst ZAnimator_1
+    = require(\"../ZAnimator\");\r\nclass Obj_OldTvCenter extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.m_MoveTime
+    = 1;\r\n        this.m_RemoconInputChanged = new RemoconInputChanged_1.default();\r\n       
+    this.m_NumState = 0;\r\n    }\r\n    Start() {\r\n        this.m_IsOn = this.GetComponentInChildren($typeof(IsOn_1.default));\r\n       
+    this.m_DefaultTf = Finder_1.default.Find(\"Room4_OldTv_DefaultTf\").transform;\r\n       
+    this.m_LeftTf = Finder_1.default.Find(\"Room4_OldTv_LeftTf\").transform;\r\n       
+    this.m_RemoconInputChanged.Check();\r\n        this.m_Tf = this.transform;\r\n   
+    }\r\n    Update() {\r\n        if (this.m_NumState === 0) {\r\n            if
+    (this.m_RemoconInputChanged.Check()) {\r\n                if (RemoconData_1.default.m_Dir.x
+    < 0) {\r\n                    this.m_IsOn.m_Value = false;\r\n                   
+    this.m_Stamp = UnityEngine_1.Time.time;\r\n                    this.m_NumState++;\r\n               
+    }\r\n            }\r\n        }\r\n        else if (this.m_NumState === 1) {\r\n           
+    var t = (UnityEngine_1.Time.time - this.m_Stamp) / this.m_MoveTime;\r\n           
+    this.m_Tf.rotation = UnityEngine_1.Quaternion.Lerp(this.m_DefaultTf.rotation,
+    this.m_LeftTf.rotation, t);\r\n            if (t >= 1) {\r\n                this.m_NumState++;\r\n           
+    }\r\n        }\r\n        else if (this.m_NumState === 2) {\r\n            if
+    (this.m_RemoconInputChanged.Check()) {\r\n                if (RemoconData_1.default.m_Dir.x
+    > 0) {\r\n                    this.m_IsOn.m_Value = false;\r\n                   
+    this.m_Stamp = UnityEngine_1.Time.time;\r\n                    this.m_NumState++;\r\n               
+    }\r\n            }\r\n        }\r\n        else if (this.m_NumState === 3) {\r\n           
+    var t = (UnityEngine_1.Time.time - this.m_Stamp) / this.m_MoveTime;\r\n           
+    this.m_Tf.rotation = UnityEngine_1.Quaternion.Lerp(this.m_LeftTf.rotation, this.m_DefaultTf.rotation,
+    t);\r\n            if (t >= 1) {\r\n                this.m_NumState = 0;\r\n           
+    }\r\n        }\r\n    }\r\n}\r\nexports.default = Obj_OldTvCenter;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiT2JqX09sZFR2Q2VudGVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiT2JqX09sZFR2Q2VudGVyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQXlEO0FBQ3pELGlEQUFxRDtBQUNyRCxxREFBOEM7QUFDOUMsc0NBQStCO0FBQy9CLGtDQUEyQjtBQUMzQixnRUFBeUQ7QUFDekQsNENBQXFDO0FBRXJDLE1BQXFCLGVBQWdCLFNBQVEscUNBQXFCO0lBQWxFOztRQUNXLGVBQVUsR0FBWSxDQUFDLENBQUM7UUFFL0IsMEJBQXFCLEdBQXlCLElBQUksNkJBQW1CLEVBQUUsQ0FBQztRQUN4RSxlQUFVLEdBQVksQ0FBQyxDQUFDO0lBMEQ1QixDQUFDO0lBckRHLEtBQUs7UUFFRCxJQUFJLENBQUMsTUFBTSxHQUFHLElBQUksQ0FBQyxzQkFBc0IsU0FBQyxjQUFJLEVBQUcsQ0FBQztRQUNsRCxJQUFJLENBQUMsV0FBVyxHQUFHLGdCQUFNLENBQUMsSUFBSSxDQUFDLHVCQUF1QixDQUFDLENBQUMsU0FBUyxDQUFDO1FBQ2xFLElBQUksQ0FBQyxRQUFRLEdBQUcsZ0JBQU0sQ0FBQyxJQUFJLENBQUMsb0JBQW9CLENBQUMsQ0FBQyxTQUFTLENBQUM7UUFDNUQsSUFBSSxDQUFDLHFCQUFxQixDQUFDLEtBQUssRUFBRSxDQUFDO1FBQ25DLElBQUksQ0FBQyxJQUFJLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQztJQUMvQixDQUFDO0lBQ0QsTUFBTTtRQUVGLElBQUcsSUFBSSxDQUFDLFVBQVUsS0FBSyxDQUFDLEVBQ3hCO1lBQ0ksSUFBRyxJQUFJLENBQUMscUJBQXFCLENBQUMsS0FBSyxFQUFFLEVBQ3JDO2dCQUNJLElBQUcscUJBQVcsQ0FBQyxLQUFLLENBQUMsQ0FBQyxHQUFHLENBQUMsRUFDMUI7b0JBQ0ksSUFBSSxDQUFDLE1BQU0sQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDO29CQUM1QixJQUFJLENBQUMsT0FBTyxHQUFHLGtCQUFJLENBQUMsSUFBSSxDQUFDO29CQUN6QixJQUFJLENBQUMsVUFBVSxFQUFFLENBQUM7aUJBQ3JCO2FBQ0o7U0FDSjthQUNJLElBQUcsSUFBSSxDQUFDLFVBQVUsS0FBSyxDQUFDLEVBQzdCO1lBQ0ksSUFBSSxDQUFDLEdBQUcsQ0FBQyxrQkFBSSxDQUFDLElBQUksR0FBRyxJQUFJLENBQUMsT0FBTyxDQUFDLEdBQUcsSUFBSSxDQUFDLFVBQVUsQ0FBQztZQUNyRCxJQUFJLENBQUMsSUFBSSxDQUFDLFFBQVEsR0FBRyx3QkFBVSxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsV0FBVyxDQUFDLFFBQVEsRUFBQyxJQUFJLENBQUMsUUFBUSxDQUFDLFFBQVEsRUFBQyxDQUFDLENBQUMsQ0FBQztZQUN6RixJQUFHLENBQUMsSUFBSSxDQUFDLEVBQ1Q7Z0JBQ0ksSUFBSSxDQUFDLFVBQVUsRUFBRSxDQUFDO2FBQ3JCO1NBQ0o7YUFDSSxJQUFHLElBQUksQ0FBQyxVQUFVLEtBQUssQ0FBQyxFQUM3QjtZQUNJLElBQUcsSUFBSSxDQUFDLHFCQUFxQixDQUFDLEtBQUssRUFBRSxFQUNyQztnQkFDSSxJQUFHLHFCQUFXLENBQUMsS0FBSyxDQUFDLENBQUMsR0FBRyxDQUFDLEVBQzFCO29CQUNJLElBQUksQ0FBQyxNQUFNLENBQUMsT0FBTyxHQUFHLEtBQUssQ0FBQztvQkFDNUIsSUFBSSxDQUFDLE9BQU8sR0FBRyxrQkFBSSxDQUFDLElBQUksQ0FBQztvQkFDekIsSUFBSSxDQUFDLFVBQVUsRUFBRSxDQUFDO2lCQUNyQjthQUNKO1NBQ0o7YUFDSSxJQUFHLElBQUksQ0FBQyxVQUFVLEtBQUssQ0FBQyxFQUM3QjtZQUNJLElBQUksQ0FBQyxHQUFHLENBQUMsa0JBQUksQ0FBQyxJQUFJLEdBQUcsSUFBSSxDQUFDLE9BQU8sQ0FBQyxHQUFHLElBQUksQ0FBQyxVQUFVLENBQUM7WUFDckQsSUFBSSxDQUFDLElBQUksQ0FBQyxRQUFRLEdBQUcsd0JBQVUsQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUFDLFFBQVEsQ0FBQyxRQUFRLEVBQUMsSUFBSSxDQUFDLFdBQVcsQ0FBQyxRQUFRLEVBQUMsQ0FBQyxDQUFDLENBQUM7WUFDekYsSUFBRyxDQUFDLElBQUksQ0FBQyxFQUNUO2dCQUNJLElBQUksQ0FBQyxVQUFVLEdBQUcsQ0FBQyxDQUFDO2FBQ3ZCO1NBQ0o7SUFDTCxDQUFDO0NBQ0o7QUE5REQsa0NBOERDIn0=","assetPath":"Assets/Scripts/Object/Obj_OldTvCenter.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_MoveTime","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"m_Tf","type":"UnityEngine.Transform","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_RemoconInputChanged","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/RemoconInputChanged.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_NumState","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_Stamp","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"m_DefaultTf","type":"UnityEngine.Transform","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"m_LeftTf","type":"UnityEngine.Transform","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_IsOn","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/IsOn.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Obj_OldTvCenter","description":""},"isCompiled":true}'
+  typescriptHash: e303c4724697418ff36dc6bd5c810570

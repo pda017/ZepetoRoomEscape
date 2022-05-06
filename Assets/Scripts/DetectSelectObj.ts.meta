@@ -18,5 +18,40 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/DetectSelectObj.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: fca334096706fce60ec6e704aec35128
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    LayerData_1 = require(\"./Data/LayerData\");\r\nconst PlayerData_1 = require(\"./Data/PlayerData\");\r\nconst
+    GetMyCharacter_1 = require(\"./GetMyCharacter\");\r\nconst GetZepetoCam_1 = require(\"./GetZepetoCam\");\r\nconst
+    Interactable_1 = require(\"./Interactable\");\r\nconst Vector3Util_1 = require(\"./Vector3Util\");\r\nclass
+    DetectSelectObj {\r\n    constructor() {\r\n        this.m_CharInfo = null;\r\n       
+    this.m_Cam = null;\r\n        this.m_CamTf = null;\r\n    }\r\n    Detect() {\r\n       
+    //console.log(\"##DetectSelectObj Start\");\r\n        if (this.m_CharInfo ===
+    null)\r\n            this.m_CharInfo = GetMyCharacter_1.default.GetInfo();\r\n       
+    //console.log(\"##m_CharInfo:\"+this.m_CharInfo);\r\n        if (this.m_CamTf
+    === null) {\r\n            this.m_Cam = GetZepetoCam_1.default.Get();\r\n           
+    if (this.m_Cam !== null)\r\n                this.m_CamTf = this.m_Cam.transform;\r\n       
+    }\r\n        //console.log(\"##camTf:\" + this.m_CamTf);\r\n        if (this.m_CharInfo
+    === null || this.m_CamTf === null)\r\n            return null;\r\n        //console.log(\"##OverlapSphere
+    Start\");\r\n        var center = this.m_CharInfo.m_Col.bounds.center;\r\n       
+    var radius = PlayerData_1.default.m_SelectDetectRange;\r\n        var camForward
+    = this.m_CamTf.forward;\r\n        camForward.y = 0;\r\n        camForward.Normalize();\r\n       
+    var hits = UnityEngine_1.Physics.OverlapSphere(center, radius, LayerData_1.default.m_SelectableObj);\r\n       
+    //console.log(hits.length);\r\n        var minAngle = Number.MAX_VALUE;\r\n       
+    var targetCol = null;\r\n        for (let i = 0; i < hits.length; i++) {\r\n           
+    var value = hits[i];\r\n            if (this.CheckWall(value))\r\n               
+    continue;\r\n            var interactable = value.GetComponentInParent($typeof(Interactable_1.default));\r\n           
+    if (interactable != null && !interactable.m_Value)\r\n                continue;\r\n           
+    var look = Vector3Util_1.default.Minus(value.bounds.center, center);\r\n           
+    look.y = 0;\r\n            var dir = look.normalized;\r\n            var angle
+    = UnityEngine_1.Vector3.Angle(dir, camForward);\r\n            if (angle < PlayerData_1.default.m_SelectDetectAngle
+    && angle < minAngle) {\r\n                minAngle = angle;\r\n               
+    targetCol = value;\r\n            }\r\n        }\r\n        return targetCol;\r\n   
+    }\r\n    CheckWall(col) {\r\n        //Debug.DrawLine(this.m_CharInfo.m_Col.bounds.center,col.bounds.center,Color.red);\r\n       
+    var charCenter = this.m_CharInfo.m_Col.bounds.center;\r\n        var look = Vector3Util_1.default.Minus(col.bounds.center,
+    charCenter);\r\n        var dir = look.normalized;\r\n        var dist = look.magnitude;\r\n       
+    var hits = UnityEngine_1.Physics.RaycastAll(charCenter, dir, dist);\r\n       
+    for (let i = 0; i < hits.length; i++) {\r\n            var hit = hits[i];\r\n           
+    //console.log(hit.collider.tag);\r\n            if (hit.collider.CompareTag(\"Wall\"))\r\n               
+    return true;\r\n        }\r\n        return false;\r\n    }\r\n}\r\nexports.default
+    = DetectSelectObj;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGV0ZWN0U2VsZWN0T2JqLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiRGV0ZWN0U2VsZWN0T2JqLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQTBGO0FBSTFGLGdEQUF5QztBQUN6QyxrREFBMkM7QUFDM0MscURBQTREO0FBQzVELGlEQUEwQztBQUMxQyxpREFBMEM7QUFDMUMsK0NBQXdDO0FBRXhDLE1BQXFCLGVBQWU7SUFBcEM7UUFDSSxlQUFVLEdBQWMsSUFBSSxDQUFDO1FBQzdCLFVBQUssR0FBWSxJQUFJLENBQUM7UUFDdEIsWUFBTyxHQUFlLElBQUksQ0FBQztJQW1FL0IsQ0FBQztJQWxFVSxNQUFNO1FBRVQseUNBQXlDO1FBQ3pDLElBQUcsSUFBSSxDQUFDLFVBQVUsS0FBSyxJQUFJO1lBQ3ZCLElBQUksQ0FBQyxVQUFVLEdBQUcsd0JBQWMsQ0FBQyxPQUFPLEVBQUUsQ0FBQztRQUMvQywrQ0FBK0M7UUFDL0MsSUFBRyxJQUFJLENBQUMsT0FBTyxLQUFLLElBQUksRUFDeEI7WUFDSSxJQUFJLENBQUMsS0FBSyxHQUFHLHNCQUFZLENBQUMsR0FBRyxFQUFFLENBQUM7WUFDaEMsSUFBRyxJQUFJLENBQUMsS0FBSyxLQUFLLElBQUk7Z0JBQ2xCLElBQUksQ0FBQyxPQUFPLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxTQUFTLENBQUM7U0FDM0M7UUFDRCx5Q0FBeUM7UUFFekMsSUFBRyxJQUFJLENBQUMsVUFBVSxLQUFLLElBQUksSUFBSSxJQUFJLENBQUMsT0FBTyxLQUFLLElBQUk7WUFDaEQsT0FBTyxJQUFJLENBQUM7UUFFaEIsdUNBQXVDO1FBQ3ZDLElBQUksTUFBTSxHQUFHLElBQUksQ0FBQyxVQUFVLENBQUMsS0FBSyxDQUFDLE1BQU0sQ0FBQyxNQUFNLENBQUM7UUFDakQsSUFBSSxNQUFNLEdBQUcsb0JBQVUsQ0FBQyxtQkFBbUIsQ0FBQztRQUM1QyxJQUFJLFVBQVUsR0FBRyxJQUFJLENBQUMsT0FBTyxDQUFD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","assetPath":"Assets/Scripts/DetectSelectObj.ts","manifest":{"properties":[{"assembly":"","name":"m_CharInfo","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/GetMyCharacter.CharInfo","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"m_Cam","type":"UnityEngine.Camera","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"m_CamTf","type":"UnityEngine.Transform","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"DetectSelectObj","description":""},"isCompiled":true}'
+  typescriptHash: 1d244e643ce9e9d3ce0dd9b996caf83b

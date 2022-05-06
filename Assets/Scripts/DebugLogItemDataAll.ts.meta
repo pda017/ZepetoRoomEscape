@@ -18,5 +18,14 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/DebugLogItemDataAll.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: a544285621f6b3f65f7207c06cd77d99
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ItemData_1 = require(\"./Data/ItemData\");\r\nclass DebugLogItemDataAll extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        var map =
+    ItemData_1.default.GetItemMap();\r\n        map.forEach((value, key) => {\r\n           
+    console.log(\" Desc : \" + value.m_Desc\r\n                + \" Disposable :
+    \" + value.m_Disposable\r\n                + \" Icon : \" + value.m_Icon\r\n               
+    + \" ItemName : \" + value.m_ItemName\r\n                + \" Key : \" + value.m_Key\r\n               
+    + \" Prefab : \" + value.m_Prefab\r\n                + \" UseItem : \" + value.m_UseItem);\r\n       
+    });\r\n    }\r\n}\r\nexports.default = DebugLogItemDataAll;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGVidWdMb2dJdGVtRGF0YUFsbC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkRlYnVnTG9nSXRlbURhdGFBbGwudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsOENBQXNDO0FBRXRDLE1BQXFCLG1CQUFvQixTQUFRLHFDQUFxQjtJQUVsRSxLQUFLO1FBQ0QsSUFBSSxHQUFHLEdBQUcsa0JBQVEsQ0FBQyxVQUFVLEVBQUUsQ0FBQztRQUNoQyxHQUFHLENBQUMsT0FBTyxDQUFDLENBQUMsS0FBSyxFQUFDLEdBQUcsRUFBQyxFQUFFO1lBRXJCLE9BQU8sQ0FBQyxHQUFHLENBQUMsVUFBVSxHQUFHLEtBQUssQ0FBQyxNQUFNO2tCQUNuQyxnQkFBZ0IsR0FBRyxLQUFLLENBQUMsWUFBWTtrQkFDckMsVUFBVSxHQUFHLEtBQUssQ0FBQyxNQUFNO2tCQUN6QixjQUFjLEdBQUcsS0FBSyxDQUFDLFVBQVU7a0JBQ2pDLFNBQVMsR0FBRyxLQUFLLENBQUMsS0FBSztrQkFDdkIsWUFBWSxHQUFHLEtBQUssQ0FBQyxRQUFRO2tCQUM3QixhQUFhLEdBQUcsS0FBSyxDQUFDLFNBQVMsQ0FBQyxDQUFDO1FBQ3ZDLENBQUMsQ0FBQyxDQUFDO0lBQ1AsQ0FBQztDQUVKO0FBaEJELHNDQWdCQyJ9","assetPath":"Assets/Scripts/DebugLogItemDataAll.ts","manifest":{"properties":[],"name":"DebugLogItemDataAll","description":""},"isCompiled":true}'
+  typescriptHash: 1e129567f47db9580b724bfb0e0a8907

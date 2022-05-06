@@ -4,6 +4,7 @@ import DialogData from './DialogData';
 import DoorLockData from './DoorLockData';
 import InventoryData from './InventoryData';
 import KeyInputData from './KeyInputData';
+import RotateLockData from './RotateLockData';
 import SelectObjData from './SelectObjData';
 
 export default class InitData {
@@ -15,5 +16,6 @@ export default class InitData {
         KeyInputData.Init();
         DialogData.Init();
         DoorLockData.Init();
+        RotateLockData.Init();
     }
 }

@@ -18,5 +18,11 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/Event/Event_GetItem.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: c768fd3d39438da0dcc916198423749d
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst SetDialog_1 = require(\"../SetDialog\");\r\nconst
+    SetNotice_1 = require(\"../SetNotice\");\r\nclass Event_GetItem extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n        SetNotice_1.default.SetByKey(this.m_NoticeKey);\r\n       
+    SetDialog_1.default.SetByKey(this.m_DialogKey);\r\n        UnityEngine_1.GameObject.Destroy(this.gameObject);\r\n   
+    }\r\n}\r\nexports.default = Event_GetItem;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXZlbnRfR2V0SXRlbS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkV2ZW50X0dldEl0ZW0udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBeUM7QUFDekMsaURBQXFEO0FBQ3JELDRDQUFxQztBQUNyQyw0Q0FBcUM7QUFFckMsTUFBcUIsYUFBYyxTQUFRLHFDQUFxQjtJQUc1RCxLQUFLO1FBQ0QsbUJBQVMsQ0FBQyxRQUFRLENBQUMsSUFBSSxDQUFDLFdBQVcsQ0FBQyxDQUFDO1FBQ3JDLG1CQUFTLENBQUMsUUFBUSxDQUFDLElBQUksQ0FBQyxXQUFXLENBQUMsQ0FBQztRQUNyQyx3QkFBVSxDQUFDLE9BQU8sQ0FBQyxJQUFJLENBQUMsVUFBVSxDQUFDLENBQUM7SUFDeEMsQ0FBQztDQUVKO0FBVEQsZ0NBU0MifQ==","assetPath":"Assets/Scripts/Event/Event_GetItem.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_DialogKey","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_NoticeKey","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Event_GetItem","description":""},"isCompiled":true}'
+  typescriptHash: 275f7b75e9cd8535f608e311414d7eaa

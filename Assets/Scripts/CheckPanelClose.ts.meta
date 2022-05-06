@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 83cebd99fda75194693850a13c6a8851
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst PanelMgr_1 = require(\"./PanelMgr\");\r\nclass CheckPanelClose
+    {\r\n    constructor(panelName = \"\") {\r\n        if (panelName == \"\")\r\n           
+    return;\r\n        this.m_PanelName = panelName;\r\n        this.Init();\r\n   
+    }\r\n    Init() {\r\n        if (this.m_Canvas == null)\r\n            this.m_Canvas
+    = PanelMgr_1.default.GetPanel(this.m_PanelName);\r\n    }\r\n    Check() {\r\n       
+    if (this.m_Canvas == null)\r\n            return false;\r\n        if (!this.m_Canvas.enabled)\r\n           
+    return true;\r\n        return false;\r\n    }\r\n}\r\nexports.default = CheckPanelClose;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hlY2tQYW5lbENsb3NlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQ2hlY2tQYW5lbENsb3NlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUEseUNBQWtDO0FBRWxDLE1BQXFCLGVBQWU7SUFHaEMsWUFBWSxZQUFxQixFQUFFO1FBRS9CLElBQUcsU0FBUyxJQUFJLEVBQUU7WUFDZCxPQUFRO1FBQ1osSUFBSSxDQUFDLFdBQVcsR0FBRyxTQUFTLENBQUM7UUFDN0IsSUFBSSxDQUFDLElBQUksRUFBRSxDQUFDO0lBRWhCLENBQUM7SUFDTSxJQUFJO1FBRVAsSUFBRyxJQUFJLENBQUMsUUFBUSxJQUFJLElBQUk7WUFDcEIsSUFBSSxDQUFDLFFBQVEsR0FBRyxrQkFBUSxDQUFDLFFBQVEsQ0FBQyxJQUFJLENBQUMsV0FBVyxDQUFDLENBQUM7SUFDNUQsQ0FBQztJQUNNLEtBQUs7UUFFUixJQUFHLElBQUksQ0FBQyxRQUFRLElBQUksSUFBSTtZQUNuQixPQUFPLEtBQUssQ0FBQztRQUVsQixJQUFHLENBQUMsSUFBSSxDQUFDLFFBQVEsQ0FBQyxPQUFPO1lBQ3JCLE9BQU8sSUFBSSxDQUFDO1FBQ2hCLE9BQU8sS0FBSyxDQUFDO0lBQ2pCLENBQUM7Q0FDSjtBQXpCRCxrQ0F5QkMifQ==","assetPath":"Assets/Scripts/CheckPanelClose.ts","manifest":{"properties":[{"assembly":"UnityEngine.UIModule","name":"m_Canvas","type":"UnityEngine.Canvas","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_PanelName","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"CheckPanelClose","description":""},"isCompiled":true}'
+  typescriptHash: bbf4acccde4f7e738662c719a56ed2de

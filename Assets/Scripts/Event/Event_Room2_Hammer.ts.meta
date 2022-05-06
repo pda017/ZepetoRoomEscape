@@ -18,5 +18,13 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/Event/Event_Room2_Hammer.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 2a0ad09a4e2d82e226390e9d4c0fad5a
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst Finder_1 = require(\"../Finder\");\r\nconst
+    Interactable_1 = require(\"../Interactable\");\r\nclass Event_Room2_Hammer extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        var cabinetInteractable
+    = Finder_1.default.Find(\"Room2_Cabinet\").GetComponent($typeof(Interactable_1.default));\r\n       
+    cabinetInteractable.m_Value = true;\r\n        cabinetInteractable.m_Dirty =
+    UnityEngine_1.Time.time;\r\n        UnityEngine_1.GameObject.Destroy(this.gameObject);\r\n   
+    }\r\n}\r\nexports.default = Event_Room2_Hammer;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXZlbnRfUm9vbTJfSGFtbWVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiRXZlbnRfUm9vbTJfSGFtbWVyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQThDO0FBQzlDLGlEQUFxRDtBQUNyRCxzQ0FBK0I7QUFDL0Isa0RBQTJDO0FBRTNDLE1BQXFCLGtCQUFtQixTQUFRLHFDQUFxQjtJQUVqRSxLQUFLO1FBQ0QsSUFBSSxtQkFBbUIsR0FBRyxnQkFBTSxDQUFDLElBQUksQ0FBQyxlQUFlLENBQUMsQ0FBQyxZQUFZLFNBQUMsc0JBQVksRUFBRyxDQUFDO1FBQ3BGLG1CQUFtQixDQUFDLE9BQU8sR0FBRyxJQUFJLENBQUM7UUFDbkMsbUJBQW1CLENBQUMsT0FBTyxHQUFHLGtCQUFJLENBQUMsSUFBSSxDQUFDO1FBQ3hDLHdCQUFVLENBQUMsT0FBTyxDQUFDLElBQUksQ0FBQyxVQUFVLENBQUMsQ0FBQztJQUN4QyxDQUFDO0NBRUo7QUFURCxxQ0FTQyJ9","assetPath":"Assets/Scripts/Event/Event_Room2_Hammer.ts","manifest":{"properties":[],"name":"Event_Room2_Hammer","description":""},"isCompiled":true}'
+  typescriptHash: c6994ece69c7f73ac613f2675c3e3eab

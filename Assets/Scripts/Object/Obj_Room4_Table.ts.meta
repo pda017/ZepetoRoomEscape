@@ -1,0 +1,45 @@
+fileFormatVersion: 2
+guid: a074b2c4b5b9e2745a7a8c05aa2c819f
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    AddItemToInventory_1 = require(\"../AddItemToInventory\");\r\nconst ItemData_1
+    = require(\"../Data/ItemData\");\r\nconst Finder_1 = require(\"../Finder\");\r\nconst
+    Interactable_1 = require(\"../Interactable\");\r\nconst IsOn_1 = require(\"../IsOn\");\r\nconst
+    ItemDialog_1 = require(\"../ItemDialog\");\r\nconst ItemKey_1 = require(\"../ItemKey\");\r\nconst
+    NumState_1 = require(\"../NumState\");\r\nconst SetDialog_1 = require(\"../SetDialog\");\r\nconst
+    SetNotice_1 = require(\"../SetNotice\");\r\nclass Obj_Room4_Table extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n        this.m_NumState = this.GetComponentInParent($typeof(NumState_1.default));\r\n       
+    this.m_ItemKey = this.GetComponent($typeof(ItemKey_1.default));\r\n        this.m_Interactable
+    = this.GetComponent($typeof(Interactable_1.default));\r\n        this.m_IsOn
+    = this.GetComponent($typeof(IsOn_1.default));\r\n    }\r\n    Update() {\r\n       
+    if (this.m_NumState.m_Value === 0) {\r\n            if (this.m_IsOn.m_Value)
+    {\r\n                this.m_IsOn.m_Value = false;\r\n                SetDialog_1.default.SetByKey(\"std_Desk&Chair1Dialog\");\r\n               
+    this.m_NumState.m_Value++;\r\n            }\r\n        }\r\n        else if (this.m_NumState.m_Value
+    === 1) {\r\n            if (this.m_IsOn.m_Value) {\r\n                this.m_IsOn.m_Value
+    = false;\r\n                SetDialog_1.default.SetByKey(\"std_Desk&Chair2Dialog\");\r\n               
+    this.m_NumState.m_Value++;\r\n            }\r\n        }\r\n        else if (this.m_NumState.m_Value
+    === 2) {\r\n            if (this.m_IsOn.m_Value) {\r\n                this.m_IsOn.m_Value
+    = false;\r\n                SetDialog_1.default.SetByKey(\"std_Desk&Chair3Dialog\");\r\n               
+    this.m_NumState.m_Value++;\r\n            }\r\n        }\r\n        else if (this.m_NumState.m_Value
+    === 3) {\r\n            if (this.m_IsOn.m_Value) {\r\n                SetDialog_1.default.SetByKey(\"std_Desk&Chair4Dialog\");\r\n               
+    this.m_NumState.m_Value++;\r\n            }\r\n        }\r\n    }\r\n}\r\nexports.default
+    = Obj_Room4_Table;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiT2JqX1Jvb200X1RhYmxlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiT2JqX1Jvb200X1RhYmxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0EsaURBQXFEO0FBQ3JELDhEQUF1RDtBQUN2RCwrQ0FBd0M7QUFDeEMsc0NBQStCO0FBQy9CLGtEQUEyQztBQUMzQyxrQ0FBMkI7QUFDM0IsOENBQXVDO0FBQ3ZDLHdDQUFnQztBQUNoQywwQ0FBbUM7QUFDbkMsNENBQXFDO0FBQ3JDLDRDQUFxQztBQUVyQyxNQUFxQixlQUFnQixTQUFRLHFDQUFxQjtJQUs5RCxLQUFLO1FBQ0QsSUFBSSxDQUFDLFVBQVUsR0FBRyxJQUFJLENBQUMsb0JBQW9CLFNBQUMsa0JBQVEsRUFBRyxDQUFDO1FBQ3hELElBQUksQ0FBQyxTQUFTLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQyxpQkFBTyxFQUFHLENBQUM7UUFDOUMsSUFBSSxDQUFDLGNBQWMsR0FBRyxJQUFJLENBQUMsWUFBWSxTQUFDLHNCQUFZLEVBQUcsQ0FBQztRQUN4RCxJQUFJLENBQUMsTUFBTSxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMsY0FBSSxFQUFHLENBQUM7SUFDNUMsQ0FBQztJQUNELE1BQU07UUFFRixJQUFHLElBQUksQ0FBQyxVQUFVLENBQUMsT0FBTyxLQUFLLENBQUMsRUFDaEM7WUFDSSxJQUFHLElBQUksQ0FBQyxNQUFNLENBQUMsT0FBTyxFQUN0QjtnQkFDSSxJQUFJLENBQUMsTUFBTSxDQUFDLE9BQU8sR0FBRyxLQUFLLENBQUM7Z0JBQzVCLG1CQUFTLENBQUMsUUFBUSxDQUFDLHVCQUF1QixDQUFDLENBQUM7Z0JBQzVDLElBQUksQ0FBQyxVQUFVLENBQUMsT0FBTyxFQUFFLENBQUM7YUFDN0I7U0FDSjthQUNJLElBQUcsSUFBSSxDQUFDLFVBQVUsQ0FBQyxPQUFPLEtBQUssQ0FBQyxFQUNyQztZQUNJLElBQUcsSUFBSSxDQUFDLE1BQU0sQ0FBQyxPQUFPLEVBQ3RCO2dCQUNJLElBQUksQ0FBQyxNQUFNLENBQUMsT0FBTyxHQUFHLEtBQUssQ0FBQztnQkFDNUIsbUJBQVMsQ0FBQyxRQUFRLENBQUMsdUJBQXVCLENBQUMsQ0FBQztnQkFDNUMsSUFBSSxDQUFDLFVBQVUsQ0FBQyxPQUFPLEVBQUUsQ0FBQzthQUM3QjtTQUNKO2FBQ0ksSUFBRyxJQUFJLENBQUMsVUFBVSxDQUFDLE9BQU8sS0FBSyxDQUFDLEVBQ3JDO1lBQ0ksSUFBRyxJQUFJLENBQUMsTUFBTSxDQUFDLE9BQU8sRUFDdEI7Z0JBQ0ksSUFBSSxDQUFDLE1BQU0sQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDO2dCQUM1QixtQkFBUyxDQUFDLFFBQVEsQ0FBQyx1QkFBdUIsQ0FBQyxDQUFDO2dCQUM1QyxJQUFJLENBQUMsVUFBVSxDQUFDLE9BQU8sRUFBRSxDQUFDO2FBQzdCO1NBQ0o7YUFDSSxJQUFHLElBQUksQ0FBQyxVQUFVLENBQUMsT0FBTyxLQUFLLENBQUMsRUFDckM7WUFDSSxJQUFHLElBQUksQ0FBQyxNQUFNLENBQUMsT0FBTyxFQUN0QjtnQkFDSSxtQkFBUyxDQUFDLFFBQVEsQ0FBQyx1QkFBdUIsQ0FBQyxDQUFDO2dCQUM1QyxJQUFJLENBQUMsVUFBVSxDQUFDLE9BQU8sRUFBRSxDQUFDO2FBQzdCO1NBQ0o7SUFDTCxDQUFDO0NBQ0o7QUFqREQsa0NBaURDIn0=","assetPath":"Assets/Scripts/Object/Obj_Room4_Table.ts","manifest":{"properties":[{"assembly":"","name":"m_IsOn","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/IsOn.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_Interactable","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/Interactable.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_ItemKey","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/ItemKey.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_NumState","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/NumState.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Obj_Room4_Table","description":""},"isCompiled":true}'
+  typescriptHash: 7b1247ecffda0e5d0930b945422993d6

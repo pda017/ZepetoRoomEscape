@@ -18,5 +18,22 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/UI_SelectButton.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: 1c4a592fb7e29deed895248ffaeeb222
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst KeyInputData_1 = require(\"./Data/KeyInputData\");\r\nconst
+    SelectObjData_1 = require(\"./Data/SelectObjData\");\r\nconst GetZepetoCam_1
+    = require(\"./GetZepetoCam\");\r\nconst PercentToScreenLength_1 = require(\"./PercentToScreenLength\");\r\nconst
+    UpdateUIButtonState_1 = require(\"./UpdateUIButtonState\");\r\nclass UI_SelectButton
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor() {\r\n       
+    super(...arguments);\r\n        this.m_Cam = null;\r\n    }\r\n    Start() {\r\n       
+    this.m_UpdateUIButton = new UpdateUIButtonState_1.default(this.gameObject, KeyInputData_1.default.m_SelectKey);\r\n       
+    this.m_Canvas = this.GetComponent($typeof(UnityEngine_1.Canvas));\r\n       
+    this.m_Tf = this.transform;\r\n    }\r\n    Update() {\r\n        this.m_UpdateUIButton.Update();\r\n       
+    if (this.m_Cam === null) {\r\n            this.m_Cam = GetZepetoCam_1.default.Get();\r\n       
+    }\r\n        if (this.m_Cam === null)\r\n            return;\r\n        if (SelectObjData_1.default.m_canSelect)
+    {\r\n            this.m_Canvas.enabled = true;\r\n            this.m_Tf.position
+    = this.m_Cam.WorldToScreenPoint(SelectObjData_1.default.m_ObjPos);\r\n           
+    this.m_Tf.Translate(0, PercentToScreenLength_1.default.Convert(SelectObjData_1.default.m_ButtonHeightPer),
+    0, UnityEngine_1.Space.World);\r\n        }\r\n        else\r\n            this.m_Canvas.enabled
+    = false;\r\n    }\r\n}\r\nexports.default = UI_SelectButton;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVUlfU2VsZWN0QnV0dG9uLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVUlfU2VsZWN0QnV0dG9uLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQXNFO0FBQ3RFLGlEQUFxRDtBQUNyRCxzREFBK0M7QUFDL0Msd0RBQWlEO0FBQ2pELGlEQUEwQztBQUMxQyxtRUFBNEQ7QUFDNUQsK0RBQXdEO0FBRXhELE1BQXFCLGVBQWdCLFNBQVEscUNBQXFCO0lBQWxFOztRQUdJLFVBQUssR0FBWSxJQUFJLENBQUM7SUEwQjFCLENBQUM7SUF4QkcsS0FBSztRQUNELElBQUksQ0FBQyxnQkFBZ0IsR0FBRyxJQUFJLDZCQUFtQixDQUFDLElBQUksQ0FBQyxVQUFVLEVBQUMsc0JBQVksQ0FBQyxXQUFXLENBQUMsQ0FBQztRQUMxRixJQUFJLENBQUMsUUFBUSxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMsb0JBQU0sRUFBRyxDQUFDO1FBQzVDLElBQUksQ0FBQyxJQUFJLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQztJQUMvQixDQUFDO0lBQ0QsTUFBTTtRQUVGLElBQUksQ0FBQyxnQkFBZ0IsQ0FBQyxNQUFNLEVBQUUsQ0FBQztRQUMvQixJQUFHLElBQUksQ0FBQyxLQUFLLEtBQUssSUFBSSxFQUN0QjtZQUNJLElBQUksQ0FBQyxLQUFLLEdBQUcsc0JBQVksQ0FBQyxHQUFHLEVBQUUsQ0FBQztTQUNuQztRQUNELElBQUcsSUFBSSxDQUFDLEtBQUssS0FBSyxJQUFJO1lBQ2xCLE9BQVE7UUFFWixJQUFHLHVCQUFhLENBQUMsV0FBVyxFQUM1QjtZQUNJLElBQUksQ0FBQyxRQUFRLENBQUMsT0FBTyxHQUFHLElBQUksQ0FBQztZQUM3QixJQUFJLENBQUMsSUFBSSxDQUFDLFFBQVEsR0FBRyxJQUFJLENBQUMsS0FBSyxDQUFDLGtCQUFrQixDQUFDLHVCQUFhLENBQUMsUUFBUSxDQUFDLENBQUM7WUFDM0UsSUFBSSxDQUFDLElBQUksQ0FBQyxTQUFTLENBQUMsQ0FBQyxFQUFDLCtCQUFxQixDQUFDLE9BQU8sQ0FBQyx1QkFBYSxDQUFDLGlCQUFpQixDQUFDLEVBQUMsQ0FBQyxFQUFDLG1CQUFLLENBQUMsS0FBSyxDQUFDLENBQUM7U0FDdkc7O1lBRUcsSUFBSSxDQUFDLFFBQVEsQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDO0lBQ3RDLENBQUM7Q0FDSjtBQTdCRCxrQ0E2QkMifQ==","assetPath":"Assets/Scripts/UI_SelectButton.ts","manifest":{"properties":[{"assembly":"UnityEngine.UIModule","name":"m_Canvas","type":"UnityEngine.Canvas","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"m_Tf","type":"UnityEngine.Transform","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"m_Cam","type":"UnityEngine.Camera","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_UpdateUIButton","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/UpdateUIButtonState.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"UI_SelectButton","description":""},"isCompiled":true}'
+  typescriptHash: a7134fbf4e1fdd3b8e2085e51529dfbd
