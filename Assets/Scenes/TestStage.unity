@@ -19359,12 +19359,10 @@ MonoBehaviour:
     unityValues:
     - {fileID: 0}
     values:
-    - '{"type":"ZEPETO.Script.ZepetoScriptSerializer+ArrayInfo, ZEPETO.Script","value":"{\"offset\":0,\"length\":2,\"type\":\"System.String,
+    - '{"type":"ZEPETO.Script.ZepetoScriptSerializer+ArrayInfo, ZEPETO.Script","value":"{\"offset\":0,\"length\":0,\"type\":\"System.String,
       mscorlib\",\"isUnity\":false}"}'
     unityArrayValues: []
-    arrayValues:
-    - Charge_Remote
-    - Teacher_Key
+    arrayValues: []
     script: {fileID: 4458252877524076426, guid: d3b2a4c3db90ca94c9b8d9690d4cc893, type: 3}
     isExpaned: 0
 --- !u!4 &943022973
