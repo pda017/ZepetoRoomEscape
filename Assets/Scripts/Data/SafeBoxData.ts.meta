@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: e06fc4e5bc9d11645bb1a9a3739f4fdc
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nclass SafeBoxData {\r\n    static Init() {\r\n        this.m_bReset
+    = true;\r\n        this.m_bEnter = false;\r\n        this.m_RotatorAngle = 0;\r\n       
+    this.m_InputDirty = 0;\r\n        this.m_InputCommand = \"\";\r\n    }\r\n}\r\nexports.default
+    = SafeBoxData;\r\nSafeBoxData.m_bReset = false;\r\nSafeBoxData.m_RotateTime =
+    0.5;\r\nSafeBoxData.m_RotatorAngle = 0;\r\nSafeBoxData.m_InputDirty = 0;\r\nSafeBoxData.m_InputCommand
+    = \"\";\r\nSafeBoxData.m_bEnter = false;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2FmZUJveERhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJTYWZlQm94RGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUVBLE1BQXFCLFdBQVc7SUFPckIsTUFBTSxDQUFDLElBQUk7UUFFZCxJQUFJLENBQUMsUUFBUSxHQUFHLElBQUksQ0FBQztRQUNyQixJQUFJLENBQUMsUUFBUSxHQUFHLEtBQUssQ0FBQztRQUN0QixJQUFJLENBQUMsY0FBYyxHQUFHLENBQUMsQ0FBQztRQUN4QixJQUFJLENBQUMsWUFBWSxHQUFHLENBQUMsQ0FBQztRQUN0QixJQUFJLENBQUMsY0FBYyxHQUFHLEVBQUUsQ0FBQztJQUM3QixDQUFDOztBQWRMLDhCQWVDO0FBZGlCLG9CQUFRLEdBQWEsS0FBSyxDQUFDO0FBQzNCLHdCQUFZLEdBQVcsR0FBRyxDQUFDO0FBQzNCLDBCQUFjLEdBQVksQ0FBQyxDQUFDO0FBQzVCLHdCQUFZLEdBQVksQ0FBQyxDQUFDO0FBQzFCLDBCQUFjLEdBQVksRUFBRSxDQUFDO0FBQzdCLG9CQUFRLEdBQUcsS0FBSyxDQUFDIn0=","assetPath":"Assets/Scripts/Data/SafeBoxData.ts","manifest":{"properties":[],"name":"SafeBoxData","description":""},"isCompiled":true}'
+  typescriptHash: 8a7baf9e35fc0a439fc0ddbcaa1a2ea6
