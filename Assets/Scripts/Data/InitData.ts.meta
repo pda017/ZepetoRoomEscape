@@ -29,4 +29,4 @@ ScriptedImporter:
     DialogData_1.default.Init();\r\n        DoorLockData_1.default.Init();\r\n       
     RotateLockData_1.default.Init();\r\n    }\r\n}\r\nexports.default = InitData;\r\n//#
     sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5pdERhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJJbml0RGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLDJEQUFtRDtBQUNuRCw2Q0FBc0M7QUFDdEMsaURBQTBDO0FBQzFDLG1EQUE0QztBQUM1QyxpREFBMEM7QUFDMUMscURBQThDO0FBQzlDLG1EQUE0QztBQUU1QyxNQUFxQixRQUFRO0lBQ2xCLE1BQU0sQ0FBQyxJQUFJO1FBRWQsd0JBQWMsQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUN0Qix1QkFBYSxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ3JCLHVCQUFhLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDckIsc0JBQVksQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUNwQixvQkFBVSxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ2xCLHNCQUFZLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDcEIsd0JBQWMsQ0FBQyxJQUFJLEVBQUUsQ0FBQztJQUMxQixDQUFDO0NBQ0o7QUFYRCwyQkFXQyJ9","assetPath":"Assets/Scripts/Data/InitData.ts","manifest":{"properties":[],"name":"InitData","description":""},"isCompiled":true}'
-  typescriptHash: 71b84515669dae19275f7a48e28f3a6b
+  typescriptHash: 6135ad1faf0fb1e4bfe51ba37e9cfbb8

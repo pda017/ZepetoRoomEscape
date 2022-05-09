@@ -23,4 +23,4 @@ ScriptedImporter:
     PercentToScreenLength {\r\n    static Convert(percent) {\r\n        var ratio
     = percent / 100.0;\r\n        return UnityEngine_1.Screen.height * ratio;\r\n   
     }\r\n}\r\nexports.default = PercentToScreenLength;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGVyY2VudFRvU2NyZWVuTGVuZ3RoLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiUGVyY2VudFRvU2NyZWVuTGVuZ3RoLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0EsNkNBQW9DO0FBQ3BDLE1BQXFCLHFCQUFxQjtJQUMvQixNQUFNLENBQUMsT0FBTyxDQUFDLE9BQWdCO1FBRWxDLElBQUksS0FBSyxHQUFHLE9BQU8sR0FBRyxLQUFLLENBQUM7UUFDNUIsT0FBTyxvQkFBTSxDQUFDLE1BQU0sR0FBRyxLQUFLLENBQUM7SUFDakMsQ0FBQztDQUNKO0FBTkQsd0NBTUMifQ==","assetPath":"Assets/Scripts/PercentToScreenLength.ts","manifest":{"properties":[],"name":"PercentToScreenLength","description":""},"isCompiled":true}'
-  typescriptHash: 34f4335def5e64b31a4019c8ea92c130
+  typescriptHash: 7477bd93c83767f908d97656f1e97487

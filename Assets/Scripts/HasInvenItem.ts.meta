@@ -22,4 +22,4 @@ ScriptedImporter:
     { value: true });\r\nconst InventoryData_1 = require(\"./Data/InventoryData\");\r\nclass
     HasInvenItem {\r\n    static Has(itemName) {\r\n        return InventoryData_1.default.m_InvenList.includes(itemName,
     0);\r\n    }\r\n}\r\nexports.default = HasInvenItem;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSGFzSW52ZW5JdGVtLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiSGFzSW52ZW5JdGVtLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0Esd0RBQWdEO0FBRWhELE1BQXFCLFlBQVk7SUFDdEIsTUFBTSxDQUFDLEdBQUcsQ0FBQyxRQUFpQjtRQUUvQixPQUFPLHVCQUFhLENBQUMsV0FBVyxDQUFDLFFBQVEsQ0FBQyxRQUFRLEVBQUMsQ0FBQyxDQUFDLENBQUM7SUFDMUQsQ0FBQztDQUNKO0FBTEQsK0JBS0MifQ==","assetPath":"Assets/Scripts/HasInvenItem.ts","manifest":{"properties":[],"name":"HasInvenItem","description":""},"isCompiled":true}'
-  typescriptHash: 9728c74c4e427a6eb3efeabe99aa997f
+  typescriptHash: c23f4cdd11a39b870ecd72411122f006
