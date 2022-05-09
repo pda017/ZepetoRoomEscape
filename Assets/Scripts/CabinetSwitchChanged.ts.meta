@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: e34f13140dbe2214197b911c9e09d457
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst CabinetData_1 = require(\"./Data/CabinetData\");\r\nclass
+    CabinetSwitchChanged {\r\n    constructor() {\r\n        this.m_Dirty = Number.MIN_SAFE_INTEGER;\r\n   
+    }\r\n    Check() {\r\n        if (this.m_Dirty !== CabinetData_1.default.m_SwitchDirty)
+    {\r\n            this.m_Dirty = CabinetData_1.default.m_SwitchDirty;\r\n           
+    return true;\r\n        }\r\n        return false;\r\n    }\r\n}\r\nexports.default
+    = CabinetSwitchChanged;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2FiaW5ldFN3aXRjaENoYW5nZWQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJDYWJpbmV0U3dpdGNoQ2hhbmdlZC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLG9EQUE2QztBQUU3QyxNQUFxQixvQkFBb0I7SUFBekM7UUFDSSxZQUFPLEdBQVksTUFBTSxDQUFDLGdCQUFnQixDQUFDO0lBVS9DLENBQUM7SUFUVSxLQUFLO1FBRVIsSUFBRyxJQUFJLENBQUMsT0FBTyxLQUFLLHFCQUFXLENBQUMsYUFBYSxFQUM3QztZQUNJLElBQUksQ0FBQyxPQUFPLEdBQUcscUJBQVcsQ0FBQyxhQUFhLENBQUM7WUFDekMsT0FBTyxJQUFJLENBQUM7U0FDZjtRQUNELE9BQU8sS0FBSyxDQUFDO0lBQ2pCLENBQUM7Q0FDSjtBQVhELHVDQVdDIn0=","assetPath":"Assets/Scripts/CabinetSwitchChanged.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"CabinetSwitchChanged","description":""},"isCompiled":true}'
+  typescriptHash: 5924cddd5f89a367718a227391d361bd

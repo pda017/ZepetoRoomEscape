@@ -20,13 +20,15 @@ ScriptedImporter:
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
     { value: true });\r\nconst StartPointData_1 = require(\"../Data/StartPointData\");\r\nconst
-    DialogData_1 = require(\"./DialogData\");\r\nconst DoorLockData_1 = require(\"./DoorLockData\");\r\nconst
-    InventoryData_1 = require(\"./InventoryData\");\r\nconst KeyInputData_1 = require(\"./KeyInputData\");\r\nconst
-    RotateLockData_1 = require(\"./RotateLockData\");\r\nconst SelectObjData_1 =
-    require(\"./SelectObjData\");\r\nclass InitData {\r\n    static Init() {\r\n       
-    StartPointData_1.default.Init();\r\n        InventoryData_1.default.Init();\r\n       
+    CabinetData_1 = require(\"./CabinetData\");\r\nconst DialogData_1 = require(\"./DialogData\");\r\nconst
+    DoorLockData_1 = require(\"./DoorLockData\");\r\nconst InventoryData_1 = require(\"./InventoryData\");\r\nconst
+    KeyInputData_1 = require(\"./KeyInputData\");\r\nconst RotateLockData_1 = require(\"./RotateLockData\");\r\nconst
+    SafeBoxData_1 = require(\"./SafeBoxData\");\r\nconst SecretCabinetData_1 = require(\"./SecretCabinetData\");\r\nconst
+    SelectObjData_1 = require(\"./SelectObjData\");\r\nclass InitData {\r\n    static
+    Init() {\r\n        StartPointData_1.default.Init();\r\n        InventoryData_1.default.Init();\r\n       
     SelectObjData_1.default.Init();\r\n        KeyInputData_1.default.Init();\r\n       
     DialogData_1.default.Init();\r\n        DoorLockData_1.default.Init();\r\n       
-    RotateLockData_1.default.Init();\r\n    }\r\n}\r\nexports.default = InitData;\r\n//#
-    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5pdERhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJJbml0RGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLDJEQUFtRDtBQUNuRCw2Q0FBc0M7QUFDdEMsaURBQTBDO0FBQzFDLG1EQUE0QztBQUM1QyxpREFBMEM7QUFDMUMscURBQThDO0FBQzlDLG1EQUE0QztBQUU1QyxNQUFxQixRQUFRO0lBQ2xCLE1BQU0sQ0FBQyxJQUFJO1FBRWQsd0JBQWMsQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUN0Qix1QkFBYSxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ3JCLHVCQUFhLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDckIsc0JBQVksQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUNwQixvQkFBVSxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ2xCLHNCQUFZLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDcEIsd0JBQWMsQ0FBQyxJQUFJLEVBQUUsQ0FBQztJQUMxQixDQUFDO0NBQ0o7QUFYRCwyQkFXQyJ9","assetPath":"Assets/Scripts/Data/InitData.ts","manifest":{"properties":[],"name":"InitData","description":""},"isCompiled":true}'
-  typescriptHash: 71b84515669dae19275f7a48e28f3a6b
+    RotateLockData_1.default.Init();\r\n        CabinetData_1.default.Init();\r\n       
+    SecretCabinetData_1.default.Init();\r\n        SafeBoxData_1.default.Init();\r\n   
+    }\r\n}\r\nexports.default = InitData;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5pdERhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJJbml0RGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLDJEQUFtRDtBQUNuRCwrQ0FBd0M7QUFDeEMsNkNBQXNDO0FBQ3RDLGlEQUEwQztBQUMxQyxtREFBNEM7QUFDNUMsaURBQTBDO0FBQzFDLHFEQUE4QztBQUM5QywrQ0FBd0M7QUFDeEMsMkRBQW9EO0FBQ3BELG1EQUE0QztBQUU1QyxNQUFxQixRQUFRO0lBQ2xCLE1BQU0sQ0FBQyxJQUFJO1FBRWQsd0JBQWMsQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUN0Qix1QkFBYSxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ3JCLHVCQUFhLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDckIsc0JBQVksQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUNwQixvQkFBVSxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ2xCLHNCQUFZLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDcEIsd0JBQWMsQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUN0QixxQkFBVyxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ25CLDJCQUFpQixDQUFDLElBQUksRUFBRSxDQUFDO1FBQ3pCLHFCQUFXLENBQUMsSUFBSSxFQUFFLENBQUM7SUFDdkIsQ0FBQztDQUNKO0FBZEQsMkJBY0MifQ==","assetPath":"Assets/Scripts/Data/InitData.ts","manifest":{"properties":[],"name":"InitData","description":""},"isCompiled":true}'
+  typescriptHash: 6e114cabf540b7631d9c2a1ebbca886b

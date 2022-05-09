@@ -20,9 +20,9 @@ export default class CheckPanelClose {
     }
     public Check() : boolean
     {
+        this.Init();
         if(this.m_Canvas == null)
-             return false;
-            
+             return false;  
         if(!this.m_Canvas.enabled)
             return true;
         return false;

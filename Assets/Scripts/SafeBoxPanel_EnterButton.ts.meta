@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: fb25852efd6c3ad47b1df95b77a5e7cd
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ButtonEvent_1 = require(\"./ButtonEvent\");\r\nconst SafeBoxData_1 = require(\"./Data/SafeBoxData\");\r\nclass
+    SafeBoxPanel_EnterButton extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n   
+    Start() {\r\n        ButtonEvent_1.default.Add(this.gameObject, () => {\r\n           
+    SafeBoxData_1.default.m_bEnter = true;\r\n            SafeBoxData_1.default.m_InputDirty++;\r\n       
+    });\r\n    }\r\n}\r\nexports.default = SafeBoxPanel_EnterButton;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2FmZUJveFBhbmVsX0VudGVyQnV0dG9uLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiU2FmZUJveFBhbmVsX0VudGVyQnV0dG9uLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQXFEO0FBQ3JELCtDQUF1QztBQUN2QyxvREFBNkM7QUFFN0MsTUFBcUIsd0JBQXlCLFNBQVEscUNBQXFCO0lBRXZFLEtBQUs7UUFDRCxxQkFBVyxDQUFDLEdBQUcsQ0FBQyxJQUFJLENBQUMsVUFBVSxFQUFDLEdBQUUsRUFBRTtZQUVoQyxxQkFBVyxDQUFDLFFBQVEsR0FBRyxJQUFJLENBQUM7WUFDNUIscUJBQVcsQ0FBQyxZQUFZLEVBQUUsQ0FBQztRQUMvQixDQUFDLENBQUMsQ0FBQztJQUNQLENBQUM7Q0FFSjtBQVZELDJDQVVDIn0=","assetPath":"Assets/Scripts/SafeBoxPanel_EnterButton.ts","manifest":{"properties":[],"name":"SafeBoxPanel_EnterButton","description":""},"isCompiled":true}'
+  typescriptHash: e112aaa8ce7b650d5ea5caeea7e93e4e
