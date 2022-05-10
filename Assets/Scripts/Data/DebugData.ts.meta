@@ -21,4 +21,4 @@ ScriptedImporter:
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
     { value: true });\r\nclass DebugData {\r\n}\r\nexports.default = DebugData;\r\nDebugData.m_DebugMode
     = true;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGVidWdEYXRhLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiRGVidWdEYXRhLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUEsTUFBcUIsU0FBUzs7QUFBOUIsNEJBRUM7QUFEaUIscUJBQVcsR0FBYSxJQUFJLENBQUMifQ==","assetPath":"Assets/Scripts/Data/DebugData.ts","manifest":{"properties":[],"name":"DebugData","description":""},"isCompiled":true}'
-  typescriptHash: 3dc3d9c1621f57e44602e12a4af7ac0e
+  typescriptHash: c57e1475112258806068575687bdfb31

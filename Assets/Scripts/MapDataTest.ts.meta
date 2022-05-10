@@ -24,4 +24,4 @@ ScriptedImporter:
     {\r\n    Start() {\r\n        var itemMap = ItemData_1.default.GetItemMap();\r\n       
     itemMap.forEach((value, key) => {\r\n            console.log(key + \",\" + value);\r\n       
     });\r\n    }\r\n}\r\nexports.default = MapDataTest;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTWFwRGF0YVRlc3QuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJNYXBEYXRhVGVzdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUNyRCw4Q0FBc0M7QUFFdEMsTUFBcUIsV0FBWSxTQUFRLHFDQUFxQjtJQUUxRCxLQUFLO1FBQ0QsSUFBSSxPQUFPLEdBQUcsa0JBQVEsQ0FBQyxVQUFVLEVBQUUsQ0FBQztRQUNwQyxPQUFPLENBQUMsT0FBTyxDQUFDLENBQUMsS0FBSyxFQUFDLEdBQUcsRUFBQyxFQUFFO1lBRXpCLE9BQU8sQ0FBQyxHQUFHLENBQUMsR0FBRyxHQUFHLEdBQUcsR0FBRyxLQUFLLENBQUMsQ0FBQztRQUNuQyxDQUFDLENBQUMsQ0FBQztJQUNQLENBQUM7Q0FFSjtBQVZELDhCQVVDIn0=","assetPath":"Assets/Scripts/MapDataTest.ts","manifest":{"properties":[],"name":"MapDataTest","description":""},"isCompiled":true}'
-  typescriptHash: b0e01fb539fd3f5a59981ed5e3b9586d
+  typescriptHash: 0c7db5834612bcfff143786ab61f1a31
