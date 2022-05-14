@@ -23,4 +23,4 @@ ScriptedImporter:
     NumState extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
     {\r\n        super(...arguments);\r\n        this.m_Value = 0;\r\n    }\r\n}\r\nexports.default
     = NumState;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTnVtU3RhdGUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJOdW1TdGF0ZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUVyRCxNQUFxQixRQUFTLFNBQVEscUNBQXFCO0lBQTNEOztRQUNXLFlBQU8sR0FBWSxDQUFDLENBQUM7SUFDaEMsQ0FBQztDQUFBO0FBRkQsMkJBRUMifQ==","assetPath":"Assets/Scripts/NumState.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Value","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"NumState","description":""},"isCompiled":true}'
-  typescriptHash: 357f6dd0e131bb3d99c09c7b55867290
+  typescriptHash: fac0cc74278c4997ee22b9f98b8ab6f1

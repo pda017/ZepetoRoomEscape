@@ -21,4 +21,4 @@ ScriptedImporter:
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
     { value: true });\r\nclass TimerData {\r\n}\r\nexports.default = TimerData;\r\n//#
     sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGltZXJEYXRhLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVGltZXJEYXRhLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUEsTUFBcUIsU0FBUztDQUU3QjtBQUZELDRCQUVDIn0=","assetPath":"Assets/Scripts/Data/TimerData.ts","manifest":{"properties":[],"name":"TimerData","description":""},"isCompiled":true}'
-  typescriptHash: 802083dd2cda46e276d067d5550ae8e3
+  typescriptHash: ca00f2a796345dae4da5925bf3eb24a6
