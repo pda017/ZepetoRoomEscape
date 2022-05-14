@@ -22,4 +22,4 @@ ScriptedImporter:
     { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
     PanelName extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n}\r\nexports.default
     = PanelName;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGFuZWxOYW1lLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiUGFuZWxOYW1lLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQXFEO0FBRXJELE1BQXFCLFNBQVUsU0FBUSxxQ0FBcUI7Q0FHM0Q7QUFIRCw0QkFHQyJ9","assetPath":"Assets/Scripts/PanelName.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Value","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"PanelName","description":""},"isCompiled":true}'
-  typescriptHash: 3c2d6c01477522a36708c963f2abf765
+  typescriptHash: 69b646fa12fe55b46f7a526b60f05b39
