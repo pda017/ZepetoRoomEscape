@@ -26,4 +26,4 @@ ScriptedImporter:
     = UnityEngine_1.Time.time;\r\n    }\r\n    static SetByKey(key) {\r\n       
     this.Set(GetStringData_1.default.Get(key));\r\n    }\r\n}\r\nexports.default
     = SetDialog;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2V0RGlhbG9nLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiU2V0RGlhbG9nLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQW1DO0FBRW5DLGtEQUEyQztBQUMzQyxtREFBNEM7QUFFNUMsTUFBcUIsU0FBUztJQUNuQixNQUFNLENBQUMsR0FBRyxDQUFDLElBQWE7UUFFM0Isb0JBQVUsQ0FBQyxlQUFlLEdBQUcsSUFBSSxDQUFDO1FBQ2xDLG9CQUFVLENBQUMsWUFBWSxHQUFHLElBQUksQ0FBQztRQUMvQixvQkFBVSxDQUFDLGlCQUFpQixHQUFHLGtCQUFJLENBQUMsSUFBSSxDQUFDO0lBQzdDLENBQUM7SUFDTSxNQUFNLENBQUMsUUFBUSxDQUFDLEdBQVk7UUFFL0IsSUFBSSxDQUFDLEdBQUcsQ0FBQyx1QkFBYSxDQUFDLEdBQUcsQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDO0lBQ3JDLENBQUM7Q0FDSjtBQVhELDRCQVdDIn0=","assetPath":"Assets/Scripts/SetDialog.ts","manifest":{"properties":[],"name":"SetDialog","description":""},"isCompiled":true}'
-  typescriptHash: 04af411c6d299fc8d19cea908df8ac5f
+  typescriptHash: d1eef94347733d58f9c9c7cc8909797d

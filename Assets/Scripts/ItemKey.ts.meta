@@ -22,4 +22,4 @@ ScriptedImporter:
     { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
     ItemKey extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n}\r\nexports.default
     = ItemKey;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSXRlbUtleS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkl0ZW1LZXkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFFckQsTUFBcUIsT0FBUSxTQUFRLHFDQUFxQjtDQUd6RDtBQUhELDBCQUdDIn0=","assetPath":"Assets/Scripts/ItemKey.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Value","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"ItemKey","description":""},"isCompiled":true}'
-  typescriptHash: 84080e7674ebafcf7c3b025e8ccba166
+  typescriptHash: 3c4304824a24732c16edeefd9c5aeb79

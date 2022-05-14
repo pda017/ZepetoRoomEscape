@@ -23,4 +23,4 @@ ScriptedImporter:
     ActiveInteractable extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
     {\r\n        super(...arguments);\r\n        this.m_Value = [];\r\n    }\r\n}\r\nexports.default
     = ActiveInteractable;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQWN0aXZlSW50ZXJhY3RhYmxlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQWN0aXZlSW50ZXJhY3RhYmxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQXFEO0FBRXJELE1BQXFCLGtCQUFtQixTQUFRLHFDQUFxQjtJQUFyRTs7UUFDVyxZQUFPLEdBQWMsRUFBRSxDQUFDO0lBRW5DLENBQUM7Q0FBQTtBQUhELHFDQUdDIn0=","assetPath":"Assets/Scripts/ActiveInteractable.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Value","type":"System.String[]","isArray":true,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"ActiveInteractable","description":""},"isCompiled":true}'
-  typescriptHash: d875e69edfe0a033f46fa99c6485cd79
+  typescriptHash: aad6a9a0a4ac3e595480218a9f8925c4

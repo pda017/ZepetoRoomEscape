@@ -25,4 +25,4 @@ ScriptedImporter:
     {\r\n    Start() {\r\n        PanelMgr_1.default.Hide(\"InvenPanel\");\r\n       
     SetDialog_1.default.SetByKey(\"AppleUseDialog\");\r\n        UnityEngine_1.GameObject.Destroy(this.gameObject);\r\n   
     }\r\n}\r\nexports.default = Event_Apple;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXZlbnRfQXBwbGUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJFdmVudF9BcHBsZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUF5QztBQUN6QyxpREFBcUQ7QUFDckQsMENBQW1DO0FBQ25DLDRDQUFxQztBQUdyQyxNQUFxQixXQUFZLFNBQVEscUNBQXFCO0lBRTFELEtBQUs7UUFDRCxrQkFBUSxDQUFDLElBQUksQ0FBQyxZQUFZLENBQUMsQ0FBQztRQUM1QixtQkFBUyxDQUFDLFFBQVEsQ0FBQyxnQkFBZ0IsQ0FBQyxDQUFDO1FBQ3JDLHdCQUFVLENBQUMsT0FBTyxDQUFDLElBQUksQ0FBQyxVQUFVLENBQUMsQ0FBQztJQUN4QyxDQUFDO0NBRUo7QUFSRCw4QkFRQyJ9","assetPath":"Assets/Scripts/Event/Event_Apple.ts","manifest":{"properties":[],"name":"Event_Apple","description":""},"isCompiled":true}'
-  typescriptHash: e3bc06b30a86af4c0ffed2a06a087cb6
+  typescriptHash: c39a1e9c3e65294e423e82b6bcd6e93b

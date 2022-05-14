@@ -18,5 +18,15 @@ ScriptedImporter:
   wrapperTypes: []
   WrapperFilters: []
   wrapperOutputDirectory: Generated
-  compiledResult: '{"source":"","assetPath":"Assets/Scripts/RotateLock_NumText.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
-  typescriptHash: f8ad37027c0abf1f67a38a948c611278
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst RotateLockData_1 = require(\"./Data/RotateLockData\");\r\nconst
+    RotatePasswordChanged_1 = require(\"./RotatePasswordChanged\");\r\nclass RotateLock_NumText
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor() {\r\n       
+    super(...arguments);\r\n        this.m_RotatePasswordChanged = new RotatePasswordChanged_1.default();\r\n   
+    }\r\n    Start() {\r\n        this.m_Tf = this.transform;\r\n        this.m_Text
+    = this.GetComponent($typeof(UnityEngine_UI_1.Text));\r\n    }\r\n    Update()
+    {\r\n        if (this.m_RotatePasswordChanged.Check()) {\r\n            var index
+    = this.m_Tf.GetSiblingIndex();\r\n            this.m_Text.text = RotateLockData_1.default.m_PasswordArr[index].toString();\r\n       
+    }\r\n    }\r\n}\r\nexports.default = RotateLock_NumText;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUm90YXRlTG9ja19OdW1UZXh0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiUm90YXRlTG9ja19OdW1UZXh0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0EsbURBQXFDO0FBQ3JDLGlEQUFxRDtBQUNyRCwwREFBbUQ7QUFDbkQsbUVBQTREO0FBRTVELE1BQXFCLGtCQUFtQixTQUFRLHFDQUFxQjtJQUFyRTs7UUFFSSw0QkFBdUIsR0FBMkIsSUFBSSwrQkFBcUIsRUFBRSxDQUFDO0lBY2xGLENBQUM7SUFaRyxLQUFLO1FBQ0QsSUFBSSxDQUFDLElBQUksR0FBRyxJQUFJLENBQUMsU0FBUyxDQUFDO1FBQzNCLElBQUksQ0FBQyxNQUFNLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQyxxQkFBSSxFQUFHLENBQUM7SUFDNUMsQ0FBQztJQUNELE1BQU07UUFFRixJQUFHLElBQUksQ0FBQyx1QkFBdUIsQ0FBQyxLQUFLLEVBQUUsRUFDdkM7WUFDSSxJQUFJLEtBQUssR0FBRyxJQUFJLENBQUMsSUFBSSxDQUFDLGVBQWUsRUFBRSxDQUFDO1lBQ3hDLElBQUksQ0FBQyxNQUFNLENBQUMsSUFBSSxHQUFHLHdCQUFjLENBQUMsYUFBYSxDQUFDLEtBQUssQ0FBQyxDQUFDLFFBQVEsRUFBRSxDQUFDO1NBQ3JFO0lBQ0wsQ0FBQztDQUNKO0FBaEJELHFDQWdCQyJ9","assetPath":"Assets/Scripts/RotateLock_NumText.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"m_Text","type":"UnityEngine.UI.Text","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_RotatePasswordChanged","type":"F:/ZepetoRoomEscape/Assets/Scripts/RotatePasswordChanged.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"m_Tf","type":"UnityEngine.Transform","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"RotateLock_NumText","description":""},"isCompiled":true}'
+  typescriptHash: be8fadd54f5158faadba0fd564394b0f
