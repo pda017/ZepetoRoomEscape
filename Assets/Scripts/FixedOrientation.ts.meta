@@ -25,4 +25,4 @@ ScriptedImporter:
     {\r\n        if (UnityEngine_1.Screen.orientation !== UnityEngine_2.ScreenOrientation.Landscape)\r\n           
     UnityEngine_1.Screen.orientation = UnityEngine_2.ScreenOrientation.Landscape;\r\n   
     }\r\n}\r\nexports.default = FixedOrientation;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRml4ZWRPcmllbnRhdGlvbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkZpeGVkT3JpZW50YXRpb24udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsNkNBQW9DO0FBQ3BDLDZDQUErQztBQUMvQyxNQUFxQixnQkFBaUIsU0FBUSxxQ0FBcUI7SUFFL0QsTUFBTTtRQUVGLElBQUcsb0JBQU0sQ0FBQyxXQUFXLEtBQUssK0JBQWlCLENBQUMsU0FBUztZQUNqRCxvQkFBTSxDQUFDLFdBQVcsR0FBRywrQkFBaUIsQ0FBQyxTQUFTLENBQUM7SUFDekQsQ0FBQztDQUNKO0FBUEQsbUNBT0MifQ==","assetPath":"Assets/Scripts/FixedOrientation.ts","manifest":{"properties":[],"name":"FixedOrientation","description":""},"isCompiled":true}'
-  typescriptHash: 090e6e0c254fddc4958e91483375e0e6
+  typescriptHash: e28ca7ad182e3c011b07bf2bb73d0ddc

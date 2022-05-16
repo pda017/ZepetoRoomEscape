@@ -23,4 +23,4 @@ ScriptedImporter:
     GetInvenItemData_1 = require(\"./GetInvenItemData\");\r\nclass GetSelectedItemData
     {\r\n    static Get() {\r\n        return GetInvenItemData_1.default.Get(InventoryData_1.default.m_SelectIndex);\r\n   
     }\r\n}\r\nexports.default = GetSelectedItemData;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2V0U2VsZWN0ZWRJdGVtRGF0YS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkdldFNlbGVjdGVkSXRlbURhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSx3REFBaUQ7QUFFakQseURBQWtEO0FBRWxELE1BQXFCLG1CQUFtQjtJQUU3QixNQUFNLENBQUMsR0FBRztRQUViLE9BQU8sMEJBQWdCLENBQUMsR0FBRyxDQUFDLHVCQUFhLENBQUMsYUFBYSxDQUFDLENBQUM7SUFDN0QsQ0FBQztDQUNKO0FBTkQsc0NBTUMifQ==","assetPath":"Assets/Scripts/GetSelectedItemData.ts","manifest":{"properties":[],"name":"GetSelectedItemData","description":""},"isCompiled":true}'
-  typescriptHash: bc905723a2ba60ae547b01c4644ef32d
+  typescriptHash: f653bb6c5196e81f43b0a05e3e6f9be2

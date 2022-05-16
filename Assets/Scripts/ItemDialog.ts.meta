@@ -22,4 +22,4 @@ ScriptedImporter:
     { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
     ItemDialog extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n}\r\nexports.default
     = ItemDialog;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSXRlbURpYWxvZy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkl0ZW1EaWFsb2cudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFFckQsTUFBcUIsVUFBVyxTQUFRLHFDQUFxQjtDQUc1RDtBQUhELDZCQUdDIn0=","assetPath":"Assets/Scripts/ItemDialog.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_DialogKey","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_NoticeKey","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"ItemDialog","description":""},"isCompiled":true}'
-  typescriptHash: 9a053432c8b9e8d6c90f35531e95c7c1
+  typescriptHash: 03a32976cc820a867d762a69e596db6c

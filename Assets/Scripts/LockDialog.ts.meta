@@ -22,4 +22,4 @@ ScriptedImporter:
     { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
     LockDialog extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n}\r\nexports.default
     = LockDialog;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTG9ja0RpYWxvZy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkxvY2tEaWFsb2cudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFFckQsTUFBcUIsVUFBVyxTQUFRLHFDQUFxQjtDQUk1RDtBQUpELDZCQUlDIn0=","assetPath":"Assets/Scripts/LockDialog.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_LockDialogKey","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_UnlockDialogKey","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"LockDialog","description":""},"isCompiled":true}'
-  typescriptHash: 357f5178590de27fb578ca112244bed8
+  typescriptHash: 2c3cf754599e762b189e9d839930567e
