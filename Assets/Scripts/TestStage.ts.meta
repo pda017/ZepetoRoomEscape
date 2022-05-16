@@ -20,9 +20,7 @@ ScriptedImporter:
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
     { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
-    InitData_1 = require(\"./Data/InitData\");\r\nconst PrefabMgr_1 = require(\"./PrefabMgr\");\r\nconst
-    SpriteMgr_1 = require(\"./SpriteMgr\");\r\nclass TestStage extends ZEPETO_Script_1.ZepetoScriptBehaviour
-    {\r\n    Awake() {\r\n        InitData_1.default.Init();\r\n        SpriteMgr_1.default.Init();\r\n       
-    PrefabMgr_1.default.Init();\r\n    }\r\n    Start() {\r\n    }\r\n}\r\nexports.default
-    = TestStage;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGVzdFN0YWdlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVGVzdFN0YWdlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0EsaURBQXFEO0FBQ3JELDhDQUF1QztBQUN2QywyQ0FBb0M7QUFDcEMsMkNBQW9DO0FBRXBDLE1BQXFCLFNBQVUsU0FBUSxxQ0FBcUI7SUFDeEQsS0FBSztRQUVELGtCQUFRLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDaEIsbUJBQVMsQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUNqQixtQkFBUyxDQUFDLElBQUksRUFBRSxDQUFDO0lBQ3JCLENBQUM7SUFDRCxLQUFLO0lBRUwsQ0FBQztDQUNKO0FBVkQsNEJBVUMifQ==","assetPath":"Assets/Scripts/TestStage.ts","manifest":{"properties":[],"name":"TestStage","description":""},"isCompiled":true}'
-  typescriptHash: fd01a69ef8ebf07f595383807ae80c30
+    InitData_1 = require(\"./Data/InitData\");\r\nclass TestStage extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Awake() {\r\n        InitData_1.default.Init();\r\n    }\r\n}\r\nexports.default
+    = TestStage;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGVzdFN0YWdlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVGVzdFN0YWdlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0EsaURBQXFEO0FBQ3JELDhDQUF1QztBQUl2QyxNQUFxQixTQUFVLFNBQVEscUNBQXFCO0lBQ3hELEtBQUs7UUFFRCxrQkFBUSxDQUFDLElBQUksRUFBRSxDQUFDO0lBQ3BCLENBQUM7Q0FDSjtBQUxELDRCQUtDIn0=","assetPath":"Assets/Scripts/TestStage.ts","manifest":{"properties":[],"name":"TestStage","description":""},"isCompiled":true}'
+  typescriptHash: 7c0a12c3a29ed4d27de900b2332e8854

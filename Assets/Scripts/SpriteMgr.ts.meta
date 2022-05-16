@@ -19,13 +19,17 @@ ScriptedImporter:
   WrapperFilters: []
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nclass
-    SpriteMgr {\r\n    static Init() {\r\n        if (this.m_SpriteMap == null) {\r\n           
-    this.m_SpriteMap = new Map();\r\n            var arr = UnityEngine_1.Resources.LoadAll(\"Sprites\");\r\n           
-    arr.forEach(value => {\r\n                if (value instanceof UnityEngine_1.Sprite)\r\n                   
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass SpriteMgr extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.m_SpriteList
+    = [];\r\n        this.m_SpriteMap = null;\r\n    }\r\n    static GetInst() {\r\n       
+    if (this.m_Inst == null)\r\n            this.m_Inst = UnityEngine_1.GameObject.FindObjectOfType($typeof(SpriteMgr));\r\n       
+    return this.m_Inst;\r\n    }\r\n    Awake() {\r\n        if (this.m_SpriteMap
+    == null) {\r\n            this.m_SpriteMap = new Map();\r\n            this.m_SpriteList.forEach(value
+    => {\r\n                if (this.m_SpriteMap.has(value.name))\r\n                   
+    console.log(\"##SpriteMgr:Sprites already exist\");\r\n                else\r\n                   
     this.m_SpriteMap.set(value.name, value);\r\n            });\r\n        }\r\n   
-    }\r\n    static Reset() {\r\n        this.m_SpriteMap = null;\r\n    }\r\n   
-    static Get(key) {\r\n        this.Init();\r\n        return this.m_SpriteMap.get(key);\r\n   
-    }\r\n}\r\nexports.default = SpriteMgr;\r\nSpriteMgr.m_SpriteMap = null;\r\n//#
-    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU3ByaXRlTWdyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiU3ByaXRlTWdyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQWdEO0FBR2hELE1BQXFCLFNBQVM7SUFFbkIsTUFBTSxDQUFDLElBQUk7UUFFZCxJQUFHLElBQUksQ0FBQyxXQUFXLElBQUksSUFBSSxFQUMzQjtZQUNJLElBQUksQ0FBQyxXQUFXLEdBQUcsSUFBSSxHQUFHLEVBQWlCLENBQUM7WUFDNUMsSUFBSSxHQUFHLEdBQUcsdUJBQVMsQ0FBQyxPQUFPLENBQUMsU0FBUyxDQUFDLENBQUM7WUFDdkMsR0FBRyxDQUFDLE9BQU8sQ0FBQyxLQUFLLENBQUEsRUFBRTtnQkFFWCxJQUFHLEtBQUssWUFBWSxvQkFBTTtvQkFDdEIsSUFBSSxDQUFDLFdBQVcsQ0FBQyxHQUFHLENBQUMsS0FBSyxDQUFDLElBQUksRUFBQyxLQUFLLENBQUMsQ0FBQztZQUMvQyxDQUFDLENBQUMsQ0FBQztTQUNWO0lBQ0wsQ0FBQztJQUNNLE1BQU0sQ0FBQyxLQUFLO1FBRWYsSUFBSSxDQUFDLFdBQVcsR0FBRyxJQUFJLENBQUM7SUFDNUIsQ0FBQztJQUNNLE1BQU0sQ0FBQyxHQUFHLENBQUMsR0FBWTtRQUUxQixJQUFJLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDWixPQUFPLElBQUksQ0FBQyxXQUFXLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQyxDQUFDO0lBQ3JDLENBQUM7O0FBdkJMLDRCQXdCQztBQXZCaUIscUJBQVcsR0FBd0IsSUFBSSxDQUFDIn0=","assetPath":"Assets/Scripts/SpriteMgr.ts","manifest":{"properties":[],"name":"SpriteMgr","description":""},"isCompiled":true}'
-  typescriptHash: 731a3e45abbc97e2abd759af5386b39e
+    }\r\n    static Reset() {\r\n        this.GetInst().m_SpriteMap = null;\r\n   
+    }\r\n    static Get(key) {\r\n        return this.GetInst().m_SpriteMap.get(key);\r\n   
+    }\r\n}\r\nexports.default = SpriteMgr;\r\nSpriteMgr.m_Inst = null;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU3ByaXRlTWdyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiU3ByaXRlTWdyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQTREO0FBQzVELGlEQUFxRDtBQUVyRCxNQUFxQixTQUFVLFNBQVEscUNBQXFCO0lBQTVEOztRQUNXLGlCQUFZLEdBQWMsRUFBRSxDQUFDO1FBQzdCLGdCQUFXLEdBQXdCLElBQUksQ0FBQztJQThCbkQsQ0FBQztJQTVCVSxNQUFNLENBQUMsT0FBTztRQUVqQixJQUFHLElBQUksQ0FBQyxNQUFNLElBQUksSUFBSTtZQUNsQixJQUFJLENBQUMsTUFBTSxHQUFHLHdCQUFVLENBQUMsZ0JBQWdCLFNBQUMsU0FBUyxFQUFHLENBQUM7UUFDM0QsT0FBTyxJQUFJLENBQUMsTUFBTSxDQUFDO0lBQ3ZCLENBQUM7SUFDTSxLQUFLO1FBRVIsSUFBRyxJQUFJLENBQUMsV0FBVyxJQUFJLElBQUksRUFDM0I7WUFDSSxJQUFJLENBQUMsV0FBVyxHQUFHLElBQUksR0FBRyxFQUFpQixDQUFDO1lBQzVDLElBQUksQ0FBQyxZQUFZLENBQUMsT0FBTyxDQUFDLEtBQUssQ0FBQSxFQUFFO2dCQUV6QixJQUFHLElBQUksQ0FBQyxXQUFXLENBQUMsR0FBRyxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQUM7b0JBQy9CLE9BQU8sQ0FBQyxHQUFHLENBQUMsbUNBQW1DLENBQUMsQ0FBQzs7b0JBRWpELElBQUksQ0FBQyxXQUFXLENBQUMsR0FBRyxDQUFDLEtBQUssQ0FBQyxJQUFJLEVBQUMsS0FBSyxDQUFDLENBQUM7WUFDL0MsQ0FBQyxDQUFDLENBQUM7U0FDVjtJQUNMLENBQUM7SUFDTSxNQUFNLENBQUMsS0FBSztRQUVmLElBQUksQ0FBQyxPQUFPLEVBQUUsQ0FBQyxXQUFXLEdBQUcsSUFBSSxDQUFDO0lBQ3RDLENBQUM7SUFDTSxNQUFNLENBQUMsR0FBRyxDQUFDLEdBQVk7UUFFMUIsT0FBTyxJQUFJLENBQUMsT0FBTyxFQUFFLENBQUMsV0FBVyxDQUFDLEdBQUcsQ0FBQyxHQUFHLENBQUMsQ0FBQztJQUMvQyxDQUFDOztBQS9CTCw0QkFnQ0M7QUE3QmlCLGdCQUFNLEdBQWUsSUFBSSxDQUFDIn0=","assetPath":"Assets/Scripts/SpriteMgr.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"m_SpriteList","type":"UnityEngine.Sprite[]","isArray":true,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_SpriteMap","type":"Map","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"SpriteMgr","description":""},"isCompiled":true}'
+  typescriptHash: 6ab942bdf2dfe239d3da6878f7c33b43

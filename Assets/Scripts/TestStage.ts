@@ -8,10 +8,5 @@ export default class TestStage extends ZepetoScriptBehaviour {
     Awake()
     {
         InitData.Init();
-        SpriteMgr.Init();
-        PrefabMgr.Init();
-    }
-    Start() 
-    {
     }
 }

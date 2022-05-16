@@ -73,8 +73,7 @@ export default class DetectSelectObj {
         for(let i =0;i<hits.length;i++)
         {
             var hit = hits[i];
-            //console.log(hit.collider.tag);
-            if(hit.collider.CompareTag("Wall"))
+            if(hit.collider.tag == "WallTag")
                 return true;
         }
         return false;

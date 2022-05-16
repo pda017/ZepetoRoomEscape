@@ -1,4 +1,6 @@
 {
-"State" : {"PlayerInfoList" : {"map" : "SPlayerInfo"},"PlayerInfoListDirty" : "int8","RemainTime" : "uint16"},
-"SPlayerInfo" : {"SessionId" : "string","UserId" : "string"}
+"State" : {"players" : {"map" : "Player"},"RemainTime" : "number"},
+"Player" : {"sessionId" : "string","zepetoHash" : "string","zepetoUserId" : "string","transform" : "Transform","state" : "number"},
+"Transform" : {"position" : "Vector3","rotation" : "Vector3"},
+"Vector3" : {"x" : "number","y" : "number","z" : "number"}
 }

@@ -8,7 +8,7 @@ export default class CombineData {
         if(this.m_CombineMap == null)
         {
             this.m_CombineMap = new Map<string,CombineInfo>();
-            var table = CsvParser.LoadTextAsset("DataTable/CombineTable");
+            var table = CsvParser.LoadTextAsset("DT_CombineTable");
             if(table.length !== 0)
             {
                 var colArr = table[0];

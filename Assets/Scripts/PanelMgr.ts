@@ -1,4 +1,4 @@
-import { Canvas, GameObject } from 'UnityEngine'
+import { Canvas, GameObject, SendMessageOptions } from 'UnityEngine'
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
 
 export default class PanelMgr {
@@ -6,13 +6,22 @@ export default class PanelMgr {
     public static Show(panelName : string, tagName : string = "Panel")
     {
         var canvas = this.GetPanel(panelName,tagName);
-        if(canvas !== null)
+        if(canvas != null)
             canvas.enabled = true;
+    }
+    public static ShowWithUpdate(panelName : string, tagName : string = "Panel")
+    {
+        var canvas = this.GetPanel(panelName,tagName);
+        if(canvas != null)
+        {
+            canvas.enabled = true;
+            canvas.BroadcastMessage("Update",SendMessageOptions.DontRequireReceiver);
+        }
     }
     public static Hide(panelName : string, tagName : string = "Panel")
     {
         var canvas = this.GetPanel(panelName,tagName);
-        if(canvas !== null)
+        if(canvas != null)
             canvas.enabled = false;
     }
     public static GetPanel(panelName : string, tagName : string = "Panel")

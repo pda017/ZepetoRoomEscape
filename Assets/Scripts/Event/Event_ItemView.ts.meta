@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: 2916ce36a580b1346a93dccc9a8ec93a
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst ItemData_1 = require(\"../Data/ItemData\");\r\nconst
+    PanelMgr_1 = require(\"../PanelMgr\");\r\nclass Event_ItemView extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.m_ImageName
+    = \"\";\r\n    }\r\n    Start() {\r\n        PanelMgr_1.default.Hide(\"InvenPanel\");\r\n       
+    PanelMgr_1.default.Show(\"ItemViewPanel\");\r\n        ItemData_1.default.m_ItemViewImage
+    = this.m_ImageName;\r\n        ItemData_1.default.m_ItemViewImageDirty++;\r\n       
+    UnityEngine_1.GameObject.Destroy(this.gameObject);\r\n    }\r\n}\r\nexports.default
+    = Event_ItemView;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXZlbnRfSXRlbVZpZXcuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJFdmVudF9JdGVtVmlldy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUF5QztBQUN6QyxpREFBcUQ7QUFDckQsK0NBQXdDO0FBQ3hDLDBDQUFtQztBQUtuQyxNQUFxQixjQUFlLFNBQVEscUNBQXFCO0lBQWpFOztRQUNXLGdCQUFXLEdBQVksRUFBRSxDQUFDO0lBU3JDLENBQUM7SUFSRyxLQUFLO1FBQ0Qsa0JBQVEsQ0FBQyxJQUFJLENBQUMsWUFBWSxDQUFDLENBQUM7UUFDNUIsa0JBQVEsQ0FBQyxJQUFJLENBQUMsZUFBZSxDQUFDLENBQUM7UUFDL0Isa0JBQVEsQ0FBQyxlQUFlLEdBQUcsSUFBSSxDQUFDLFdBQVcsQ0FBQztRQUM1QyxrQkFBUSxDQUFDLG9CQUFvQixFQUFFLENBQUM7UUFDaEMsd0JBQVUsQ0FBQyxPQUFPLENBQUMsSUFBSSxDQUFDLFVBQVUsQ0FBQyxDQUFDO0lBQ3hDLENBQUM7Q0FFSjtBQVZELGlDQVVDIn0=","assetPath":"Assets/Scripts/Event/Event_ItemView.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_ImageName","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Event_ItemView","description":""},"isCompiled":true}'
+  typescriptHash: cbb0e2a9b919f54f15972a1d91dca6e7

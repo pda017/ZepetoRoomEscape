@@ -40,7 +40,7 @@ export default class Obj_Room3_DoorLock extends ZepetoScriptBehaviour {
         {
             if(DoorLockData.m_InputDone)
             {
-                if(DoorLockData.m_Password == "222222")
+                if(DoorLockData.m_Password === this.m_Password)
                 {
                     this.m_Interactable.m_Value = false;
                     SetNotice.SetByKey("Room3_correctDoorLockNotice");
