@@ -7,7 +7,7 @@ TagManager:
   - StartPoints
   - Panel
   - SelectableObj
-  - Wall
+  - WallTag
   layers:
   - Default
   - TransparentFX

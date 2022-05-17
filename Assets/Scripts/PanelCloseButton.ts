@@ -1,5 +1,6 @@
 import { Canvas } from 'UnityEngine';
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
+import { ZepetoWorldMultiplay } from 'ZEPETO.World';
 import ButtonEvent from './ButtonEvent'
 
 export default class PanelCloseButton extends ZepetoScriptBehaviour {

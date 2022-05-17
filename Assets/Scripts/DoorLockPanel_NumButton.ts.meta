@@ -22,8 +22,9 @@ ScriptedImporter:
     { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
     ButtonEvent_1 = require(\"./ButtonEvent\");\r\nconst DoorLockData_1 = require(\"./Data/DoorLockData\");\r\nclass
     DoorLockPanel_NumButton extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n   
-    Start() {\r\n        var index = this.transform.GetSiblingIndex();\r\n       
-    ButtonEvent_1.default.Add(this.gameObject, () => {\r\n            DoorLockData_1.default.m_Password
-    += (index + 1).toString();\r\n            DoorLockData_1.default.m_PasswordDirty++;\r\n       
-    });\r\n    }\r\n}\r\nexports.default = DoorLockPanel_NumButton;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRG9vckxvY2tQYW5lbF9OdW1CdXR0b24uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJEb29yTG9ja1BhbmVsX051bUJ1dHRvbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUNyRCwrQ0FBdUM7QUFDdkMsc0RBQStDO0FBRS9DLE1BQXFCLHVCQUF3QixTQUFRLHFDQUFxQjtJQUN0RSxLQUFLO1FBQ0QsSUFBSSxLQUFLLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQyxlQUFlLEVBQUUsQ0FBQztRQUM3QyxxQkFBVyxDQUFDLEdBQUcsQ0FBQyxJQUFJLENBQUMsVUFBVSxFQUFDLEdBQUUsRUFBRTtZQUVoQyxzQkFBWSxDQUFDLFVBQVUsSUFBSSxDQUFDLEtBQUssR0FBQyxDQUFDLENBQUMsQ0FBQyxRQUFRLEVBQUUsQ0FBQztZQUNoRCxzQkFBWSxDQUFDLGVBQWUsRUFBRSxDQUFDO1FBQ25DLENBQUMsQ0FBQyxDQUFDO0lBQ1AsQ0FBQztDQUNKO0FBVEQsMENBU0MifQ==","assetPath":"Assets/Scripts/DoorLockPanel_NumButton.ts","manifest":{"properties":[],"name":"DoorLockPanel_NumButton","description":""},"isCompiled":true}'
-  typescriptHash: 57790765c8c42a1a768ad09de72b0729
+    constructor() {\r\n        super(...arguments);\r\n        this.m_PadKey = \"\";\r\n   
+    }\r\n    Start() {\r\n        ButtonEvent_1.default.Add(this.gameObject, () =>
+    {\r\n            DoorLockData_1.default.m_Password += this.m_PadKey;\r\n           
+    DoorLockData_1.default.m_PasswordDirty++;\r\n        });\r\n    }\r\n}\r\nexports.default
+    = DoorLockPanel_NumButton;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRG9vckxvY2tQYW5lbF9OdW1CdXR0b24uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJEb29yTG9ja1BhbmVsX051bUJ1dHRvbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUNyRCwrQ0FBdUM7QUFDdkMsc0RBQStDO0FBRS9DLE1BQXFCLHVCQUF3QixTQUFRLHFDQUFxQjtJQUExRTs7UUFDVyxhQUFRLEdBQVksRUFBRSxDQUFDO0lBUWxDLENBQUM7SUFQRyxLQUFLO1FBQ0QscUJBQVcsQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLFVBQVUsRUFBQyxHQUFFLEVBQUU7WUFFaEMsc0JBQVksQ0FBQyxVQUFVLElBQUksSUFBSSxDQUFDLFFBQVEsQ0FBQztZQUN6QyxzQkFBWSxDQUFDLGVBQWUsRUFBRSxDQUFDO1FBQ25DLENBQUMsQ0FBQyxDQUFDO0lBQ1AsQ0FBQztDQUNKO0FBVEQsMENBU0MifQ==","assetPath":"Assets/Scripts/DoorLockPanel_NumButton.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_PadKey","type":"System.String","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"DoorLockPanel_NumButton","description":""},"isCompiled":true}'
+  typescriptHash: 759d55ecf9c84cf20b6dcc7ae4cd8637

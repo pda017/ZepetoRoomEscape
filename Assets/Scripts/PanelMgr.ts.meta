@@ -21,13 +21,17 @@ ScriptedImporter:
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
     { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nclass
     PanelMgr {\r\n    static Show(panelName, tagName = \"Panel\") {\r\n        var
-    canvas = this.GetPanel(panelName, tagName);\r\n        if (canvas !== null)\r\n           
-    canvas.enabled = true;\r\n    }\r\n    static Hide(panelName, tagName = \"Panel\")
-    {\r\n        var canvas = this.GetPanel(panelName, tagName);\r\n        if (canvas
-    !== null)\r\n            canvas.enabled = false;\r\n    }\r\n    static GetPanel(panelName,
-    tagName = \"Panel\") {\r\n        var objs = UnityEngine_1.GameObject.FindGameObjectsWithTag(tagName);\r\n       
-    for (let i = 0; i < objs.length; i++) {\r\n            var obj = objs[i];\r\n           
+    canvas = this.GetPanel(panelName, tagName);\r\n        if (canvas != null)\r\n           
+    canvas.enabled = true;\r\n    }\r\n    static ShowWithUpdate(panelName, tagName
+    = \"Panel\") {\r\n        var canvas = this.GetPanel(panelName, tagName);\r\n       
+    if (canvas != null) {\r\n            canvas.enabled = true;\r\n            canvas.BroadcastMessage(\"Update\",
+    UnityEngine_1.SendMessageOptions.DontRequireReceiver);\r\n        }\r\n    }\r\n   
+    static Hide(panelName, tagName = \"Panel\") {\r\n        var canvas = this.GetPanel(panelName,
+    tagName);\r\n        if (canvas != null)\r\n            canvas.enabled = false;\r\n   
+    }\r\n    static GetPanel(panelName, tagName = \"Panel\") {\r\n        var objs
+    = UnityEngine_1.GameObject.FindGameObjectsWithTag(tagName);\r\n        for (let
+    i = 0; i < objs.length; i++) {\r\n            var obj = objs[i];\r\n           
     if (obj.name === panelName) {\r\n                return obj.GetComponent($typeof(UnityEngine_1.Canvas));\r\n           
     }\r\n        }\r\n        return null;\r\n    }\r\n}\r\nexports.default = PanelMgr;\r\n//#
-    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGFuZWxNZ3IuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJQYW5lbE1nci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFnRDtBQUdoRCxNQUFxQixRQUFRO0lBRWxCLE1BQU0sQ0FBQyxJQUFJLENBQUMsU0FBa0IsRUFBRSxVQUFtQixPQUFPO1FBRTdELElBQUksTUFBTSxHQUFHLElBQUksQ0FBQyxRQUFRLENBQUMsU0FBUyxFQUFDLE9BQU8sQ0FBQyxDQUFDO1FBQzlDLElBQUcsTUFBTSxLQUFLLElBQUk7WUFDZCxNQUFNLENBQUMsT0FBTyxHQUFHLElBQUksQ0FBQztJQUM5QixDQUFDO0lBQ00sTUFBTSxDQUFDLElBQUksQ0FBQyxTQUFrQixFQUFFLFVBQW1CLE9BQU87UUFFN0QsSUFBSSxNQUFNLEdBQUcsSUFBSSxDQUFDLFFBQVEsQ0FBQyxTQUFTLEVBQUMsT0FBTyxDQUFDLENBQUM7UUFDOUMsSUFBRyxNQUFNLEtBQUssSUFBSTtZQUNkLE1BQU0sQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDO0lBQy9CLENBQUM7SUFDTSxNQUFNLENBQUMsUUFBUSxDQUFDLFNBQWtCLEVBQUUsVUFBbUIsT0FBTztRQUVqRSxJQUFJLElBQUksR0FBRyx3QkFBVSxDQUFDLHNCQUFzQixDQUFDLE9BQU8sQ0FBQyxDQUFDO1FBQ3RELEtBQUksSUFBSSxDQUFDLEdBQUcsQ0FBQyxFQUFDLENBQUMsR0FBQyxJQUFJLENBQUMsTUFBTSxFQUFDLENBQUMsRUFBRSxFQUMvQjtZQUNJLElBQUksR0FBRyxHQUFHLElBQUksQ0FBQyxDQUFDLENBQUMsQ0FBQztZQUNsQixJQUFHLEdBQUcsQ0FBQyxJQUFJLEtBQUssU0FBUyxFQUN6QjtnQkFDSSxPQUFPLEdBQUcsQ0FBQyxZQUFZLFNBQUMsb0JBQU0sR0FBSTthQUNyQztTQUNKO1FBQ0QsT0FBTyxJQUFJLENBQUM7SUFDaEIsQ0FBQztDQUNKO0FBM0JELDJCQTJCQyJ9","assetPath":"Assets/Scripts/PanelMgr.ts","manifest":{"properties":[],"name":"PanelMgr","description":""},"isCompiled":true}'
-  typescriptHash: 580bde5cc74968f9041911a716e90f90
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGFuZWxNZ3IuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJQYW5lbE1nci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFvRTtBQUdwRSxNQUFxQixRQUFRO0lBRWxCLE1BQU0sQ0FBQyxJQUFJLENBQUMsU0FBa0IsRUFBRSxVQUFtQixPQUFPO1FBRTdELElBQUksTUFBTSxHQUFHLElBQUksQ0FBQyxRQUFRLENBQUMsU0FBUyxFQUFDLE9BQU8sQ0FBQyxDQUFDO1FBQzlDLElBQUcsTUFBTSxJQUFJLElBQUk7WUFDYixNQUFNLENBQUMsT0FBTyxHQUFHLElBQUksQ0FBQztJQUM5QixDQUFDO0lBQ00sTUFBTSxDQUFDLGNBQWMsQ0FBQyxTQUFrQixFQUFFLFVBQW1CLE9BQU87UUFFdkUsSUFBSSxNQUFNLEdBQUcsSUFBSSxDQUFDLFFBQVEsQ0FBQyxTQUFTLEVBQUMsT0FBTyxDQUFDLENBQUM7UUFDOUMsSUFBRyxNQUFNLElBQUksSUFBSSxFQUNqQjtZQUNJLE1BQU0sQ0FBQyxPQUFPLEdBQUcsSUFBSSxDQUFDO1lBQ3RCLE1BQU0sQ0FBQyxnQkFBZ0IsQ0FBQyxRQUFRLEVBQUMsZ0NBQWtCLENBQUMsbUJBQW1CLENBQUMsQ0FBQztTQUM1RTtJQUNMLENBQUM7SUFDTSxNQUFNLENBQUMsSUFBSSxDQUFDLFNBQWtCLEVBQUUsVUFBbUIsT0FBTztRQUU3RCxJQUFJLE1BQU0sR0FBRyxJQUFJLENBQUMsUUFBUSxDQUFDLFNBQVMsRUFBQyxPQUFPLENBQUMsQ0FBQztRQUM5QyxJQUFHLE1BQU0sSUFBSSxJQUFJO1lBQ2IsTUFBTSxDQUFDLE9BQU8sR0FBRyxLQUFLLENBQUM7SUFDL0IsQ0FBQztJQUNNLE1BQU0sQ0FBQyxRQUFRLENBQUMsU0FBa0IsRUFBRSxVQUFtQixPQUFPO1FBRWpFLElBQUksSUFBSSxHQUFHLHdCQUFVLENBQUMsc0JBQXNCLENBQUMsT0FBTyxDQUFDLENBQUM7UUFDdEQsS0FBSSxJQUFJLENBQUMsR0FBRyxDQUFDLEVBQUMsQ0FBQyxHQUFDLElBQUksQ0FBQyxNQUFNLEVBQUMsQ0FBQyxFQUFFLEVBQy9CO1lBQ0ksSUFBSSxHQUFHLEdBQUcsSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDO1lBQ2xCLElBQUcsR0FBRyxDQUFDLElBQUksS0FBSyxTQUFTLEVBQ3pCO2dCQUNJLE9BQU8sR0FBRyxDQUFDLFlBQVksU0FBQyxvQkFBTSxHQUFJO2FBQ3JDO1NBQ0o7UUFDRCxPQUFPLElBQUksQ0FBQztJQUNoQixDQUFDO0NBQ0o7QUFwQ0QsMkJBb0NDIn0=","assetPath":"Assets/Scripts/PanelMgr.ts","manifest":{"properties":[],"name":"PanelMgr","description":""},"isCompiled":true}'
+  typescriptHash: ce8df7959a149226771b26dcb677813b

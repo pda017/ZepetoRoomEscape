@@ -8,7 +8,7 @@ export default class StringData {
         if(this.m_StringMap == null)
         {
             this.m_StringMap = new Map<string,string>();
-            var table = CsvParser.LoadTextAsset("DataTable/StringTable");
+            var table = CsvParser.LoadTextAsset("DT_StringTable");
             if(table.length !== 0)
             {
                 var colArr = table[0];

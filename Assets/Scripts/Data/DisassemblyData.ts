@@ -8,7 +8,7 @@ export default class DisassemblyData {
         if(this.m_DisassemblyMap == null)
         {
             this.m_DisassemblyMap = new Map<string,DisassemblyInfo>();
-            var table = CsvParser.LoadTextAsset("DataTable/DisassemblyTable");
+            var table = CsvParser.LoadTextAsset("DT_DisassemblyTable");
             if(table.length !== 0)
             {
                 var colArr = table[0];

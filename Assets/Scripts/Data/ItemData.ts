@@ -3,13 +3,15 @@ import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
 import CsvParser from '../CsvParser';
 
 export default class ItemData {
+    public static m_ItemViewImage : string = "";
+    public static m_ItemViewImageDirty : number = 0;
     public static m_ItemMap : Map<string,ItemInfo> = null;
     public static GetItemMap() : Map<string,ItemInfo>
     {
         if(this.m_ItemMap === null)
         {
             this.m_ItemMap = new Map<string,ItemInfo>();
-            var table = CsvParser.LoadTextAsset("DataTable/ItemTable");
+            var table = CsvParser.LoadTextAsset("DT_ItemTable");
             if(table.length !== 0)
             {
                 var colArr = table[0];

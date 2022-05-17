@@ -2,15 +2,17 @@ import { Room } from 'ZEPETO.Multiplay';
 import { State } from 'ZEPETO.Multiplay.Schema';
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
 import { ZepetoWorldMultiplay } from 'ZEPETO.World'
+import ClientStarter from './ClientStarter';
 import TimerData from './Data/TimerData';
-import UpdatePlayerExists from './UpdatePlayerExists';
 
 export default class MultiplayMgr extends ZepetoScriptBehaviour {
     public static m_Room : Room = null;
-    m_UpdatePlayerExists : UpdatePlayerExists;
     m_Multiplay : ZepetoWorldMultiplay;
+    m_ClientStarter : ClientStarter;
     Start() {    
         this.m_Multiplay = this.GetComponent<ZepetoWorldMultiplay>();
+        this.m_ClientStarter = new ClientStarter(this.m_Multiplay);
+        this.m_ClientStarter.Start();
         this.m_Multiplay.RoomCreated += (room: Room) => {
             MultiplayMgr.m_Room = room;
         };
@@ -20,7 +22,9 @@ export default class MultiplayMgr extends ZepetoScriptBehaviour {
                 TimerData.m_RemainTime = state.RemainTime;
             };
         };
-        
-        this.m_UpdatePlayerExists = new UpdatePlayerExists(this.gameObject);
+    }
+    Update()
+    {
+        this.m_ClientStarter.Update();
     }
 }
