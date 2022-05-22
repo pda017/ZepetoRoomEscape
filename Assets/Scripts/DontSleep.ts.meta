@@ -23,4 +23,4 @@ ScriptedImporter:
     ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass DontSleep extends ZEPETO_Script_1.ZepetoScriptBehaviour
     {\r\n    Start() {\r\n        UnityEngine_1.Screen.sleepTimeout = UnityEngine_1.SleepTimeout.NeverSleep;\r\n   
     }\r\n}\r\nexports.default = DontSleep;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRG9udFNsZWVwLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiRG9udFNsZWVwLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQStEO0FBQy9ELGlEQUFxRDtBQUVyRCxNQUFxQixTQUFVLFNBQVEscUNBQXFCO0lBRXhELEtBQUs7UUFDRCxvQkFBTSxDQUFDLFlBQVksR0FBRywwQkFBWSxDQUFDLFVBQVUsQ0FBQztJQUNsRCxDQUFDO0NBRUo7QUFORCw0QkFNQyJ9","assetPath":"Assets/Scripts/DontSleep.ts","manifest":{"properties":[],"name":"DontSleep","description":""},"isCompiled":true}'
-  typescriptHash: 7e0ed67ed2f99705f44dfb724f121eaa
+  typescriptHash: 2cf787ae091cd3320cfd37002a957374

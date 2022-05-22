@@ -23,4 +23,4 @@ ScriptedImporter:
     InitData_1 = require(\"./Data/InitData\");\r\nclass TestStage extends ZEPETO_Script_1.ZepetoScriptBehaviour
     {\r\n    Awake() {\r\n        InitData_1.default.Init();\r\n    }\r\n}\r\nexports.default
     = TestStage;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGVzdFN0YWdlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVGVzdFN0YWdlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0EsaURBQXFEO0FBQ3JELDhDQUF1QztBQUl2QyxNQUFxQixTQUFVLFNBQVEscUNBQXFCO0lBQ3hELEtBQUs7UUFFRCxrQkFBUSxDQUFDLElBQUksRUFBRSxDQUFDO0lBQ3BCLENBQUM7Q0FDSjtBQUxELDRCQUtDIn0=","assetPath":"Assets/Scripts/TestStage.ts","manifest":{"properties":[],"name":"TestStage","description":""},"isCompiled":true}'
-  typescriptHash: 7c0a12c3a29ed4d27de900b2332e8854
+  typescriptHash: d89639c5dc9eceb98603b1d0adf9eb31
