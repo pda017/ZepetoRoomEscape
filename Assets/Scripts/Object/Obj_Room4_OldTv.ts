@@ -8,13 +8,17 @@ import SetDialog from '../SetDialog';
 import ZAnimator from '../ZAnimator';
 
 export default class Obj_Room4_OldTv extends ZepetoScriptBehaviour {
+    public m_FindAnimAtSibling : boolean = false; 
     m_IsOn : IsOn;
     m_Interactable : Interactable;
     m_ItemDialog : ItemDialog;
     m_NumState : number = 0;
     m_Anim : ZAnimator;
     Start() {    
-        this.m_Anim = new ZAnimator(this.gameObject,true);
+        if(this.m_FindAnimAtSibling)
+            this.m_Anim = new ZAnimator(this.transform.parent.gameObject,false);
+        else
+            this.m_Anim = new ZAnimator(this.gameObject,true);
         this.m_ItemDialog = this.GetComponent<ItemDialog>();
         this.m_IsOn = this.GetComponent<IsOn>();
         this.m_Interactable = this.GetComponent<Interactable>();

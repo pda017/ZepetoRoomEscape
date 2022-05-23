@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4000010670910742}
   - component: {fileID: 33000013321035850}
   - component: {fileID: 23000014209588918}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: doorway_2-4
   m_TagString: WallTag
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9160718721717535522}
   - component: {fileID: 3673227222447693444}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: col (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5704780127053343251}
   - component: {fileID: 6545016913671921768}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: col (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,7 +182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5049769444457781819}
   - component: {fileID: 3106482445960780472}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: col
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -14,11 +14,14 @@ export default class SecretCabinetPanel_SwitchButton extends ZepetoScriptBehavio
         ButtonEvent.Add(this.gameObject,()=>
         {
             var index = this.m_Tf.GetSiblingIndex();
-            if(index < SecretCabinetData.m_SwitchList.length)
+            SecretCabinetData.m_SwitchList.forEach((v,i)=>
             {
-                SecretCabinetData.m_SwitchList[index] = !SecretCabinetData.m_SwitchList[index];
-                SecretCabinetData.m_SwitchDirty++;
-            }
+                if(index === i)
+                    SecretCabinetData.m_SwitchList[index] = !SecretCabinetData.m_SwitchList[index];
+                else
+                    SecretCabinetData.m_SwitchList[i] = false;
+            });
+            SecretCabinetData.m_SwitchDirty++;
         });
     }
     Update()

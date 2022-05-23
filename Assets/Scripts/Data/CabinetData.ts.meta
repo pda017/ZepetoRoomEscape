@@ -23,4 +23,4 @@ ScriptedImporter:
     = [];\r\n        for (let i = 0; i < this.m_Count; i++)\r\n            this.m_SwitchList.push(false);\r\n   
     }\r\n}\r\nexports.default = CabinetData;\r\nCabinetData.m_Count = 24;\r\nCabinetData.m_SwitchList
     = [];\r\nCabinetData.m_SwitchDirty = 0;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2FiaW5ldERhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJDYWJpbmV0RGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUVBLE1BQXFCLFdBQVc7SUFJckIsTUFBTSxDQUFDLElBQUk7UUFFZCxJQUFJLENBQUMsWUFBWSxHQUFHLEVBQUUsQ0FBQztRQUN2QixLQUFJLElBQUksQ0FBQyxHQUFFLENBQUMsRUFBQyxDQUFDLEdBQUMsSUFBSSxDQUFDLE9BQU8sRUFBQyxDQUFDLEVBQUU7WUFDM0IsSUFBSSxDQUFDLFlBQVksQ0FBQyxJQUFJLENBQUMsS0FBSyxDQUFDLENBQUM7SUFDdEMsQ0FBQzs7QUFUTCw4QkFVQztBQVRpQixtQkFBTyxHQUFZLEVBQUUsQ0FBQztBQUN0Qix3QkFBWSxHQUFvQixFQUFFLENBQUM7QUFDbkMseUJBQWEsR0FBWSxDQUFDLENBQUMifQ==","assetPath":"Assets/Scripts/Data/CabinetData.ts","manifest":{"properties":[],"name":"CabinetData","description":""},"isCompiled":true}'
-  typescriptHash: b9c60ae5d209cc4a70e486c85b14f645
+  typescriptHash: fcb3d4471d90b7bdfee1f40e336582ef

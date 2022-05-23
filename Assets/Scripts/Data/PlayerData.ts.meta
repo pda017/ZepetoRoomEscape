@@ -20,5 +20,6 @@ ScriptedImporter:
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
     { value: true });\r\nclass PlayerData {\r\n}\r\nexports.default = PlayerData;\r\nPlayerData.m_SelectDetectRange
-    = 1;\r\nPlayerData.m_SelectDetectAngle = 45;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGxheWVyRGF0YS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlBsYXllckRhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFQSxNQUFxQixVQUFVOztBQUEvQiw2QkFHQztBQUZpQiw4QkFBbUIsR0FBWSxDQUFDLENBQUM7QUFDakMsOEJBQW1CLEdBQVksRUFBRSxDQUFDIn0=","assetPath":"Assets/Scripts/Data/PlayerData.ts","manifest":{"properties":[],"name":"PlayerData","description":""},"isCompiled":true}'
-  typescriptHash: 2277dad56c59eff9daf4c6b01931f4d1
+    = 1;\r\nPlayerData.m_SelectDetectAngle = 90;\r\nPlayerData.m_PlayerInfoMapDirty
+    = 0;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGxheWVyRGF0YS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlBsYXllckRhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFHQSxNQUFxQixVQUFVOztBQUEvQiw2QkFLQztBQUppQiw4QkFBbUIsR0FBWSxDQUFDLENBQUM7QUFDakMsOEJBQW1CLEdBQVksRUFBRSxDQUFDO0FBRWxDLCtCQUFvQixHQUFZLENBQUMsQ0FBQyJ9","assetPath":"Assets/Scripts/Data/PlayerData.ts","manifest":{"properties":[],"name":"PlayerData","description":""},"isCompiled":true}'
+  typescriptHash: 679c54300cd2164333da23de7c190cf9

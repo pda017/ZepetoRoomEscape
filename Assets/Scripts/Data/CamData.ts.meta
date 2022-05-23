@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 2ec0c5f911c97d7488924a6dd2ad7243
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nclass CamData {\r\n}\r\nexports.default = CamData;\r\nCamData.m_ColGap
+    = 0.2;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2FtRGF0YS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkNhbURhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFQSxNQUFxQixPQUFPOztBQUE1QiwwQkFFQztBQURpQixnQkFBUSxHQUFZLEdBQUcsQ0FBQyJ9","assetPath":"Assets/Scripts/Data/CamData.ts","manifest":{"properties":[],"name":"CamData","description":""},"isCompiled":true}'
+  typescriptHash: 493d12d00597eed02ef7b0aae16b3637

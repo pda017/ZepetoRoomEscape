@@ -5,10 +5,12 @@ import {Player, State, Vector3} from 'ZEPETO.Multiplay.Schema'
 import {CharacterState, SpawnInfo, ZepetoPlayers, ZepetoPlayer} from 'ZEPETO.Character.Controller'
 import * as UnityEngine from "UnityEngine";
 import GetStartPoint from './GetStartPoint'
+import LayerData from './Data/LayerData'
+import PlayerData from './Data/PlayerData'
 
 
-export default class Starter {
-
+export default class ClientStarter {
+    m_OtherCharLayer : number;
     constructor(_multiplay : ZepetoWorldMultiplay)
     {
         this.multiplay = _multiplay;
@@ -21,6 +23,8 @@ export default class Starter {
     m_PlayerUpdateDelay : number = 0.1; 
 
     public Start() {
+        PlayerData.m_PlayerInfoMap = this.currentPlayers;
+        this.m_OtherCharLayer = UnityEngine.LayerMask.NameToLayer("OtherCharacter");
         this.multiplay.RoomCreated += (room: Room) => {
             this.room = room;
         };
@@ -90,6 +94,7 @@ export default class Starter {
     private OnJoinPlayer(sessionId: string, player: Player) {
         console.log(`[OnJoinPlayer] players - sessionId : ${sessionId}`);
         this.currentPlayers.set(sessionId, player);
+        PlayerData.m_PlayerInfoMapDirty++;
 
         var startPos = GetStartPoint.Get(0);
 
@@ -104,16 +109,20 @@ export default class Starter {
     private OnLeavePlayer(sessionId: string, player: Player) {
         console.log(`[OnRemove] players - sessionId : ${sessionId}`);
         this.currentPlayers.delete(sessionId);
+        PlayerData.m_PlayerInfoMapDirty++;
 
         ZepetoPlayers.instance.RemovePlayer(sessionId);
     }
 
     private OnUpdatePlayer(sessionId: string, player: Player) {
-
+        const isLocal = this.room.SessionId === player.sessionId;
         const position = this.ParseVector3(player.transform.position);
 
         const zepetoPlayer = ZepetoPlayers.instance.GetPlayer(sessionId);
         zepetoPlayer.character.MoveToPosition(position);
+        
+        if(!isLocal && zepetoPlayer.character.gameObject.layer !== this.m_OtherCharLayer)
+            zepetoPlayer.character.gameObject.layer = this.m_OtherCharLayer;
 
         if (player.state === CharacterState.JumpIdle || player.state === CharacterState.JumpMove)
             zepetoPlayer.character.Jump();

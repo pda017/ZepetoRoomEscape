@@ -1,0 +1,35 @@
+fileFormatVersion: 2
+guid: 5833075efea738548962f3336d90eae1
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    DoorLockData_1 = require(\"./Data/DoorLockData\");\r\nclass DoorLockPanel_UnderBarGrid
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor() {\r\n       
+    super(...arguments);\r\n        this.m_ObjList = [];\r\n        this.m_Dirty
+    = Number.MIN_SAFE_INTEGER;\r\n    }\r\n    Start() {\r\n        this.m_Tf = this.transform;\r\n       
+    for (let i = 0; i < this.m_Tf.childCount; i++) {\r\n            this.m_ObjList.push(this.m_Tf.GetChild(i).gameObject);\r\n       
+    }\r\n    }\r\n    Update() {\r\n        if (this.m_Dirty != DoorLockData_1.default.m_PasswordLimit)
+    {\r\n            this.m_Dirty = DoorLockData_1.default.m_PasswordLimit;\r\n           
+    for (let i = 0; i < this.m_ObjList.length; i++) {\r\n                if (i <
+    DoorLockData_1.default.m_PasswordLimit)\r\n                    this.m_ObjList[i].SetActive(true);\r\n               
+    else\r\n                    this.m_ObjList[i].SetActive(false);\r\n           
+    }\r\n        }\r\n    }\r\n}\r\nexports.default = DoorLockPanel_UnderBarGrid;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRG9vckxvY2tQYW5lbF9VbmRlckJhckdyaWQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJEb29yTG9ja1BhbmVsX1VuZGVyQmFyR3JpZC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUVBLGlEQUFxRDtBQUNyRCxzREFBK0M7QUFFL0MsTUFBcUIsMEJBQTJCLFNBQVEscUNBQXFCO0lBQTdFOztRQUNJLGNBQVMsR0FBa0IsRUFBRSxDQUFDO1FBRTlCLFlBQU8sR0FBWSxNQUFNLENBQUMsZ0JBQWdCLENBQUM7SUFzQi9DLENBQUM7SUFyQkcsS0FBSztRQUNELElBQUksQ0FBQyxJQUFJLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQztRQUMzQixLQUFJLElBQUksQ0FBQyxHQUFFLENBQUMsRUFBRSxDQUFDLEdBQUUsSUFBSSxDQUFDLElBQUksQ0FBQyxVQUFVLEVBQUMsQ0FBQyxFQUFFLEVBQ3pDO1lBQ0ksSUFBSSxDQUFDLFNBQVMsQ0FBQyxJQUFJLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLENBQUMsVUFBVSxDQUFDLENBQUM7U0FDekQ7SUFDTCxDQUFDO0lBQ0QsTUFBTTtRQUVGLElBQUcsSUFBSSxDQUFDLE9BQU8sSUFBSSxzQkFBWSxDQUFDLGVBQWUsRUFDL0M7WUFDSSxJQUFJLENBQUMsT0FBTyxHQUFHLHNCQUFZLENBQUMsZUFBZSxDQUFDO1lBQzVDLEtBQUksSUFBSSxDQUFDLEdBQUUsQ0FBQyxFQUFFLENBQUMsR0FBRSxJQUFJLENBQUMsU0FBUyxDQUFDLE1BQU0sRUFBQyxDQUFDLEVBQUUsRUFDMUM7Z0JBQ0ksSUFBRyxDQUFDLEdBQUcsc0JBQVksQ0FBQyxlQUFlO29CQUMvQixJQUFJLENBQUMsU0FBUyxDQUFDLENBQUMsQ0FBQyxDQUFDLFNBQVMsQ0FBQyxJQUFJLENBQUMsQ0FBQzs7b0JBRWxDLElBQUksQ0FBQyxTQUFTLENBQUMsQ0FBQyxDQUFDLENBQUMsU0FBUyxDQUFDLEtBQUssQ0FBQyxDQUFDO2FBQzFDO1NBQ0o7SUFDTCxDQUFDO0NBQ0o7QUF6QkQsNkNBeUJDIn0=","assetPath":"Assets/Scripts/DoorLockPanel_UnderBarGrid.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"m_ObjList","type":"UnityEngine.GameObject[]","isArray":true,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"m_Tf","type":"UnityEngine.Transform","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"DoorLockPanel_UnderBarGrid","description":""},"isCompiled":true}'
+  typescriptHash: ce5725de5f6ba0f3280f3f05e3d51b17

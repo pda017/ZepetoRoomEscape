@@ -25,4 +25,4 @@ ScriptedImporter:
     {\r\n            this.m_Dirty = DialogData_1.default.m_DialogPlayDirty;\r\n           
     return true;\r\n        }\r\n        return false;\r\n    }\r\n}\r\nexports.default
     = DialogPlayChanged;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGlhbG9nUGxheUNoYW5nZWQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJEaWFsb2dQbGF5Q2hhbmdlZC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLGtEQUEyQztBQUUzQyxNQUFxQixpQkFBaUI7SUFBdEM7UUFDSSxZQUFPLEdBQVksTUFBTSxDQUFDLGdCQUFnQixDQUFDO0lBVS9DLENBQUM7SUFUVSxLQUFLO1FBRVIsSUFBRyxJQUFJLENBQUMsT0FBTyxLQUFLLG9CQUFVLENBQUMsaUJBQWlCLEVBQ2hEO1lBQ0ksSUFBSSxDQUFDLE9BQU8sR0FBRyxvQkFBVSxDQUFDLGlCQUFpQixDQUFDO1lBQzVDLE9BQU8sSUFBSSxDQUFDO1NBQ2Y7UUFDRCxPQUFPLEtBQUssQ0FBQztJQUNqQixDQUFDO0NBQ0o7QUFYRCxvQ0FXQyJ9","assetPath":"Assets/Scripts/DialogPlayChanged.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"DialogPlayChanged","description":""},"isCompiled":true}'
-  typescriptHash: e13c7abf216503b53093b1d15eafd310
+  typescriptHash: 665408171e4faf4e2fa943d617dc3ba4

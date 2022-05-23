@@ -25,4 +25,4 @@ ScriptedImporter:
     {\r\n            this.m_Dirty = CabinetData_1.default.m_SwitchDirty;\r\n           
     return true;\r\n        }\r\n        return false;\r\n    }\r\n}\r\nexports.default
     = CabinetSwitchChanged;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2FiaW5ldFN3aXRjaENoYW5nZWQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJDYWJpbmV0U3dpdGNoQ2hhbmdlZC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLG9EQUE2QztBQUU3QyxNQUFxQixvQkFBb0I7SUFBekM7UUFDSSxZQUFPLEdBQVksTUFBTSxDQUFDLGdCQUFnQixDQUFDO0lBVS9DLENBQUM7SUFUVSxLQUFLO1FBRVIsSUFBRyxJQUFJLENBQUMsT0FBTyxLQUFLLHFCQUFXLENBQUMsYUFBYSxFQUM3QztZQUNJLElBQUksQ0FBQyxPQUFPLEdBQUcscUJBQVcsQ0FBQyxhQUFhLENBQUM7WUFDekMsT0FBTyxJQUFJLENBQUM7U0FDZjtRQUNELE9BQU8sS0FBSyxDQUFDO0lBQ2pCLENBQUM7Q0FDSjtBQVhELHVDQVdDIn0=","assetPath":"Assets/Scripts/CabinetSwitchChanged.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"CabinetSwitchChanged","description":""},"isCompiled":true}'
-  typescriptHash: be8c914e9dbd7a4b00b4ae53353ec73c
+  typescriptHash: 5924cddd5f89a367718a227391d361bd

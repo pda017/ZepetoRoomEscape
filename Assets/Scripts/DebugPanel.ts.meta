@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 59dc4a8e70d775c4bbc75ca1a4503389
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst DebugData_1 = require(\"./Data/DebugData\");\r\nclass
+    DebugPanel extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n       
+    this.m_Canvas = this.GetComponent($typeof(UnityEngine_1.Canvas));\r\n       
+    if (DebugData_1.default.m_DebugMode)\r\n            this.m_Canvas.enabled = true;\r\n       
+    else\r\n            this.m_Canvas.enabled = false;\r\n    }\r\n}\r\nexports.default
+    = DebugPanel;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGVidWdQYW5lbC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkRlYnVnUGFuZWwudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBb0M7QUFDcEMsaURBQXFEO0FBQ3JELGdEQUF3QztBQUV4QyxNQUFxQixVQUFXLFNBQVEscUNBQXFCO0lBRXpELEtBQUs7UUFDRCxJQUFJLENBQUMsUUFBUSxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMsb0JBQU0sRUFBRyxDQUFDO1FBQzVDLElBQUcsbUJBQVMsQ0FBQyxXQUFXO1lBQ3BCLElBQUksQ0FBQyxRQUFRLENBQUMsT0FBTyxHQUFHLElBQUksQ0FBQzs7WUFFN0IsSUFBSSxDQUFDLFFBQVEsQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDO0lBQ3RDLENBQUM7Q0FFSjtBQVZELDZCQVVDIn0=","assetPath":"Assets/Scripts/DebugPanel.ts","manifest":{"properties":[{"assembly":"UnityEngine.UIModule","name":"m_Canvas","type":"UnityEngine.Canvas","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"DebugPanel","description":""},"isCompiled":true}'
+  typescriptHash: 20df42ccdb9f9b1b04792e572b531126

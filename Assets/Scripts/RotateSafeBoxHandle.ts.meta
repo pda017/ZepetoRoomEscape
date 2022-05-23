@@ -25,4 +25,4 @@ ScriptedImporter:
     }\r\n    static Right() {\r\n        SafeBoxData_1.default.m_RotatorAngle -=
     90;\r\n        SafeBoxData_1.default.m_InputCommand += \"R\";\r\n        SafeBoxData_1.default.m_InputDirty++;\r\n   
     }\r\n}\r\nexports.default = RotateSafeBoxHandle;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUm90YXRlU2FmZUJveEhhbmRsZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlJvdGF0ZVNhZmVCb3hIYW5kbGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSxvREFBNEM7QUFFNUMsTUFBcUIsbUJBQW1CO0lBQzdCLE1BQU0sQ0FBQyxJQUFJO1FBRWQscUJBQVcsQ0FBQyxjQUFjLElBQUksRUFBRSxDQUFDO1FBQ2pDLHFCQUFXLENBQUMsY0FBYyxJQUFJLEdBQUcsQ0FBQztRQUNsQyxxQkFBVyxDQUFDLFlBQVksRUFBRSxDQUFDO0lBQy9CLENBQUM7SUFDTSxNQUFNLENBQUMsS0FBSztRQUVmLHFCQUFXLENBQUMsY0FBYyxJQUFJLEVBQUUsQ0FBQztRQUM3QixxQkFBVyxDQUFDLGNBQWMsSUFBSSxHQUFHLENBQUM7UUFDbEMscUJBQVcsQ0FBQyxZQUFZLEVBQUUsQ0FBQztJQUNuQyxDQUFDO0NBQ0o7QUFiRCxzQ0FhQyJ9","assetPath":"Assets/Scripts/RotateSafeBoxHandle.ts","manifest":{"properties":[],"name":"RotateSafeBoxHandle","description":""},"isCompiled":true}'
-  typescriptHash: 5628a1aae7b5950481853d7f7487f8b1
+  typescriptHash: 5b87a2aa4b4c5155f608e6fef28ed770
