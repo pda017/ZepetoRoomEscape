@@ -14,6 +14,9 @@ export default class extends Sandbox {
         this.m_RemainTime = ServerData.m_TimeOut;
         this.m_RemainTimeDirty = Number.MIN_SAFE_INTEGER;
         this.state.RemainTime = Math.round(this.m_RemainTime / 1000);
+        this.state.PlayerNumMax = this.maxClients;
+        this.state.PlayerNum = 0;
+        this.state.JoinLeaveDirty = 0;
 
         this.m_PlayerMgr = new S_PlayerMgr(this);
         this.m_PlayerMgr.onCreate(options);
@@ -21,6 +24,8 @@ export default class extends Sandbox {
 
     async onJoin(client: SandboxPlayer) {
         this.m_PlayerMgr.onJoin(client);
+        this.state.JoinLeaveDirty++;
+        this.state.PlayerNum++;
     }
 
     onTick(deltaTime: number): void {
@@ -35,5 +40,7 @@ export default class extends Sandbox {
 
     async onLeave(client: SandboxPlayer, consented?: boolean) {
         this.m_PlayerMgr.onLeave(client,consented);
+        this.state.JoinLeaveDirty++;
+        this.state.PlayerNum--;
     }
 }

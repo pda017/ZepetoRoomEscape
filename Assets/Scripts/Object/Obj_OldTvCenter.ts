@@ -17,7 +17,7 @@ export default class Obj_OldTvCenter extends ZepetoScriptBehaviour {
     m_IsOn : IsOn;
     Start() 
     {
-        this.m_IsOn = this.GetComponentInChildren<IsOn>();
+        this.m_IsOn = Finder.Find("Room4_OldTv").GetComponent<IsOn>();
         this.m_DefaultTf = Finder.Find("Room4_OldTv_DefaultTf").transform;
         this.m_LeftTf = Finder.Find("Room4_OldTv_LeftTf").transform;
         this.m_RemoconInputChanged.Check();

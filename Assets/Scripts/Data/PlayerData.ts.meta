@@ -19,6 +19,9 @@ ScriptedImporter:
   WrapperFilters: []
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nclass PlayerData {\r\n}\r\nexports.default = PlayerData;\r\nPlayerData.m_SelectDetectRange
-    = 1;\r\nPlayerData.m_SelectDetectAngle = 45;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGxheWVyRGF0YS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlBsYXllckRhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFQSxNQUFxQixVQUFVOztBQUEvQiw2QkFHQztBQUZpQiw4QkFBbUIsR0FBWSxDQUFDLENBQUM7QUFDakMsOEJBQW1CLEdBQVksRUFBRSxDQUFDIn0=","assetPath":"Assets/Scripts/Data/PlayerData.ts","manifest":{"properties":[],"name":"PlayerData","description":""},"isCompiled":true}'
-  typescriptHash: 2277dad56c59eff9daf4c6b01931f4d1
+    { value: true });\r\nclass PlayerData {\r\n    static Init() {\r\n        this.m_PlayerInfoMap
+    = new Map();\r\n        this.m_PlayerOrderedList = [];\r\n    }\r\n}\r\nexports.default
+    = PlayerData;\r\nPlayerData.m_SelectDetectRange = 1;\r\nPlayerData.m_SelectDetectAngle
+    = 90;\r\nPlayerData.m_PlayerInfoMapDirty = 0;\r\nPlayerData.m_PlayerOrderedList
+    = [];\r\nPlayerData.m_PlayerOrderedDirty = 0;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGxheWVyRGF0YS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlBsYXllckRhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFHQSxNQUFxQixVQUFVO0lBT3BCLE1BQU0sQ0FBQyxJQUFJO1FBRWQsSUFBSSxDQUFDLGVBQWUsR0FBRyxJQUFJLEdBQUcsRUFBaUIsQ0FBQztRQUNoRCxJQUFJLENBQUMsbUJBQW1CLEdBQUcsRUFBRSxDQUFDO0lBQ2xDLENBQUM7O0FBWEwsNkJBWUM7QUFYaUIsOEJBQW1CLEdBQVksQ0FBQyxDQUFDO0FBQ2pDLDhCQUFtQixHQUFZLEVBQUUsQ0FBQztBQUVsQywrQkFBb0IsR0FBWSxDQUFDLENBQUM7QUFDbEMsOEJBQW1CLEdBQWMsRUFBRSxDQUFDO0FBQ3BDLCtCQUFvQixHQUFZLENBQUMsQ0FBQyJ9","assetPath":"Assets/Scripts/Data/PlayerData.ts","manifest":{"properties":[],"name":"PlayerData","description":""},"isCompiled":true}'
+  typescriptHash: 813eb7d568d1dc9718245c0385d5ceb0

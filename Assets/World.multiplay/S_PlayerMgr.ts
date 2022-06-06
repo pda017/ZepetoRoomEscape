@@ -4,6 +4,7 @@ import { Player, Transform, Vector3 } from "ZEPETO.Multiplay.Schema";
 
 export default class S_PlayerMgr {
     m_SandBox : Sandbox;
+    m_JoinIndex : number = 0;
     constructor(sandBox : Sandbox)
     {
         this.m_SandBox = sandBox;
@@ -31,6 +32,12 @@ export default class S_PlayerMgr {
             const player = this.m_SandBox.state.players.get(client.sessionId);
             player.state = message.state;
         });
+
+        this.m_SandBox.onMessage("onReady",(client,message)=>
+        {
+            const player = this.m_SandBox.state.players.get(client.sessionId);
+            player.ready = message.ready;
+        });
     }
     public async onJoin(client: SandboxPlayer)
     {
@@ -39,6 +46,9 @@ export default class S_PlayerMgr {
 
         const player = new Player();
         player.sessionId = client.sessionId;
+        player.ready = false;
+        player.JoinOrder = this.m_JoinIndex;
+        this.m_JoinIndex++;
 
         if (client.hashCode) {
             player.zepetoHash = client.hashCode;

@@ -9,6 +9,7 @@ import SetDialog from '../SetDialog';
 import SetNotice from '../SetNotice';
 
 export default class Obj_Hammer extends ZepetoScriptBehaviour {
+    public m_bDisableParent : boolean;
     m_ItemKey : ItemKey;
     m_ItemDialog : ItemDialog;
     m_IsOn : IsOn;
@@ -26,7 +27,10 @@ export default class Obj_Hammer extends ZepetoScriptBehaviour {
             {
                 AddItemToInventory.AddWithDialog(this.m_ItemKey.m_Value,this.m_ItemDialog.m_DialogKey,this.m_ItemDialog.m_NoticeKey);
                 Finder.Find("Room2_Cabinet").GetComponent<Interactable>().m_Value = true;
-                this.gameObject.SetActive(false);
+                if(this.m_bDisableParent)
+                    this.transform.parent.gameObject.SetActive(false);
+                else
+                    this.gameObject.SetActive(false);
                 this.m_NumState++;
             }
         }

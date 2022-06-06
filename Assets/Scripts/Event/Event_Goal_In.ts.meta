@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: 8a03c8bdedd3c5e43add1f6ba38a3dbe
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    GetMyCharacter_1 = require(\"../GetMyCharacter\");\r\nconst PanelMgr_1 = require(\"../PanelMgr\");\r\nclass
+    Event_Goal_In extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
+    {\r\n        super(...arguments);\r\n        this.m_NumState = 0;\r\n    }\r\n   
+    Start() {\r\n    }\r\n    Update() {\r\n        if (this.m_NumState === 0) {\r\n           
+    this.m_MyChar = GetMyCharacter_1.default.Get();\r\n            if (this.m_MyChar
+    != null)\r\n                this.m_NumState++;\r\n        }\r\n    }\r\n    OnTriggerStay(col)
+    {\r\n        if (this.m_NumState === 1) {\r\n            if (this.m_MyChar.gameObject
+    === col.gameObject) {\r\n                PanelMgr_1.default.Show(\"GameOverPanel\");\r\n               
+    this.m_NumState++;\r\n            }\r\n        }\r\n    }\r\n}\r\nexports.default
+    = Event_Goal_In;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXZlbnRfR29hbF9Jbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkV2ZW50X0dvYWxfSW4udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFQSxpREFBcUQ7QUFDckQsc0RBQStDO0FBQy9DLDBDQUFtQztBQUVuQyxNQUFxQixhQUFjLFNBQVEscUNBQXFCO0lBQWhFOztRQUNJLGVBQVUsR0FBWSxDQUFDLENBQUM7SUF5QjVCLENBQUM7SUF2QkcsS0FBSztJQUVMLENBQUM7SUFDRCxNQUFNO1FBRUYsSUFBRyxJQUFJLENBQUMsVUFBVSxLQUFLLENBQUMsRUFDeEI7WUFDSSxJQUFJLENBQUMsUUFBUSxHQUFHLHdCQUFjLENBQUMsR0FBRyxFQUFFLENBQUM7WUFDckMsSUFBRyxJQUFJLENBQUMsUUFBUSxJQUFJLElBQUk7Z0JBQ3BCLElBQUksQ0FBQyxVQUFVLEVBQUUsQ0FBQztTQUN6QjtJQUNMLENBQUM7SUFDRCxhQUFhLENBQUMsR0FBYztRQUV4QixJQUFHLElBQUksQ0FBQyxVQUFVLEtBQUssQ0FBQyxFQUN4QjtZQUNJLElBQUcsSUFBSSxDQUFDLFFBQVEsQ0FBQyxVQUFVLEtBQUssR0FBRyxDQUFDLFVBQVUsRUFDOUM7Z0JBQ0ksa0JBQVEsQ0FBQyxJQUFJLENBQUMsZUFBZSxDQUFDLENBQUM7Z0JBQy9CLElBQUksQ0FBQyxVQUFVLEVBQUUsQ0FBQzthQUNyQjtTQUNKO0lBQ0wsQ0FBQztDQUNKO0FBMUJELGdDQTBCQyJ9","assetPath":"Assets/Scripts/Event/Event_Goal_In.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_NumState","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"ZEPETO.Character.Controller","name":"m_MyChar","type":"ZEPETO.Character.Controller.ZepetoCharacter","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Event_Goal_In","description":""},"isCompiled":true}'
+  typescriptHash: 778336178cc72567cb17ddb5facc31cb

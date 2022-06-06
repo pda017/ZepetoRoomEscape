@@ -4,6 +4,7 @@ import Finder from '../Finder';
 import Interactable from '../Interactable';
 import IsOn from '../IsOn';
 import PanelMgr from '../PanelMgr';
+import RemoveInvenItem from '../RemoveInvenItem';
 import SetDialog from '../SetDialog';
 import SetNotice from '../SetNotice';
 import ShowDoorLock from '../ShowDoorLock';
@@ -45,6 +46,7 @@ export default class Obj_Room3_DoorLock extends ZepetoScriptBehaviour {
                     this.m_Interactable.m_Value = false;
                     SetNotice.SetByKey("Room3_correctDoorLockNotice");
                     Finder.Find("Room3_ExitDoor").GetComponent<IsOn>().m_Value = true;
+                    RemoveInvenItem.RemoveAll();
                     this.m_NumState++;
                     return ;
                 }

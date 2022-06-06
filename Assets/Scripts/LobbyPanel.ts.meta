@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: 8b949e92536ae8d4ca9b8e63dd2b56de
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst LobbyData_1 = require(\"./Data/LobbyData\");\r\nclass
+    LobbyPanel extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
+    {\r\n        super(...arguments);\r\n        this.m_NumState = 0;\r\n    }\r\n   
+    Start() {\r\n        this.m_Canvas = this.GetComponent($typeof(UnityEngine_1.Canvas));\r\n   
+    }\r\n    Update() {\r\n        if (this.m_NumState === 0) {\r\n            if
+    (LobbyData_1.default.m_PlayerNum === LobbyData_1.default.m_ReadyNum) {\r\n               
+    this.m_Canvas.enabled = false;\r\n                this.m_NumState++;\r\n           
+    }\r\n        }\r\n    }\r\n}\r\nexports.default = LobbyPanel;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTG9iYnlQYW5lbC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkxvYmJ5UGFuZWwudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBcUM7QUFDckMsaURBQXFEO0FBQ3JELGdEQUF5QztBQUV6QyxNQUFxQixVQUFXLFNBQVEscUNBQXFCO0lBQTdEOztRQUNJLGVBQVUsR0FBWSxDQUFDLENBQUM7SUFnQjVCLENBQUM7SUFkRyxLQUFLO1FBQ0QsSUFBSSxDQUFDLFFBQVEsR0FBRyxJQUFJLENBQUMsWUFBWSxTQUFDLG9CQUFNLEVBQUcsQ0FBQztJQUNoRCxDQUFDO0lBQ0QsTUFBTTtRQUVGLElBQUcsSUFBSSxDQUFDLFVBQVUsS0FBSyxDQUFDLEVBQ3hCO1lBQ0ksSUFBRyxtQkFBUyxDQUFDLFdBQVcsS0FBSyxtQkFBUyxDQUFDLFVBQVUsRUFDakQ7Z0JBQ0ksSUFBSSxDQUFDLFFBQVEsQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDO2dCQUM5QixJQUFJLENBQUMsVUFBVSxFQUFFLENBQUM7YUFDckI7U0FDSjtJQUNMLENBQUM7Q0FDSjtBQWpCRCw2QkFpQkMifQ==","assetPath":"Assets/Scripts/LobbyPanel.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_NumState","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UIModule","name":"m_Canvas","type":"UnityEngine.Canvas","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"LobbyPanel","description":""},"isCompiled":true}'
+  typescriptHash: 2ab5024f3148815f1a53cac5dfd78296

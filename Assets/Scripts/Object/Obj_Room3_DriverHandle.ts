@@ -49,7 +49,6 @@ export default class Obj_Room3_DriverHandle extends ZepetoScriptBehaviour {
                 SetDialog.SetByKey("Driver_BodyGetDialog");
                 SetNotice.SetByKey("Driver_BodyGetNotice");
                 this.transform.parent.gameObject.SetActive(false);
-                this.GetComponentInParent<Interactable>().m_Value = false;
                 this.m_NumState.m_Value++;
             }
         }

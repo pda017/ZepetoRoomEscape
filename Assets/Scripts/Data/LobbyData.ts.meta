@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 348907728b19c40489abfd853a9d8114
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nexports.PlayerProfileInfo = void 0;\r\nclass LobbyData {\r\n   
+    static Init() {\r\n        this.m_bLeave = false;\r\n        this.m_ReadyNum
+    = 0;\r\n        this.m_bReady = false;\r\n        this.m_ProfileList = [];\r\n       
+    this.m_PlayerNum = 0;\r\n        this.m_PlayerNumMax = 0;\r\n    }\r\n}\r\nexports.default
+    = LobbyData;\r\nLobbyData.m_PlayerNumMax = 0;\r\nLobbyData.m_PlayerNum = 0;\r\nLobbyData.m_ReadyNum
+    = 0;\r\nLobbyData.m_ProfileList = [];\r\nLobbyData.m_ProfileListDirty = 0;\r\nLobbyData.m_bReady
+    = false;\r\nLobbyData.m_ReadyDirty = 0;\r\nLobbyData.m_bLeave = false;\r\nclass
+    PlayerProfileInfo {\r\n    constructor() {\r\n        this.m_SeesionId = \"\";\r\n       
+    this.m_Name = \"\";\r\n        this.m_Sprite = null;\r\n    }\r\n}\r\nexports.PlayerProfileInfo
+    = PlayerProfileInfo;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTG9iYnlEYXRhLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiTG9iYnlEYXRhLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUdBLE1BQXFCLFNBQVM7SUFTbkIsTUFBTSxDQUFDLElBQUk7UUFFZCxJQUFJLENBQUMsUUFBUSxHQUFHLEtBQUssQ0FBQztRQUN0QixJQUFJLENBQUMsVUFBVSxHQUFHLENBQUMsQ0FBQztRQUNwQixJQUFJLENBQUMsUUFBUSxHQUFHLEtBQUssQ0FBQztRQUN0QixJQUFJLENBQUMsYUFBYSxHQUFHLEVBQUUsQ0FBQztRQUN4QixJQUFJLENBQUMsV0FBVyxHQUFHLENBQUMsQ0FBQztRQUNyQixJQUFJLENBQUMsY0FBYyxHQUFHLENBQUMsQ0FBQztJQUM1QixDQUFDOztBQWpCTCw0QkFrQkM7QUFqQmlCLHdCQUFjLEdBQVksQ0FBQyxDQUFDO0FBQzVCLHFCQUFXLEdBQVksQ0FBQyxDQUFDO0FBQ3pCLG9CQUFVLEdBQVksQ0FBQyxDQUFDO0FBQ3hCLHVCQUFhLEdBQXlCLEVBQUUsQ0FBQztBQUN6Qyw0QkFBa0IsR0FBWSxDQUFDLENBQUM7QUFDaEMsa0JBQVEsR0FBYSxLQUFLLENBQUM7QUFDM0Isc0JBQVksR0FBWSxDQUFDLENBQUM7QUFDMUIsa0JBQVEsR0FBYSxLQUFLLENBQUM7QUFZN0MsTUFBYSxpQkFBaUI7SUFBOUI7UUFFVyxnQkFBVyxHQUFZLEVBQUUsQ0FBQztRQUMxQixXQUFNLEdBQVksRUFBRSxDQUFDO1FBQ3JCLGFBQVEsR0FBWSxJQUFJLENBQUM7SUFDcEMsQ0FBQztDQUFBO0FBTEQsOENBS0MifQ==","assetPath":"Assets/Scripts/Data/LobbyData.ts","manifest":{"properties":[],"name":"LobbyData","description":""},"isCompiled":true}'
+  typescriptHash: 3f5889148d560d8d5c66f904e0f55812

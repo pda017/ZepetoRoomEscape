@@ -25,4 +25,4 @@ ScriptedImporter:
     {\r\n            this.m_Dirty = RemoconData_1.default.m_InputDirty;\r\n           
     return true;\r\n        }\r\n        return false;\r\n    }\r\n}\r\nexports.default
     = RemoconInputChanged;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVtb2NvbklucHV0Q2hhbmdlZC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlJlbW9jb25JbnB1dENoYW5nZWQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSxvREFBNkM7QUFFN0MsTUFBcUIsbUJBQW1CO0lBQXhDO1FBQ0ksWUFBTyxHQUFZLE1BQU0sQ0FBQyxnQkFBZ0IsQ0FBQztJQVUvQyxDQUFDO0lBVFUsS0FBSztRQUVSLElBQUcsSUFBSSxDQUFDLE9BQU8sS0FBSyxxQkFBVyxDQUFDLFlBQVksRUFDNUM7WUFDSSxJQUFJLENBQUMsT0FBTyxHQUFHLHFCQUFXLENBQUMsWUFBWSxDQUFDO1lBQ3hDLE9BQU8sSUFBSSxDQUFDO1NBQ2Y7UUFDRCxPQUFPLEtBQUssQ0FBQztJQUNqQixDQUFDO0NBQ0o7QUFYRCxzQ0FXQyJ9","assetPath":"Assets/Scripts/RemoconInputChanged.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"RemoconInputChanged","description":""},"isCompiled":true}'
-  typescriptHash: e1311b66088501a8e1f01be30bca3cdf
+  typescriptHash: 3304e77fab6814f3a42b4b97f00ae195

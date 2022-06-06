@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: e8b8962c9a425744695aa015645cd6d6
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ButtonEvent_1 = require(\"./ButtonEvent\");\r\nconst LobbyData_1 = require(\"./Data/LobbyData\");\r\nclass
+    LobbyPanel_LeaveButton extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n   
+    Start() {\r\n        ButtonEvent_1.default.Add(this.gameObject, () => {\r\n           
+    LobbyData_1.default.m_bLeave = true;\r\n        });\r\n    }\r\n}\r\nexports.default
+    = LobbyPanel_LeaveButton;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTG9iYnlQYW5lbF9MZWF2ZUJ1dHRvbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkxvYmJ5UGFuZWxfTGVhdmVCdXR0b24udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsK0NBQXVDO0FBQ3ZDLGdEQUF5QztBQUV6QyxNQUFxQixzQkFBdUIsU0FBUSxxQ0FBcUI7SUFFckUsS0FBSztRQUNELHFCQUFXLENBQUMsR0FBRyxDQUFDLElBQUksQ0FBQyxVQUFVLEVBQUMsR0FBRSxFQUFFO1lBRWhDLG1CQUFTLENBQUMsUUFBUSxHQUFHLElBQUksQ0FBQztRQUM5QixDQUFDLENBQUMsQ0FBQztJQUNQLENBQUM7Q0FFSjtBQVRELHlDQVNDIn0=","assetPath":"Assets/Scripts/LobbyPanel_LeaveButton.ts","manifest":{"properties":[],"name":"LobbyPanel_LeaveButton","description":""},"isCompiled":true}'
+  typescriptHash: 7f30c969d1ca99f9cf30ca352ae45183

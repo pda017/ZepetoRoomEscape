@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 0b3ef35a4385e734aa5f15378b1a8e58
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ButtonEvent_1 = require(\"./ButtonEvent\");\r\nconst UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nconst
+    AddItemToInventory_1 = require(\"./AddItemToInventory\");\r\nclass AddItemPanel_AddButton
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.m_InputField
+    = this.transform.parent.GetComponentInChildren($typeof(UnityEngine_UI_1.InputField));\r\n       
+    ButtonEvent_1.default.Add(this.gameObject, () => {\r\n            AddItemToInventory_1.default.Add(this.m_InputField.text);\r\n           
+    this.m_InputField.text = \"\";\r\n        });\r\n    }\r\n}\r\nexports.default
+    = AddItemPanel_AddButton;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQWRkSXRlbVBhbmVsX0FkZEJ1dHRvbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkFkZEl0ZW1QYW5lbF9BZGRCdXR0b24udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsK0NBQXVDO0FBQ3ZDLG1EQUF5QztBQUN6Qyw2REFBc0Q7QUFDdEQsTUFBcUIsc0JBQXVCLFNBQVEscUNBQXFCO0lBRXJFLEtBQUs7UUFDRCxJQUFJLENBQUMsWUFBWSxHQUFHLElBQUksQ0FBQyxTQUFTLENBQUMsTUFBTSxDQUFDLHNCQUFzQixTQUFDLDJCQUFVLEVBQUcsQ0FBQztRQUMvRSxxQkFBVyxDQUFDLEdBQUcsQ0FBQyxJQUFJLENBQUMsVUFBVSxFQUFDLEdBQUUsRUFBRTtZQUVoQyw0QkFBa0IsQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLFlBQVksQ0FBQyxJQUFJLENBQUMsQ0FBQztZQUMvQyxJQUFJLENBQUMsWUFBWSxDQUFDLElBQUksR0FBRyxFQUFFLENBQUM7UUFDaEMsQ0FBQyxDQUFDLENBQUM7SUFDUCxDQUFDO0NBRUo7QUFYRCx5Q0FXQyJ9","assetPath":"Assets/Scripts/AddItemPanel_AddButton.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"m_InputField","type":"UnityEngine.UI.InputField","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"AddItemPanel_AddButton","description":""},"isCompiled":true}'
+  typescriptHash: ece80c14807dd88eb1232fd9ffa42a77

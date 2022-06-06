@@ -19,6 +19,18 @@ ScriptedImporter:
   WrapperFilters: []
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nclass TimerData {\r\n}\r\nexports.default = TimerData;\r\n//#
-    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGltZXJEYXRhLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVGltZXJEYXRhLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUEsTUFBcUIsU0FBUztDQUU3QjtBQUZELDRCQUVDIn0=","assetPath":"Assets/Scripts/Data/TimerData.ts","manifest":{"properties":[],"name":"TimerData","description":""},"isCompiled":true}'
-  typescriptHash: 802083dd2cda46e276d067d5550ae8e3
+    { value: true });\r\nexports.TimerColorInfo = void 0;\r\nconst UnityEngine_1
+    = require(\"UnityEngine\");\r\nconst HexCodeToColor_1 = require(\"../HexCodeToColor\");\r\nclass
+    TimerData {\r\n    static Init() {\r\n        this.m_TimeColorList = [];\r\n       
+    this.m_TimeColorList.push(new TimerColorInfo(3600, HexCodeToColor_1.default.Convert(\"#00004E\")));\r\n       
+    this.m_TimeColorList.push(new TimerColorInfo(3000, HexCodeToColor_1.default.Convert(\"#7030A0\")));\r\n       
+    this.m_TimeColorList.push(new TimerColorInfo(2400, HexCodeToColor_1.default.Convert(\"#6B72C4\")));\r\n       
+    this.m_TimeColorList.push(new TimerColorInfo(1800, HexCodeToColor_1.default.Convert(\"#70AD47\")));\r\n       
+    this.m_TimeColorList.push(new TimerColorInfo(1200, HexCodeToColor_1.default.Convert(\"#FEC000\")));\r\n       
+    this.m_TimeColorList.push(new TimerColorInfo(600, HexCodeToColor_1.default.Convert(\"#ED7D31\")));\r\n       
+    this.m_TimeColorList.push(new TimerColorInfo(60, HexCodeToColor_1.default.Convert(\"#FD0000\")));\r\n   
+    }\r\n}\r\nexports.default = TimerData;\r\nclass TimerColorInfo {\r\n    constructor(time,
+    color) {\r\n        this.m_Time = 0;\r\n        this.m_Color = UnityEngine_1.Color.white;\r\n       
+    this.m_Time = time;\r\n        this.m_Color = color;\r\n    }\r\n}\r\nexports.TimerColorInfo
+    = TimerColorInfo;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGltZXJEYXRhLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVGltZXJEYXRhLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLDZDQUFrRDtBQUVsRCxzREFBK0M7QUFFL0MsTUFBcUIsU0FBUztJQUduQixNQUFNLENBQUMsSUFBSTtRQUVkLElBQUksQ0FBQyxlQUFlLEdBQUcsRUFBRSxDQUFDO1FBQzFCLElBQUksQ0FBQyxlQUFlLENBQUMsSUFBSSxDQUFDLElBQUksY0FBYyxDQUFDLElBQUksRUFBQyx3QkFBYyxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsQ0FBQyxDQUFDLENBQUM7UUFDdEYsSUFBSSxDQUFDLGVBQWUsQ0FBQyxJQUFJLENBQUMsSUFBSSxjQUFjLENBQUMsSUFBSSxFQUFDLHdCQUFjLENBQUMsT0FBTyxDQUFDLFNBQVMsQ0FBQyxDQUFDLENBQUMsQ0FBQztRQUN0RixJQUFJLENBQUMsZUFBZSxDQUFDLElBQUksQ0FBQyxJQUFJLGNBQWMsQ0FBQyxJQUFJLEVBQUMsd0JBQWMsQ0FBQyxPQUFPLENBQUMsU0FBUyxDQUFDLENBQUMsQ0FBQyxDQUFDO1FBQ3RGLElBQUksQ0FBQyxlQUFlLENBQUMsSUFBSSxDQUFDLElBQUksY0FBYyxDQUFDLElBQUksRUFBQyx3QkFBYyxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsQ0FBQyxDQUFDLENBQUM7UUFDdEYsSUFBSSxDQUFDLGVBQWUsQ0FBQyxJQUFJLENBQUMsSUFBSSxjQUFjLENBQUMsSUFBSSxFQUFDLHdCQUFjLENBQUMsT0FBTyxDQUFDLFNBQVMsQ0FBQyxDQUFDLENBQUMsQ0FBQztRQUN0RixJQUFJLENBQUMsZUFBZSxDQUFDLElBQUksQ0FBQyxJQUFJLGNBQWMsQ0FBQyxHQUFHLEVBQUMsd0JBQWMsQ0FBQyxPQUFPLENBQUMsU0FBUyxDQUFDLENBQUMsQ0FBQyxDQUFDO1FBQ3JGLElBQUksQ0FBQyxlQUFlLENBQUMsSUFBSSxDQUFDLElBQUksY0FBYyxDQUFDLEVBQUUsRUFBQyx3QkFBYyxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsQ0FBQyxDQUFDLENBQUM7SUFDeEYsQ0FBQztDQUNKO0FBZEQsNEJBY0M7QUFFRCxNQUFhLGNBQWM7SUFJdkIsWUFBWSxJQUFhLEVBQUMsS0FBYTtRQUZoQyxXQUFNLEdBQVksQ0FBQyxDQUFDO1FBQ3BCLFlBQU8sR0FBVyxtQkFBSyxDQUFDLEtBQUssQ0FBQztRQUdqQyxJQUFJLENBQUMsTUFBTSxHQUFHLElBQUksQ0FBQztRQUNuQixJQUFJLENBQUMsT0FBTyxHQUFHLEtBQUssQ0FBQztJQUN6QixDQUFDO0NBQ0o7QUFURCx3Q0FTQyJ9","assetPath":"Assets/Scripts/Data/TimerData.ts","manifest":{"properties":[],"name":"TimerData","description":""},"isCompiled":true}'
+  typescriptHash: babaa1982987bdcdc7a1d6d06d8cfaef

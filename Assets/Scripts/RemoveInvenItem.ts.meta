@@ -19,15 +19,15 @@ ScriptedImporter:
   WrapperFilters: []
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
-    InventoryData_1 = require(\"./Data/InventoryData\");\r\nclass RemoveInvenItem
-    {\r\n    static Remove(itemName) {\r\n        var index = InventoryData_1.default.m_InvenList.indexOf(itemName);\r\n       
-    this.RemoveByIndex(index);\r\n    }\r\n    static RemoveByIndex(index) {\r\n       
-    if (index >= 0) {\r\n            if (InventoryData_1.default.m_EquipedIndex ===
-    index)\r\n                InventoryData_1.default.m_EquipedIndex = -1;\r\n           
-    InventoryData_1.default.m_InvenList.splice(index, 1);\r\n            InventoryData_1.default.m_InvenListDirty
-    = UnityEngine_1.Time.time;\r\n        }\r\n    }\r\n    static RemoveEquipedItem()
-    {\r\n        this.RemoveByIndex(InventoryData_1.default.m_EquipedIndex);\r\n   
+    { value: true });\r\nconst InventoryData_1 = require(\"./Data/InventoryData\");\r\nclass
+    RemoveInvenItem {\r\n    static Remove(itemName) {\r\n        var index = InventoryData_1.default.m_InvenList.indexOf(itemName);\r\n       
+    this.RemoveByIndex(index);\r\n    }\r\n    static RemoveAll() {\r\n        InventoryData_1.default.m_InvenList
+    = [];\r\n        InventoryData_1.default.m_EquipedIndex = -1;\r\n        InventoryData_1.default.m_InvenListDirty++;\r\n   
+    }\r\n    static RemoveByIndex(index) {\r\n        if (index >= 0) {\r\n           
+    if (InventoryData_1.default.m_EquipedIndex === index)\r\n                InventoryData_1.default.m_EquipedIndex
+    = -1;\r\n            InventoryData_1.default.m_InvenList.splice(index, 1);\r\n           
+    InventoryData_1.default.m_InvenListDirty++;\r\n        }\r\n    }\r\n    static
+    RemoveEquipedItem() {\r\n        this.RemoveByIndex(InventoryData_1.default.m_EquipedIndex);\r\n   
     }\r\n    static RemoveSelectedItem() {\r\n        this.RemoveByIndex(InventoryData_1.default.m_SelectIndex);\r\n   
-    }\r\n}\r\nexports.default = RemoveInvenItem;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVtb3ZlSW52ZW5JdGVtLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiUmVtb3ZlSW52ZW5JdGVtLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQW1DO0FBRW5DLHdEQUFnRDtBQUVoRCxNQUFxQixlQUFlO0lBQ3pCLE1BQU0sQ0FBQyxNQUFNLENBQUMsUUFBaUI7UUFFbEMsSUFBSSxLQUFLLEdBQUcsdUJBQWEsQ0FBQyxXQUFXLENBQUMsT0FBTyxDQUFDLFFBQVEsQ0FBQyxDQUFDO1FBQ3hELElBQUksQ0FBQyxhQUFhLENBQUMsS0FBSyxDQUFDLENBQUM7SUFDOUIsQ0FBQztJQUNNLE1BQU0sQ0FBQyxhQUFhLENBQUMsS0FBYztRQUV0QyxJQUFHLEtBQUssSUFBSSxDQUFDLEVBQ2I7WUFDSSxJQUFHLHVCQUFhLENBQUMsY0FBYyxLQUFLLEtBQUs7Z0JBQ3JDLHVCQUFhLENBQUMsY0FBYyxHQUFHLENBQUMsQ0FBQyxDQUFDO1lBQ3RDLHVCQUFhLENBQUMsV0FBVyxDQUFDLE1BQU0sQ0FBQyxLQUFLLEVBQUMsQ0FBQyxDQUFDLENBQUM7WUFDMUMsdUJBQWEsQ0FBQyxnQkFBZ0IsR0FBRyxrQkFBSSxDQUFDLElBQUksQ0FBQztTQUM5QztJQUNMLENBQUM7SUFDTSxNQUFNLENBQUMsaUJBQWlCO1FBRTNCLElBQUksQ0FBQyxhQUFhLENBQUMsdUJBQWEsQ0FBQyxjQUFjLENBQUMsQ0FBQztJQUNyRCxDQUFDO0lBQ00sTUFBTSxDQUFDLGtCQUFrQjtRQUU1QixJQUFJLENBQUMsYUFBYSxDQUFDLHVCQUFhLENBQUMsYUFBYSxDQUFDLENBQUM7SUFDcEQsQ0FBQztDQUNKO0FBeEJELGtDQXdCQyJ9","assetPath":"Assets/Scripts/RemoveInvenItem.ts","manifest":{"properties":[],"name":"RemoveInvenItem","description":""},"isCompiled":true}'
-  typescriptHash: 00047d7a0a15cff4e9295c798db69c04
+    }\r\n}\r\nexports.default = RemoveInvenItem;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVtb3ZlSW52ZW5JdGVtLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiUmVtb3ZlSW52ZW5JdGVtLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUEsd0RBQWdEO0FBRWhELE1BQXFCLGVBQWU7SUFDekIsTUFBTSxDQUFDLE1BQU0sQ0FBQyxRQUFpQjtRQUVsQyxJQUFJLEtBQUssR0FBRyx1QkFBYSxDQUFDLFdBQVcsQ0FBQyxPQUFPLENBQUMsUUFBUSxDQUFDLENBQUM7UUFDeEQsSUFBSSxDQUFDLGFBQWEsQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUM5QixDQUFDO0lBQ00sTUFBTSxDQUFDLFNBQVM7UUFFbkIsdUJBQWEsQ0FBQyxXQUFXLEdBQUcsRUFBRSxDQUFDO1FBQy9CLHVCQUFhLENBQUMsY0FBYyxHQUFHLENBQUMsQ0FBQyxDQUFDO1FBQ2xDLHVCQUFhLENBQUMsZ0JBQWdCLEVBQUUsQ0FBQztJQUNyQyxDQUFDO0lBQ00sTUFBTSxDQUFDLGFBQWEsQ0FBQyxLQUFjO1FBRXRDLElBQUcsS0FBSyxJQUFJLENBQUMsRUFDYjtZQUNJLElBQUcsdUJBQWEsQ0FBQyxjQUFjLEtBQUssS0FBSztnQkFDckMsdUJBQWEsQ0FBQyxjQUFjLEdBQUcsQ0FBQyxDQUFDLENBQUM7WUFDdEMsdUJBQWEsQ0FBQyxXQUFXLENBQUMsTUFBTSxDQUFDLEtBQUssRUFBQyxDQUFDLENBQUMsQ0FBQztZQUMxQyx1QkFBYSxDQUFDLGdCQUFnQixFQUFFLENBQUM7U0FDcEM7SUFDTCxDQUFDO0lBQ00sTUFBTSxDQUFDLGlCQUFpQjtRQUUzQixJQUFJLENBQUMsYUFBYSxDQUFDLHVCQUFhLENBQUMsY0FBYyxDQUFDLENBQUM7SUFDckQsQ0FBQztJQUNNLE1BQU0sQ0FBQyxrQkFBa0I7UUFFNUIsSUFBSSxDQUFDLGFBQWEsQ0FBQyx1QkFBYSxDQUFDLGFBQWEsQ0FBQyxDQUFDO0lBQ3BELENBQUM7Q0FDSjtBQTlCRCxrQ0E4QkMifQ==","assetPath":"Assets/Scripts/RemoveInvenItem.ts","manifest":{"properties":[],"name":"RemoveInvenItem","description":""},"isCompiled":true}'
+  typescriptHash: 7de4d2fdc3c0bb3d3a8ddce2a2246b31

@@ -23,4 +23,4 @@ ScriptedImporter:
     GetInvenItemData_1 = require(\"./GetInvenItemData\");\r\nclass GetEquipedItemData
     {\r\n    static Get() {\r\n        return GetInvenItemData_1.default.Get(InventoryData_1.default.m_EquipedIndex);\r\n   
     }\r\n}\r\nexports.default = GetEquipedItemData;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2V0RXF1aXBlZEl0ZW1EYXRhLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiR2V0RXF1aXBlZEl0ZW1EYXRhLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0Esd0RBQWlEO0FBRWpELHlEQUFrRDtBQUdsRCxNQUFxQixrQkFBa0I7SUFDNUIsTUFBTSxDQUFDLEdBQUc7UUFFYixPQUFPLDBCQUFnQixDQUFDLEdBQUcsQ0FBQyx1QkFBYSxDQUFDLGNBQWMsQ0FBQyxDQUFDO0lBQzlELENBQUM7Q0FDSjtBQUxELHFDQUtDIn0=","assetPath":"Assets/Scripts/GetEquipedItemData.ts","manifest":{"properties":[],"name":"GetEquipedItemData","description":""},"isCompiled":true}'
-  typescriptHash: f4c629eecc7692798e03b69ec2514b9d
+  typescriptHash: f155bdf9c6f9d244c4bb804b73654250

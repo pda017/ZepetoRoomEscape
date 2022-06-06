@@ -29,7 +29,10 @@ export default class InvenPanel_ItemUseButton extends ZepetoScriptBehaviour {
                         if(InventoryData.m_EquipedIndex === InventoryData.m_SelectIndex)
                             InventoryData.m_EquipedIndex = -1;
                         else
+                        {
                             InventoryData.m_EquipedIndex = InventoryData.m_SelectIndex;
+                            PanelMgr.Hide("InvenPanel");
+                        }
                     }
 
                     if(selectedItemData.m_Disposable)

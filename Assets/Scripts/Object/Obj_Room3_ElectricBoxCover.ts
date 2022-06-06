@@ -21,7 +21,7 @@ export default class Obj_Room3_ElectricBoxCover extends ZepetoScriptBehaviour {
     m_Interactable : Interactable;
     Start() {    
         this.m_Interactable = this.GetComponent<Interactable>();
-        this.m_Anim = new ZAnimator(this.gameObject,true);
+        this.m_Anim = new ZAnimator(this.transform.parent.gameObject,false);
         this.m_RequireItem = this.GetComponent<RequireItem>();
         this.m_IsOn = this.GetComponent<IsOn>();
     }

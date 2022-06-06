@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: d5d045abae51cb54491f956b603d1d9a
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass DisableGridLayout extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.GetComponent($typeof(UnityEngine_UI_1.GridLayoutGroup)).enabled
+    = false;\r\n    }\r\n}\r\nexports.default = DisableGridLayout;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGlzYWJsZUdyaWRMYXlvdXQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJEaXNhYmxlR3JpZExheW91dC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLG1EQUFnRDtBQUNoRCxpREFBcUQ7QUFFckQsTUFBcUIsaUJBQWtCLFNBQVEscUNBQXFCO0lBRWhFLEtBQUs7UUFDRCxJQUFJLENBQUMsWUFBWSxTQUFDLGdDQUFlLEdBQUksT0FBTyxHQUFHLEtBQUssQ0FBQztJQUN6RCxDQUFDO0NBRUo7QUFORCxvQ0FNQyJ9","assetPath":"Assets/Scripts/DisableGridLayout.ts","manifest":{"properties":[],"name":"DisableGridLayout","description":""},"isCompiled":true}'
+  typescriptHash: 42d2896376bd53cecdc050882490d78f

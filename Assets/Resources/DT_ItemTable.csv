@@ -20,7 +20,7 @@ Fuse,퓨즈,Item_Fuse,"퓨즈를 찾았다.
 이거면 전원을 켤 수 있을거야.",,FALSE,FALSE,
 Calander_Broken,찢어진 달력,Item_CalanderBroken,일부분이 찢어져 있어서 제대로 볼 수 없다..,,TRUE,FALSE,Event_Calendar1
 Calander_piece,찢어진 달력 조각,Item_CalanderPiece,"찢어진 달력 조각이다.
-보이지 않던 달력의 부분을 볼 수 있을거야.",,FALSE,FALSE,
+보이지 않던 달력의 부분을 볼 수 있을거야.",,TRUE,FALSE,Event_Calendar3
 Calander_Combine,달력,Item_Calander,조각을 갖다대어 달력을 멀쩡하게 확인 할 수 있다.,,TRUE,FALSE,Event_Calendar2
 ClassClock,교실 시계,Item_ClassClock,"교실에서 사용하는 시계다.
 건전지로 작동하는 것 같다.",,FALSE,FALSE,
@@ -29,10 +29,10 @@ Battery,건전지,Item_Battery,"시계에서 빼낸 건전지다.
 Remote,리모컨,Item_Remote,"TV 옆에 있던 리모컨이다.
 건전지가 없는지 작동하지 않는다.",,FALSE,FALSE,
 Charge_Remote,리모컨,Item_ChargeRemote,건전지가 들어가 정상적으로 작동한다.,,TRUE,FALSE,Event_Remocon
-Teacher_Key,선생님 열쇠,Item_TeacherKey,"TV 뒤 사물함에 있던 열쇠다.
+Teacher_Key,선생님 열쇠,Item_Key,"TV 뒤 사물함에 있던 열쇠다.
 어딘가에 사용할 수 있을 것 같다.",,FALSE,FALSE,
 Teacher_Note,선생님 쪽지,Item_TeacherNote,"선생님 글씨체 무언가 적혀있다.
-왜 서랍을 잠그면서까지 이걸 넣어 놓았을까..",,FALSE,FALSE,
+왜 서랍을 잠그면서까지 이걸 넣어 놓았을까..",,TRUE,FALSE,Event_TeacherNote
 Safe_PW,금고 비밀번호,Item_SafePW,"알 수 없는 내용이 적힌 쪽지다..
 무슨 뜻인지 모르겠다..",,TRUE,FALSE,Event_SafePW
 Secret_Note,뇌물 장부,Item_SecretNote,"금고 안에 들어있던 장부다...

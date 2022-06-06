@@ -19,7 +19,8 @@ ScriptedImporter:
   WrapperFilters: []
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nclass SelectObjData {\r\n    static Init() {\r\n       
-    this.m_canSelect = false;\r\n    }\r\n}\r\nexports.default = SelectObjData;\r\nSelectObjData.m_ButtonHeightPer
-    = 10;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2VsZWN0T2JqRGF0YS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlNlbGVjdE9iakRhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFHQSxNQUFxQixhQUFhO0lBSXZCLE1BQU0sQ0FBQyxJQUFJO1FBRWQsSUFBSSxDQUFDLFdBQVcsR0FBRyxLQUFLLENBQUM7SUFDN0IsQ0FBQzs7QUFQTCxnQ0FRQztBQUxpQiwrQkFBaUIsR0FBWSxFQUFFLENBQUMifQ==","assetPath":"Assets/Scripts/Data/SelectObjData.ts","manifest":{"properties":[],"name":"SelectObjData","description":""},"isCompiled":true}'
-  typescriptHash: 0d5d87da24202b2c93b41d9cb785b943
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nclass
+    SelectObjData {\r\n    static Init() {\r\n        this.m_canSelect = false;\r\n   
+    }\r\n}\r\nexports.default = SelectObjData;\r\nSelectObjData.m_ObjPos = UnityEngine_1.Vector3.zero;\r\nSelectObjData.m_canSelect
+    = false;\r\nSelectObjData.m_ButtonHeightPer = 0;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2VsZWN0T2JqRGF0YS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlNlbGVjdE9iakRhdGEudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBaUQ7QUFHakQsTUFBcUIsYUFBYTtJQUl2QixNQUFNLENBQUMsSUFBSTtRQUVkLElBQUksQ0FBQyxXQUFXLEdBQUcsS0FBSyxDQUFDO0lBQzdCLENBQUM7O0FBUEwsZ0NBUUM7QUFQaUIsc0JBQVEsR0FBYSxxQkFBTyxDQUFDLElBQUksQ0FBQztBQUNsQyx5QkFBVyxHQUFhLEtBQUssQ0FBQztBQUM5QiwrQkFBaUIsR0FBWSxDQUFDLENBQUMifQ==","assetPath":"Assets/Scripts/Data/SelectObjData.ts","manifest":{"properties":[],"name":"SelectObjData","description":""},"isCompiled":true}'
+  typescriptHash: dc25872a794bcc46c7f2528756a33e78

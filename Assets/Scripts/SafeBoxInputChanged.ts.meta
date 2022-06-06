@@ -25,4 +25,4 @@ ScriptedImporter:
     {\r\n            this.m_Dirty = SafeBoxData_1.default.m_InputDirty;\r\n           
     return true;\r\n        }\r\n        return false;\r\n    }\r\n}\r\nexports.default
     = SafeBoxInputChanged;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2FmZUJveElucHV0Q2hhbmdlZC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlNhZmVCb3hJbnB1dENoYW5nZWQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSxvREFBNkM7QUFFN0MsTUFBcUIsbUJBQW1CO0lBQXhDO1FBQ0ksWUFBTyxHQUFZLE1BQU0sQ0FBQyxnQkFBZ0IsQ0FBQztJQVUvQyxDQUFDO0lBVFUsS0FBSztRQUVSLElBQUcsSUFBSSxDQUFDLE9BQU8sS0FBSyxxQkFBVyxDQUFDLFlBQVksRUFDNUM7WUFDSSxJQUFJLENBQUMsT0FBTyxHQUFHLHFCQUFXLENBQUMsWUFBWSxDQUFDO1lBQ3hDLE9BQU8sSUFBSSxDQUFDO1NBQ2Y7UUFDRCxPQUFPLEtBQUssQ0FBQztJQUNqQixDQUFDO0NBQ0o7QUFYRCxzQ0FXQyJ9","assetPath":"Assets/Scripts/SafeBoxInputChanged.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"SafeBoxInputChanged","description":""},"isCompiled":true}'
-  typescriptHash: 2e08492fb166dfdcaa1632739ce20a56
+  typescriptHash: 90f48d15b12b2f7bb64b5b4432ee834c

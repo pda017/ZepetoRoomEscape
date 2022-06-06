@@ -19,14 +19,17 @@ ScriptedImporter:
   WrapperFilters: []
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nconst
-    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst TimerData_1 = require(\"./Data/TimerData\");\r\nclass
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    TimerData_1 = require(\"./Data/TimerData\");\r\nconst GetTimerColor_1 = require(\"./GetTimerColor\");\r\nclass
     UI_TimerText extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
     {\r\n        super(...arguments);\r\n        this.m_Dirty = Number.MIN_SAFE_INTEGER;\r\n   
     }\r\n    Start() {\r\n        this.m_Text = this.GetComponent($typeof(UnityEngine_UI_1.Text));\r\n   
     }\r\n    Update() {\r\n        if (this.m_Dirty !== TimerData_1.default.m_RemainTime)
     {\r\n            this.m_Dirty = TimerData_1.default.m_RemainTime;\r\n           
-    var date = new Date(TimerData_1.default.m_RemainTime * 1000);\r\n           
-    this.m_Text.text = date.getMinutes() + \":\" + date.getSeconds();\r\n       
-    }\r\n    }\r\n}\r\nexports.default = UI_TimerText;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVUlfVGltZXJUZXh0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVUlfVGltZXJUZXh0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsbURBQXFDO0FBQ3JDLGlEQUFxRDtBQUNyRCxnREFBeUM7QUFDekMsTUFBcUIsWUFBYSxTQUFRLHFDQUFxQjtJQUEvRDs7UUFFSSxZQUFPLEdBQVksTUFBTSxDQUFDLGdCQUFnQixDQUFDO0lBYS9DLENBQUM7SUFaRyxLQUFLO1FBQ0QsSUFBSSxDQUFDLE1BQU0sR0FBRyxJQUFJLENBQUMsWUFBWSxTQUFDLHFCQUFJLEVBQUcsQ0FBQztJQUM1QyxDQUFDO0lBQ0QsTUFBTTtRQUVGLElBQUcsSUFBSSxDQUFDLE9BQU8sS0FBSyxtQkFBUyxDQUFDLFlBQVksRUFDMUM7WUFDSSxJQUFJLENBQUMsT0FBTyxHQUFHLG1CQUFTLENBQUMsWUFBWSxDQUFDO1lBQ3RDLElBQUksSUFBSSxHQUFHLElBQUksSUFBSSxDQUFDLG1CQUFTLENBQUMsWUFBWSxHQUFHLElBQUksQ0FBQyxDQUFDO1lBQ25ELElBQUksQ0FBQyxNQUFNLENBQUMsSUFBSSxHQUFHLElBQUksQ0FBQyxVQUFVLEVBQUUsR0FBRyxHQUFHLEdBQUcsSUFBSSxDQUFDLFVBQVUsRUFBRSxDQUFDO1NBQ2xFO0lBQ0wsQ0FBQztDQUNKO0FBZkQsK0JBZUMifQ==","assetPath":"Assets/Scripts/UI_TimerText.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"m_Text","type":"UnityEngine.UI.Text","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"UI_TimerText","description":""},"isCompiled":true}'
-  typescriptHash: 27a70e48506fcd3badbfccc562887a25
+    var remainTime = UnityEngine_1.Mathf.Clamp(TimerData_1.default.m_RemainTime,
+    0, Number.MAX_SAFE_INTEGER);\r\n            var date = new Date(remainTime *
+    1000);\r\n            this.m_Text.text = date.getMinutes() + \":\" + date.getSeconds();\r\n           
+    this.m_Text.color = GetTimerColor_1.default.Get();\r\n        }\r\n    }\r\n}\r\nexports.default
+    = UI_TimerText;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVUlfVGltZXJUZXh0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiVUlfVGltZXJUZXh0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQW9DO0FBQ3BDLG1EQUFxQztBQUNyQyxpREFBcUQ7QUFDckQsZ0RBQXlDO0FBQ3pDLG1EQUE0QztBQUM1QyxNQUFxQixZQUFhLFNBQVEscUNBQXFCO0lBQS9EOztRQUVJLFlBQU8sR0FBWSxNQUFNLENBQUMsZ0JBQWdCLENBQUM7SUFlL0MsQ0FBQztJQWRHLEtBQUs7UUFDRCxJQUFJLENBQUMsTUFBTSxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMscUJBQUksRUFBRyxDQUFDO0lBQzVDLENBQUM7SUFDRCxNQUFNO1FBRUYsSUFBRyxJQUFJLENBQUMsT0FBTyxLQUFLLG1CQUFTLENBQUMsWUFBWSxFQUMxQztZQUNJLElBQUksQ0FBQyxPQUFPLEdBQUcsbUJBQVMsQ0FBQyxZQUFZLENBQUM7WUFDdEMsSUFBSSxVQUFVLEdBQUcsbUJBQUssQ0FBQyxLQUFLLENBQUMsbUJBQVMsQ0FBQyxZQUFZLEVBQUMsQ0FBQyxFQUFDLE1BQU0sQ0FBQyxnQkFBZ0IsQ0FBQyxDQUFDO1lBQy9FLElBQUksSUFBSSxHQUFHLElBQUksSUFBSSxDQUFDLFVBQVUsR0FBRyxJQUFJLENBQUMsQ0FBQztZQUN2QyxJQUFJLENBQUMsTUFBTSxDQUFDLElBQUksR0FBRyxJQUFJLENBQUMsVUFBVSxFQUFFLEdBQUcsR0FBRyxHQUFHLElBQUksQ0FBQyxVQUFVLEVBQUUsQ0FBQztZQUMvRCxJQUFJLENBQUMsTUFBTSxDQUFDLEtBQUssR0FBRyx1QkFBYSxDQUFDLEdBQUcsRUFBRSxDQUFDO1NBQzNDO0lBQ0wsQ0FBQztDQUNKO0FBakJELCtCQWlCQyJ9","assetPath":"Assets/Scripts/UI_TimerText.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"m_Text","type":"UnityEngine.UI.Text","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"m_Dirty","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"UI_TimerText","description":""},"isCompiled":true}'
+  typescriptHash: af8c040ad89cb76f97def8ea1d5a2a38

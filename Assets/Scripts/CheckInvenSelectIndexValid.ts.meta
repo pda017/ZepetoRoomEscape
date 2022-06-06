@@ -24,4 +24,4 @@ ScriptedImporter:
     >= 0 && InventoryData_1.default.m_SelectIndex < InventoryData_1.default.m_InvenList.length)\r\n           
     return true;\r\n        return false;\r\n    }\r\n}\r\nexports.default = CheckInvenSelectIndexValid;\r\n//#
     sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hlY2tJbnZlblNlbGVjdEluZGV4VmFsaWQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJDaGVja0ludmVuU2VsZWN0SW5kZXhWYWxpZC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLHdEQUFnRDtBQUVoRCxNQUFxQiwwQkFBMEI7SUFDcEMsTUFBTSxDQUFDLEtBQUs7UUFFZixJQUFHLHVCQUFhLENBQUMsYUFBYSxJQUFJLENBQUMsSUFBSSx1QkFBYSxDQUFDLGFBQWEsR0FBRyx1QkFBYSxDQUFDLFdBQVcsQ0FBQyxNQUFNO1lBQ2pHLE9BQU8sSUFBSSxDQUFDO1FBQ2hCLE9BQU8sS0FBSyxDQUFDO0lBQ2pCLENBQUM7Q0FDSjtBQVBELDZDQU9DIn0=","assetPath":"Assets/Scripts/CheckInvenSelectIndexValid.ts","manifest":{"properties":[],"name":"CheckInvenSelectIndexValid","description":""},"isCompiled":true}'
-  typescriptHash: 5a6148527328747af13de8468124cd47
+  typescriptHash: 0ad2169172f009415347814f0a1f9bd2
