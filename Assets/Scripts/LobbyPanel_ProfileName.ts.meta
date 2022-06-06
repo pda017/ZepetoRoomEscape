@@ -1,0 +1,36 @@
+fileFormatVersion: 2
+guid: b07d6bfcca3dd234fb31f33a64830cd6
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst ZEPETO_Script_1 = require(\\\"ZEPETO.Script\\\");\\r\\nconst
+    UnityEngine_UI_1 = require(\\\"UnityEngine.UI\\\");\\r\\nconst ProfileInfoChanged_1
+    = require(\\\"./ProfileInfoChanged\\\");\\r\\nconst IndexTag_1 = require(\\\"./IndexTag\\\");\\r\\nconst
+    LobbyData_1 = require(\\\"./Data/LobbyData\\\");\\r\\nclass LobbyPanel_ProfileName
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\\r\\n    constructor() {\\r\\n       
+    super(...arguments);\\r\\n        this.m_ProfileInfoChanged = new ProfileInfoChanged_1.default();\\r\\n   
+    }\\r\\n    Start() {\\r\\n        this.m_IndexTf = this.GetComponentInParent($typeof(IndexTag_1.default)).transform;\\r\\n       
+    this.m_Text = this.GetComponent($typeof(UnityEngine_UI_1.Text));\\r\\n    }\\r\\n   
+    Update() {\\r\\n        if (this.m_ProfileInfoChanged.Check()) {\\r\\n           
+    var index = this.m_IndexTf.GetSiblingIndex();\\r\\n            if (index < LobbyData_1.default.m_ProfileList.length)
+    {\\r\\n                var profileInfo = LobbyData_1.default.m_ProfileList[index];\\r\\n               
+    this.m_Text.text = profileInfo.m_Name;\\r\\n            }\\r\\n            else\\r\\n               
+    this.m_Text.text = \\\"\uB2C9\uB124\uC784\\\";\\r\\n        }\\r\\n    }\\r\\n}\\r\\nexports.default
+    = LobbyPanel_ProfileName;\\r\\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTG9iYnlQYW5lbF9Qcm9maWxlTmFtZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkxvYmJ5UGFuZWxfUHJvZmlsZU5hbWUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsbURBQW1DO0FBQ25DLDZEQUFzRDtBQUV0RCx5Q0FBa0M7QUFDbEMsZ0RBQXlDO0FBRXpDLE1BQXFCLHNCQUF1QixTQUFRLHFDQUFxQjtJQUF6RTs7UUFFSSx5QkFBb0IsR0FBd0IsSUFBSSw0QkFBa0IsRUFBRSxDQUFDO0lBb0J6RSxDQUFDO0lBbEJHLEtBQUs7UUFDRCxJQUFJLENBQUMsU0FBUyxHQUFHLElBQUksQ0FBQyxvQkFBb0IsU0FBQyxrQkFBUSxHQUFJLFNBQVMsQ0FBQztRQUNqRSxJQUFJLENBQUMsTUFBTSxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMscUJBQUksRUFBRyxDQUFDO0lBQzVDLENBQUM7SUFDRCxNQUFNO1FBRUYsSUFBRyxJQUFJLENBQUMsb0JBQW9CLENBQUMsS0FBSyxFQUFFLEVBQ3BDO1lBQ0ksSUFBSSxLQUFLLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQyxlQUFlLEVBQUUsQ0FBQztZQUM3QyxJQUFHLEtBQUssR0FBRyxtQkFBUyxDQUFDLGFBQWEsQ0FBQyxNQUFNLEVBQ3pDO2dCQUNJLElBQUksV0FBVyxHQUFHLG1CQUFTLENBQUMsYUFBYSxDQUFDLEtBQUssQ0FBQyxDQUFDO2dCQUNqRCxJQUFJLENBQUMsTUFBTSxDQUFDLElBQUksR0FBRyxXQUFXLENBQUMsTUFBTSxDQUFDO2FBQ3pDOztnQkFFRyxJQUFJLENBQUMsTUFBTSxDQUFDLElBQUksR0FBRyxLQUFLLENBQUM7U0FDaEM7SUFDTCxDQUFDO0NBQ0o7QUF0QkQseUNBc0JDIn0=\",\"assetPath\":\"Assets/Scripts/LobbyPanel_ProfileName.ts\",\"manifest\":{\"properties\":[{\"assembly\":\"UnityEngine.UI\",\"name\":\"m_Text\",\"type\":\"UnityEngine.UI.Text\",\"isArray\":false,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"\",\"name\":\"m_ProfileInfoChanged\",\"type\":\"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/ProfileInfoChanged.default\",\"isArray\":false,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"m_IndexTf\",\"type\":\"UnityEngine.Transform\",\"isArray\":false,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]}],\"name\":\"LobbyPanel_ProfileName\",\"description\":\"\"},\"isCompiled\":true}"
+  typescriptHash: 00aab2522655ac317083332121fb041d

@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 26ca77267d67d9847929144ad87d4e59
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nclass
+    HexCodeToColor {\r\n    static Convert(hexCode) {\r\n        var value = $ref();\r\n       
+    if (UnityEngine_1.ColorUtility.TryParseHtmlString(hexCode, value))\r\n           
+    return value.value;\r\n        return UnityEngine_1.Color.white;\r\n    }\r\n}\r\nexports.default
+    = HexCodeToColor;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSGV4Q29kZVRvQ29sb3IuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJIZXhDb2RlVG9Db2xvci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUFrRDtBQUdsRCxNQUFxQixjQUFjO0lBQ3hCLE1BQU0sQ0FBQyxPQUFPLENBQUMsT0FBZ0I7UUFFbEMsSUFBSSxLQUFLLEdBQUcsSUFBSSxFQUFTLENBQUM7UUFDMUIsSUFBRywwQkFBWSxDQUFDLGtCQUFrQixDQUFDLE9BQU8sRUFBQyxLQUFLLENBQUM7WUFDN0MsT0FBTyxLQUFLLENBQUMsS0FBSyxDQUFDO1FBQ3ZCLE9BQU8sbUJBQUssQ0FBQyxLQUFLLENBQUM7SUFDdkIsQ0FBQztDQUNKO0FBUkQsaUNBUUMifQ==","assetPath":"Assets/Scripts/HexCodeToColor.ts","manifest":{"properties":[],"name":"HexCodeToColor","description":""},"isCompiled":true}'
+  typescriptHash: db12c8e2063694bf54bb74942ab61e8a

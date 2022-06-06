@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: 90df60926d0d28a4d97fa06654de133b
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nconst ProfileInfoChanged_1
+    = require(\"./ProfileInfoChanged\");\r\nconst IndexTag_1 = require(\"./IndexTag\");\r\nconst
+    LobbyData_1 = require(\"./Data/LobbyData\");\r\nclass LobbyPanel_ProfileImage
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor() {\r\n       
+    super(...arguments);\r\n        this.m_ProfileInfoChanged = new ProfileInfoChanged_1.default();\r\n   
+    }\r\n    Start() {\r\n        this.m_IndexTf = this.GetComponentInParent($typeof(IndexTag_1.default)).transform;\r\n       
+    this.m_Image = this.GetComponent($typeof(UnityEngine_UI_1.Image));\r\n    }\r\n   
+    Update() {\r\n        if (this.m_ProfileInfoChanged.Check()) {\r\n           
+    var index = this.m_IndexTf.GetSiblingIndex();\r\n            if (index < LobbyData_1.default.m_ProfileList.length)
+    {\r\n                var profileInfo = LobbyData_1.default.m_ProfileList[index];\r\n               
+    if (profileInfo.m_Sprite == null)\r\n                    this.m_Image.enabled
+    = false;\r\n                else {\r\n                    this.m_Image.sprite
+    = profileInfo.m_Sprite;\r\n                    this.m_Image.enabled = true;\r\n               
+    }\r\n            }\r\n            else\r\n                this.m_Image.enabled
+    = false;\r\n        }\r\n    }\r\n}\r\nexports.default = LobbyPanel_ProfileImage;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTG9iYnlQYW5lbF9Qcm9maWxlSW1hZ2UuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJMb2JieVBhbmVsX1Byb2ZpbGVJbWFnZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUNyRCxtREFBeUM7QUFDekMsNkRBQXNEO0FBRXRELHlDQUFrQztBQUNsQyxnREFBeUM7QUFFekMsTUFBcUIsdUJBQXdCLFNBQVEscUNBQXFCO0lBQTFFOztRQUVJLHlCQUFvQixHQUF3QixJQUFJLDRCQUFrQixFQUFFLENBQUM7SUEwQnpFLENBQUM7SUF4QkcsS0FBSztRQUNELElBQUksQ0FBQyxTQUFTLEdBQUcsSUFBSSxDQUFDLG9CQUFvQixTQUFDLGtCQUFRLEdBQUksU0FBUyxDQUFDO1FBQ2pFLElBQUksQ0FBQyxPQUFPLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQyxzQkFBSyxFQUFHLENBQUM7SUFDOUMsQ0FBQztJQUNELE1BQU07UUFFRixJQUFHLElBQUksQ0FBQyxvQkFBb0IsQ0FBQyxLQUFLLEVBQUUsRUFDcEM7WUFDSSxJQUFJLEtBQUssR0FBRyxJQUFJLENBQUMsU0FBUyxDQUFDLGVBQWUsRUFBRSxDQUFDO1lBQzdDLElBQUcsS0FBSyxHQUFHLG1CQUFTLENBQUMsYUFBYSxDQUFDLE1BQU0sRUFDekM7Z0JBQ0ksSUFBSSxXQUFXLEdBQUcsbUJBQVMsQ0FBQyxhQUFhLENBQUMsS0FBSyxDQUFDLENBQUM7Z0JBQ2pELElBQUcsV0FBVyxDQUFDLFFBQVEsSUFBSSxJQUFJO29CQUMzQixJQUFJLENBQUMsT0FBTyxDQUFDLE9BQU8sR0FBRyxLQUFLLENBQUM7cUJBRWpDO29CQUNJLElBQUksQ0FBQyxPQUFPLENBQUMsTUFBTSxHQUFHLFdBQVcsQ0FBQyxRQUFRLENBQUM7b0JBQzNDLElBQUksQ0FBQyxPQUFPLENBQUMsT0FBTyxHQUFHLElBQUksQ0FBQztpQkFDL0I7YUFDSjs7Z0JBRUcsSUFBSSxDQUFDLE9BQU8sQ0FBQyxPQUFPLEdBQUcsS0FBSyxDQUFDO1NBQ3BDO0lBQ0wsQ0FBQztDQUNKO0FBNUJELDBDQTRCQyJ9","assetPath":"Assets/Scripts/LobbyPanel_ProfileImage.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"m_Image","type":"UnityEngine.UI.Image","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"","name":"m_ProfileInfoChanged","type":"H:/UnityProjects/ZepetoRoomEscape/Assets/Scripts/ProfileInfoChanged.default","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"m_IndexTf","type":"UnityEngine.Transform","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"LobbyPanel_ProfileImage","description":""},"isCompiled":true}'
+  typescriptHash: 9d7db8e5bc05ed683c709fa342a69a5b

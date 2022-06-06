@@ -22,13 +22,16 @@ ScriptedImporter:
     { value: true });\r\nconst StartPointData_1 = require(\"../Data/StartPointData\");\r\nconst
     CabinetData_1 = require(\"./CabinetData\");\r\nconst DialogData_1 = require(\"./DialogData\");\r\nconst
     DoorLockData_1 = require(\"./DoorLockData\");\r\nconst InventoryData_1 = require(\"./InventoryData\");\r\nconst
-    KeyInputData_1 = require(\"./KeyInputData\");\r\nconst RotateLockData_1 = require(\"./RotateLockData\");\r\nconst
+    KeyInputData_1 = require(\"./KeyInputData\");\r\nconst LobbyData_1 = require(\"./LobbyData\");\r\nconst
+    PlayerData_1 = require(\"./PlayerData\");\r\nconst RotateLockData_1 = require(\"./RotateLockData\");\r\nconst
     SafeBoxData_1 = require(\"./SafeBoxData\");\r\nconst SecretCabinetData_1 = require(\"./SecretCabinetData\");\r\nconst
-    SelectObjData_1 = require(\"./SelectObjData\");\r\nclass InitData {\r\n    static
-    Init() {\r\n        StartPointData_1.default.Init();\r\n        InventoryData_1.default.Init();\r\n       
+    SelectObjData_1 = require(\"./SelectObjData\");\r\nconst TimerData_1 = require(\"./TimerData\");\r\nclass
+    InitData {\r\n    static Init() {\r\n        LobbyData_1.default.Init();\r\n       
+    StartPointData_1.default.Init();\r\n        InventoryData_1.default.Init();\r\n       
     SelectObjData_1.default.Init();\r\n        KeyInputData_1.default.Init();\r\n       
     DialogData_1.default.Init();\r\n        DoorLockData_1.default.Init();\r\n       
     RotateLockData_1.default.Init();\r\n        CabinetData_1.default.Init();\r\n       
-    SecretCabinetData_1.default.Init();\r\n        SafeBoxData_1.default.Init();\r\n   
-    }\r\n}\r\nexports.default = InitData;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5pdERhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJJbml0RGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLDJEQUFtRDtBQUNuRCwrQ0FBd0M7QUFDeEMsNkNBQXNDO0FBQ3RDLGlEQUEwQztBQUMxQyxtREFBNEM7QUFDNUMsaURBQTBDO0FBQzFDLHFEQUE4QztBQUM5QywrQ0FBd0M7QUFDeEMsMkRBQW9EO0FBQ3BELG1EQUE0QztBQUU1QyxNQUFxQixRQUFRO0lBQ2xCLE1BQU0sQ0FBQyxJQUFJO1FBRWQsd0JBQWMsQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUN0Qix1QkFBYSxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ3JCLHVCQUFhLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDckIsc0JBQVksQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUNwQixvQkFBVSxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ2xCLHNCQUFZLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDcEIsd0JBQWMsQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUN0QixxQkFBVyxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ25CLDJCQUFpQixDQUFDLElBQUksRUFBRSxDQUFDO1FBQ3pCLHFCQUFXLENBQUMsSUFBSSxFQUFFLENBQUM7SUFDdkIsQ0FBQztDQUNKO0FBZEQsMkJBY0MifQ==","assetPath":"Assets/Scripts/Data/InitData.ts","manifest":{"properties":[],"name":"InitData","description":""},"isCompiled":true}'
-  typescriptHash: 6e114cabf540b7631d9c2a1ebbca886b
+    SecretCabinetData_1.default.Init();\r\n        SafeBoxData_1.default.Init();\r\n       
+    PlayerData_1.default.Init();\r\n        TimerData_1.default.Init();\r\n    }\r\n}\r\nexports.default
+    = InitData;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiSW5pdERhdGEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJJbml0RGF0YS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLDJEQUFtRDtBQUNuRCwrQ0FBd0M7QUFDeEMsNkNBQXNDO0FBQ3RDLGlEQUEwQztBQUMxQyxtREFBNEM7QUFDNUMsaURBQTBDO0FBQzFDLDJDQUFvQztBQUNwQyw2Q0FBc0M7QUFDdEMscURBQThDO0FBQzlDLCtDQUF3QztBQUN4QywyREFBb0Q7QUFDcEQsbURBQTRDO0FBQzVDLDJDQUFvQztBQUVwQyxNQUFxQixRQUFRO0lBQ2xCLE1BQU0sQ0FBQyxJQUFJO1FBRWQsbUJBQVMsQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUNqQix3QkFBYyxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ3RCLHVCQUFhLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDckIsdUJBQWEsQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUNyQixzQkFBWSxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ3BCLG9CQUFVLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDbEIsc0JBQVksQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUNwQix3QkFBYyxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ3RCLHFCQUFXLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDbkIsMkJBQWlCLENBQUMsSUFBSSxFQUFFLENBQUM7UUFDekIscUJBQVcsQ0FBQyxJQUFJLEVBQUUsQ0FBQztRQUNuQixvQkFBVSxDQUFDLElBQUksRUFBRSxDQUFDO1FBQ2xCLG1CQUFTLENBQUMsSUFBSSxFQUFFLENBQUM7SUFDckIsQ0FBQztDQUNKO0FBakJELDJCQWlCQyJ9","assetPath":"Assets/Scripts/Data/InitData.ts","manifest":{"properties":[],"name":"InitData","description":""},"isCompiled":true}'
+  typescriptHash: 8a222f9ad731c724780fb0d0ac7a0428

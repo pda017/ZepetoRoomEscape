@@ -8,6 +8,12 @@ export default class RemoveInvenItem {
         var index = InventoryData.m_InvenList.indexOf(itemName);
         this.RemoveByIndex(index);
     }
+    public static RemoveAll()
+    {
+        InventoryData.m_InvenList = [];
+        InventoryData.m_EquipedIndex = -1;
+        InventoryData.m_InvenListDirty++;
+    }
     public static RemoveByIndex(index : number)
     {
         if(index >= 0)
@@ -15,7 +21,7 @@ export default class RemoveInvenItem {
             if(InventoryData.m_EquipedIndex === index)
                 InventoryData.m_EquipedIndex = -1;
             InventoryData.m_InvenList.splice(index,1);
-            InventoryData.m_InvenListDirty = Time.time;
+            InventoryData.m_InvenListDirty++;
         }
     }
     public static RemoveEquipedItem()

@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 75202d0c710bff04fb5f6da6c5039e18
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ButtonEvent_1 = require(\"./ButtonEvent\");\r\nconst LobbyData_1 = require(\"./Data/LobbyData\");\r\nclass
+    LobbyPanel_ReadyButton extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n   
+    Start() {\r\n        ButtonEvent_1.default.Add(this.gameObject, () => {\r\n           
+    LobbyData_1.default.m_bReady = !LobbyData_1.default.m_bReady;\r\n           
+    LobbyData_1.default.m_ReadyDirty++;\r\n        });\r\n    }\r\n}\r\nexports.default
+    = LobbyPanel_ReadyButton;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTG9iYnlQYW5lbF9SZWFkeUJ1dHRvbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkxvYmJ5UGFuZWxfUmVhZHlCdXR0b24udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsK0NBQXVDO0FBQ3ZDLGdEQUF5QztBQUV6QyxNQUFxQixzQkFBdUIsU0FBUSxxQ0FBcUI7SUFFckUsS0FBSztRQUNELHFCQUFXLENBQUMsR0FBRyxDQUFDLElBQUksQ0FBQyxVQUFVLEVBQUMsR0FBRSxFQUFFO1lBRWhDLG1CQUFTLENBQUMsUUFBUSxHQUFHLENBQUMsbUJBQVMsQ0FBQyxRQUFRLENBQUM7WUFDekMsbUJBQVMsQ0FBQyxZQUFZLEVBQUUsQ0FBQztRQUM3QixDQUFDLENBQUMsQ0FBQztJQUNQLENBQUM7Q0FFSjtBQVZELHlDQVVDIn0=","assetPath":"Assets/Scripts/LobbyPanel_ReadyButton.ts","manifest":{"properties":[],"name":"LobbyPanel_ReadyButton","description":""},"isCompiled":true}'
+  typescriptHash: 0aa12eb746495a74fac2c4e1c3b39361

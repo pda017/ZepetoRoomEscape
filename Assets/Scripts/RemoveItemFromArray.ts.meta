@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: c9af624c44b67504a9bfca3b59b0dda2
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nclass RemoveItemFromArray {\r\n    static Remove(arr, predicate)
+    {\r\n        var removeIndex = arr.findIndex(predicate);\r\n        if (removeIndex
+    !== -1) {\r\n            arr.splice(removeIndex, 1);\r\n        }\r\n    }\r\n}\r\nexports.default
+    = RemoveItemFromArray;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUmVtb3ZlSXRlbUZyb21BcnJheS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlJlbW92ZUl0ZW1Gcm9tQXJyYXkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFQSxNQUFxQixtQkFBbUI7SUFDN0IsTUFBTSxDQUFDLE1BQU0sQ0FBSSxHQUFTLEVBQUUsU0FBMEQ7UUFFekYsSUFBSSxXQUFXLEdBQUcsR0FBRyxDQUFDLFNBQVMsQ0FBQyxTQUFTLENBQUMsQ0FBQztRQUMzQyxJQUFHLFdBQVcsS0FBSyxDQUFDLENBQUMsRUFDckI7WUFDSSxHQUFHLENBQUMsTUFBTSxDQUFDLFdBQVcsRUFBQyxDQUFDLENBQUMsQ0FBQztTQUM3QjtJQUNMLENBQUM7Q0FDSjtBQVRELHNDQVNDIn0=","assetPath":"Assets/Scripts/RemoveItemFromArray.ts","manifest":{"properties":[],"name":"RemoveItemFromArray","description":""},"isCompiled":true}'
+  typescriptHash: 4516ff19f4908cf9e376a507577f1a18

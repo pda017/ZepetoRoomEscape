@@ -19,10 +19,14 @@ ScriptedImporter:
   WrapperFilters: []
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nexports.PlayerProfileInfo = void 0;\r\nclass LobbyData {\r\n}\r\nexports.default
-    = LobbyData;\r\nLobbyData.m_PlayerNumMax = 0;\r\nLobbyData.m_PlayerNum = 0;\r\nLobbyData.m_ProfileList
-    = [];\r\nLobbyData.m_ProfileListDirty = 0;\r\nclass PlayerProfileInfo {\r\n   
-    constructor() {\r\n        this.m_bJoined = false;\r\n        this.m_Name = \"\";\r\n       
-    this.m_ImageUrl = \"\";\r\n    }\r\n}\r\nexports.PlayerProfileInfo = PlayerProfileInfo;\r\n//#
-    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTG9iYnlEYXRhLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiTG9iYnlEYXRhLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUVBLE1BQXFCLFNBQVM7O0FBQTlCLDRCQUtDO0FBSmlCLHdCQUFjLEdBQVksQ0FBQyxDQUFDO0FBQzVCLHFCQUFXLEdBQVksQ0FBQyxDQUFDO0FBQ3pCLHVCQUFhLEdBQXlCLEVBQUUsQ0FBQztBQUN6Qyw0QkFBa0IsR0FBWSxDQUFDLENBQUM7QUFHbEQsTUFBYSxpQkFBaUI7SUFBOUI7UUFFVyxjQUFTLEdBQWEsS0FBSyxDQUFDO1FBQzVCLFdBQU0sR0FBWSxFQUFFLENBQUM7UUFDckIsZUFBVSxHQUFZLEVBQUUsQ0FBQztJQUNwQyxDQUFDO0NBQUE7QUFMRCw4Q0FLQyJ9","assetPath":"Assets/Scripts/Data/LobbyData.ts","manifest":{"properties":[],"name":"LobbyData","description":""},"isCompiled":true}'
-  typescriptHash: 171b8e8063d0dcc3df441db70eee9122
+    { value: true });\r\nexports.PlayerProfileInfo = void 0;\r\nclass LobbyData {\r\n   
+    static Init() {\r\n        this.m_bLeave = false;\r\n        this.m_ReadyNum
+    = 0;\r\n        this.m_bReady = false;\r\n        this.m_ProfileList = [];\r\n       
+    this.m_PlayerNum = 0;\r\n        this.m_PlayerNumMax = 0;\r\n    }\r\n}\r\nexports.default
+    = LobbyData;\r\nLobbyData.m_PlayerNumMax = 0;\r\nLobbyData.m_PlayerNum = 0;\r\nLobbyData.m_ReadyNum
+    = 0;\r\nLobbyData.m_ProfileList = [];\r\nLobbyData.m_ProfileListDirty = 0;\r\nLobbyData.m_bReady
+    = false;\r\nLobbyData.m_ReadyDirty = 0;\r\nLobbyData.m_bLeave = false;\r\nclass
+    PlayerProfileInfo {\r\n    constructor() {\r\n        this.m_SeesionId = \"\";\r\n       
+    this.m_Name = \"\";\r\n        this.m_Sprite = null;\r\n    }\r\n}\r\nexports.PlayerProfileInfo
+    = PlayerProfileInfo;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTG9iYnlEYXRhLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiTG9iYnlEYXRhLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUdBLE1BQXFCLFNBQVM7SUFTbkIsTUFBTSxDQUFDLElBQUk7UUFFZCxJQUFJLENBQUMsUUFBUSxHQUFHLEtBQUssQ0FBQztRQUN0QixJQUFJLENBQUMsVUFBVSxHQUFHLENBQUMsQ0FBQztRQUNwQixJQUFJLENBQUMsUUFBUSxHQUFHLEtBQUssQ0FBQztRQUN0QixJQUFJLENBQUMsYUFBYSxHQUFHLEVBQUUsQ0FBQztRQUN4QixJQUFJLENBQUMsV0FBVyxHQUFHLENBQUMsQ0FBQztRQUNyQixJQUFJLENBQUMsY0FBYyxHQUFHLENBQUMsQ0FBQztJQUM1QixDQUFDOztBQWpCTCw0QkFrQkM7QUFqQmlCLHdCQUFjLEdBQVksQ0FBQyxDQUFDO0FBQzVCLHFCQUFXLEdBQVksQ0FBQyxDQUFDO0FBQ3pCLG9CQUFVLEdBQVksQ0FBQyxDQUFDO0FBQ3hCLHVCQUFhLEdBQXlCLEVBQUUsQ0FBQztBQUN6Qyw0QkFBa0IsR0FBWSxDQUFDLENBQUM7QUFDaEMsa0JBQVEsR0FBYSxLQUFLLENBQUM7QUFDM0Isc0JBQVksR0FBWSxDQUFDLENBQUM7QUFDMUIsa0JBQVEsR0FBYSxLQUFLLENBQUM7QUFZN0MsTUFBYSxpQkFBaUI7SUFBOUI7UUFFVyxnQkFBVyxHQUFZLEVBQUUsQ0FBQztRQUMxQixXQUFNLEdBQVksRUFBRSxDQUFDO1FBQ3JCLGFBQVEsR0FBWSxJQUFJLENBQUM7SUFDcEMsQ0FBQztDQUFBO0FBTEQsOENBS0MifQ==","assetPath":"Assets/Scripts/Data/LobbyData.ts","manifest":{"properties":[],"name":"LobbyData","description":""},"isCompiled":true}'
+  typescriptHash: 3f5889148d560d8d5c66f904e0f55812

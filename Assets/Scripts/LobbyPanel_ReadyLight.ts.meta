@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 4a0959f22d0fe7b44b0e01042d0d9f3c
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst LobbyData_1 = require(\"./Data/LobbyData\");\r\nclass
+    LobbyPanel_ReadyLight extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n   
+    Start() {\r\n        this.m_Image = this.GetComponent($typeof(UnityEngine_UI_1.Image));\r\n   
+    }\r\n    Update() {\r\n        if (LobbyData_1.default.m_bReady)\r\n           
+    this.m_Image.enabled = true;\r\n        else\r\n            this.m_Image.enabled
+    = false;\r\n    }\r\n}\r\nexports.default = LobbyPanel_ReadyLight;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTG9iYnlQYW5lbF9SZWFkeUxpZ2h0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiTG9iYnlQYW5lbF9SZWFkeUxpZ2h0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsbURBQXNDO0FBQ3RDLGlEQUFxRDtBQUNyRCxnREFBeUM7QUFFekMsTUFBcUIscUJBQXNCLFNBQVEscUNBQXFCO0lBRXBFLEtBQUs7UUFDRCxJQUFJLENBQUMsT0FBTyxHQUFHLElBQUksQ0FBQyxZQUFZLFNBQUMsc0JBQUssRUFBRyxDQUFDO0lBQzlDLENBQUM7SUFDRCxNQUFNO1FBRUYsSUFBRyxtQkFBUyxDQUFDLFFBQVE7WUFDakIsSUFBSSxDQUFDLE9BQU8sQ0FBQyxPQUFPLEdBQUcsSUFBSSxDQUFDOztZQUU1QixJQUFJLENBQUMsT0FBTyxDQUFDLE9BQU8sR0FBRyxLQUFLLENBQUM7SUFDckMsQ0FBQztDQUNKO0FBWkQsd0NBWUMifQ==","assetPath":"Assets/Scripts/LobbyPanel_ReadyLight.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"m_Image","type":"UnityEngine.UI.Image","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"LobbyPanel_ReadyLight","description":""},"isCompiled":true}'
+  typescriptHash: f0d749be266c463046cd607dbb8c885d

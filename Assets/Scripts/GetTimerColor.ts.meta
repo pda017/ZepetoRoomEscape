@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a0705824fb480ca43a00284192cd0a4c
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"","assetPath":"Assets/Scripts/GetTimerColor.ts","manifest":{"properties":[],"name":"","description":""},"isCompiled":false}'
+  typescriptHash: bd34e4f013ea5491fc9e5d65292ba3b4

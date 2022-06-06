@@ -1,0 +1,236 @@
+[World Settings]
+world id             com.pda017.roomescape
+version              0.1                 
+max clients          4                   
+orientation          horizontal          
+disable invite       false               
+disable room list    false               
+disable private room false               
+
+[Build Manifest]
+[scenes]
+2 mb                 assets/scenes/teststage.unity
+[assets]
+18 kb                assets/horror school props/models/drawer.fbx
+2 kb                 assets/sprites/obj/board3_page2.mat
+57 kb                assets/sprites/item/item_hammer.png
+2 kb                 assets/horror school props/materials/teacher_desk.mat
+3 mb                 assets/horror school props/textures/sch_table_sch_table_normal.png
+2 kb                 assets/horror school props/materials/sch_chair.mat
+23 kb                assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/prefabs/structure/doors_windows/meshes/neo_door_01_snaps001.asset
+235 kb               assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/prefabs/props/meshes/officechair_01_snaps001.asset
+34 kb                packages/zepeto.character.controller/runtime/_resources/inputactions/zepetoinputcontrol.inputactions
+2 kb                 assets/zmaterial/collider.mat
+1 kb                 assets/prefabs/event/event_key.prefab
+2 kb                 assets/horror school props/prefabs/teacher_chair.prefab
+1 mb                 packages/zepeto.character.controller/runtime/_resources/animations/base/walk.anim
+7 mb                 assets/technical laboratory designer-v1_room/3d/technical laboratory designer-v1_room.fbx
+2 kb                 assets/technical laboratory designer-v1_room/prefabs/wall_4-4.prefab
+1 mb                 assets/horror school props/textures/blackboard_blackboard_albedotransparency.png
+6 kb                 assets/technical laboratory designer-v1_room/prefabs/doorway_4-4.prefab
+1 mb                 assets/horror school props/textures/sch_chair_sch_chair_metallicsmoothness.png
+73 kb                assets/sprites/ui/lobbypanel.png
+4 kb                 assets/technical laboratory designer-v1_room/prefabs/floor_4-4.prefab
+2 kb                 assets/zmaterial/red.mat
+2 kb                 assets/sprites/obj/board2_page1.mat
+3 kb                 assets/animation/connectedcabinet/connectedcabinet.controller
+14 kb                assets/models/smallcabinet.fbx
+2 kb                 assets/testfolder/green.mat
+25 kb                assets/horror school props/models/teacher_chair.fbx
+2 kb                 assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/materials/gray_snaps001.mat
+24 kb                assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/prefabs/props/meshes/coffeemug_01_snaps001.asset
+34 kb                assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/prefabs/props/meshes/cabinet_01_snaps001.asset
+1 kb                 assets/prefabs/event/event_calendar2.prefab
+1 mb                 packages/zepeto.character.controller/runtime/_resources/animations/base/jump_move.anim
+2 kb                 assets/zmaterial/white.mat
+23 kb                assets/models/crowbar/source/crowbar.fbx
+2 kb                 assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/materials/deepblue_snaps001.mat
+14 kb                assets/horror school props/models/teacher_desk.fbx
+24 kb                assets/horror school props/models/sch_table.fbx
+1 kb                 assets/prefabs/event/event_calendar1.prefab
+255 kb               assets/samples/ui1.jpg
+1 kb                 packages/com.unity.inputsystem/inputsystem/editor/icons/inputsystemuiinputmodule@64.png
+2 kb                 assets/zmaterial/black.mat
+6 kb                 assets/technical laboratory designer-v1_room/prefabs/doorway_2-4.prefab
+2 kb                 assets/zmaterial/darkgreen.mat
+1017 b               packages/zepeto.character.controller/runtime/_resources/images/ellipse 28.png
+24 kb                assets/sprites/ui/playerviewframe.png
+2 kb                 assets/prefabs/event/event_combineremocon.prefab
+2 kb                 assets/zmaterial/transblue.mat
+119 kb               assets/horror school props/textures/drawer_drawer_normal.png
+62 kb                packages/zepeto.character.controller/runtime/_resources/animations/base/gesture.anim
+764 kb               assets/technical laboratory designer-v1_room/textures/occlusion.png
+3 kb                 assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/prefabs/props/officechair_01_snaps001.prefab
+195 kb               assets/horror school props/textures/drawer_drawer_metallicsmoothness.png
+18 kb                packages/zepeto.character.controller/runtime/_resources/animatorcontroller/zepetoanimator.controller
+43 kb                assets/sprites/item/item_prybar.png
+42 kb                assets/sprites/obj/doorlockoff.png
+2 kb                 assets/technical laboratory designer-v1_room/materials/floor.mat
+560 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/idle.anim
+29 kb                assets/sprites/item/item_ice.png
+2 kb                 assets/horror school props/prefabs/sch_chair.prefab
+151 kb               assets/horror school props/textures/drawer_drawer_albedotransparency.png
+3 kb                 assets/animation/cabinet/cabinet.controller
+2 kb                 assets/zmaterial/key.mat
+8 kb                 assets/animation/cabinet/open.anim
+1 kb                 assets/sprites/ui/rightarrowbutton.png
+4 mb                 assets/technical laboratory designer-v1_room/textures/dla-zbr_pol_albedotransparency.png
+2 kb                 assets/zmaterial/gray.mat
+172 kb               assets/sprites/item/item_secretnote.png
+2 kb                 assets/technical laboratory designer-v1_room/materials/material-2.mat
+895 kb               assets/prefabs/obj/room3cabinet.blend
+2 mb                 assets/horror school props/textures/teacher_desk_teacher_desk_normal.png
+781 kb               assets/prefabs/obj/freezer_.blend
+2 kb                 assets/horror school props/materials/sch_table.mat
+2 kb                 assets/horror school props/prefabs/blackboard.prefab
+55 kb                assets/sprites/item/item_driverhandle.png
+2 kb                 assets/horror school props/prefabs/sch_table.prefab
+24 kb                assets/horror school props/models/blackboard.fbx
+1 mb                 packages/zepeto.character.controller/runtime/_resources/animations/base/jump_idle.anim
+77 kb                assets/sprites/item/item_driver.png
+4 kb                 assets/technical laboratory designer-v1_room/materials/material-1.mat
+4 kb                 assets/animation/electricbox/open.anim
+3 mb                 assets/horror school props/textures/teacher_desk_teacher_desk_albedotransparency.png
+8 kb                 assets/sprites/ui/safeboxenterbutton.png
+86 kb                assets/sprites/item/item_safepw.png
+3 mb                 assets/horror school props/textures/info_board_info_board_albedotransparency.png
+2 kb                 assets/animation/friger/friger.controller
+2 mb                 assets/technical laboratory designer-v1_room/textures/dla-zbr_steni_normal.png
+367 kb               assets/models/hammer/survivalkit_hammer_albedotransparency.png
+814 b                assets/fonts/nanumsquareround.mat
+94 kb                assets/sprites/item/item_remote.png
+46 kb                assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/prefabs/props/meshes/potplant_02_snaps001.asset
+2 kb                 assets/models/crowbar/textures/crowbar.mat
+215 kb               assets/sprites/item/item_classclock.png
+818 kb               assets/prefabs/obj/cabinet_.blend
+8 kb                 assets/animation/connectedcabinet/open.anim
+861 kb               assets/prefabs/obj/drivertip.blend
+590 kb               assets/horror school props/textures/info_board_info_board_metallicsmoothness.png
+2 kb                 assets/sprites/item/material/item_teachernote.mat
+53 kb                assets/sprites/ui/safeboxrotator.png
+2 mb                 assets/technical laboratory designer-v1_room/textures/dla-zbr_steni_albedotransparency.png
+39 kb                assets/sprites/obj/board3_page2.png
+17 kb                assets/models/key.fbx
+1 kb                 assets/prefabs/event/event_apple.prefab
+70 kb                assets/sprites/item/item_battery.png
+1 mb                 assets/horror school props/textures/teacher_chair_teacher_chair_albedotransparency.png
+1 kb                 assets/prefabs/event/event_teachernote.prefab
+4 kb                 assets/animation/smallcabinet/open.anim
+3 kb                 assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/prefabs/props/computerdesk_01_snaps001.prefab
+2 kb                 assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/materials/green_snaps001.mat
+133 kb               assets/sprites/item/item_stick.png
+3 kb                 assets/animation/door/door.controller
+581 kb               assets/models/crowbar/textures/material_base_color.png
+1005 kb              assets/fonts/nanumsquareroundeb.ttf
+677 b                assets/sprites/obj/password.png
+139 kb               assets/technical laboratory designer-v1_room/textures/dla-zbr_steni_emission.png
+3 kb                 assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/prefabs/props/potplant_01_snaps001.prefab
+20 kb                assets/sprites/obj/board2_page2.png
+4 mb                 assets/technical laboratory designer-v1_room/textures/dla-zbr_pol_normal.png
+3 mb                 assets/horror school props/textures/sch_table_sch_table_metallicsmoothness.png
+14 kb                assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/prefabs/props/meshes/keyboard_01_snaps001.asset
+3 kb                 assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/prefabs/props/potplant_02_snaps001.prefab
+2 kb                 assets/horror school props/materials/teacher_chair.mat
+9 kb                 assets/horror school props/prefabs/teacher_desk_prefab.prefab
+2 kb                 assets/animation/desk/trash_desk.controller
+59 kb                assets/sprites/item/item_chargeremote.png
+16 kb                assets/sprites/obj/circle.png
+3 mb                 assets/horror school props/textures/sch_chair_sch_chair_albedotransparency.png
+3 kb                 assets/animation/door2/room4_exitdoor.controller
+1 kb                 assets/prefabs/event/event_safepw.prefab
+48 kb                assets/horror school props/models/sch_chair.fbx
+2 kb                 assets/sprites/item/material/item_safepw.mat
+20 kb                assets/sprites/item/item_drivertip.png
+35 kb                assets/sprites/ui/safeboxpanel.png
+1 kb                 assets/prefabs/event/event_room2_hammer.prefab
+5 kb                 assets/models/startpoint.prefab
+3 mb                 assets/horror school props/textures/sch_chair_sch_chair_normal.png
+2 kb                 assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/materials/brown_snaps001.mat
+2 kb                 assets/horror school props/materials/drawer.mat
+2 kb                 assets/zmaterial/transgreen.mat
+4 kb                 assets/animation/friger/open.anim
+2 kb                 assets/models/crowbar/crowbar.prefab
+1 kb                 assets/prefabs/event/event_calendar3.prefab
+900 kb               assets/horror school props/textures/teacher_chair_teacher_chair_normal.png
+3 kb                 assets/animation/drawer/lower_drawer.controller
+3 kb                 packages/zepeto.character.controller/runtime/_resources/prefabs/shadow/charactershadow.prefab
+2 mb                 assets/horror school props/textures/info_board_info_board_normal.png
+43 kb                assets/sprites/obj/doorlockon.png
+8 kb                 assets/sprites/square.png
+24 kb                assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/prefabs/props/meshes/monitor_01_snaps001.asset
+2 kb                 assets/testfolder/yellow.mat
+1004 b               packages/zepeto.character.controller/runtime/_resources/images/vector 24.png
+4 kb                 assets/technical laboratory designer-v1_room/prefabs/lamp_1-1.prefab
+2 kb                 assets/sprites/item/material/item_calanderbroken.mat
+31 kb                assets/sprites/item/item_fuse.png
+52 kb                assets/sprites/item/item_apple.png
+8 kb                 assets/animation/oldtv/open.anim
+4 mb                 assets/horror school props/textures/sch_table_sch_table_albedotransparency.png
+2 mb                 assets/technical laboratory designer-v1_room/textures/dla-zbr_pol_specularsmoothness.png
+2 kb                 assets/sprites/item/material/item_calanderpiece.mat
+2 kb                 assets/prefabs/event/event_getbattery.prefab
+949 kb               assets/prefabs/clock 1.blend
+2 kb                 assets/technical laboratory designer-v1_room/prefabs/support.prefab
+16 kb                assets/sprites/item/item_calanderpiece.png
+5 kb                 assets/sprites/circle.png
+2 kb                 assets/shader/customtextmesh.shader
+2 kb                 assets/technical laboratory designer-v1_room/3d/materials/dla-zbr_steni_albedotransparency.mat
+45 kb                assets/sprites/item/item_key.png
+189 kb               assets/horror school props/textures/teacher_chair_teacher_chair_metallicsmoothness.png
+2 kb                 assets/technical laboratory designer-v1_room/3d/materials/dla-zbr_pol_albedotransparency.mat
+2 kb                 assets/prefabs/zepetocamera.prefab
+4 kb                 packages/zepeto.character.controller/runtime/_resources/images/ellipse 27.png
+20 kb                assets/sprites/ui/monitor.png
+1 kb                 packages/zepeto.character.controller/runtime/_resources/prefabs/shadow/fxt_blobshadow.png
+4 kb                 assets/animation/desk/open.anim
+64 kb                assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/prefabs/structure/doors_windows/meshes/classic_door_01_snaps001.asset
+4 kb                 assets/animation/door/open.anim
+9 kb                 assets/sprites/obj/board2_page1.png
+20 kb                assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/prefabs/props/meshes/computer_01_snaps001.asset
+57 kb                assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/prefabs/structure/walls/meshes/partition_wall_snaps001.asset
+2 kb                 assets/sprites/obj/doorlockoff.mat
+2 kb                 assets/sprites/obj/doorlockon.mat
+4 kb                 assets/animation/drawer/open.anim
+827 kb               assets/horror school props/textures/blackboard_blackboard_normal.png
+27 kb                assets/models/lowpoly-apple.fbx
+48 kb                assets/sprites/item/item_teachernote.png
+2 kb                 assets/zmaterial/yellow.mat
+2 kb                 assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/prefabs/structure/walls/partition_wall_snaps001.prefab
+26 kb                assets/horror school props/models/info_board.fbx
+1 mb                 assets/technical laboratory designer-v1_room/textures/dla-zbr_steni_specularsmoothness.png
+2 kb                 assets/models/hammer/hammer.prefab
+2 kb                 assets/horror school props/materials/blackboard.mat
+3 kb                 assets/animation/smallcabinet/smallcabinet.controller
+125 kb               assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/prefabs/props/meshes/potplant_01_snaps001.asset
+2 kb                 assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/materials/darkgray_snaps001.mat
+60 kb                assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/prefabs/props/meshes/computerdesk_01_snaps001.asset
+940 kb               packages/zepeto.character.controller/runtime/_resources/animations/base/run.anim
+765 kb               assets/prefabs/obj/doorbutton.blend
+835 kb               assets/prefabs/oldtv.blend
+1 mb                 assets/prefabs/obj/fusebox_fix.blend
+2 kb                 assets/technical laboratory designer-v1_room/prefabs/wall_4-6.prefab
+2 kb                 assets/horror school props/materials/info_board.mat
+2 kb                 assets/animation/electricbox/electricbox.controller
+2 kb                 assets/sprites/obj/board2_page2.mat
+83 kb                assets/assetstoreoriginals/_snaps_prototypingassets/modernoffice_interior/prefabs/props/meshes/cabinet_04_snaps001.asset
+1 mb                 assets/horror school props/textures/blackboard_blackboard_metallicsmoothness.png
+2 kb                 packages/zepeto.character.controller/runtime/_resources/prefabs/shadow/fxt_blobshadow.mat
+1 mb                 assets/technical laboratory designer-v1_room/textures/occlusion_0.png
+2 kb                 packages/zepeto.character.controller/runtime/_resources/prefabs/eventsystem.prefab
+11 kb                assets/models/circle.fbx
+2 mb                 assets/horror school props/textures/teacher_desk_teacher_desk_metallicsmoothness.png
+2 kb                 assets/models/hammer/hammer.mat
+11 kb                assets/sprites/ui/rotatelock.png
+52 kb                assets/models/hammer/uploads_files_1909598_survivalkit_hammer.fbx
+3 kb                 assets/animation/oldtv/oldtv.controller
+17 kb                assets/sprites/item/item_calander.png
+4 kb                 assets/animation/door2/open.anim
+1 kb                 assets/prefabs/event/event_remocon.prefab
+31 kb                packages/com.unity.inputsystem/inputsystem/plugins/playerinput/defaultinputactions.inputactions
+2 kb                 assets/sprites/ui/xbutton.png
+28 kb                assets/sprites/item/item_calanderbroken.png
+834 kb               assets/prefabs/uicontroller_horizontal_custom.prefab
+[resources]
+0 b                  assets/resources    
+0 b                  assets/textmesh pro/resources
+[streamingAssets]

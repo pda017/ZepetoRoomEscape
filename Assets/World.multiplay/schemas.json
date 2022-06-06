@@ -1,6 +1,6 @@
 {
-"State" : {"players" : {"map" : "Player"},"RemainTime" : "number","PlayerNumMax" : "uint8","PlayerNum" : "uint8"},
-"Player" : {"sessionId" : "string","zepetoHash" : "string","zepetoUserId" : "string","transform" : "Transform","state" : "number"},
+"State" : {"players" : {"map" : "Player"},"RemainTime" : "number","PlayerNumMax" : "uint8","PlayerNum" : "uint8","JoinLeaveDirty" : "uint8"},
+"Player" : {"sessionId" : "string","zepetoHash" : "string","zepetoUserId" : "string","transform" : "Transform","state" : "number","ready" : "boolean","JoinOrder" : "number"},
 "Transform" : {"position" : "Vector3","rotation" : "Vector3"},
 "Vector3" : {"x" : "number","y" : "number","z" : "number"}
 }
